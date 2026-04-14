@@ -40,7 +40,7 @@ Comercial use is permitted only if the original source is specified.
 
 - **[OpenStreetMap](https://www.openstreetmap.org/copyright)** contributors — ODbL
 - **[Esri](https://www.esri.com)** — satellite imagery
-- **[adsbdb.com](https://www.adsbdb.com)** — flight route data
+- **[Virtual Radar](https://github.com/vradarserver/standing-data)** — flight route data
 
 ### Utility libraries
 
