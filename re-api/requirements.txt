@@ -1,0 +1,4 @@
+# Python 3 requirements for re-api service
+requests
+setproctitle
+zstandard

@@ -3,6 +3,7 @@
     * Author: Ionut Muntean
 */
 
+
 const cesiumIonToken = typeof window.CESIUM_ION_TOKEN === 'string'
     ? window.CESIUM_ION_TOKEN.trim()
     : '';

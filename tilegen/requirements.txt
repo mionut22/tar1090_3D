@@ -1,0 +1,4 @@
+# Python 3 requirements for tilegen service
+requests
+setproctitle
+urllib3
