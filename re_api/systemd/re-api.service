@@ -1,0 +1,23 @@
+[Unit]
+Description=Re-API Proxy Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ionut
+Group=ionut
+WorkingDirectory=/home/ionut/tilegen
+Environment=SYSTEMD_SERVICE=1
+ExecStart=/usr/bin/env python3 /home/ionut/tilegen/re-api
+Restart=on-failure
+RestartSec=2
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=false
+ReadWritePaths=/home/ionut/tilegen
+
+[Install]
+WantedBy=multi-user.target

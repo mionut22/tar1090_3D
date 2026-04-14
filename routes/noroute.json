@@ -1,0 +1,31 @@
+{
+    "callsign": "x",
+    "number": "0",
+    "airline_code": "x",
+    "airport_codes": "xxx-xxx",
+    "_airport_codes_iata": "xxx-xxx",
+    "_airports": [
+        {
+            "name": "-",
+            "icao": "x",
+            "iata": "x",
+            "location": "x",
+            "countryiso2": "US",
+            "lat": 0.0,
+            "lon": 0.0,
+            "alt_feet": 0.0,
+            "alt_meters": 0.0
+        },
+        {
+            "name": "-",
+            "icao": "x",
+            "iata": "x",
+            "location": "x",
+            "countryiso2": "US",
+            "lat": 0.0,
+            "lon": 0.0,
+            "alt_feet": 0.0,
+            "alt_meters": 0.0
+        }
+    ]
+}

@@ -1,0 +1,281 @@
+#!/usr/bin/env python3
+import os
+import sys
+import json
+import csv
+import time
+from http.server import HTTPServer, SimpleHTTPRequestHandler, ThreadingHTTPServer
+from urllib.parse import urlparse, parse_qs
+from pathlib import Path
+from datetime import datetime
+from functools import lru_cache
+import math
+import subprocess
+from socketserver import ThreadingMixIn
+import socket
+import requests
+import setproctitle
+import logging
+from logging.handlers import RotatingFileHandler
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+#from signal import signal, SIGPIPE, SIG_DFL
+
+#signal(SIGPIPE,SIG_DFL)
+this_path = os.path.dirname(os.path.abspath(__file__))
+style = 'bw2krvk.json'
+LOGFILE = this_path + "/tilegen.log"
+logger = None
+
+def setup_logging():
+    global logger
+
+    logger = logging.getLogger("tilegen")
+    logger.setLevel(logging.INFO)
+    logger.handlers.clear()
+    logger.propagate = False
+
+    handler = RotatingFileHandler(LOGFILE, maxBytes=5 * 1024 * 1024, backupCount=3)
+    handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(handler)
+
+def create_requests_session():
+    session = requests.Session()
+    retries = Retry(
+        total=2,
+        connect=2,
+        read=2,
+        backoff_factor=0.2,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=frozenset(["GET"]),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retries, pool_connections=20, pool_maxsize=50)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
+
+REQUEST_SESSION = create_requests_session()
+
+def timeit(method):
+    def timed(*args, **kw):
+        ts = time.time()
+        result = method(*args, **kw)
+        te = time.time()
+        if 'log_time' in kw:
+            name = kw.get('log_name', method.__name__.upper())
+            kw['log_time'][name] = int((te - ts) * 1000)
+        else:
+            print('%r  %2.2f ms' % \
+                  (method.__name__, (te - ts) * 1000))
+        return result
+    return timed
+
+def log(msg):
+    if logger:
+        logger.info(msg)
+    else:
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{timestamp} - {msg}")
+
+def getHostIP(host): 
+    return socket.gethostbyname(host)
+
+def num2deg(xtile, ytile, zoom):
+  n = 1 << zoom
+  lon_deg = xtile / n * 360.0 - 180.0
+  lat_rad = math.atan(math.sinh(math.pi * (1 - 2 * ytile / n)))
+  lat_deg = math.degrees(lat_rad)
+  return lat_deg, lon_deg
+
+def get_tile_bounds(x, y, z):
+    lat1, lon1 = num2deg(x, y, z)
+    lat2, lon2 = num2deg(x + 1, y + 1, z)
+    return (lat1, lon1, lat2, lon2)
+
+def getFile(path):
+    with open(path, "rb") as f:
+        return f.read()
+    
+def generate_tile(x, y, z, style):
+    lat1, lon1, lat2, lon2 = get_tile_bounds(x, y, z)
+    style_path = os.path.join(this_path, style) + ".json"
+    if not os.path.exists(style_path):
+        log(f"Style file {style_path} does not exist")
+        return None
+    #log(f"Generating tile {z}/{x}/{y} for style {style} with bounds {(lat1, lon1, lat2, lon2)}")
+    tile_path = os.path.join(this_path, f"data/{style}/{z}/{x}/{y}.png")
+    if not os.path.exists(os.path.dirname(tile_path)):
+        os.makedirs(os.path.dirname(tile_path), exist_ok=True)
+    if os.path.exists(tile_path):
+        log(f"Tile {style}/{z}/{x}/{y} - cache")
+        return getFile(tile_path)
+    log(f"Tile {style}/{z}/{x}/{y} - new tile")
+    cmd = ['/usr/bin/xvfb-run', 
+           '-a',
+           '/usr/bin/mbgl-render', 
+           style_path, 
+           tile_path, 
+           '256', 
+           '256', 
+           '-b', 
+           f'{lon1},{lat2},{lon2},{lat1}', 
+           '-z', 
+           str(z)]
+#    log(f"Running command: {' '.join(cmd)}")
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=False)
+    out, err = process.communicate()
+#    log(f"Command output: {out}")
+#    log(f"Command error: {err}")
+    if process.returncode != 0:
+        log(f"Command output: {out}")
+        log(f"Command error: {err}")
+        log(f"Error generating tile {z}/{x}/{y}: {err}")
+        return None
+    return getFile(tile_path)
+
+def getSatTile(x, y, z):
+    tile_path = os.path.join(this_path, f"data/sat/{z}/{y}/{x}.png")
+    if not os.path.exists(os.path.dirname(tile_path)):
+        os.makedirs(os.path.dirname(tile_path), exist_ok=True)
+    if os.path.exists(tile_path):
+        log(f"Tile sat/{z}/{y}/{x} - cache")
+        return getFile(tile_path)
+    log(f"Tile sat/{z}/{y}/{x} - new tile")
+    reqHeaders = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+    url = f"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+    try:
+        response = REQUEST_SESSION.get(url, headers=reqHeaders, timeout = 10)
+        response.raise_for_status()
+        with open(tile_path, "wb") as f:
+            f.write(response.content)
+        return response.content
+    except requests.RequestException as e:
+        log(f"Error fetching satellite tile: {e}")
+        return None
+
+class TileServer(ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+    allow_reuse_address = True
+
+    def __init__(self, server_address, RequestHandlerClass):
+        super().__init__(server_address, RequestHandlerClass)
+
+def parse_tile_request(path):
+    parsed_path = urlparse(path)
+    path_parts = parsed_path.path.strip("/").split("/")
+
+    if len(path_parts) != 4:
+        raise ValueError("Not found")
+
+    style = path_parts[0]
+    z = int(path_parts[1])
+    x = int(path_parts[2])
+    y = int(path_parts[3])
+
+    if z < 0 or z > 22:
+        raise ValueError("Invalid zoom")
+
+    max_index = (1 << z) - 1
+    if x < 0 or y < 0 or x > max_index or y > max_index:
+        raise ValueError("Invalid tile coordinates")
+
+    return style, z, x, y
+
+class TileHandler(SimpleHTTPRequestHandler):
+
+    def log_message(self, format, *args):
+        pass
+
+    def handle(self):
+        try:
+            super().handle()
+        except BrokenPipeError:
+            log("Client disconnected before response was sent.")
+            pass
+
+    def end_headers(self):
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'access-control-allow-origin,content-type')
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
+        return super(TileHandler, self).end_headers()
+    
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.end_headers()
+
+    # @timeit
+    def do_GET(self):
+        try:
+            style, z, x, y = parse_tile_request(self.path)
+            if style == "sat":
+                tile_data = getSatTile(y, x, z)
+            else:
+                tile_data = generate_tile(x, y, z, style)
+
+            if tile_data:
+                self.send_response(200)
+                self.send_header("Content-Type", "image/png")
+                self.send_header("Content-Length", str(len(tile_data)))
+                self.end_headers()
+                self.wfile.write(tile_data)
+            else:
+                self.send_error(502, "Error generating tile")
+        except ValueError as e:
+            msg = str(e)
+            if msg == "Not found":
+                self.send_error(404, "Not found")
+            else:
+                log(f"Invalid tile request {self.path}: {msg}")
+                self.send_error(400, msg)
+        else:
+            pass
+
+def run_server(port = 8080):
+    server = TileServer(("0.0.0.0", port), TileHandler)
+    server.serve_forever()
+
+def new_logfile():
+    try:
+        os.remove(LOGFILE)
+    except FileNotFoundError:
+        pass
+    except OSError as e:
+        print(f"Failed to remove old logfile: {e}")
+
+def daemonize():
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+    os.setsid()
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+    # Redirect stdin/stdout/stderr to LOGFILE
+    sys.stdout.flush()
+    sys.stderr.flush()
+    with open("/dev/null", "rb", 0) as f:
+        os.dup2(f.fileno(), sys.stdin.fileno())
+    with open(LOGFILE, "ab", 0) as f:
+        os.dup2(f.fileno(), sys.stdout.fileno())
+        os.dup2(f.fileno(), sys.stderr.fileno())
+
+def running_under_systemd():
+    # Explicit flag from unit file keeps behavior deterministic.
+    return os.environ.get("SYSTEMD_SERVICE") == "1"
+
+if __name__ == "__main__":
+    setproctitle.setproctitle("tilegen")
+    if not running_under_systemd():
+        new_logfile()
+        daemonize()
+    setup_logging()
+    log("Starting tilegen server.")
+    log("Listening on port 8080, awaiting requests.")
+    run_server(8080)
+
+
+
+
+

@@ -1,0 +1,1130 @@
+2026-04-14 22:54:27,989 - INFO - Starting route server.
+2026-04-14 22:54:27,989 - INFO - Counting routes ...
+2026-04-14 22:54:28,417 - INFO - Route count: 609126
+2026-04-14 22:54:28,436 - INFO - Listening on port 8080, awaiting requests.
+2026-04-14 22:54:41,146 - INFO - Cache miss for MNB9345, checking disk
+2026-04-14 22:54:41,156 - INFO - 22:54:41: 10.100.100.163  - MNB9345   : IST -> LEJ - MNG Airlines
+2026-04-14 22:54:45,297 - INFO - Cache miss for PGT398, checking disk
+2026-04-14 22:54:45,302 - INFO - 22:54:45: 10.100.100.163  - PGT398    : SAW -> LED - Pegasus Airlines
+2026-04-14 22:54:46,346 - INFO - Cache miss for THY8BC, checking disk
+2026-04-14 22:54:46,367 - INFO - 22:54:46: 10.100.100.163  - THY8BC    : BHX -> IST - Turkish Airlines
+2026-04-14 22:54:46,367 - INFO - Cache miss for THY6AM, checking disk
+2026-04-14 22:54:46,375 - INFO - 22:54:46: 10.100.100.163  - THY6AM    : IST -> MXP - Turkish Airlines
+2026-04-14 22:54:46,375 - INFO - Cache miss for THY4SD, checking disk
+2026-04-14 22:54:46,385 - INFO - 22:54:46: 10.100.100.163  - THY4SD    : LHR -> IST - Turkish Airlines
+2026-04-14 22:54:46,385 - INFO - Cache miss for RYR2288, checking disk
+2026-04-14 22:54:46,396 - INFO - 22:54:46: 10.100.100.163  - RYR2288   : OTP -> BGY - Ryanair
+2026-04-14 22:54:46,396 - INFO - Cache miss for VJT278, checking disk
+2026-04-14 22:54:46,396 - INFO - 22:54:46: 10.100.100.163  - VJT278    : xxx -> xxx - Vistajet
+2026-04-14 22:54:46,396 - INFO - Cache miss for RCH429, checking disk
+2026-04-14 22:54:46,396 - INFO - 22:54:46: 10.100.100.163  - RCH429    : xxx -> xxx - Air Mobility Command
+2026-04-14 22:54:46,397 - INFO - Cache miss for LOT6227, checking disk
+2026-04-14 22:54:46,408 - INFO - 22:54:46: 10.100.100.163  - LOT6227   : KTW -> SSH - LOT Polish Airlines
+2026-04-14 22:54:46,408 - INFO - Cache miss for ROT647M, checking disk
+2026-04-14 22:54:46,418 - INFO - 22:54:46: 10.100.100.163  - ROT647M   : OTP -> CLJ - Tarom
+2026-04-14 22:54:46,418 - INFO - Cache miss for TKJ3HF, checking disk
+2026-04-14 22:54:46,431 - INFO - 22:54:46: 10.100.100.163  - TKJ3HF    : SAW -> CGN - AJet
+2026-04-14 22:54:46,431 - INFO - Cache miss for WMT7TW, checking disk
+2026-04-14 22:54:46,442 - INFO - 22:54:46: 10.100.100.163  - WMT7TW    : CLJ -> LCA - Wizz Air Malta
+2026-04-14 22:54:46,443 - INFO - Cache miss for UPS269, checking disk
+2026-04-14 22:54:46,450 - INFO - 22:54:46: 10.100.100.163  - UPS269    : IST -> CGN - United Parcel Service
+2026-04-14 22:54:46,450 - INFO - Cache miss for WZZ281, checking disk
+2026-04-14 22:54:46,459 - INFO - 22:54:46: 10.100.100.163  - WZZ281    : NUE -> VAR - Wizz Air
+2026-04-14 22:54:46,459 - INFO - Cache miss for FCA2MA, checking disk
+2026-04-14 22:54:46,459 - INFO - 22:54:46: 10.100.100.163  - FCA2MA    : xxx -> xxx - First Choice Airways
+2026-04-14 22:54:50,455 - INFO - Cache miss for EZY65FT, checking disk
+2026-04-14 22:54:50,479 - INFO - 22:54:50: 10.100.100.163  - EZY65FT   : DLM -> BFS - easyJet
+2026-04-14 22:54:50,479 - INFO - Cache miss for EFW7SN, checking disk
+2026-04-14 22:54:50,484 - INFO - 22:54:50: 10.100.100.163  - EFW7SN    : PFO -> LGW - BA Euroflyer
+2026-04-14 22:54:50,484 - INFO - Cache miss for EXS72BQ, checking disk
+2026-04-14 22:54:50,490 - INFO - 22:54:50: 10.100.100.163  - EXS72BQ   : DLM -> NCL - Jet2.com
+2026-04-14 22:54:50,490 - INFO - Cache miss for SXS5EY, checking disk
+2026-04-14 22:54:50,501 - INFO - 22:54:50: 10.100.100.163  - SXS5EY    : AYT -> HAJ - SunExpress
+2026-04-14 22:54:50,502 - INFO - Cache miss for CFG2366, checking disk
+2026-04-14 22:54:50,507 - INFO - 22:54:50: 10.100.100.163  - CFG2366   : FRA -> TNA - Condor
+2026-04-14 22:54:50,507 - INFO - Cache miss for NSZ2827, checking disk
+2026-04-14 22:54:50,511 - INFO - 22:54:50: 10.100.100.163  - NSZ2827   : PRN -> HEL - Norwegian Air Sweden
+2026-04-14 22:54:50,511 - INFO - Cache miss for RSX321, checking disk
+2026-04-14 22:54:50,511 - INFO - 22:54:50: 10.100.100.163  - RSX321    : xxx -> xxx - Red Sea Airlines
+2026-04-14 22:54:50,511 - INFO - Cache miss for MNB9391, checking disk
+2026-04-14 22:54:50,521 - INFO - 22:54:50: 10.100.100.163  - MNB9391   : IST -> EMA - MNG Airlines
+2026-04-14 22:54:50,521 - INFO - Cache miss for HYM412, checking disk
+2026-04-14 22:54:50,526 - INFO - 22:54:50: 10.100.100.163  - HYM412    : STN -> RMO - HiSky Airilnes
+2026-04-14 22:54:51,515 - INFO - Cache miss for RYR84TT, checking disk
+2026-04-14 22:54:51,520 - INFO - 22:54:51: 10.100.100.163  - RYR84TT   : BCN -> NAP - Ryanair
+2026-04-14 22:54:51,520 - INFO - Cache miss for RYR75EU, checking disk
+2026-04-14 22:54:51,525 - INFO - 22:54:51: 10.100.100.163  - RYR75EU   : FCO -> CTA - Ryanair
+2026-04-14 22:54:51,525 - INFO - Cache miss for ITY1789, checking disk
+2026-04-14 22:54:51,531 - INFO - 22:54:51: 10.100.100.163  - ITY1789   : FCO -> PMO - ITA Airways
+2026-04-14 22:54:51,531 - INFO - Cache miss for THY5RD, checking disk
+2026-04-14 22:54:51,536 - INFO - 22:54:51: 10.100.100.163  - THY5RD    : IST -> BCN - Turkish Airlines
+2026-04-14 22:54:51,536 - INFO - Cache miss for EDW399L, checking disk
+2026-04-14 22:54:51,541 - INFO - 22:54:51: 10.100.100.163  - EDW399L   : CTA -> ZRH - Edelweiss Air
+2026-04-14 22:54:51,541 - INFO - Cache miss for AFR25LD, checking disk
+2026-04-14 22:54:51,550 - INFO - 22:54:51: 10.100.100.163  - AFR25LD   : CDG -> VCE - Air France
+2026-04-14 22:54:51,550 - INFO - Cache miss for RYR8132, checking disk
+2026-04-14 22:54:51,558 - INFO - 22:54:51: 10.100.100.163  - RYR8132   : STN -> LPA - Ryanair
+2026-04-14 22:54:51,558 - INFO - Cache miss for ASL45X, checking disk
+2026-04-14 22:54:51,567 - INFO - 22:54:51: 10.100.100.163  - ASL45X    : CDG -> BEG - Air Serbia
+2026-04-14 22:54:51,567 - INFO - Cache miss for RYR30KP, checking disk
+2026-04-14 22:54:51,573 - INFO - 22:54:51: 10.100.100.163  - RYR30KP   : BHX -> MLA - Ryanair
+2026-04-14 22:54:51,573 - INFO - Cache miss for AEZ157Q, checking disk
+2026-04-14 22:54:51,578 - INFO - 22:54:51: 10.100.100.163  - AEZ157Q   : FCO -> CTA - AeroItalia
+2026-04-14 22:54:51,578 - INFO - Cache miss for BEL7JU, checking disk
+2026-04-14 22:54:51,585 - INFO - 22:54:51: 10.100.100.163  - BEL7JU    : BRU -> BUD - Brussels Airlines
+2026-04-14 22:54:51,585 - INFO - Cache miss for RYR6TE, checking disk
+2026-04-14 22:54:51,595 - INFO - 22:54:51: 10.100.100.163  - RYR6TE    : BRI -> PSA - Ryanair
+2026-04-14 22:54:51,595 - INFO - Cache miss for EZY56EJ, checking disk
+2026-04-14 22:54:51,611 - INFO - 22:54:51: 10.100.100.163  - EZY56EJ   : VCE -> LGW - easyJet
+2026-04-14 22:54:51,611 - INFO - Cache miss for RYR10PP, checking disk
+2026-04-14 22:54:51,614 - INFO - 22:54:51: 10.100.100.163  - RYR10PP   : TSF -> MLA - Ryanair
+2026-04-14 22:54:51,614 - INFO - Cache miss for RYR89RA, checking disk
+2026-04-14 22:54:51,624 - INFO - 22:54:51: 10.100.100.163  - RYR89RA   : MXP -> CTA - Ryanair
+2026-04-14 22:54:51,624 - INFO - Cache miss for CES788, checking disk
+2026-04-14 22:54:51,635 - INFO - 22:54:51: 10.100.100.163  - CES788    : FCO -> PVG - China Eastern Airlines
+2026-04-14 22:54:51,635 - INFO - Cache miss for AUA55P, checking disk
+2026-04-14 22:54:51,640 - INFO - 22:54:51: 10.100.100.163  - AUA55P    : FCO -> VIE - Austrian Airlines
+2026-04-14 22:54:51,640 - INFO - Cache miss for BCS7YL, checking disk
+2026-04-14 22:54:51,647 - INFO - 22:54:51: 10.100.100.163  - BCS7YL    : CIA -> LEJ - European Air Transport
+2026-04-14 22:54:51,647 - INFO - Cache miss for RYR51FQ, checking disk
+2026-04-14 22:54:51,657 - INFO - 22:54:51: 10.100.100.163  - RYR51FQ   : POZ -> BGY - Ryanair
+2026-04-14 22:54:51,657 - INFO - Cache miss for RYR791X, checking disk
+2026-04-14 22:54:51,667 - INFO - 22:54:51: 10.100.100.163  - RYR791X   : CIA -> STN - Ryanair
+2026-04-14 22:54:51,667 - INFO - Cache miss for EWG6PL, checking disk
+2026-04-14 22:54:51,672 - INFO - 22:54:51: 10.100.100.163  - EWG6PL    : PMI -> DUS - Eurowings
+2026-04-14 22:54:51,672 - INFO - Cache miss for AIC156, checking disk
+2026-04-14 22:54:51,678 - INFO - 22:54:51: 10.100.100.163  - AIC156    : AMS -> DEL - Air India
+2026-04-14 22:54:51,678 - INFO - Cache miss for ITY1161, checking disk
+2026-04-14 22:54:51,687 - INFO - 22:54:51: 10.100.100.163  - ITY1161   : FCO -> REG - ITA Airways
+2026-04-14 22:54:51,687 - INFO - Cache miss for WZZ85, checking disk
+2026-04-14 22:54:51,703 - INFO - 22:54:51: 10.100.100.163  - WZZ85     : NCE -> KRK - Wizz Air
+2026-04-14 22:54:51,703 - INFO - Cache miss for VOE6KX, checking disk
+2026-04-14 22:54:51,764 - INFO - 22:54:51: 10.100.100.163  - VOE6KX    : CTA -> VRN - Volotea
+2026-04-14 22:54:51,765 - INFO - Cache miss for KMM615, checking disk
+2026-04-14 22:54:51,780 - INFO - 22:54:51: 10.100.100.163  - KMM615    : FCO -> MLA - KM Malta Airlines
+2026-04-14 22:54:51,781 - INFO - Cache miss for QTR91Y, checking disk
+2026-04-14 22:54:51,790 - INFO - 22:54:51: 10.100.100.163  - QTR91Y    : BER -> DOH - Qatar Airways
+2026-04-14 22:54:51,791 - INFO - Cache miss for WZZ86, checking disk
+2026-04-14 22:54:51,804 - INFO - 22:54:51: 10.100.100.163  - WZZ86     : BCN -> VNO - Wizz Air
+2026-04-14 22:54:51,804 - INFO - Cache miss for DLA1KF, checking disk
+2026-04-14 22:54:51,875 - INFO - 22:54:51: 10.100.100.163  - DLA1KF    : FRA -> TRS - Air Dolomiti
+2026-04-14 22:54:51,875 - INFO - Cache miss for SWT2SO, checking disk
+2026-04-14 22:54:51,893 - INFO - 22:54:51: 10.100.100.163  - SWT2SO    : SOF -> CGN - Swiftair
+2026-04-14 22:54:51,893 - INFO - Cache miss for RYR21GU, checking disk
+2026-04-14 22:54:51,915 - INFO - 22:54:51: 10.100.100.163  - RYR21GU   : PMO -> FCO - Ryanair
+2026-04-14 22:54:51,915 - INFO - Cache miss for RYR1NU, checking disk
+2026-04-14 22:54:51,928 - INFO - 22:54:51: 10.100.100.163  - RYR1NU    : MAN -> NAP - Ryanair
+2026-04-14 22:54:51,928 - INFO - Cache miss for EJU38QA, checking disk
+2026-04-14 22:54:51,985 - INFO - 22:54:51: 10.100.100.163  - EJU38QA   : HRG -> CDG - easyJet Europe
+2026-04-14 22:54:51,985 - INFO - Cache miss for RYR67PF, checking disk
+2026-04-14 22:54:51,990 - INFO - 22:54:51: 10.100.100.163  - RYR67PF   : BLQ -> VIE - Ryanair
+2026-04-14 22:54:51,990 - INFO - Cache miss for WZZ1706, checking disk
+2026-04-14 22:54:51,996 - INFO - 22:54:51: 10.100.100.163  - WZZ1706   : PMO -> BTS - Wizz Air
+2026-04-14 22:54:51,996 - INFO - Cache miss for LGL142, checking disk
+2026-04-14 22:54:52,000 - INFO - 22:54:51: 10.100.100.163  - LGL142    : RMF -> LUX - Luxair
+2026-04-14 22:54:52,000 - INFO - Cache miss for RYR882R, checking disk
+2026-04-14 22:54:52,016 - INFO - 22:54:52: 10.100.100.163  - RYR882R   : VCE -> REG - Ryanair
+2026-04-14 22:54:52,017 - INFO - Cache miss for TAY4RQ, checking disk
+2026-04-14 22:54:52,030 - INFO - 22:54:52: 10.100.100.163  - TAY4RQ    : BRQ -> CDG - ASL Airlines Belgium
+2026-04-14 22:54:52,032 - INFO - Cache miss for WMT91ZF, checking disk
+2026-04-14 22:54:52,045 - INFO - 22:54:52: 10.100.100.163  - WMT91ZF   : LPA -> OTP - Wizz Air Malta
+2026-04-14 22:54:52,054 - INFO - Cache miss for WUK75, checking disk
+2026-04-14 22:54:52,067 - INFO - 22:54:52: 10.100.100.163  - WUK75     : IST -> LGW - Wizz Air UK
+2026-04-14 22:54:52,067 - INFO - Cache miss for LOT355, checking disk
+2026-04-14 22:54:52,112 - INFO - 22:54:52: 10.100.100.163  - LOT355    : WAW -> MUC - LOT Polish Airlines
+2026-04-14 22:54:52,112 - INFO - Cache miss for ITY1297, checking disk
+2026-04-14 22:54:52,124 - INFO - 22:54:52: 10.100.100.163  - ITY1297   : LIN -> NAP - ITA Airways
+2026-04-14 22:54:52,124 - INFO - Cache miss for TUI94G, checking disk
+2026-04-14 22:54:52,124 - INFO - 22:54:52: 10.100.100.163  - TUI94G    : xxx -> xxx - TUIfly
+2026-04-14 22:54:52,125 - INFO - Cache miss for WZZ2039, checking disk
+2026-04-14 22:54:52,128 - INFO - 22:54:52: 10.100.100.163  - WZZ2039   : BVA -> BEG - Wizz Air
+2026-04-14 22:54:52,128 - INFO - Cache miss for SXS6ED, checking disk
+2026-04-14 22:54:52,141 - INFO - 22:54:52: 10.100.100.163  - SXS6ED    : FRA -> AYT - SunExpress
+2026-04-14 22:54:52,141 - INFO - Cache miss for VOE9FT, checking disk
+2026-04-14 22:54:52,221 - INFO - 22:54:52: 10.100.100.163  - VOE9FT    : CIY -> VRN - Volotea
+2026-04-14 22:54:52,221 - INFO - Cache miss for EZY82AL, checking disk
+2026-04-14 22:54:52,273 - INFO - 22:54:52: 10.100.100.163  - EZY82AL   : AYT -> SEN - easyJet
+2026-04-14 22:54:52,273 - INFO - Cache miss for WZZ4D, checking disk
+2026-04-14 22:54:52,299 - INFO - 22:54:52: 10.100.100.163  - WZZ4D     : DTM -> BUD - Wizz Air
+2026-04-14 22:54:52,300 - INFO - Cache miss for VJT634, checking disk
+2026-04-14 22:54:52,300 - INFO - 22:54:52: 10.100.100.163  - VJT634    : xxx -> xxx - Vistajet
+2026-04-14 22:54:52,300 - INFO - Cache miss for CTN4457, checking disk
+2026-04-14 22:54:52,320 - INFO - 22:54:52: 10.100.100.163  - CTN4457   : BRU -> ZAG - Croatia Airlines
+2026-04-14 22:54:52,320 - INFO - Cache miss for DLA37P, checking disk
+2026-04-14 22:54:52,356 - INFO - 22:54:52: 10.100.100.163  - DLA37P    : FRA -> GRZ - Air Dolomiti
+2026-04-14 22:54:52,356 - INFO - Cache miss for AEZ2119, checking disk
+2026-04-14 22:54:52,411 - INFO - 22:54:52: 10.100.100.163  - AEZ2119   : FCO -> CIY - AeroItalia
+2026-04-14 22:54:52,411 - INFO - Cache miss for WMT376, checking disk
+2026-04-14 22:54:52,431 - INFO - 22:54:52: 10.100.100.163  - WMT376    : TRN -> CTA - Wizz Air Malta
+2026-04-14 22:54:52,431 - INFO - Cache miss for EWG4393, checking disk
+2026-04-14 22:54:52,493 - INFO - 22:54:52: 10.100.100.163  - EWG4393   : HRG -> SZG - Eurowings
+2026-04-14 22:54:52,493 - INFO - Cache miss for SXS4CD, checking disk
+2026-04-14 22:54:52,541 - INFO - 22:54:52: 10.100.100.163  - SXS4CD    : DUS -> COV - SunExpress
+2026-04-14 22:54:52,541 - INFO - Cache miss for EZY93DB, checking disk
+2026-04-14 22:54:52,590 - INFO - 22:54:52: 10.100.100.163  - EZY93DB   : SSH -> LGW - easyJet
+2026-04-14 22:54:52,590 - INFO - Cache miss for SXS9SV, checking disk
+2026-04-14 22:54:52,970 - INFO - 22:54:52: 10.100.100.163  - SXS9SV    : LGW -> AYT - SunExpress
+2026-04-14 22:54:52,970 - INFO - Cache miss for BCS4127, checking disk
+2026-04-14 22:54:53,055 - INFO - 22:54:52: 10.100.100.163  - BCS4127   : LNZ -> LEJ - European Air Transport
+2026-04-14 22:54:53,055 - INFO - Cache miss for THY6CA, checking disk
+2026-04-14 22:54:53,068 - INFO - 22:54:53: 10.100.100.163  - THY6CA    : LYS -> IST - Turkish Airlines
+2026-04-14 22:54:53,069 - INFO - Cache miss for EZS23HQ, checking disk
+2026-04-14 22:54:53,076 - INFO - 22:54:53: 10.100.100.163  - EZS23HQ   : CTA -> EAP - easyJet Switzerland
+2026-04-14 22:54:53,076 - INFO - Cache miss for VOE1LU, checking disk
+2026-04-14 22:54:53,080 - INFO - 22:54:53: 10.100.100.163  - VOE1LU    : BOD -> NAP - Volotea
+2026-04-14 22:54:53,081 - INFO - Cache miss for AEE5IN, checking disk
+2026-04-14 22:54:53,086 - INFO - 22:54:53: 10.100.100.163  - AEE5IN    : MXP -> ATH - Aegean Airlines
+2026-04-14 22:54:53,086 - INFO - Cache miss for WMT279, checking disk
+2026-04-14 22:54:53,091 - INFO - 22:54:53: 10.100.100.163  - WMT279    : VLC -> OTP - Wizz Air Malta
+2026-04-14 22:54:53,091 - INFO - Cache miss for RYR4044, checking disk
+2026-04-14 22:54:53,102 - INFO - 22:54:53: 10.100.100.163  - RYR4044   : BGY -> WMI - Ryanair
+2026-04-14 22:54:53,102 - INFO - Cache miss for WMT4820, checking disk
+2026-04-14 22:54:53,113 - INFO - 22:54:53: 10.100.100.163  - WMT4820   : FKB -> TIA - Wizz Air Malta
+2026-04-14 22:54:53,113 - INFO - Cache miss for EDW371, checking disk
+2026-04-14 22:54:53,125 - INFO - 22:54:53: 10.100.100.163  - EDW371    : LCA -> ZRH - Edelweiss Air
+2026-04-14 22:54:53,125 - INFO - Cache miss for EZY76TP, checking disk
+2026-04-14 22:54:53,134 - INFO - 22:54:53: 10.100.100.163  - EZY76TP   : HER -> MAN - easyJet
+2026-04-14 22:54:53,134 - INFO - Cache miss for CFG7VL, checking disk
+2026-04-14 22:54:53,153 - INFO - 22:54:53: 10.100.100.163  - CFG7VL    : RHO -> DUS - Condor
+2026-04-14 22:54:53,153 - INFO - Cache miss for RYR7PD, checking disk
+2026-04-14 22:54:53,167 - INFO - 22:54:53: 10.100.100.163  - RYR7PD    : KRK -> CAG - Ryanair
+2026-04-14 22:54:53,167 - INFO - Cache miss for TVS6P7, checking disk
+2026-04-14 22:54:53,168 - INFO - 22:54:53: 10.100.100.163  - TVS6P7    : xxx -> xxx - Smartwings
+2026-04-14 22:54:53,168 - INFO - Cache miss for RYR39KL, checking disk
+2026-04-14 22:54:53,178 - INFO - 22:54:53: 10.100.100.163  - RYR39KL   : ZAD -> STN - Ryanair
+2026-04-14 22:54:53,178 - INFO - Cache miss for WMT454, checking disk
+2026-04-14 22:54:53,185 - INFO - 22:54:53: 10.100.100.163  - WMT454    : MXP -> CTA - Wizz Air Malta
+2026-04-14 22:54:53,185 - INFO - Cache miss for AUA549Y, checking disk
+2026-04-14 22:54:53,194 - INFO - 22:54:53: 10.100.100.163  - AUA549Y   : VIE -> VCE - Austrian Airlines
+2026-04-14 22:54:53,194 - INFO - Cache miss for EZY92NB, checking disk
+2026-04-14 22:54:53,209 - INFO - 22:54:53: 10.100.100.163  - EZY92NB   : ADB -> LGW - easyJet
+2026-04-14 22:54:53,209 - INFO - Cache miss for PGT1688, checking disk
+2026-04-14 22:54:53,214 - INFO - 22:54:53: 10.100.100.163  - PGT1688   : DUS -> ESB - Pegasus Airlines
+2026-04-14 22:54:53,214 - INFO - Cache miss for KING91, checking disk
+2026-04-14 22:54:53,215 - INFO - 22:54:53: 10.100.100.163  - KING91    : xxx -> xxx - Kinloss Flying Training Unit
+2026-04-14 22:54:53,215 - INFO - Cache miss for RYR5RW, checking disk
+2026-04-14 22:54:53,230 - INFO - 22:54:53: 10.100.100.163  - RYR5RW    : BGY -> BRI - Ryanair
+2026-04-14 22:54:53,230 - INFO - Cache miss for WZZ68HS, checking disk
+2026-04-14 22:54:53,240 - INFO - 22:54:53: 10.100.100.163  - WZZ68HS   : AGP -> WAW - Wizz Air
+2026-04-14 22:54:53,240 - INFO - Cache miss for RYR90RV, checking disk
+2026-04-14 22:54:53,252 - INFO - 22:54:53: 10.100.100.163  - RYR90RV   : WRO -> BLQ - Ryanair
+2026-04-14 22:54:53,252 - INFO - Cache miss for ELY458, checking disk
+2026-04-14 22:54:53,252 - INFO - 22:54:53: 10.100.100.163  - ELY458    : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:54:53,252 - INFO - Cache miss for RYR5GF, checking disk
+2026-04-14 22:54:53,262 - INFO - 22:54:53: 10.100.100.163  - RYR5GF    : PEG -> CTA - Ryanair
+2026-04-14 22:54:53,262 - INFO - Cache miss for CTN415, checking disk
+2026-04-14 22:54:53,266 - INFO - 22:54:53: 10.100.100.163  - CTN415    : FRA -> ZAG - Croatia Airlines
+2026-04-14 22:54:53,266 - INFO - Cache miss for AFR73CU, checking disk
+2026-04-14 22:54:53,273 - INFO - 22:54:53: 10.100.100.163  - AFR73CU   : CDG -> NAP - Air France
+2026-04-14 22:54:53,273 - INFO - Cache miss for RYR12LU, checking disk
+2026-04-14 22:54:53,290 - INFO - 22:54:53: 10.100.100.163  - RYR12LU   : BGY -> SUF - Ryanair
+2026-04-14 22:54:53,290 - INFO - Cache miss for AEE605, checking disk
+2026-04-14 22:54:53,291 - INFO - 22:54:53: 10.100.100.163  - AEE605    : LHR -> ATH - Aegean Airlines
+2026-04-14 22:54:53,291 - INFO - Cache miss for WZZ5LW, checking disk
+2026-04-14 22:54:53,307 - INFO - 22:54:53: 10.100.100.163  - WZZ5LW    : BGY -> WAW - Wizz Air
+2026-04-14 22:54:53,307 - INFO - Cache miss for SAR1921, checking disk
+2026-04-14 22:54:53,317 - INFO - 22:54:53: 10.100.100.163  - SAR1921   : LJU -> CGN - SprintAir Cargo
+2026-04-14 22:54:53,317 - INFO - Cache miss for VOE81QA, checking disk
+2026-04-14 22:54:53,324 - INFO - 22:54:53: 10.100.100.163  - VOE81QA   : BRI -> BOD - Volotea
+2026-04-14 22:54:53,324 - INFO - Cache miss for WMT2L, checking disk
+2026-04-14 22:54:53,325 - INFO - 22:54:53: 10.100.100.163  - WMT2L     : FAO -> OTP - Wizz Air Malta
+2026-04-14 22:54:53,325 - INFO - Cache miss for RYR29FJ, checking disk
+2026-04-14 22:54:53,332 - INFO - 22:54:53: 10.100.100.163  - RYR29FJ   : CIA -> BUD - Ryanair
+2026-04-14 22:54:53,332 - INFO - Cache miss for AUA38M, checking disk
+2026-04-14 22:54:53,339 - INFO - 22:54:53: 10.100.100.163  - AUA38M    : LHR -> VIE - Austrian Airlines
+2026-04-14 22:54:53,339 - INFO - Cache miss for EDW349E, checking disk
+2026-04-14 22:54:53,340 - INFO - 22:54:53: 10.100.100.163  - EDW349E   : HER -> ZRH - Edelweiss Air
+2026-04-14 22:54:53,340 - INFO - Cache miss for TWB406, checking disk
+2026-04-14 22:54:53,352 - INFO - 22:54:53: 10.100.100.163  - TWB406    : FCO -> ICN - T'Way Air
+2026-04-14 22:54:53,352 - INFO - Cache miss for RYR46JB, checking disk
+2026-04-14 22:54:53,370 - INFO - 22:54:53: 10.100.100.163  - RYR46JB   : KRK -> MLA - Ryanair
+2026-04-14 22:54:53,371 - INFO - Cache miss for EJU82TA, checking disk
+2026-04-14 22:54:53,379 - INFO - 22:54:53: 10.100.100.163  - EJU82TA   : LCA -> CDG - easyJet Europe
+2026-04-14 22:54:53,379 - INFO - Cache miss for WUK7UP, checking disk
+2026-04-14 22:54:53,396 - INFO - 22:54:53: 10.100.100.163  - WUK7UP    : BEG -> LTN - Wizz Air UK
+2026-04-14 22:54:53,396 - INFO - Cache miss for WUK3WN, checking disk
+2026-04-14 22:54:53,404 - INFO - 22:54:53: 10.100.100.163  - WUK3WN    : LTN -> PRN - Wizz Air UK
+2026-04-14 22:54:53,404 - INFO - Cache miss for TUI74N, checking disk
+2026-04-14 22:54:53,405 - INFO - 22:54:53: 10.100.100.163  - TUI74N    : xxx -> xxx - TUIfly
+2026-04-14 22:54:53,405 - INFO - Cache miss for EZS75UD, checking disk
+2026-04-14 22:54:53,414 - INFO - 22:54:53: 10.100.100.163  - EZS75UD   : HER -> EAP - easyJet Switzerland
+2026-04-14 22:54:53,414 - INFO - Cache miss for PGT34VX, checking disk
+2026-04-14 22:54:53,426 - INFO - 22:54:53: 10.100.100.163  - PGT34VX   : ZRH -> SAW - Pegasus Airlines
+2026-04-14 22:54:53,456 - INFO - Cache miss for EZY58DK, checking disk
+2026-04-14 22:54:53,475 - INFO - 22:54:53: 10.100.100.163  - EZY58DK   : ATH -> LGW - easyJet
+2026-04-14 22:54:53,475 - INFO - Cache miss for EJU91VG, checking disk
+2026-04-14 22:54:53,484 - INFO - 22:54:53: 10.100.100.163  - EJU91VG   : HER -> NTE - easyJet Europe
+2026-04-14 22:54:53,484 - INFO - Cache miss for RYR309, checking disk
+2026-04-14 22:54:53,495 - INFO - 22:54:53: 10.100.100.163  - RYR309    : KRK -> AGP - Ryanair
+2026-04-14 22:54:53,495 - INFO - Cache miss for RYR3EN, checking disk
+2026-04-14 22:54:53,503 - INFO - 22:54:53: 10.100.100.163  - RYR3EN    : FCO -> VIE - Ryanair
+2026-04-14 22:54:53,503 - INFO - Cache miss for ETD5FA, checking disk
+2026-04-14 22:54:53,506 - INFO - 22:54:53: 10.100.100.163  - ETD5FA    : DUB -> AUH - Etihad Airways
+2026-04-14 22:54:53,507 - INFO - Cache miss for SXS4EA, checking disk
+2026-04-14 22:54:53,523 - INFO - 22:54:53: 10.100.100.163  - SXS4EA    : NCL -> AYT - SunExpress
+2026-04-14 22:54:53,524 - INFO - Cache miss for RYR7109, checking disk
+2026-04-14 22:54:53,529 - INFO - 22:54:53: 10.100.100.163  - RYR7109   : BTS -> MLA - Ryanair
+2026-04-14 22:54:53,529 - INFO - Cache miss for BAW709, checking disk
+2026-04-14 22:54:53,534 - INFO - 22:54:53: 10.100.100.163  - BAW709    : LCA -> LHR - British Airways
+2026-04-14 22:54:53,535 - INFO - Cache miss for WZZ5EV, checking disk
+2026-04-14 22:54:53,544 - INFO - 22:54:53: 10.100.100.163  - WZZ5EV    : AGA -> WAW - Wizz Air
+2026-04-14 22:54:53,544 - INFO - Cache miss for WMT711, checking disk
+2026-04-14 22:54:53,553 - INFO - 22:54:53: 10.100.100.163  - WMT711    : AGP -> OTP - Wizz Air Malta
+2026-04-14 22:54:53,553 - INFO - Cache miss for RYR1TH, checking disk
+2026-04-14 22:54:53,563 - INFO - 22:54:53: 10.100.100.163  - RYR1TH    : RHO -> EDI - Ryanair
+2026-04-14 22:54:53,563 - INFO - Cache miss for SXS6PZ, checking disk
+2026-04-14 22:54:53,574 - INFO - 22:54:53: 10.100.100.163  - SXS6PZ    : AYT -> FMO - SunExpress
+2026-04-14 22:54:53,574 - INFO - Cache miss for RYR84JW, checking disk
+2026-04-14 22:54:53,583 - INFO - 22:54:53: 10.100.100.163  - RYR84JW   : NAP -> BTS - Ryanair
+2026-04-14 22:54:53,583 - INFO - Cache miss for RYR9DT, checking disk
+2026-04-14 22:54:53,596 - INFO - 22:54:53: 10.100.100.163  - RYR9DT    : STN -> SUF - Ryanair
+2026-04-14 22:54:53,597 - INFO - Cache miss for RYR7TM, checking disk
+2026-04-14 22:54:53,606 - INFO - 22:54:53: 10.100.100.163  - RYR7TM    : VIE -> STN - Ryanair
+2026-04-14 22:54:53,606 - INFO - Cache miss for WUK2BY, checking disk
+2026-04-14 22:54:53,607 - INFO - 22:54:53: 10.100.100.163  - WUK2BY    : xxx -> xxx - Wizz Air UK
+2026-04-14 22:54:53,607 - INFO - Cache miss for RYR74SV, checking disk
+2026-04-14 22:54:53,616 - INFO - 22:54:53: 10.100.100.163  - RYR74SV   : MLA -> ZAG - Ryanair
+2026-04-14 22:54:53,617 - INFO - Cache miss for CCA940, checking disk
+2026-04-14 22:54:53,621 - INFO - 22:54:53: 10.100.100.163  - CCA940    : FCO -> PEK - Air China
+2026-04-14 22:54:53,621 - INFO - Cache miss for WZZ2CG, checking disk
+2026-04-14 22:54:53,630 - INFO - 22:54:53: 10.100.100.163  - WZZ2CG    : BCN -> WAW - Wizz Air
+2026-04-14 22:54:53,631 - INFO - Cache miss for CTN632, checking disk
+2026-04-14 22:54:53,638 - INFO - 22:54:53: 10.100.100.163  - CTN632    : ZAG -> PUY - Croatia Airlines
+2026-04-14 22:54:53,638 - INFO - Cache miss for LION92, checking disk
+2026-04-14 22:54:53,638 - INFO - 22:54:53: 10.100.100.163  - LION92    : xxx -> xxx - 
+2026-04-14 22:54:53,638 - INFO - Cache miss for WZZ8050, checking disk
+2026-04-14 22:54:53,648 - INFO - 22:54:53: 10.100.100.163  - WZZ8050   : BGY -> SKP - Wizz Air
+2026-04-14 22:54:53,648 - INFO - Cache miss for EXS97YF, checking disk
+2026-04-14 22:54:53,656 - INFO - 22:54:53: 10.100.100.163  - EXS97YF   : AYT -> BRS - Jet2.com
+2026-04-14 22:54:53,656 - INFO - Cache miss for AEE699, checking disk
+2026-04-14 22:54:53,663 - INFO - 22:54:53: 10.100.100.163  - AEE699    : TLS -> ATH - Aegean Airlines
+2026-04-14 22:54:53,663 - INFO - Cache miss for RYR70XA, checking disk
+2026-04-14 22:54:53,676 - INFO - 22:54:53: 10.100.100.163  - RYR70XA   : BUD -> STN - Ryanair
+2026-04-14 22:54:53,676 - INFO - Cache miss for AFR1694, checking disk
+2026-04-14 22:54:53,686 - INFO - 22:54:53: 10.100.100.163  - AFR1694   : CDG -> BUD - Air France
+2026-04-14 22:54:53,686 - INFO - Cache miss for LION91, checking disk
+2026-04-14 22:54:53,687 - INFO - 22:54:53: 10.100.100.163  - LION91    : xxx -> xxx - 
+2026-04-14 22:54:53,687 - INFO - Cache miss for RYR3XU, checking disk
+2026-04-14 22:54:53,698 - INFO - 22:54:53: 10.100.100.163  - RYR3XU    : ZAG -> BGY - Ryanair
+2026-04-14 22:54:53,698 - INFO - Cache miss for WMT5356, checking disk
+2026-04-14 22:54:53,703 - INFO - 22:54:53: 10.100.100.163  - WMT5356   : TIA -> VRN - Wizz Air Malta
+2026-04-14 22:54:53,704 - INFO - Cache miss for WZZ22TM, checking disk
+2026-04-14 22:54:53,710 - INFO - 22:54:53: 10.100.100.163  - WZZ22TM   : SUF -> KTW - Wizz Air
+2026-04-14 22:54:53,710 - INFO - Cache miss for AEE3FU, checking disk
+2026-04-14 22:54:53,713 - INFO - 22:54:53: 10.100.100.163  - AEE3FU    : FRA -> SKG - Aegean Airlines
+2026-04-14 22:54:53,713 - INFO - Cache miss for EZS26WZ, checking disk
+2026-04-14 22:54:53,720 - INFO - 22:54:53: 10.100.100.163  - EZS26WZ   : SPU -> EAP - easyJet Switzerland
+2026-04-14 22:54:53,720 - INFO - Cache miss for TRA51T, checking disk
+2026-04-14 22:54:53,732 - INFO - 22:54:53: 10.100.100.163  - TRA51T    : TIA -> AMS - Transavia
+2026-04-14 22:54:53,732 - INFO - Cache miss for WMT9SG, checking disk
+2026-04-14 22:54:53,740 - INFO - 22:54:53: 10.100.100.163  - WMT9SG    : BGY -> RMO - Wizz Air Malta
+2026-04-14 22:54:53,740 - INFO - Cache miss for EDW45L, checking disk
+2026-04-14 22:54:53,745 - INFO - 22:54:53: 10.100.100.163  - EDW45L    : PRN -> ZRH - Edelweiss Air
+2026-04-14 22:54:53,745 - INFO - Cache miss for RYR22AC, checking disk
+2026-04-14 22:54:53,761 - INFO - 22:54:53: 10.100.100.163  - RYR22AC   : WAW -> PMI - Ryanair
+2026-04-14 22:54:53,761 - INFO - Cache miss for AEE82B, checking disk
+2026-04-14 22:54:53,768 - INFO - 22:54:53: 10.100.100.163  - AEE82B    : BER -> ATH - Aegean Airlines
+2026-04-14 22:54:53,768 - INFO - Cache miss for MBU5DF, checking disk
+2026-04-14 22:54:53,773 - INFO - 22:54:53: 10.100.100.163  - MBU5DF    : RHO -> LEJ - Marabu Airlines
+2026-04-14 22:54:53,773 - INFO - Cache miss for RYR2YU, checking disk
+2026-04-14 22:54:53,791 - INFO - 22:54:53: 10.100.100.163  - RYR2YU    : BRI -> VIE - Ryanair
+2026-04-14 22:54:53,791 - INFO - Cache miss for RYR63UE, checking disk
+2026-04-14 22:54:53,802 - INFO - 22:54:53: 10.100.100.163  - RYR63UE   : BDS -> STN - Ryanair
+2026-04-14 22:54:53,802 - INFO - Cache miss for AUA14GK, checking disk
+2026-04-14 22:54:53,809 - INFO - 22:54:53: 10.100.100.163  - AUA14GK   : ZRH -> VIE - Austrian Airlines
+2026-04-14 22:54:53,809 - INFO - Cache miss for AUA699M, checking disk
+2026-04-14 22:54:53,815 - INFO - 22:54:53: 10.100.100.163  - AUA699M   : VIE -> OTP - Austrian Airlines
+2026-04-14 22:54:53,815 - INFO - Cache miss for RYR9WE, checking disk
+2026-04-14 22:54:53,829 - INFO - 22:54:53: 10.100.100.163  - RYR9WE    : BVA -> VIE - Ryanair
+2026-04-14 22:54:53,829 - INFO - Cache miss for SXS2UM, checking disk
+2026-04-14 22:54:53,838 - INFO - 22:54:53: 10.100.100.163  - SXS2UM    : AMS -> ADB - SunExpress
+2026-04-14 22:54:53,839 - INFO - Cache miss for RYR2TJ, checking disk
+2026-04-14 22:54:53,851 - INFO - 22:54:53: 10.100.100.163  - RYR2TJ    : CIA -> KRK - Ryanair
+2026-04-14 22:54:53,852 - INFO - Cache miss for KLM57C, checking disk
+2026-04-14 22:54:53,854 - INFO - 22:54:53: 10.100.100.163  - KLM57C    : AMS -> VIE - KLM
+2026-04-14 22:54:53,854 - INFO - Cache miss for AUA23N, checking disk
+2026-04-14 22:54:53,864 - INFO - 22:54:53: 10.100.100.163  - AUA23N    : BER -> VIE - Austrian Airlines
+2026-04-14 22:54:53,864 - INFO - Cache miss for WZZ427, checking disk
+2026-04-14 22:54:53,868 - INFO - 22:54:53: 10.100.100.163  - WZZ427    : MLA -> WAW - Wizz Air
+2026-04-14 22:54:53,868 - INFO - Cache miss for RCH3270, checking disk
+2026-04-14 22:54:53,868 - INFO - 22:54:53: 10.100.100.163  - RCH3270   : xxx -> xxx - Air Mobility Command
+2026-04-14 22:54:53,868 - INFO - Cache miss for EZS52CP, checking disk
+2026-04-14 22:54:53,888 - INFO - 22:54:53: 10.100.100.163  - EZS52CP   : HER -> GVA - easyJet Switzerland
+2026-04-14 22:54:53,888 - INFO - Cache miss for RYR95AT, checking disk
+2026-04-14 22:54:53,892 - INFO - 22:54:53: 10.100.100.163  - RYR95AT   : VCE -> BRI - Ryanair
+2026-04-14 22:54:53,892 - INFO - Cache miss for RYR11LR, checking disk
+2026-04-14 22:54:53,901 - INFO - 22:54:53: 10.100.100.163  - RYR11LR   : ATH -> CTA - Ryanair
+2026-04-14 22:54:53,901 - INFO - Cache miss for FBU70A, checking disk
+2026-04-14 22:54:53,911 - INFO - 22:54:53: 10.100.100.163  - FBU70A    : ORY -> RUN - French Bee
+2026-04-14 22:54:53,912 - INFO - Cache miss for WMT9BT, checking disk
+2026-04-14 22:54:53,918 - INFO - 22:54:53: 10.100.100.163  - WMT9BT    : ZAZ -> CLJ - Wizz Air Malta
+2026-04-14 22:54:53,918 - INFO - Cache miss for ITY9946, checking disk
+2026-04-14 22:54:53,918 - INFO - 22:54:53: 10.100.100.163  - ITY9946   : xxx -> xxx - ITA Airways
+2026-04-14 22:54:53,918 - INFO - Cache miss for GPX9RE, checking disk
+2026-04-14 22:54:53,919 - INFO - 22:54:53: 10.100.100.163  - GPX9RE    : xxx -> xxx - GP Aviation
+2026-04-14 22:54:53,919 - INFO - Cache miss for AEE6130, checking disk
+2026-04-14 22:54:53,919 - INFO - 22:54:53: 10.100.100.163  - AEE6130   : RHO -> BHX - Aegean Airlines
+2026-04-14 22:54:53,919 - INFO - Cache miss for VLG3073, checking disk
+2026-04-14 22:54:53,927 - INFO - 22:54:53: 10.100.100.163  - VLG3073   : IST -> BCN - Vueling Airlines
+2026-04-14 22:54:53,927 - INFO - Cache miss for RYR198, checking disk
+2026-04-14 22:54:53,946 - INFO - 22:54:53: 10.100.100.163  - RYR198    : VIE -> VNO - Ryanair
+2026-04-14 22:54:53,946 - INFO - Cache miss for VOE77UN, checking disk
+2026-04-14 22:54:53,946 - INFO - 22:54:53: 10.100.100.163  - VOE77UN   : xxx -> xxx - Volotea
+2026-04-14 22:54:53,947 - INFO - Cache miss for CSW3PR, checking disk
+2026-04-14 22:54:53,957 - INFO - 22:54:53: 10.100.100.163  - CSW3PR    : PRN -> ZRH - Chair Airlines
+2026-04-14 22:54:53,957 - INFO - Cache miss for KAL518, checking disk
+2026-04-14 22:54:53,968 - INFO - 22:54:53: 10.100.100.163  - KAL518    : FRA -> ICN - Korean Air
+2026-04-14 22:54:53,968 - INFO - Cache miss for RYR3ZQ, checking disk
+2026-04-14 22:54:53,975 - INFO - 22:54:53: 10.100.100.163  - RYR3ZQ    : BVA -> OTP - Ryanair
+2026-04-14 22:54:53,975 - INFO - Cache miss for TVS2527, checking disk
+2026-04-14 22:54:53,985 - INFO - 22:54:53: 10.100.100.163  - TVS2527   : RMF -> PRG - Smartwings
+2026-04-14 22:54:53,985 - INFO - Cache miss for AUA779, checking disk
+2026-04-14 22:54:53,989 - INFO - 22:54:53: 10.100.100.163  - AUA779    : VIE -> SOF - Austrian Airlines
+2026-04-14 22:54:53,989 - INFO - Cache miss for EWG981, checking disk
+2026-04-14 22:54:53,999 - INFO - 22:54:53: 10.100.100.163  - EWG981    : HRG -> CGN - Eurowings
+2026-04-14 22:54:53,999 - INFO - Cache miss for GPX601, checking disk
+2026-04-14 22:54:54,005 - INFO - 22:54:53: 10.100.100.163  - GPX601    : ZRH -> PRN - GP Aviation
+2026-04-14 22:54:54,005 - INFO - Cache miss for TRA7X, checking disk
+2026-04-14 22:54:54,013 - INFO - 22:54:54: 10.100.100.163  - TRA7X     : ATH -> AMS - Transavia
+2026-04-14 22:54:54,014 - INFO - Cache miss for WZZ5189, checking disk
+2026-04-14 22:54:54,025 - INFO - 22:54:54: 10.100.100.163  - WZZ5189   : MST -> TGD - Wizz Air
+2026-04-14 22:54:54,025 - INFO - Cache miss for RYR33KN, checking disk
+2026-04-14 22:54:54,029 - INFO - 22:54:54: 10.100.100.163  - RYR33KN   : WMI -> BTS - Ryanair
+2026-04-14 22:54:54,029 - INFO - Cache miss for ROT374W, checking disk
+2026-04-14 22:54:54,036 - INFO - 22:54:54: 10.100.100.163  - ROT374W   : BRU -> OTP - Tarom
+2026-04-14 22:54:54,036 - INFO - Cache miss for MGH227, checking disk
+2026-04-14 22:54:54,037 - INFO - 22:54:54: 10.100.100.163  - MGH227    : xxx -> xxx - Mavi Gok Aviation
+2026-04-14 22:54:54,037 - INFO - Cache miss for AUA66D, checking disk
+2026-04-14 22:54:54,042 - INFO - 22:54:54: 10.100.100.163  - AUA66D    : VIE -> WAW - Austrian Airlines
+2026-04-14 22:54:54,042 - INFO - Cache miss for WMT57WN, checking disk
+2026-04-14 22:54:54,043 - INFO - 22:54:54: 10.100.100.163  - WMT57WN   : xxx -> xxx - Wizz Air Malta
+2026-04-14 22:54:54,043 - INFO - Cache miss for MNS503, checking disk
+2026-04-14 22:54:54,053 - INFO - 22:54:54: 10.100.100.163  - MNS503    : IST -> MJI - Medsky Airways
+2026-04-14 22:54:54,054 - INFO - Cache miss for WMT1MC, checking disk
+2026-04-14 22:54:54,062 - INFO - 22:54:54: 10.100.100.163  - WMT1MC    : PRG -> IAS - Wizz Air Malta
+2026-04-14 22:54:54,062 - INFO - Cache miss for WMT2WY, checking disk
+2026-04-14 22:54:54,062 - INFO - 22:54:54: 10.100.100.163  - WMT2WY    : FCO -> KEF - Wizz Air Malta
+2026-04-14 22:54:54,062 - INFO - Cache miss for EZY87RX, checking disk
+2026-04-14 22:54:54,063 - INFO - 22:54:54: 10.100.100.163  - EZY87RX   : xxx -> xxx - easyJet
+2026-04-14 22:54:54,063 - INFO - Cache miss for EDW70, checking disk
+2026-04-14 22:54:54,072 - INFO - 22:54:54: 10.100.100.163  - EDW70     : ZRH -> MRU - Edelweiss Air
+2026-04-14 22:54:54,072 - INFO - Cache miss for RYR1MT, checking disk
+2026-04-14 22:54:54,087 - INFO - 22:54:54: 10.100.100.163  - RYR1MT    : TRN -> BDS - Ryanair
+2026-04-14 22:54:54,087 - INFO - Cache miss for SXS8XT, checking disk
+2026-04-14 22:54:54,099 - INFO - 22:54:54: 10.100.100.163  - SXS8XT    : MAN -> AYT - SunExpress
+2026-04-14 22:54:54,099 - INFO - Cache miss for WZZ264U, checking disk
+2026-04-14 22:54:54,103 - INFO - 22:54:54: 10.100.100.163  - WZZ264U   : WMI -> BDS - Wizz Air
+2026-04-14 22:54:54,103 - INFO - Cache miss for RYR18TX, checking disk
+2026-04-14 22:54:54,119 - INFO - 22:54:54: 10.100.100.163  - RYR18TX   : OTP -> MAD - Ryanair
+2026-04-14 22:54:54,119 - INFO - Cache miss for WUK7WJ, checking disk
+2026-04-14 22:54:54,123 - INFO - 22:54:54: 10.100.100.163  - WUK7WJ    : AYT -> LTN - Wizz Air UK
+2026-04-14 22:54:54,124 - INFO - Cache miss for AEE6BR, checking disk
+2026-04-14 22:54:54,130 - INFO - 22:54:54: 10.100.100.163  - AEE6BR    : BRU -> ATH - Aegean Airlines
+2026-04-14 22:54:54,130 - INFO - Cache miss for MGH231, checking disk
+2026-04-14 22:54:54,138 - INFO - 22:54:54: 10.100.100.163  - MGH231    : AYT -> HAJ - Mavi Gok Aviation
+2026-04-14 22:54:54,138 - INFO - Cache miss for CFG6LT, checking disk
+2026-04-14 22:54:54,146 - INFO - 22:54:54: 10.100.100.163  - CFG6LT    : FRA -> MLE - Condor
+2026-04-14 22:54:54,146 - INFO - Cache miss for WZZ9LJ, checking disk
+2026-04-14 22:54:54,152 - INFO - 22:54:54: 10.100.100.163  - WZZ9LJ    : FCO -> SOF - Wizz Air
+2026-04-14 22:54:54,152 - INFO - Cache miss for ANA212, checking disk
+2026-04-14 22:54:54,158 - INFO - 22:54:54: 10.100.100.163  - ANA212    : LHR -> HND - All Nippon Airways
+2026-04-14 22:54:54,158 - INFO - Cache miss for NSZ4352, checking disk
+2026-04-14 22:54:54,168 - INFO - 22:54:54: 10.100.100.163  - NSZ4352   : PRN -> ARN - Norwegian Air Sweden
+2026-04-14 22:54:54,168 - INFO - Cache miss for RYR52KD, checking disk
+2026-04-14 22:54:54,179 - INFO - 22:54:54: 10.100.100.163  - RYR52KD   : BGY -> CFU - Ryanair
+2026-04-14 22:54:54,179 - INFO - Cache miss for ASL75K, checking disk
+2026-04-14 22:54:54,188 - INFO - 22:54:54: 10.100.100.163  - ASL75K    : FRA -> BEG - Air Serbia
+2026-04-14 22:54:54,188 - INFO - Cache miss for PGT86MR, checking disk
+2026-04-14 22:54:54,199 - INFO - 22:54:54: 10.100.100.163  - PGT86MR   : STN -> SAW - Pegasus Airlines
+2026-04-14 22:54:54,199 - INFO - Cache miss for ASL64P, checking disk
+2026-04-14 22:54:54,203 - INFO - 22:54:54: 10.100.100.163  - ASL64P    : DUS -> BEG - Air Serbia
+2026-04-14 22:54:54,203 - INFO - Cache miss for EZY12ET, checking disk
+2026-04-14 22:54:54,213 - INFO - 22:54:54: 10.100.100.163  - EZY12ET   : NAP -> STN - easyJet
+2026-04-14 22:54:54,213 - INFO - Cache miss for WMT288, checking disk
+2026-04-14 22:54:54,225 - INFO - 22:54:54: 10.100.100.163  - WMT288    : WAW -> CTA - Wizz Air Malta
+2026-04-14 22:54:54,225 - INFO - Cache miss for EZS67UZ, checking disk
+2026-04-14 22:54:54,237 - INFO - 22:54:54: 10.100.100.163  - EZS67UZ   : PRN -> EAP - easyJet Switzerland
+2026-04-14 22:54:54,237 - INFO - Cache miss for PGT598Q, checking disk
+2026-04-14 22:54:54,247 - INFO - 22:54:54: 10.100.100.163  - PGT598Q   : SAW -> STN - Pegasus Airlines
+2026-04-14 22:54:54,247 - INFO - Cache miss for TFL8FA, checking disk
+2026-04-14 22:54:54,247 - INFO - 22:54:54: 10.100.100.163  - TFL8FA    : xxx -> xxx - TUI fly Netherlands
+2026-04-14 22:54:54,248 - INFO - Cache miss for ELY462, checking disk
+2026-04-14 22:54:54,248 - INFO - 22:54:54: 10.100.100.163  - ELY462    : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:54:54,495 - INFO - Cache miss for TUI7LE, checking disk
+2026-04-14 22:54:54,495 - INFO - 22:54:54: 10.100.100.163  - TUI7LE    : xxx -> xxx - TUIfly
+2026-04-14 22:54:54,495 - INFO - Cache miss for EZY96BE, checking disk
+2026-04-14 22:54:54,507 - INFO - 22:54:54: 10.100.100.163  - EZY96BE   : HRG -> LGW - easyJet
+2026-04-14 22:54:54,507 - INFO - Cache miss for EZY35HU, checking disk
+2026-04-14 22:54:54,510 - INFO - 22:54:54: 10.100.100.163  - EZY35HU   : DLM -> NCL - easyJet
+2026-04-14 22:54:54,510 - INFO - Cache miss for RYR1AY, checking disk
+2026-04-14 22:54:54,518 - INFO - 22:54:54: 10.100.100.163  - RYR1AY    : KSC -> STN - Ryanair
+2026-04-14 22:54:54,518 - INFO - Cache miss for RYR7VK, checking disk
+2026-04-14 22:54:54,520 - INFO - 22:54:54: 10.100.100.163  - RYR7VK    : BRS -> BUD - Ryanair
+2026-04-14 22:54:54,520 - INFO - Cache miss for WMT4GW, checking disk
+2026-04-14 22:54:54,532 - INFO - 22:54:54: 10.100.100.163  - WMT4GW    : MAD -> OTP - Wizz Air Malta
+2026-04-14 22:54:54,532 - INFO - Cache miss for BCS3XV, checking disk
+2026-04-14 22:54:54,544 - INFO - 22:54:54: 10.100.100.163  - BCS3XV    : BUD -> LEJ - European Air Transport
+2026-04-14 22:54:54,544 - INFO - Cache miss for EJU12RY, checking disk
+2026-04-14 22:54:54,553 - INFO - 22:54:54: 10.100.100.163  - EJU12RY   : BOD -> OPO - easyJet Europe
+2026-04-14 22:54:54,553 - INFO - Cache miss for SXS1XU, checking disk
+2026-04-14 22:54:54,565 - INFO - 22:54:54: 10.100.100.163  - SXS1XU    : AYT -> CGN - SunExpress
+2026-04-14 22:54:54,565 - INFO - Cache miss for BAW257, checking disk
+2026-04-14 22:54:54,576 - INFO - 22:54:54: 10.100.100.163  - BAW257    : LHR -> DEL - British Airways
+2026-04-14 22:54:54,576 - INFO - Cache miss for RYR18EG, checking disk
+2026-04-14 22:54:54,581 - INFO - 22:54:54: 10.100.100.163  - RYR18EG   : ARN -> BUD - Ryanair
+2026-04-14 22:54:54,581 - INFO - Cache miss for LGL922, checking disk
+2026-04-14 22:54:54,588 - INFO - 22:54:54: 10.100.100.163  - LGL922    : HRG -> LUX - Luxair
+2026-04-14 22:54:54,588 - INFO - Cache miss for AEE2LP, checking disk
+2026-04-14 22:54:54,593 - INFO - 22:54:54: 10.100.100.163  - AEE2LP    : LIS -> ATH - Aegean Airlines
+2026-04-14 22:54:54,593 - INFO - Cache miss for UPS2, checking disk
+2026-04-14 22:54:54,597 - INFO - 22:54:54: 10.100.100.163  - UPS2      : CGN -> HKG - United Parcel Service
+2026-04-14 22:54:54,597 - INFO - Cache miss for TAY6SF, checking disk
+2026-04-14 22:54:54,607 - INFO - 22:54:54: 10.100.100.163  - TAY6SF    : SOF -> CDG - ASL Airlines Belgium
+2026-04-14 22:54:54,608 - INFO - Cache miss for WZZ6255, checking disk
+2026-04-14 22:54:54,613 - INFO - 22:54:54: 10.100.100.163  - WZZ6255   : BEG -> BGY - Wizz Air
+2026-04-14 22:54:54,613 - INFO - Cache miss for ASL98C, checking disk
+2026-04-14 22:54:54,616 - INFO - 22:54:54: 10.100.100.163  - ASL98C    : ZRH -> BEG - Air Serbia
+2026-04-14 22:54:54,617 - INFO - Cache miss for CEF5B, checking disk
+2026-04-14 22:54:54,617 - INFO - 22:54:54: 10.100.100.163  - CEF5B     : xxx -> xxx - Czech Air Force
+2026-04-14 22:54:54,617 - INFO - Cache miss for ASL93T, checking disk
+2026-04-14 22:54:54,620 - INFO - 22:54:54: 10.100.100.163  - ASL93T    : LJU -> INI - Air Serbia
+2026-04-14 22:54:54,620 - INFO - Cache miss for WZZ6RJ, checking disk
+2026-04-14 22:54:54,627 - INFO - 22:54:54: 10.100.100.163  - WZZ6RJ    : ARN -> BUD - Wizz Air
+2026-04-14 22:54:54,627 - INFO - Cache miss for FHM7522, checking disk
+2026-04-14 22:54:54,631 - INFO - 22:54:54: 10.100.100.163  - FHM7522   : SKP -> SKP - Freebird Airlines Europe
+2026-04-14 22:54:54,631 - INFO - Cache miss for RYR86GG, checking disk
+2026-04-14 22:54:54,638 - INFO - 22:54:54: 10.100.100.163  - RYR86GG   : STN -> SOF - Ryanair
+2026-04-14 22:54:54,638 - INFO - Cache miss for GPX2IM, checking disk
+2026-04-14 22:54:54,644 - INFO - 22:54:54: 10.100.100.163  - GPX2IM    : EAP -> PRN - GP Aviation
+2026-04-14 22:54:54,644 - INFO - Cache miss for ANA224, checking disk
+2026-04-14 22:54:54,655 - INFO - 22:54:54: 10.100.100.163  - ANA224    : FRA -> HND - All Nippon Airways
+2026-04-14 22:54:54,655 - INFO - Cache miss for RYR6AN, checking disk
+2026-04-14 22:54:54,662 - INFO - 22:54:54: 10.100.100.163  - RYR6AN    : BGY -> SOF - Ryanair
+2026-04-14 22:54:54,662 - INFO - Cache miss for TVF3422, checking disk
+2026-04-14 22:54:54,670 - INFO - 22:54:54: 10.100.100.163  - TVF3422   : ORY -> IST - Transavia France
+2026-04-14 22:54:54,670 - INFO - Cache miss for WZZ292, checking disk
+2026-04-14 22:54:54,675 - INFO - 22:54:54: 10.100.100.163  - WZZ292    : KTW -> TIA - Wizz Air
+2026-04-14 22:54:54,675 - INFO - Cache miss for RYR7FW, checking disk
+2026-04-14 22:54:54,681 - INFO - 22:54:54: 10.100.100.163  - RYR7FW    : CTA -> TIA - Ryanair
+2026-04-14 22:54:54,681 - INFO - Cache miss for WZZ9XS, checking disk
+2026-04-14 22:54:54,688 - INFO - 22:54:54: 10.100.100.163  - WZZ9XS    : SKP -> BRI - Wizz Air
+2026-04-14 22:54:54,689 - INFO - Cache miss for BAW398, checking disk
+2026-04-14 22:54:54,699 - INFO - 22:54:54: 10.100.100.163  - BAW398    : LHR -> BRU - British Airways
+2026-04-14 22:54:54,699 - INFO - Cache miss for EZY34YB, checking disk
+2026-04-14 22:54:54,699 - INFO - 22:54:54: 10.100.100.163  - EZY34YB   : xxx -> xxx - easyJet
+2026-04-14 22:54:54,699 - INFO - Cache miss for BAW720, checking disk
+2026-04-14 22:54:54,723 - INFO - 22:54:54: 10.100.100.163  - BAW720    : LHR -> IST - British Airways
+2026-04-14 22:54:54,723 - INFO - Cache miss for ELY1524, checking disk
+2026-04-14 22:54:54,723 - INFO - 22:54:54: 10.100.100.163  - ELY1524   : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:54:54,723 - INFO - Cache miss for ASL133, checking disk
+2026-04-14 22:54:54,733 - INFO - 22:54:54: 10.100.100.163  - ASL133    : SVO -> BEG - Air Serbia
+2026-04-14 22:54:54,733 - INFO - Cache miss for EJU17CG, checking disk
+2026-04-14 22:54:54,745 - INFO - 22:54:54: 10.100.100.163  - EJU17CG   : HRG -> BER - easyJet Europe
+2026-04-14 22:54:54,745 - INFO - Cache miss for WMT169, checking disk
+2026-04-14 22:54:54,752 - INFO - 22:54:54: 10.100.100.163  - WMT169    : BGY -> CLJ - Wizz Air Malta
+2026-04-14 22:54:54,752 - INFO - Cache miss for RYR7749, checking disk
+2026-04-14 22:54:54,764 - INFO - 22:54:54: 10.100.100.163  - RYR7749   : PFO -> STN - Ryanair
+2026-04-14 22:54:54,764 - INFO - Cache miss for SEU7552, checking disk
+2026-04-14 22:54:54,771 - INFO - 22:54:54: 10.100.100.163  - SEU7552   : SSH -> RZE - SkyUp Europe
+2026-04-14 22:54:54,771 - INFO - Cache miss for LZB480, checking disk
+2026-04-14 22:54:54,778 - INFO - 22:54:54: 10.100.100.163  - LZB480    : AGP -> SOF - Bulgaria Air
+2026-04-14 22:54:54,778 - INFO - Cache miss for LSI219, checking disk
+2026-04-14 22:54:54,778 - INFO - 22:54:54: 10.100.100.163  - LSI219    : xxx -> xxx - AlisCargo Airlines
+2026-04-14 22:54:54,778 - INFO - Cache miss for AFR42KK, checking disk
+2026-04-14 22:54:54,782 - INFO - 22:54:54: 10.100.100.163  - AFR42KK   : CDG -> ATH - Air France
+2026-04-14 22:54:54,782 - INFO - Cache miss for EZY89YM, checking disk
+2026-04-14 22:54:54,782 - INFO - 22:54:54: 10.100.100.163  - EZY89YM   : xxx -> xxx - easyJet
+2026-04-14 22:54:54,782 - INFO - Cache miss for ROT364Q, checking disk
+2026-04-14 22:54:54,791 - INFO - 22:54:54: 10.100.100.163  - ROT364Q   : AMS -> OTP - Tarom
+2026-04-14 22:54:54,791 - INFO - Cache miss for THY9WR, checking disk
+2026-04-14 22:54:54,804 - INFO - 22:54:54: 10.100.100.163  - THY9WR    : CDG -> IST - Turkish Airlines
+2026-04-14 22:54:54,804 - INFO - Cache miss for RYR3VL, checking disk
+2026-04-14 22:54:54,811 - INFO - 22:54:54: 10.100.100.163  - RYR3VL    : SKG -> ARN - Ryanair
+2026-04-14 22:54:54,811 - INFO - Cache miss for SXS6SF, checking disk
+2026-04-14 22:54:54,818 - INFO - 22:54:54: 10.100.100.163  - SXS6SF    : AYT -> NUE - SunExpress
+2026-04-14 22:54:54,818 - INFO - Cache miss for AUA805, checking disk
+2026-04-14 22:54:54,830 - INFO - 22:54:54: 10.100.100.163  - AUA805    : VIE -> ATH - Austrian Airlines
+2026-04-14 22:54:54,830 - INFO - Cache miss for MSC926, checking disk
+2026-04-14 22:54:54,830 - INFO - 22:54:54: 10.100.100.163  - MSC926    : xxx -> xxx - Air Cairo
+2026-04-14 22:54:54,830 - INFO - Cache miss for RYR42HR, checking disk
+2026-04-14 22:54:54,840 - INFO - 22:54:54: 10.100.100.163  - RYR42HR   : BLQ -> ATH - Ryanair
+2026-04-14 22:54:54,841 - INFO - Cache miss for SEH6CA, checking disk
+2026-04-14 22:54:54,846 - INFO - 22:54:54: 10.100.100.163  - SEH6CA    : CFU -> ATH - Sky Express
+2026-04-14 22:54:54,846 - INFO - Cache miss for TKJ2HX, checking disk
+2026-04-14 22:54:54,847 - INFO - 22:54:54: 10.100.100.163  - TKJ2HX    : xxx -> xxx - AJet
+2026-04-14 22:54:54,847 - INFO - Cache miss for AIC154, checking disk
+2026-04-14 22:54:54,855 - INFO - 22:54:54: 10.100.100.163  - AIC154    : VIE -> DEL - Air India
+2026-04-14 22:54:54,855 - INFO - Cache miss for THY3ZM, checking disk
+2026-04-14 22:54:54,867 - INFO - 22:54:54: 10.100.100.163  - THY3ZM    : NCE -> IST - Turkish Airlines
+2026-04-14 22:54:54,867 - INFO - Cache miss for THY7VM, checking disk
+2026-04-14 22:54:54,871 - INFO - 22:54:54: 10.100.100.163  - THY7VM    : NAP -> IST - Turkish Airlines
+2026-04-14 22:54:54,871 - INFO - Cache miss for RBG104, checking disk
+2026-04-14 22:54:54,876 - INFO - 22:54:54: 10.100.100.163  - RBG104    : BGY -> HBE - Air Arabia Egypt
+2026-04-14 22:54:54,877 - INFO - Cache miss for QTR5J, checking disk
+2026-04-14 22:54:54,883 - INFO - 22:54:54: 10.100.100.163  - QTR5J     : NCE -> DOH - Qatar Airways
+2026-04-14 22:54:54,883 - INFO - Cache miss for THY5CR, checking disk
+2026-04-14 22:54:54,894 - INFO - 22:54:54: 10.100.100.163  - THY5CR    : IST -> ALG - Turkish Airlines
+2026-04-14 22:54:54,894 - INFO - Cache miss for LMU625, checking disk
+2026-04-14 22:54:54,904 - INFO - 22:54:54: 10.100.100.163  - LMU625    : SSH -> LED - AlMasria Universal Airlines
+2026-04-14 22:54:54,904 - INFO - Cache miss for BOX519, checking disk
+2026-04-14 22:54:54,911 - INFO - 22:54:54: 10.100.100.163  - BOX519    : HKG -> LEJ - Aerologic
+2026-04-14 22:54:54,911 - INFO - Cache miss for FIA5548, checking disk
+2026-04-14 22:54:54,921 - INFO - 22:54:54: 10.100.100.163  - FIA5548   : STN -> RMO - FlyOne
+2026-04-14 22:54:54,921 - INFO - Cache miss for SXS2BB, checking disk
+2026-04-14 22:54:54,933 - INFO - 22:54:54: 10.100.100.163  - SXS2BB    : FRA -> AYT - SunExpress
+2026-04-14 22:54:54,933 - INFO - Cache miss for BTI2FK, checking disk
+2026-04-14 22:54:54,941 - INFO - 22:54:54: 10.100.100.163  - BTI2FK    : SSH -> RIX - Air Baltic
+2026-04-14 22:54:54,941 - INFO - Cache miss for AEE167, checking disk
+2026-04-14 22:54:54,951 - INFO - 22:54:54: 10.100.100.163  - AEE167    : IOA -> ATH - Aegean Airlines
+2026-04-14 22:54:54,951 - INFO - Cache miss for THY6451, checking disk
+2026-04-14 22:54:54,959 - INFO - 22:54:54: 10.100.100.163  - THY6451   : HKG -> IST - Turkish Airlines
+2026-04-14 22:54:54,959 - INFO - Cache miss for EZY19YL, checking disk
+2026-04-14 22:54:54,979 - INFO - 22:54:54: 10.100.100.163  - EZY19YL   : LCA -> LTN - easyJet
+2026-04-14 22:54:54,979 - INFO - Cache miss for THY42W, checking disk
+2026-04-14 22:54:54,984 - INFO - 22:54:54: 10.100.100.163  - THY42W    : VLC -> IST - Turkish Airlines
+2026-04-14 22:54:54,984 - INFO - Cache miss for DHX856, checking disk
+2026-04-14 22:54:54,993 - INFO - 22:54:54: 10.100.100.163  - DHX856    : MCT -> LEJ - DHL International
+2026-04-14 22:54:54,993 - INFO - Cache miss for ETD916, checking disk
+2026-04-14 22:54:55,004 - INFO - 22:54:54: 10.100.100.163  - ETD916    : FRA -> AUH - Etihad Airways
+2026-04-14 22:54:55,004 - INFO - Cache miss for THY9LK, checking disk
+2026-04-14 22:54:55,009 - INFO - 22:54:55: 10.100.100.163  - THY9LK    : ALG -> IST - Turkish Airlines
+2026-04-14 22:54:55,009 - INFO - Cache miss for VOE2827, checking disk
+2026-04-14 22:54:55,017 - INFO - 22:54:55: 10.100.100.163  - VOE2827   : HER -> LYS - Volotea
+2026-04-14 22:54:55,018 - INFO - Cache miss for WMT6TE, checking disk
+2026-04-14 22:54:55,029 - INFO - 22:54:55: 10.100.100.163  - WMT6TE    : EAP -> CLJ - Wizz Air Malta
+2026-04-14 22:54:55,029 - INFO - Cache miss for EJU59PD, checking disk
+2026-04-14 22:54:55,036 - INFO - 22:54:55: 10.100.100.163  - EJU59PD   : LCA -> BER - easyJet Europe
+2026-04-14 22:54:55,036 - INFO - Cache miss for AEE503, checking disk
+2026-04-14 22:54:55,048 - INFO - 22:54:55: 10.100.100.163  - AEE503    : MUC -> SKG - Aegean Airlines
+2026-04-14 22:54:55,049 - INFO - Cache miss for ICV7112, checking disk
+2026-04-14 22:54:55,058 - INFO - 22:54:55: 10.100.100.163  - ICV7112   : MXP -> CGO - Cargolux Italia
+2026-04-14 22:54:55,058 - INFO - Cache miss for SEH5GK, checking disk
+2026-04-14 22:54:55,070 - INFO - 22:54:55: 10.100.100.163  - SEH5GK    : SKG -> ATH - Sky Express
+2026-04-14 22:54:55,070 - INFO - Cache miss for EJU17QX, checking disk
+2026-04-14 22:54:55,086 - INFO - 22:54:55: 10.100.100.163  - EJU17QX   : MXP -> ATH - easyJet Europe
+2026-04-14 22:54:55,086 - INFO - Cache miss for EZY31DV, checking disk
+2026-04-14 22:54:55,096 - INFO - 22:54:55: 10.100.100.163  - EZY31DV   : JER -> LPL - easyJet
+2026-04-14 22:54:55,096 - INFO - Cache miss for NSZ4402, checking disk
+2026-04-14 22:54:55,108 - INFO - 22:54:55: 10.100.100.163  - NSZ4402   : LCA -> ARN - Norwegian Air Sweden
+2026-04-14 22:54:55,108 - INFO - Cache miss for LZB974, checking disk
+2026-04-14 22:54:55,116 - INFO - 22:54:55: 10.100.100.163  - LZB974    : VAR -> SOF - Bulgaria Air
+2026-04-14 22:54:55,117 - INFO - Cache miss for CGF1907, checking disk
+2026-04-14 22:54:55,126 - INFO - 22:54:55: 10.100.100.163  - CGF1907   : TLV -> CGN - Cargoair
+2026-04-14 22:54:55,126 - INFO - Cache miss for EZY12ZY, checking disk
+2026-04-14 22:54:55,139 - INFO - 22:54:55: 10.100.100.163  - EZY12ZY   : DLM -> EDI - easyJet
+2026-04-14 22:54:55,139 - INFO - Cache miss for THY5EJ, checking disk
+2026-04-14 22:54:55,145 - INFO - 22:54:55: 10.100.100.163  - THY5EJ    : IST -> FCO - Turkish Airlines
+2026-04-14 22:54:55,145 - INFO - Cache miss for WZZ116, checking disk
+2026-04-14 22:54:55,151 - INFO - 22:54:55: 10.100.100.163  - WZZ116    : BCN -> KUT - Wizz Air
+2026-04-14 22:54:55,151 - INFO - Cache miss for QTR8357, checking disk
+2026-04-14 22:54:55,152 - INFO - 22:54:55: 10.100.100.163  - QTR8357   : xxx -> xxx - Qatar Airways
+2026-04-14 22:54:55,152 - INFO - Cache miss for IFA1124, checking disk
+2026-04-14 22:54:55,152 - INFO - 22:54:55: 10.100.100.163  - IFA1124   : xxx -> xxx - FAI Air Service
+2026-04-14 22:54:55,152 - INFO - Cache miss for RYR1EY, checking disk
+2026-04-14 22:54:55,163 - INFO - 22:54:55: 10.100.100.163  - RYR1EY    : RHO -> KUN - Ryanair
+2026-04-14 22:54:55,163 - INFO - Cache miss for THY657, checking disk
+2026-04-14 22:54:55,173 - INFO - 22:54:55: 10.100.100.163  - THY657    : IST -> TUN - Turkish Airlines
+2026-04-14 22:54:55,173 - INFO - Cache miss for HST2862, checking disk
+2026-04-14 22:54:55,184 - INFO - 22:54:55: 10.100.100.163  - HST2862   : HRG -> VNO - Heston Airlines
+2026-04-14 22:54:55,185 - INFO - Cache miss for CFG282, checking disk
+2026-04-14 22:54:55,195 - INFO - 22:54:55: 10.100.100.163  - CFG282    : FRA -> MBA - Condor
+2026-04-14 22:54:55,195 - INFO - Cache miss for AEE3FT, checking disk
+2026-04-14 22:54:55,214 - INFO - 22:54:55: 10.100.100.163  - AEE3FT    : FRA -> ATH - Aegean Airlines
+2026-04-14 22:54:55,215 - INFO - Cache miss for AEE963, checking disk
+2026-04-14 22:54:55,223 - INFO - 22:54:55: 10.100.100.163  - AEE963    : OTP -> ATH - Aegean Airlines
+2026-04-14 22:54:55,223 - INFO - Cache miss for RYR691H, checking disk
+2026-04-14 22:54:55,242 - INFO - 22:54:55: 10.100.100.163  - RYR691H   : WRO -> ATH - Ryanair
+2026-04-14 22:54:55,242 - INFO - Cache miss for DLH5AE, checking disk
+2026-04-14 22:54:55,267 - INFO - 22:54:55: 10.100.100.163  - DLH5AE    : MUC -> ATH - Lufthansa
+2026-04-14 22:54:55,267 - INFO - Cache miss for AUA61, checking disk
+2026-04-14 22:54:55,288 - INFO - 22:54:55: 10.100.100.163  - AUA61     : VIE -> ZRH - Austrian Airlines
+2026-04-14 22:54:55,288 - INFO - Cache miss for AEE279, checking disk
+2026-04-14 22:54:55,321 - INFO - 22:54:55: 10.100.100.163  - AEE279    : JKH -> ATH - Aegean Airlines
+2026-04-14 22:54:55,322 - INFO - Cache miss for ELY526, checking disk
+2026-04-14 22:54:55,322 - INFO - 22:54:55: 10.100.100.163  - ELY526    : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:54:55,322 - INFO - Cache miss for A3127, checking disk
+2026-04-14 22:54:55,322 - INFO - 22:54:55: 10.100.100.163  - A3127     : xxx -> xxx - 
+2026-04-14 22:54:55,322 - INFO - Cache miss for SEH6MT, checking disk
+2026-04-14 22:54:55,338 - INFO - 22:54:55: 10.100.100.163  - SEH6MT    : JMK -> ATH - Sky Express
+2026-04-14 22:54:55,339 - INFO - Cache miss for SEH5SP, checking disk
+2026-04-14 22:54:55,356 - INFO - 22:54:55: 10.100.100.163  - SEH5SP    : DUS -> ATH - Sky Express
+2026-04-14 22:54:55,356 - INFO - Cache miss for WMT7822, checking disk
+2026-04-14 22:54:55,375 - INFO - 22:54:55: 10.100.100.163  - WMT7822   : ATH -> RMO - Wizz Air Malta
+2026-04-14 22:54:55,545 - INFO - Cache miss for SEH293, checking disk
+2026-04-14 22:54:55,552 - INFO - 22:54:55: 10.100.100.163  - SEH293    : AXD -> ATH - Sky Express
+2026-04-14 22:54:55,552 - INFO - Cache miss for THY8JT, checking disk
+2026-04-14 22:54:55,557 - INFO - 22:54:55: 10.100.100.163  - THY8JT    : PMO -> IST - Turkish Airlines
+2026-04-14 22:54:55,557 - INFO - Cache miss for SEH6JA, checking disk
+2026-04-14 22:54:55,566 - INFO - 22:54:55: 10.100.100.163  - SEH6JA    : JKH -> ATH - Sky Express
+2026-04-14 22:54:55,566 - INFO - Cache miss for TOM24T, checking disk
+2026-04-14 22:54:55,574 - INFO - 22:54:55: 10.100.100.163  - TOM24T    : AGP -> LGW - TUI Airways
+2026-04-14 22:54:55,574 - INFO - Cache miss for VIR384T, checking disk
+2026-04-14 22:54:55,582 - INFO - 22:54:55: 10.100.100.163  - VIR384T   : LHR -> MLE - Virgin Atlantic
+2026-04-14 22:54:55,582 - INFO - Cache miss for AMQ257, checking disk
+2026-04-14 22:54:55,582 - INFO - 22:54:55: 10.100.100.163  - AMQ257    : xxx -> xxx - AMC Aviation
+2026-04-14 22:54:55,582 - INFO - Cache miss for PGT15JR, checking disk
+2026-04-14 22:54:55,588 - INFO - 22:54:55: 10.100.100.163  - PGT15JR   : MUC -> SAW - Pegasus Airlines
+2026-04-14 22:54:55,588 - INFO - Cache miss for WMT5KM, checking disk
+2026-04-14 22:54:55,592 - INFO - 22:54:55: 10.100.100.163  - WMT5KM    : RMO -> FCO - Wizz Air Malta
+2026-04-14 22:54:55,592 - INFO - Cache miss for AEE916, checking disk
+2026-04-14 22:54:55,596 - INFO - 22:54:55: 10.100.100.163  - AEE916    : ATH -> LCA - Aegean Airlines
+2026-04-14 22:54:55,596 - INFO - Cache miss for SEH6VS, checking disk
+2026-04-14 22:54:55,597 - INFO - 22:54:55: 10.100.100.163  - SEH6VS    : MJT -> ATH - Sky Express
+2026-04-14 22:54:55,597 - INFO - Cache miss for THY1DB, checking disk
+2026-04-14 22:54:55,603 - INFO - 22:54:55: 10.100.100.163  - THY1DB    : LIS -> IST - Turkish Airlines
+2026-04-14 22:54:55,603 - INFO - Cache miss for EZY73UB, checking disk
+2026-04-14 22:54:55,616 - INFO - 22:54:55: 10.100.100.163  - EZY73UB   : BFS -> STN - easyJet
+2026-04-14 22:54:55,616 - INFO - Cache miss for PGT984, checking disk
+2026-04-14 22:54:55,629 - INFO - 22:54:55: 10.100.100.163  - PGT984    : BER -> SAW - Pegasus Airlines
+2026-04-14 22:54:55,629 - INFO - Cache miss for THY1YR, checking disk
+2026-04-14 22:54:55,635 - INFO - 22:54:55: 10.100.100.163  - THY1YR    : VCE -> IST - Turkish Airlines
+2026-04-14 22:54:55,635 - INFO - Cache miss for THY5SC, checking disk
+2026-04-14 22:54:55,645 - INFO - 22:54:55: 10.100.100.163  - THY5SC    : LHR -> IST - Turkish Airlines
+2026-04-14 22:54:55,645 - INFO - Cache miss for THY4BV, checking disk
+2026-04-14 22:54:55,652 - INFO - 22:54:55: 10.100.100.163  - THY4BV    : SAW -> ESB - Turkish Airlines
+2026-04-14 22:54:55,652 - INFO - Cache miss for THY5YE, checking disk
+2026-04-14 22:54:55,659 - INFO - 22:54:55: 10.100.100.163  - THY5YE    : RAK -> IST - Turkish Airlines
+2026-04-14 22:54:55,659 - INFO - Cache miss for ELY1372, checking disk
+2026-04-14 22:54:55,659 - INFO - 22:54:55: 10.100.100.163  - ELY1372   : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:54:55,659 - INFO - Cache miss for EZY9858, checking disk
+2026-04-14 22:54:55,660 - INFO - 22:54:55: 10.100.100.163  - EZY9858   : xxx -> xxx - easyJet
+2026-04-14 22:54:55,660 - INFO - Cache miss for THY1WC, checking disk
+2026-04-14 22:54:55,671 - INFO - 22:54:55: 10.100.100.163  - THY1WC    : NKC -> IST - Turkish Airlines
+2026-04-14 22:54:55,671 - INFO - Cache miss for THY6MG, checking disk
+2026-04-14 22:54:55,678 - INFO - 22:54:55: 10.100.100.163  - THY6MG    : FRA -> IST - Turkish Airlines
+2026-04-14 22:54:55,678 - INFO - Cache miss for AEE239, checking disk
+2026-04-14 22:54:55,678 - INFO - 22:54:55: 10.100.100.163  - AEE239    : xxx -> xxx - Aegean Airlines
+2026-04-14 22:54:55,679 - INFO - Cache miss for NJE702F, checking disk
+2026-04-14 22:54:55,679 - INFO - 22:54:55: 10.100.100.163  - NJE702F   : xxx -> xxx - NetJets Europe
+2026-04-14 22:54:55,679 - INFO - Cache miss for BNL304, checking disk
+2026-04-14 22:54:55,684 - INFO - 22:54:55: 10.100.100.163  - BNL304    : IST -> BEN - Forward Air International Airlines
+2026-04-14 22:54:55,684 - INFO - Cache miss for EZY89VP, checking disk
+2026-04-14 22:54:55,702 - INFO - 22:54:55: 10.100.100.163  - EZY89VP   : AYT -> LGW - easyJet
+2026-04-14 22:54:55,702 - INFO - Cache miss for MNB9403, checking disk
+2026-04-14 22:54:55,713 - INFO - 22:54:55: 10.100.100.163  - MNB9403   : IST -> LEJ - MNG Airlines
+2026-04-14 22:54:55,713 - INFO - Cache miss for FDX6927, checking disk
+2026-04-14 22:54:55,724 - INFO - 22:54:55: 10.100.100.163  - FDX6927   : IST -> CDG - Federal Express
+2026-04-14 22:54:55,724 - INFO - Cache miss for PGT33RR, checking disk
+2026-04-14 22:54:55,737 - INFO - 22:54:55: 10.100.100.163  - PGT33RR   : HEL -> AYT - Pegasus Airlines
+2026-04-14 22:54:55,737 - INFO - Cache miss for THY2PH, checking disk
+2026-04-14 22:54:55,772 - INFO - 22:54:55: 10.100.100.163  - THY2PH    : MAN -> IST - Turkish Airlines
+2026-04-14 22:54:55,773 - INFO - Cache miss for TOM639, checking disk
+2026-04-14 22:54:55,794 - INFO - 22:54:55: 10.100.100.163  - TOM639    : AYT -> BRS - TUI Airways
+2026-04-14 22:54:55,794 - INFO - Cache miss for THY9DC, checking disk
+2026-04-14 22:54:55,798 - INFO - 22:54:55: 10.100.100.163  - THY9DC    : MAD -> IST - Turkish Airlines
+2026-04-14 22:54:55,798 - INFO - Cache miss for VLW3, checking disk
+2026-04-14 22:54:55,799 - INFO - 22:54:55: 10.100.100.163  - VLW3      : xxx -> xxx - 
+2026-04-14 22:54:55,799 - INFO - Cache miss for ANA216, checking disk
+2026-04-14 22:54:55,808 - INFO - 22:54:55: 10.100.100.163  - ANA216    : CDG -> HND - All Nippon Airways
+2026-04-14 22:54:55,808 - INFO - Cache miss for PGT66F, checking disk
+2026-04-14 22:54:55,812 - INFO - 22:54:55: 10.100.100.163  - PGT66F    : FRA -> SAW - Pegasus Airlines
+2026-04-14 22:54:55,813 - INFO - Cache miss for WZZ1024, checking disk
+2026-04-14 22:54:55,825 - INFO - 22:54:55: 10.100.100.163  - WZZ1024   : AYT -> BUD - Wizz Air
+2026-04-14 22:54:55,825 - INFO - Cache miss for EZY95YX, checking disk
+2026-04-14 22:54:55,831 - INFO - 22:54:55: 10.100.100.163  - EZY95YX   : DLM -> MAN - easyJet
+2026-04-14 22:54:55,831 - INFO - Cache miss for THY4UP, checking disk
+2026-04-14 22:54:55,836 - INFO - 22:54:55: 10.100.100.163  - THY4UP    : VNO -> IST - Turkish Airlines
+2026-04-14 22:54:55,836 - INFO - Cache miss for THY5BU, checking disk
+2026-04-14 22:54:55,843 - INFO - 22:54:55: 10.100.100.163  - THY5BU    : SJJ -> IST - Turkish Airlines
+2026-04-14 22:54:55,843 - INFO - Cache miss for SXS6BM, checking disk
+2026-04-14 22:54:55,847 - INFO - 22:54:55: 10.100.100.163  - SXS6BM    : AYT -> FMO - SunExpress
+2026-04-14 22:54:55,847 - INFO - Cache miss for THY2TC, checking disk
+2026-04-14 22:54:55,855 - INFO - 22:54:55: 10.100.100.163  - THY2TC    : BCN -> IST - Turkish Airlines
+2026-04-14 22:54:55,855 - INFO - Cache miss for THY7RJ, checking disk
+2026-04-14 22:54:55,865 - INFO - 22:54:55: 10.100.100.163  - THY7RJ    : MUC -> IST - Turkish Airlines
+2026-04-14 22:54:55,865 - INFO - Cache miss for SXS3ZX, checking disk
+2026-04-14 22:54:55,876 - INFO - 22:54:55: 10.100.100.163  - SXS3ZX    : AYT -> CGN - SunExpress
+2026-04-14 22:54:55,876 - INFO - Cache miss for AAR542, checking disk
+2026-04-14 22:54:55,881 - INFO - 22:54:55: 10.100.100.163  - AAR542    : FRA -> ICN - Asiana Airlines
+2026-04-14 22:54:55,881 - INFO - Cache miss for SXS7EC, checking disk
+2026-04-14 22:54:55,885 - INFO - 22:54:55: 10.100.100.163  - SXS7EC    : AYT -> HAJ - SunExpress
+2026-04-14 22:54:55,885 - INFO - Cache miss for SXS98G, checking disk
+2026-04-14 22:54:55,890 - INFO - 22:54:55: 10.100.100.163  - SXS98G    : DUS -> AYT - SunExpress
+2026-04-14 22:54:55,890 - INFO - Cache miss for THY4QN, checking disk
+2026-04-14 22:54:55,893 - INFO - 22:54:55: 10.100.100.163  - THY4QN    : OSL -> IST - Turkish Airlines
+2026-04-14 22:54:55,893 - INFO - Cache miss for PGT946C, checking disk
+2026-04-14 22:54:55,901 - INFO - 22:54:55: 10.100.100.163  - PGT946C   : SAW -> CGN - Pegasus Airlines
+2026-04-14 22:54:55,901 - INFO - Cache miss for THY3FW, checking disk
+2026-04-14 22:54:55,911 - INFO - 22:54:55: 10.100.100.163  - THY3FW    : LGW -> IST - Turkish Airlines
+2026-04-14 22:54:55,911 - INFO - Cache miss for THY84X, checking disk
+2026-04-14 22:54:55,921 - INFO - 22:54:55: 10.100.100.163  - THY84X    : EAP -> IST - Turkish Airlines
+2026-04-14 22:54:55,921 - INFO - Cache miss for THY9VU, checking disk
+2026-04-14 22:54:55,928 - INFO - 22:54:55: 10.100.100.163  - THY9VU    : TGD -> IST - Turkish Airlines
+2026-04-14 22:54:55,928 - INFO - Cache miss for THY1TU, checking disk
+2026-04-14 22:54:55,929 - INFO - 22:54:55: 10.100.100.163  - THY1TU    : ZAG -> IST - Turkish Airlines
+2026-04-14 22:54:55,929 - INFO - Cache miss for THY321, checking disk
+2026-04-14 22:54:55,932 - INFO - 22:54:55: 10.100.100.163  - THY321    : ASB -> IST - Turkish Airlines
+2026-04-14 22:54:55,932 - INFO - Cache miss for THY4EK, checking disk
+2026-04-14 22:54:55,933 - INFO - 22:54:55: 10.100.100.163  - THY4EK    : BUD -> IST - Turkish Airlines
+2026-04-14 22:54:55,933 - INFO - Cache miss for FDX4797, checking disk
+2026-04-14 22:54:55,938 - INFO - 22:54:55: 10.100.100.163  - FDX4797   : SAW -> LGG - Federal Express
+2026-04-14 22:54:55,938 - INFO - Cache miss for PGT70DJ, checking disk
+2026-04-14 22:54:55,945 - INFO - 22:54:55: 10.100.100.163  - PGT70DJ   : COV -> SAW - Pegasus Airlines
+2026-04-14 22:54:55,945 - INFO - Cache miss for KNE300, checking disk
+2026-04-14 22:54:55,955 - INFO - 22:54:55: 10.100.100.163  - KNE300    : IST -> RUH - Flynas
+2026-04-14 22:54:55,955 - INFO - Cache miss for TKJ8RE, checking disk
+2026-04-14 22:54:55,955 - INFO - 22:54:55: 10.100.100.163  - TKJ8RE    : xxx -> xxx - AJet
+2026-04-14 22:54:55,956 - INFO - Cache miss for THY6255, checking disk
+2026-04-14 22:54:55,968 - INFO - 22:54:55: 10.100.100.163  - THY6255   : HAN -> IST - Turkish Airlines
+2026-04-14 22:54:55,968 - INFO - Cache miss for BAW135, checking disk
+2026-04-14 22:54:55,976 - INFO - 22:54:55: 10.100.100.163  - BAW135    : LHR -> BOM - British Airways
+2026-04-14 22:54:55,977 - INFO - Cache miss for THY7CG, checking disk
+2026-04-14 22:54:55,986 - INFO - 22:54:55: 10.100.100.163  - THY7CG    : VKO -> IST - Turkish Airlines
+2026-04-14 22:54:55,986 - INFO - Cache miss for PGT15HF, checking disk
+2026-04-14 22:54:55,986 - INFO - 22:54:55: 10.100.100.163  - PGT15HF   : ESB -> SAW - Pegasus Airlines
+2026-04-14 22:54:55,986 - INFO - Cache miss for SXS4WM, checking disk
+2026-04-14 22:54:55,989 - INFO - 22:54:55: 10.100.100.163  - SXS4WM    : AYT -> PAD - SunExpress
+2026-04-14 22:54:55,989 - INFO - Cache miss for THY50V, checking disk
+2026-04-14 22:54:55,995 - INFO - 22:54:55: 10.100.100.163  - THY50V    : GOT -> IST - Turkish Airlines
+2026-04-14 22:54:55,995 - INFO - Cache miss for TOM769, checking disk
+2026-04-14 22:54:56,004 - INFO - 22:54:55: 10.100.100.163  - TOM769    : AYT -> NCL - TUI Airways
+2026-04-14 22:54:56,004 - INFO - Cache miss for THY127, checking disk
+2026-04-14 22:54:56,013 - INFO - 22:54:56: 10.100.100.163  - THY127    : JED -> IST - Turkish Airlines
+2026-04-14 22:54:56,014 - INFO - Cache miss for THY1AJ, checking disk
+2026-04-14 22:54:56,018 - INFO - 22:54:56: 10.100.100.163  - THY1AJ    : WAW -> IST - Turkish Airlines
+2026-04-14 22:54:56,018 - INFO - Cache miss for UTN9122, checking disk
+2026-04-14 22:54:56,025 - INFO - 22:54:56: 10.100.100.163  - UTN9122   : HRG -> KTW - Skyline Express Airlines
+2026-04-14 22:54:56,025 - INFO - Cache miss for TKJ9ME, checking disk
+2026-04-14 22:54:56,031 - INFO - 22:54:56: 10.100.100.163  - TKJ9ME    : CDG -> SAW - AJet
+2026-04-14 22:54:56,031 - INFO - Cache miss for PGT51LB, checking disk
+2026-04-14 22:54:56,036 - INFO - 22:54:56: 10.100.100.163  - PGT51LB   : GZP -> SAW - Pegasus Airlines
+2026-04-14 22:54:56,036 - INFO - Cache miss for PGT4642, checking disk
+2026-04-14 22:54:56,036 - INFO - 22:54:56: 10.100.100.163  - PGT4642   : xxx -> xxx - Pegasus Airlines
+2026-04-14 22:54:56,036 - INFO - Cache miss for TKJ189, checking disk
+2026-04-14 22:54:56,042 - INFO - 22:54:56: 10.100.100.163  - TKJ189    : SAW -> JED - AJet
+2026-04-14 22:54:56,043 - INFO - Cache miss for PGT363T, checking disk
+2026-04-14 22:54:56,043 - INFO - 22:54:56: 10.100.100.163  - PGT363T   : xxx -> xxx - Pegasus Airlines
+2026-04-14 22:54:56,043 - INFO - Cache miss for TKJ1LJ, checking disk
+2026-04-14 22:54:56,045 - INFO - 22:54:56: 10.100.100.163  - TKJ1LJ    : SAW -> VKO - AJet
+2026-04-14 22:54:56,045 - INFO - Cache miss for PGT82KF, checking disk
+2026-04-14 22:54:56,051 - INFO - 22:54:56: 10.100.100.163  - PGT82KF   : AYT -> CGN - Pegasus Airlines
+2026-04-14 22:54:56,051 - INFO - Cache miss for TKJ5YQ, checking disk
+2026-04-14 22:54:56,054 - INFO - 22:54:56: 10.100.100.163  - TKJ5YQ    : SAW -> DLM - AJet
+2026-04-14 22:54:56,054 - INFO - Cache miss for SXS1445, checking disk
+2026-04-14 22:54:56,054 - INFO - 22:54:56: 10.100.100.163  - SXS1445   : xxx -> xxx - SunExpress
+2026-04-14 22:54:56,055 - INFO - Cache miss for THY2RE, checking disk
+2026-04-14 22:54:56,062 - INFO - 22:54:56: 10.100.100.163  - THY2RE    : ECN -> IST - Turkish Airlines
+2026-04-14 22:54:56,062 - INFO - Cache miss for KAL918, checking disk
+2026-04-14 22:54:56,068 - INFO - 22:54:56: 10.100.100.163  - KAL918    : ZRH -> ICN - Korean Air
+2026-04-14 22:54:56,068 - INFO - Cache miss for PGT2707, checking disk
+2026-04-14 22:54:56,068 - INFO - 22:54:56: 10.100.100.163  - PGT2707   : xxx -> xxx - Pegasus Airlines
+2026-04-14 22:54:56,068 - INFO - Cache miss for BBC356, checking disk
+2026-04-14 22:54:56,073 - INFO - 22:54:56: 10.100.100.163  - BBC356    : FCO -> DAC - Biman Bangladesh Airlines
+2026-04-14 22:54:56,073 - INFO - Cache miss for PGT4044, checking disk
+2026-04-14 22:54:56,084 - INFO - 22:54:56: 10.100.100.163  - PGT4044   : AYT -> SAW - Pegasus Airlines
+2026-04-14 22:54:56,084 - INFO - Cache miss for THY364, checking disk
+2026-04-14 22:54:56,095 - INFO - 22:54:56: 10.100.100.163  - THY364    : IST -> TAS - Turkish Airlines
+2026-04-14 22:54:56,095 - INFO - Cache miss for THY1KA, checking disk
+2026-04-14 22:54:56,099 - INFO - 22:54:56: 10.100.100.163  - THY1KA    : ASR -> IST - Turkish Airlines
+2026-04-14 22:54:56,099 - INFO - Cache miss for PGT710, checking disk
+2026-04-14 22:54:56,103 - INFO - 22:54:56: 10.100.100.163  - PGT710    : SAW -> OSS - Pegasus Airlines
+2026-04-14 22:54:56,103 - INFO - Cache miss for PGT24BK, checking disk
+2026-04-14 22:54:56,111 - INFO - 22:54:56: 10.100.100.163  - PGT24BK   : MQM -> ADB - Pegasus Airlines
+2026-04-14 22:55:09,187 - INFO - Cache miss for PGT9GP, checking disk
+2026-04-14 22:55:09,199 - INFO - 22:55:09: 10.100.100.163  - PGT9GP    : SAW -> STN - Pegasus Airlines
+2026-04-14 22:55:09,199 - INFO - Cache miss for PGT58CD, checking disk
+2026-04-14 22:55:09,209 - INFO - 22:55:09: 10.100.100.163  - PGT58CD   : STN -> SAW - Pegasus Airlines
+2026-04-14 22:57:07,180 - INFO - Cache hit for EZY89YM
+2026-04-14 22:57:07,180 - INFO - 22:57:07: 10.100.100.163  - EZY89YM   : xxx -> xxx - easyJet
+2026-04-14 22:57:07,180 - INFO - Cache hit for SXS6SF
+2026-04-14 22:57:07,180 - INFO - 22:57:07: 10.100.100.163  - SXS6SF    : AYT -> NUE - SunExpress
+2026-04-14 22:57:07,180 - INFO - Cache hit for RYR3VL
+2026-04-14 22:57:07,180 - INFO - 22:57:07: 10.100.100.163  - RYR3VL    : SKG -> ARN - Ryanair
+2026-04-14 22:57:07,180 - INFO - Cache hit for WMT169
+2026-04-14 22:57:07,180 - INFO - 22:57:07: 10.100.100.163  - WMT169    : BGY -> CLJ - Wizz Air Malta
+2026-04-14 22:57:07,181 - INFO - Cache hit for LSI219
+2026-04-14 22:57:07,181 - INFO - 22:57:07: 10.100.100.163  - LSI219    : xxx -> xxx - AlisCargo Airlines
+2026-04-14 22:57:07,181 - INFO - Cache hit for ROT364Q
+2026-04-14 22:57:07,181 - INFO - 22:57:07: 10.100.100.163  - ROT364Q   : AMS -> OTP - Tarom
+2026-04-14 22:57:07,181 - INFO - Cache hit for LZB480
+2026-04-14 22:57:07,181 - INFO - 22:57:07: 10.100.100.163  - LZB480    : AGP -> SOF - Bulgaria Air
+2026-04-14 22:57:07,181 - INFO - Cache hit for THY9WR
+2026-04-14 22:57:07,181 - INFO - 22:57:07: 10.100.100.163  - THY9WR    : CDG -> IST - Turkish Airlines
+2026-04-14 22:57:07,181 - INFO - Cache hit for EZY65FT
+2026-04-14 22:57:07,181 - INFO - 22:57:07: 10.100.100.163  - EZY65FT   : DLM -> BFS - easyJet
+2026-04-14 22:57:07,181 - INFO - Cache hit for EFW7SN
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - EFW7SN    : PFO -> LGW - BA Euroflyer
+2026-04-14 22:57:07,182 - INFO - Cache hit for BOX519
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - BOX519    : HKG -> LEJ - Aerologic
+2026-04-14 22:57:07,182 - INFO - Cache hit for AIC154
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - AIC154    : VIE -> DEL - Air India
+2026-04-14 22:57:07,182 - INFO - Cache hit for THY6AM
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - THY6AM    : IST -> MXP - Turkish Airlines
+2026-04-14 22:57:07,182 - INFO - Cache hit for EXS72BQ
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - EXS72BQ   : DLM -> NCL - Jet2.com
+2026-04-14 22:57:07,182 - INFO - Cache hit for SXS5EY
+2026-04-14 22:57:07,182 - INFO - 22:57:07: 10.100.100.163  - SXS5EY    : AYT -> HAJ - SunExpress
+2026-04-14 22:57:07,182 - INFO - Cache hit for THY8BC
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - THY8BC    : BHX -> IST - Turkish Airlines
+2026-04-14 22:57:07,183 - INFO - Cache hit for RYR2288
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - RYR2288   : OTP -> BGY - Ryanair
+2026-04-14 22:57:07,183 - INFO - Cache hit for CFG2366
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - CFG2366   : FRA -> TNA - Condor
+2026-04-14 22:57:07,183 - INFO - Cache hit for NSZ4402
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - NSZ4402   : LCA -> ARN - Norwegian Air Sweden
+2026-04-14 22:57:07,183 - INFO - Cache hit for THY4SD
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - THY4SD    : LHR -> IST - Turkish Airlines
+2026-04-14 22:57:07,183 - INFO - Cache hit for RSX321
+2026-04-14 22:57:07,183 - INFO - 22:57:07: 10.100.100.163  - RSX321    : xxx -> xxx - Red Sea Airlines
+2026-04-14 22:57:07,183 - INFO - Cache hit for RCH429
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - RCH429    : xxx -> xxx - Air Mobility Command
+2026-04-14 22:57:07,184 - INFO - Cache hit for WMT6TE
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - WMT6TE    : EAP -> CLJ - Wizz Air Malta
+2026-04-14 22:57:07,184 - INFO - Cache hit for NSZ2827
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - NSZ2827   : PRN -> HEL - Norwegian Air Sweden
+2026-04-14 22:57:07,184 - INFO - Cache hit for VJT278
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - VJT278    : xxx -> xxx - Vistajet
+2026-04-14 22:57:07,184 - INFO - Cache hit for LOT6227
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - LOT6227   : KTW -> SSH - LOT Polish Airlines
+2026-04-14 22:57:07,184 - INFO - Cache hit for MNB9391
+2026-04-14 22:57:07,184 - INFO - 22:57:07: 10.100.100.163  - MNB9391   : IST -> EMA - MNG Airlines
+2026-04-14 22:57:07,184 - INFO - Cache hit for ROT647M
+2026-04-14 22:57:07,185 - INFO - 22:57:07: 10.100.100.163  - ROT647M   : OTP -> CLJ - Tarom
+2026-04-14 22:57:07,185 - INFO - Cache miss for KZR664, checking disk
+2026-04-14 22:57:07,185 - INFO - 22:57:07: 10.100.100.163  - KZR664    : LHR -> ALA - Air Astana
+2026-04-14 22:57:07,185 - INFO - Cache hit for MNB9345
+2026-04-14 22:57:07,185 - INFO - 22:57:07: 10.100.100.163  - MNB9345   : IST -> LEJ - MNG Airlines
+2026-04-14 22:57:07,185 - INFO - Cache miss for AFR22KN, checking disk
+2026-04-14 22:57:07,185 - INFO - 22:57:07: 10.100.100.163  - AFR22KN   : CDG -> OTP - Air France
+2026-04-14 22:57:07,185 - INFO - Cache hit for TKJ3HF
+2026-04-14 22:57:07,185 - INFO - 22:57:07: 10.100.100.163  - TKJ3HF    : SAW -> CGN - AJet
+2026-04-14 22:57:07,186 - INFO - Cache hit for UPS269
+2026-04-14 22:57:07,186 - INFO - 22:57:07: 10.100.100.163  - UPS269    : IST -> CGN - United Parcel Service
+2026-04-14 22:57:07,186 - INFO - Cache miss for LOT4HF, checking disk
+2026-04-14 22:57:07,186 - INFO - 22:57:07: 10.100.100.163  - LOT4HF    : xxx -> xxx - LOT Polish Airlines
+2026-04-14 22:57:07,186 - INFO - Cache hit for WMT5KM
+2026-04-14 22:57:07,186 - INFO - 22:57:07: 10.100.100.163  - WMT5KM    : RMO -> FCO - Wizz Air Malta
+2026-04-14 22:57:07,186 - INFO - Cache hit for WMT7TW
+2026-04-14 22:57:07,186 - INFO - 22:57:07: 10.100.100.163  - WMT7TW    : CLJ -> LCA - Wizz Air Malta
+2026-04-14 22:57:07,186 - INFO - Cache miss for JAL408, checking disk
+2026-04-14 22:57:07,187 - INFO - 22:57:07: 10.100.100.163  - JAL408    : FRA -> NRT - Japan Airlines
+2026-04-14 22:57:07,187 - INFO - Cache miss for LOT639, checking disk
+2026-04-14 22:57:07,208 - INFO - 22:57:07: 10.100.100.163  - LOT639    : WAW -> OTP - LOT Polish Airlines
+2026-04-14 22:57:07,209 - INFO - Cache miss for SXS1EN, checking disk
+2026-04-14 22:57:07,209 - INFO - 22:57:07: 10.100.100.163  - SXS1EN    : AYT -> CPH - SunExpress
+2026-04-14 22:57:07,209 - INFO - Cache miss for TUAF403, checking disk
+2026-04-14 22:57:07,209 - INFO - 22:57:07: 10.100.100.163  - TUAF403   : xxx -> xxx - Turkmenistan Airlines
+2026-04-14 22:57:07,209 - INFO - Cache miss for MGH873, checking disk
+2026-04-14 22:57:07,209 - INFO - 22:57:07: 10.100.100.163  - MGH873    : AYT -> KTW - Mavi Gok Aviation
+2026-04-14 22:57:07,209 - INFO - Cache miss for RYR8CN, checking disk
+2026-04-14 22:57:07,210 - INFO - 22:57:07: 10.100.100.163  - RYR8CN    : OTP -> MAN - Ryanair
+2026-04-14 22:57:07,210 - INFO - Cache hit for WZZ281
+2026-04-14 22:57:07,210 - INFO - 22:57:07: 10.100.100.163  - WZZ281    : NUE -> VAR - Wizz Air
+2026-04-14 22:57:07,210 - INFO - Cache miss for RYR10ZF, checking disk
+2026-04-14 22:57:07,215 - INFO - 22:57:07: 10.100.100.163  - RYR10ZF   : OTP -> STN - Ryanair
+2026-04-14 22:57:07,215 - INFO - Cache hit for EZY89VP
+2026-04-14 22:57:07,215 - INFO - 22:57:07: 10.100.100.163  - EZY89VP   : AYT -> LGW - easyJet
+2026-04-14 22:57:07,215 - INFO - Cache miss for ROT809H, checking disk
+2026-04-14 22:57:07,216 - INFO - 22:57:07: 10.100.100.163  - ROT809H   : OTP -> SCV - Tarom
+2026-04-14 22:57:07,216 - INFO - Cache miss for GTI8057, checking disk
+2026-04-14 22:57:07,216 - INFO - 22:57:07: 10.100.100.163  - GTI8057   : RMS -> HKG - Atlas Air
+2026-04-14 22:57:07,216 - INFO - Cache hit for FCA2MA
+2026-04-14 22:57:07,216 - INFO - 22:57:07: 10.100.100.163  - FCA2MA    : xxx -> xxx - First Choice Airways
+2026-04-14 22:57:07,216 - INFO - Cache miss for CPA250, checking disk
+2026-04-14 22:57:07,216 - INFO - 22:57:07: 10.100.100.163  - CPA250    : LHR -> HKG - Cathay Pacific
+2026-04-14 22:57:07,216 - INFO - Cache hit for PGT398
+2026-04-14 22:57:07,216 - INFO - 22:57:07: 10.100.100.163  - PGT398    : SAW -> LED - Pegasus Airlines
+2026-04-14 22:57:07,217 - INFO - Cache miss for WZZ8NF, checking disk
+2026-04-14 22:57:07,217 - INFO - 22:57:07: 10.100.100.163  - WZZ8NF    : BTS -> EVN - Wizz Air
+2026-04-14 22:57:07,217 - INFO - Cache hit for HYM412
+2026-04-14 22:57:07,217 - INFO - 22:57:07: 10.100.100.163  - HYM412    : STN -> RMO - HiSky Airilnes
+2026-04-14 22:57:12,327 - INFO - Cache hit for ANA224
+2026-04-14 22:57:12,327 - INFO - 22:57:12: 10.100.100.163  - ANA224    : FRA -> HND - All Nippon Airways
+2026-04-14 22:57:12,327 - INFO - Cache hit for RYR7749
+2026-04-14 22:57:12,327 - INFO - 22:57:12: 10.100.100.163  - RYR7749   : PFO -> STN - Ryanair
+2026-04-14 22:57:12,327 - INFO - Cache hit for BAW720
+2026-04-14 22:57:12,327 - INFO - 22:57:12: 10.100.100.163  - BAW720    : LHR -> IST - British Airways
+2026-04-14 22:57:12,327 - INFO - Cache hit for ELY1524
+2026-04-14 22:57:12,327 - INFO - 22:57:12: 10.100.100.163  - ELY1524   : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:57:12,327 - INFO - Cache hit for FIA5548
+2026-04-14 22:57:12,328 - INFO - 22:57:12: 10.100.100.163  - FIA5548   : STN -> RMO - FlyOne
+2026-04-14 22:57:20,727 - INFO - Cache hit for ROT374W
+2026-04-14 22:57:20,727 - INFO - 22:57:20: 10.100.100.163  - ROT374W   : BRU -> OTP - Tarom
+2026-04-14 22:57:20,727 - INFO - Cache hit for EZY12ET
+2026-04-14 22:57:20,727 - INFO - 22:57:20: 10.100.100.163  - EZY12ET   : NAP -> STN - easyJet
+2026-04-14 22:57:20,727 - INFO - Cache hit for EDW70
+2026-04-14 22:57:20,727 - INFO - 22:57:20: 10.100.100.163  - EDW70     : ZRH -> MRU - Edelweiss Air
+2026-04-14 22:57:20,727 - INFO - Cache hit for EZS67UZ
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - EZS67UZ   : PRN -> EAP - easyJet Switzerland
+2026-04-14 22:57:20,728 - INFO - Cache hit for SXS8XT
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - SXS8XT    : MAN -> AYT - SunExpress
+2026-04-14 22:57:20,728 - INFO - Cache hit for PGT598Q
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - PGT598Q   : SAW -> STN - Pegasus Airlines
+2026-04-14 22:57:20,728 - INFO - Cache hit for NSZ4352
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - NSZ4352   : PRN -> ARN - Norwegian Air Sweden
+2026-04-14 22:57:20,728 - INFO - Cache hit for CFG6LT
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - CFG6LT    : FRA -> MLE - Condor
+2026-04-14 22:57:20,728 - INFO - Cache hit for SXS1XU
+2026-04-14 22:57:20,728 - INFO - 22:57:20: 10.100.100.163  - SXS1XU    : AYT -> CGN - SunExpress
+2026-04-14 22:57:20,729 - INFO - Cache hit for ANA212
+2026-04-14 22:57:20,729 - INFO - 22:57:20: 10.100.100.163  - ANA212    : LHR -> HND - All Nippon Airways
+2026-04-14 22:57:20,729 - INFO - Cache hit for ASL75K
+2026-04-14 22:57:20,729 - INFO - 22:57:20: 10.100.100.163  - ASL75K    : FRA -> BEG - Air Serbia
+2026-04-14 22:57:20,729 - INFO - Cache hit for ASL64P
+2026-04-14 22:57:20,729 - INFO - 22:57:20: 10.100.100.163  - ASL64P    : DUS -> BEG - Air Serbia
+2026-04-14 22:57:20,729 - INFO - Cache hit for PGT86MR
+2026-04-14 22:57:20,729 - INFO - 22:57:20: 10.100.100.163  - PGT86MR   : STN -> SAW - Pegasus Airlines
+2026-04-14 22:57:20,729 - INFO - Cache hit for TAY6SF
+2026-04-14 22:57:20,729 - INFO - 22:57:20: 10.100.100.163  - TAY6SF    : SOF -> CDG - ASL Airlines Belgium
+2026-04-14 22:57:20,729 - INFO - Cache hit for WZZ6255
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - WZZ6255   : BEG -> BGY - Wizz Air
+2026-04-14 22:57:20,730 - INFO - Cache hit for ELY462
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - ELY462    : xxx -> xxx - El Al Israel Airlines
+2026-04-14 22:57:20,730 - INFO - Cache hit for RYR7VK
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - RYR7VK    : BRS -> BUD - Ryanair
+2026-04-14 22:57:20,730 - INFO - Cache hit for RYR18EG
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - RYR18EG   : ARN -> BUD - Ryanair
+2026-04-14 22:57:20,730 - INFO - Cache hit for BAW257
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - BAW257    : LHR -> DEL - British Airways
+2026-04-14 22:57:20,730 - INFO - Cache hit for ASL98C
+2026-04-14 22:57:20,730 - INFO - 22:57:20: 10.100.100.163  - ASL98C    : ZRH -> BEG - Air Serbia
+2026-04-14 22:57:20,730 - INFO - Cache hit for ASL93T
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - ASL93T    : LJU -> INI - Air Serbia
+2026-04-14 22:57:20,731 - INFO - Cache hit for UPS2
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - UPS2      : CGN -> HKG - United Parcel Service
+2026-04-14 22:57:20,731 - INFO - Cache hit for RYR86GG
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - RYR86GG   : STN -> SOF - Ryanair
+2026-04-14 22:57:20,731 - INFO - Cache hit for EJU17CG
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - EJU17CG   : HRG -> BER - easyJet Europe
+2026-04-14 22:57:20,731 - INFO - Cache hit for ASL133
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - ASL133    : SVO -> BEG - Air Serbia
+2026-04-14 22:57:20,731 - INFO - Cache hit for TVF3422
+2026-04-14 22:57:20,731 - INFO - 22:57:20: 10.100.100.163  - TVF3422   : ORY -> IST - Transavia France
+2026-04-14 22:57:24,825 - INFO - Cache hit for BCS3XV
+2026-04-14 22:57:24,825 - INFO - 22:57:24: 10.100.100.163  - BCS3XV    : BUD -> LEJ - European Air Transport
+2026-04-14 22:57:24,825 - INFO - Cache hit for CEF5B
+2026-04-14 22:57:24,825 - INFO - 22:57:24: 10.100.100.163  - CEF5B     : xxx -> xxx - Czech Air Force
+2026-04-14 22:57:51,077 - INFO - Cache hit for WMT288
+2026-04-14 22:57:51,077 - INFO - 22:57:51: 10.100.100.163  - WMT288    : WAW -> CTA - Wizz Air Malta
+2026-04-14 23:41:22,461 - INFO - Cache miss for ROT648P, checking disk
+2026-04-14 23:41:22,486 - INFO - 23:41:22: 10.100.100.163  - ROT648P   : CLJ -> OTP - Tarom
+2026-04-14 23:41:22,486 - INFO - Cache miss for SXS2FW, checking disk
+2026-04-14 23:41:22,530 - INFO - 23:41:22: 10.100.100.163  - SXS2FW    : STN -> GZT - SunExpress
+2026-04-14 23:41:22,530 - INFO - Cache miss for AZG722, checking disk
+2026-04-14 23:41:22,574 - INFO - 23:41:22: 10.100.100.163  - AZG722    : LGG -> GYD - Silk Way West Airlines
+2026-04-14 23:41:22,574 - INFO - Cache hit for EJU59PD
+2026-04-14 23:41:22,574 - INFO - 23:41:22: 10.100.100.163  - EJU59PD   : LCA -> BER - easyJet Europe
+2026-04-14 23:41:22,574 - INFO - Cache miss for ETH731, checking disk
+2026-04-14 23:41:22,618 - INFO - 23:41:22: 10.100.100.163  - ETH731    : WAW -> ADD - Ethiopian Airlines
+2026-04-14 23:41:22,618 - INFO - Cache hit for CGF1907
+2026-04-14 23:41:22,618 - INFO - 23:41:22: 10.100.100.163  - CGF1907   : TLV -> CGN - Cargoair
+2026-04-14 23:41:22,619 - INFO - Cache miss for OMA172, checking disk
+2026-04-14 23:41:22,667 - INFO - 23:41:22: 10.100.100.163  - OMA172    : AMS -> MCT - Oman Air
+2026-04-14 23:41:22,667 - INFO - Cache hit for EZY12ZY
+2026-04-14 23:41:22,667 - INFO - 23:41:22: 10.100.100.163  - EZY12ZY   : DLM -> EDI - easyJet
+2026-04-14 23:41:22,667 - INFO - Cache miss for KAL908, checking disk
+2026-04-14 23:41:22,710 - INFO - 23:41:22: 10.100.100.163  - KAL908    : LHR -> ICN - Korean Air
+2026-04-14 23:41:22,711 - INFO - Cache hit for BEL7JU
+2026-04-14 23:41:22,711 - INFO - 23:41:22: 10.100.100.163  - BEL7JU    : BRU -> BUD - Brussels Airlines
+2026-04-14 23:41:22,711 - INFO - Cache hit for WZZ4D
+2026-04-14 23:41:22,711 - INFO - 23:41:22: 10.100.100.163  - WZZ4D     : DTM -> BUD - Wizz Air
+2026-04-14 23:41:22,711 - INFO - Cache miss for WZZ1PT, checking disk
+2026-04-14 23:41:22,762 - INFO - 23:41:22: 10.100.100.163  - WZZ1PT    : BIO -> BUD - Wizz Air
+2026-04-14 23:41:22,762 - INFO - Cache miss for FIE928, checking disk
+2026-04-14 23:41:22,848 - INFO - 23:41:22: 10.100.100.163  - FIE928    : CDG -> EVN - FlyOne Armenia
+2026-04-14 23:41:22,849 - INFO - Cache miss for ASL30L, checking disk
+2026-04-14 23:41:22,926 - INFO - 23:41:22: 10.100.100.163  - ASL30L    : TIV -> BEG - Air Serbia
+2026-04-14 23:41:22,926 - INFO - Cache miss for KLM835, checking disk
+2026-04-14 23:41:22,963 - INFO - 23:41:22: 10.100.100.163  - KLM835    : AMS -> DPS - KLM
+2026-04-14 23:41:22,963 - INFO - Cache miss for ASL65W, checking disk
+2026-04-14 23:41:23,002 - INFO - 23:41:22: 10.100.100.163  - ASL65W    : ARN -> BEG - Air Serbia
+2026-04-14 23:41:23,003 - INFO - Cache hit for WZZ2039
+2026-04-14 23:41:23,003 - INFO - 23:41:23: 10.100.100.163  - WZZ2039   : BVA -> BEG - Wizz Air
+2026-04-14 23:41:23,003 - INFO - Cache miss for THA923, checking disk
+2026-04-14 23:41:23,043 - INFO - 23:41:23: 10.100.100.163  - THA923    : FRA -> BKK - Thai Airways International
+2026-04-14 23:41:23,043 - INFO - Cache miss for BAW11, checking disk
+2026-04-14 23:41:23,080 - INFO - 23:41:23: 10.100.100.163  - BAW11     : LHR -> SIN - British Airways
+2026-04-14 23:41:23,080 - INFO - Cache miss for WZZ8ZD, checking disk
+2026-04-14 23:41:23,175 - INFO - 23:41:23: 10.100.100.163  - WZZ8ZD    : PRG -> LCA - Wizz Air
+2026-04-14 23:41:23,175 - INFO - Cache miss for WMT5363, checking disk
+2026-04-14 23:41:23,219 - INFO - 23:41:23: 10.100.100.163  - WMT5363   : BHX -> SBZ - Wizz Air Malta
+2026-04-14 23:41:23,219 - INFO - Cache hit for SXS4CD
+2026-04-14 23:41:23,219 - INFO - 23:41:23: 10.100.100.163  - SXS4CD    : DUS -> COV - SunExpress
+2026-04-14 23:41:23,219 - INFO - Cache hit for FDX6927
+2026-04-14 23:41:23,219 - INFO - 23:41:23: 10.100.100.163  - FDX6927   : IST -> CDG - Federal Express
+2026-04-14 23:41:23,219 - INFO - Cache miss for HYP247, checking disk
+2026-04-14 23:41:23,219 - INFO - 23:41:23: 10.100.100.163  - HYP247    : xxx -> xxx - Hyperion Aviation
+2026-04-14 23:41:23,220 - INFO - Cache hit for TOM639
+2026-04-14 23:41:23,220 - INFO - 23:41:23: 10.100.100.163  - TOM639    : AYT -> BRS - TUI Airways
+2026-04-14 23:41:23,220 - INFO - Cache miss for JAL46, checking disk
+2026-04-14 23:41:23,264 - INFO - 23:41:23: 10.100.100.163  - JAL46     : CDG -> HND - Japan Airlines
+2026-04-14 23:41:23,264 - INFO - Cache miss for SXS5HU, checking disk
+2026-04-14 23:41:23,309 - INFO - 23:41:23: 10.100.100.163  - SXS5HU    : BER -> AYT - SunExpress
+2026-04-14 23:41:23,310 - INFO - Cache hit for MSC926
+2026-04-14 23:41:23,310 - INFO - 23:41:23: 10.100.100.163  - MSC926    : xxx -> xxx - Air Cairo
+2026-04-14 23:41:23,310 - INFO - Cache hit for MNB9403
+2026-04-14 23:41:23,310 - INFO - 23:41:23: 10.100.100.163  - MNB9403   : IST -> LEJ - MNG Airlines
+2026-04-14 23:41:23,310 - INFO - Cache miss for WZZ5975, checking disk
+2026-04-14 23:41:23,349 - INFO - 23:41:23: 10.100.100.163  - WZZ5975   : BBU -> BUD - Wizz Air
+2026-04-14 23:41:23,349 - INFO - Cache hit for ELY458
+2026-04-14 23:41:23,349 - INFO - 23:41:23: 10.100.100.163  - ELY458    : xxx -> xxx - El Al Israel Airlines
+2026-04-14 23:41:23,349 - INFO - Cache hit for PGT1688
+2026-04-14 23:41:23,349 - INFO - 23:41:23: 10.100.100.163  - PGT1688   : DUS -> ESB - Pegasus Airlines
+2026-04-14 23:41:23,350 - INFO - Cache hit for WMT279
+2026-04-14 23:41:23,350 - INFO - 23:41:23: 10.100.100.163  - WMT279    : VLC -> OTP - Wizz Air Malta
+2026-04-14 23:41:23,350 - INFO - Cache miss for SXS5XB, checking disk
+2026-04-14 23:41:23,350 - INFO - 23:41:23: 10.100.100.163  - SXS5XB    : xxx -> xxx - SunExpress
+2026-04-14 23:41:23,350 - INFO - Cache hit for HST2862
+2026-04-14 23:41:23,350 - INFO - 23:41:23: 10.100.100.163  - HST2862   : HRG -> VNO - Heston Airlines
+2026-04-14 23:41:23,350 - INFO - Cache hit for WZZ1024
+2026-04-14 23:41:23,350 - INFO - 23:41:23: 10.100.100.163  - WZZ1024   : AYT -> BUD - Wizz Air
+2026-04-14 23:41:23,350 - INFO - Cache hit for SXS6BM
+2026-04-14 23:41:23,350 - INFO - 23:41:23: 10.100.100.163  - SXS6BM    : AYT -> FMO - SunExpress
+2026-04-14 23:41:23,351 - INFO - Cache miss for RYR6GV, checking disk
+2026-04-14 23:41:23,390 - INFO - 23:41:23: 10.100.100.163  - RYR6GV    : SOF -> EDI - Ryanair
+2026-04-14 23:41:23,390 - INFO - Cache miss for BAW31, checking disk
+2026-04-14 23:41:23,434 - INFO - 23:41:23: 10.100.100.163  - BAW31     : LHR -> HKG - British Airways
+2026-04-14 23:41:23,435 - INFO - Cache hit for AMQ257
+2026-04-14 23:41:23,435 - INFO - 23:41:23: 10.100.100.163  - AMQ257    : xxx -> xxx - AMC Aviation
+2026-04-14 23:41:23,435 - INFO - Cache miss for QTR8098, checking disk
+2026-04-14 23:41:23,473 - INFO - 23:41:23: 10.100.100.163  - QTR8098   : MAA -> ORD - Qatar Airways
+2026-04-14 23:41:23,473 - INFO - Cache miss for WMT508, checking disk
+2026-04-14 23:41:23,510 - INFO - 23:41:23: 10.100.100.163  - WMT508    : CPH -> OTP - Wizz Air Malta
+2026-04-14 23:41:23,510 - INFO - Cache hit for WMT2L
+2026-04-14 23:41:23,510 - INFO - 23:41:23: 10.100.100.163  - WMT2L     : FAO -> OTP - Wizz Air Malta
+2026-04-14 23:41:23,510 - INFO - Cache miss for WZZ529A, checking disk
+2026-04-14 23:41:23,549 - INFO - 23:41:23: 10.100.100.163  - WZZ529A   : RMO -> WMI - Wizz Air
+2026-04-14 23:41:23,549 - INFO - Cache hit for SXS3ZX
+2026-04-14 23:41:23,549 - INFO - 23:41:23: 10.100.100.163  - SXS3ZX    : AYT -> CGN - SunExpress
+2026-04-14 23:41:23,549 - INFO - Cache miss for LOT723, checking disk
+2026-04-14 23:41:23,600 - INFO - 23:41:23: 10.100.100.163  - LOT723    : WAW -> TBS - LOT Polish Airlines
+2026-04-14 23:41:23,600 - INFO - Cache miss for FIN9DF, checking disk
+2026-04-14 23:41:23,641 - INFO - 23:41:23: 10.100.100.163  - FIN9DF    : HEL -> GZP - Finnair
+2026-04-14 23:41:23,641 - INFO - Cache miss for WUK76, checking disk
+2026-04-14 23:41:23,683 - INFO - 23:41:23: 10.100.100.163  - WUK76     : LTN -> RMO - Wizz Air UK
+2026-04-14 23:41:23,683 - INFO - Cache hit for AUA699M
+2026-04-14 23:41:23,683 - INFO - 23:41:23: 10.100.100.163  - AUA699M   : VIE -> OTP - Austrian Airlines
+2026-04-14 23:41:23,683 - INFO - Cache hit for PGT946C
+2026-04-14 23:41:23,683 - INFO - 23:41:23: 10.100.100.163  - PGT946C   : SAW -> CGN - Pegasus Airlines
+2026-04-14 23:41:23,683 - INFO - Cache miss for THY6506, checking disk
+2026-04-14 23:41:23,721 - INFO - 23:41:23: 10.100.100.163  - THY6506   : ISL -> ISL - Turkish Airlines
+2026-04-14 23:41:23,721 - INFO - Cache hit for SXS7EC
+2026-04-14 23:41:23,721 - INFO - 23:41:23: 10.100.100.163  - SXS7EC    : AYT -> HAJ - SunExpress
+2026-04-14 23:41:23,721 - INFO - Cache hit for FDX4797
+2026-04-14 23:41:23,721 - INFO - 23:41:23: 10.100.100.163  - FDX4797   : SAW -> LGG - Federal Express
+2026-04-14 23:41:23,721 - INFO - Cache miss for CGF1809, checking disk
+2026-04-14 23:41:23,779 - INFO - 23:41:23: 10.100.100.163  - CGF1809   : OTP -> CGN - Cargoair
+2026-04-14 23:41:23,780 - INFO - Cache hit for WMT711
+2026-04-14 23:41:23,780 - INFO - 23:41:23: 10.100.100.163  - WMT711    : AGP -> OTP - Wizz Air Malta
+2026-04-14 23:41:23,780 - INFO - Cache hit for WMT9BT
+2026-04-14 23:41:23,780 - INFO - 23:41:23: 10.100.100.163  - WMT9BT    : ZAZ -> CLJ - Wizz Air Malta
+2026-04-14 23:41:23,780 - INFO - Cache miss for MAI333, checking disk
+2026-04-14 23:41:23,780 - INFO - 23:41:23: 10.100.100.163  - MAI333    : xxx -> xxx - Mauritania Airlines International
+2026-04-14 23:41:23,780 - INFO - Cache hit for TOM769
+2026-04-14 23:41:23,781 - INFO - 23:41:23: 10.100.100.163  - TOM769    : AYT -> NCL - TUI Airways
+2026-04-14 23:41:23,781 - INFO - Cache miss for RYR91SU, checking disk
+2026-04-14 23:41:23,781 - INFO - 23:41:23: 10.100.100.163  - RYR91SU   : xxx -> xxx - Ryanair
+2026-04-14 23:41:23,781 - INFO - Cache hit for SXS4WM
+2026-04-14 23:41:23,781 - INFO - 23:41:23: 10.100.100.163  - SXS4WM    : AYT -> PAD - SunExpress
+2026-04-14 23:41:23,781 - INFO - Cache hit for WMT9SG
+2026-04-14 23:41:23,781 - INFO - 23:41:23: 10.100.100.163  - WMT9SG    : BGY -> RMO - Wizz Air Malta
+2026-04-14 23:41:23,781 - INFO - Cache hit for KAL518
+2026-04-14 23:41:23,781 - INFO - 23:41:23: 10.100.100.163  - KAL518    : FRA -> ICN - Korean Air
+2026-04-14 23:41:23,782 - INFO - Cache miss for WZZ4943, checking disk
+2026-04-14 23:41:23,857 - INFO - 23:41:23: 10.100.100.163  - WZZ4943   : BBU -> WAW - Wizz Air
+2026-04-14 23:41:23,857 - INFO - Cache hit for RYR3ZQ
+2026-04-14 23:41:23,857 - INFO - 23:41:23: 10.100.100.163  - RYR3ZQ    : BVA -> OTP - Ryanair
+2026-04-14 23:41:23,857 - INFO - Cache hit for UTN9122
+2026-04-14 23:41:23,858 - INFO - 23:41:23: 10.100.100.163  - UTN9122   : HRG -> KTW - Skyline Express Airlines
+2026-04-14 23:41:23,858 - INFO - Cache hit for WMT4GW
+2026-04-14 23:41:23,858 - INFO - 23:41:23: 10.100.100.163  - WMT4GW    : MAD -> OTP - Wizz Air Malta

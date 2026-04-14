@@ -1,0 +1,24 @@
+[Unit]
+Description=Route Server Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ionut
+Group=ionut
+WorkingDirectory=/usr/local/share/tar1090/routes
+Environment=SYSTEMD_SERVICE=1
+ExecStart=/usr/local/share/tar1090/routes/route_server
+Restart=on-failure
+RestartSec=2
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=false
+ReadWritePaths=/usr/local/share/tar1090/routes
+
+[Install]
+WantedBy=multi-user.target
+

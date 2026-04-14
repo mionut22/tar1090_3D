@@ -1,0 +1,415 @@
+#!/usr/bin/env python3
+import os
+import json
+import sys
+import time
+from http.server import HTTPServer, SimpleHTTPRequestHandler, ThreadingHTTPServer
+from socketserver import ThreadingMixIn
+from datetime import datetime
+import math
+import requests
+import struct
+import setproctitle
+import logging
+import importlib
+from logging.handlers import RotatingFileHandler
+from urllib.parse import urlsplit
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+try:
+    zstd = importlib.import_module("zstandard")
+except ModuleNotFoundError:
+    zstd = importlib.import_module("zstd")
+
+this_path = os.path.dirname(os.path.abspath(__file__))
+LOGFILE = this_path + "/re-api.log"
+#theReApiUrl = "http://readsb.ami/re-api"
+#theReApiUrl = "http://planes.ami/re-api"
+theReApiUrl = "https://globe.airplanes.live/re-api"
+#theReApiUrl = "https://re-api.adsb.lol/"
+
+logger = None
+
+SAFE_UPSTREAM_HEADERS = {
+    'content-type',
+    'content-encoding',
+    'cache-control',
+    'etag',
+    'last-modified',
+    'content-length',
+    'expires',
+    'vary'
+}
+
+def setup_logging():
+    global logger
+
+    logger = logging.getLogger("re-api")
+    logger.setLevel(logging.INFO)
+    logger.handlers.clear()
+    logger.propagate = False
+
+    handler = RotatingFileHandler(LOGFILE, maxBytes=5 * 1024 * 1024, backupCount=3)
+    handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(handler)
+
+def create_requests_session():
+    session = requests.Session()
+    retries = Retry(
+        total=2,
+        connect=2,
+        read=2,
+        backoff_factor=0.2,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=frozenset(["GET"]),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retries, pool_connections=20, pool_maxsize=50)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
+
+REQUEST_SESSION = create_requests_session()
+
+def unpack(fmt,buff):
+	vals = struct.iter_unpack(fmt, buff)
+	r = []
+	for val in vals:
+		r.append(val[0])
+
+	return r
+
+def getHex(i):
+	h = hex(i).split('x')[-1]
+	return h
+
+def genStr(data,start,end):
+	s = ""
+	i = start
+	while data[i] and i < end:
+		if 32 < data[i] < 127:
+			s += chr(data[i])
+		i += 1
+	s = s.strip();
+	return s
+
+def getType(t):
+	if t == 0:
+		return 'adsb_icao'
+	if t == 1:
+		return 'adsb_icao_nt'
+	if t == 2:
+		return 'adsr_icao'
+	if t == 3:
+		return 'tisb_icao'
+	if t == 4:
+		return 'adsc'
+	if t == 5:
+		return 'mlat'
+	if t == 6:
+		return 'other'
+	if t == 7:
+		return 'mode_s'
+	if t == 8:
+		return 'adsb_other'
+	if t == 9:
+		return 'adsr_other'
+	if t ==10:
+		return 'tisb_trackfile'
+	if t ==11:
+		return 'tisb_other'
+	if t ==12:
+		return 'mode_ac'
+	return 'unknown'
+
+def binCraftReader(data):
+    data = zstd.decompress(data)
+
+    r = {}
+
+	#Vals
+    vals = unpack('I', data)
+    r['now'] = vals[0] / 1000 + vals[1] * 4294967.296
+    r['global_ac_count_withpos'] = vals[3]
+    r['globeIndex'] = vals[4]
+    r['stride'] = vals[2]
+    stride = vals[2]
+    del vals
+
+	#Bounds
+    limits = unpack('h', data[20:])
+    r['south'] = limits[0]
+    r['west'] = limits[1]
+    r['north'] = limits[2]
+    r['east'] = limits[3]
+    del limits
+
+    #Aircraft
+    r['aircraft'] = []
+    acount = 0
+    for off in range(stride, len(data), stride):
+        ac = {}
+        s32 = unpack('i', data[off:]);
+        u16 = unpack('H', data[off:]);
+        s16 = unpack('h', data[off:]);
+        u8  = unpack('B', data[off:]);
+
+        ac['hex'] = getHex(s32[0] & ((1<<24) - 1)).zfill(6)
+        ac['seen_pos'] = u16[2] / 10;
+        ac['seen'] = u16[3] / 10;
+
+        ac['lon'] = s32[2] / 1e6;
+        ac['lat'] = s32[3] / 1e6;
+
+        ac['alt_baro'] = s16[8] * 25;
+        ac['alt_geom'] = s16[9] * 25;
+        ac['baro_rate'] = s16[10] * 8;
+        ac['geom_rate'] = s16[11] * 8;
+
+        ac['nav_altitude_mcp'] = u16[12] * 4;
+        ac['nav_altitude_fms'] = u16[13] * 4;
+        ac['nav_qnh'] = s16[14] / 10;
+        ac['nav_heading'] = s16[15] / 90;
+
+        ac['squawk'] = getHex(u16[16]).zfill(4)
+        ac['gs'] = s16[17] / 10;
+        ac['mach'] = s16[18] / 1000;
+        ac['roll'] = s16[19] / 100;
+
+        ac['track'] = s16[20] / 90;
+        ac['track_rate'] = s16[21] / 100;
+        ac['mag_heading'] = s16[22] / 90;
+        ac['true_heading'] = s16[23] / 90;
+
+        ac['wd'] = s16[24];
+        ac['ws'] = s16[25];
+        ac['oat'] = s16[26];
+        ac['tat'] = s16[27];
+
+        ac['tas'] = u16[28];
+        ac['ias'] = u16[19];
+        ac['rc'] = u16[30];
+        ac['messages'] = u16[31];
+
+        ac['category'] = getHex(u8[64]).upper() if u8[64] else None
+        ac['nic'] = u8[65];
+
+        ac['emergency'] = u8[67] & 15;
+        ac['type'] = (u8[67] & 240) >> 4;
+
+        ac['airground'] = u8[68] & 15;
+        ac['nav_altitude_src'] = (u8[68] & 240) >> 4;
+
+        ac['sil_type'] = u8[69] & 15;
+        ac['adsb_version'] = (u8[69] & 240) >> 4;
+
+        ac['adsr_version'] = u8[70] & 15;
+        ac['tisb_version'] = (u8[70] & 240) >> 4;
+
+        ac['nac_p'] = u8[71] & 15;
+        ac['nac_v'] = (u8[71] & 240) >> 4;
+
+        ac['sil'] = u8[72] & 3;
+        ac['gva'] = (u8[72] & 12) >> 2;
+        ac['sda'] = (u8[72] & 48) >> 4;
+        ac['nic_a'] = (u8[72] & 64) >> 6;
+        ac['nic_c'] = (u8[72] & 128) >> 7;
+
+        ac['rssi'] = 10 * math.log10(u8[86]*u8[86]/65025 + 1.125e-5);
+        ac['dbFlags'] = u8[87];
+
+        ac['flight'] = genStr(u8,78,87)
+        ac['t'] = genStr(u8,88,92)
+        ac['r'] = genStr(u8,92,104)
+
+        ac['receiverCount'] = u8[104];
+        ac['nic_baro']      = (u8[73] & 1);
+        ac['alert']        = (u8[73] & 2);
+        ac['spi']           = (u8[73] & 4);
+
+        if ac['airground'] == 1:
+            ac['alt_baro'] = "ground";
+
+        nav_modes = u8[66];
+        ac['nav_modes'] = [];
+        if (nav_modes & 1):
+            ac['nav_modes'].append('autopilot')
+        if (nav_modes & 2):
+            ac['nav_modes'].append('vnav')
+        if (nav_modes & 4):
+            ac['nav_modes'].append('alt_hold')
+        if (nav_modes & 8):
+            ac['nav_modes'].append('approach')
+        if (nav_modes & 16):
+            ac['nav_modes'].append('lnav')
+        if (nav_modes & 32):
+            ac['nav_modes'].append('tcas')
+
+        ac['type'] = getType(ac['type'])
+
+
+        r['aircraft'].append(ac)
+        acount += 1
+        r['resultCount'] = acount
+
+    jsres = json.dumps(r, indent=4)
+    # log(f"Decoded {acount} aircraft, total size {len(jsres)} bytes")
+    # log(jsres)
+    return jsres
+
+
+def timeit(method):
+    def timed(*args, **kw):
+        ts = time.time()
+        result = method(*args, **kw)
+        te = time.time()
+        if 'log_time' in kw:
+            name = kw.get('log_name', method.__name__.upper())
+            kw['log_time'][name] = int((te - ts) * 1000)
+        else:
+            print('%20r:  %2.2f ms' % \
+                  (method.__name__, (te - ts) * 1000))
+        return result
+    return timed
+
+def log(msg):
+    if logger:
+        logger.info(msg)
+    else:
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{timestamp} - {msg}")
+
+def build_upstream_url(path):
+    parsed = urlsplit(path)
+
+    if parsed.scheme or parsed.netloc:
+        raise ValueError("Absolute URLs are not allowed")
+
+    query = parsed.query.strip()
+    if not query:
+        raise ValueError("Missing query string")
+
+    if len(query) > 4096:
+        raise ValueError("Query string too long")
+
+    return f"{theReApiUrl.rstrip('/')}/?{query}"
+
+#@timeit
+def fetch_adsb_data(what):
+    reqHeaders = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+                  'Accept-Encoding': 'gzip, deflate, br, zstd',
+                  'Accept': '*/*',
+                  'Sec-Ch-Ua': '"Google Chrome";v="120", "Not:A-Brand";v="8", "Chromium";v="120"',
+                  'Sec-Ch-Ua-Platform': '"Linux"',
+                  'Accept-Language': 'en-US,en;q=0.9'}
+
+    url = build_upstream_url(what)
+    try:
+        response = REQUEST_SESSION.get(url, timeout = 5, headers = reqHeaders)
+        response.raise_for_status()
+        result = response.content
+        headers = response.headers
+        log(f"get: {url} - {len(result)} bytes")
+        return result, headers
+    except requests.RequestException as e:
+        log(f"Error fetching ADS-B data: {e}")
+        return None, None
+
+
+class ReApiServer(ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+    allow_reuse_address = True
+
+    def __init__(self, server_address, RequestHandlerClass):
+        super().__init__(server_address, RequestHandlerClass)
+
+class ReApiHandler(SimpleHTTPRequestHandler):
+    def log_message(self, format, *args):
+        pass
+
+    def handle(self):
+        try:
+            super().handle()
+        except BrokenPipeError:
+            log("Client disconnected before response was sent.")
+            pass
+
+    def end_headers(self):
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'access-control-allow-origin,content-type')
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
+        return super(ReApiHandler, self).end_headers()
+    
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.end_headers()
+
+    #@timeit
+    def do_GET(self):
+        if (self.path == "/favicon.ico"):
+            self.send_error(404, "Not found")
+            return
+
+        try:
+            data, headers = fetch_adsb_data(self.path)
+        except ValueError as e:
+            self.send_error(400, str(e))
+            return
+
+        if data:
+            self.send_response(200)
+            if ("zstd" in self.path):
+                # binCraftReader(data)
+                for key, value in headers.items():
+                    if key.lower() in SAFE_UPSTREAM_HEADERS:
+                        self.send_header(key, value)
+            else:
+                self.send_header('Content-Type', headers.get('Content-Type', 'application/json'))
+                self.send_header('Content-Length', str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+        else:
+            self.send_error(502, "Error fetching ADS-B data")
+
+def run_server(port = 8080):
+    server = ReApiServer(("0.0.0.0", port), ReApiHandler)
+    server.serve_forever()
+
+def new_logfile():
+    try:
+        os.remove(LOGFILE)
+    except:
+        pass
+
+def daemonize():
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+    os.setsid()
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+    # Redirect stdin/stdout/stderr to LOGFILE
+    sys.stdout.flush()
+    sys.stderr.flush()
+    with open("/dev/null", "rb", 0) as f:
+        os.dup2(f.fileno(), sys.stdin.fileno())
+    with open(LOGFILE, "ab", 0) as f:
+        os.dup2(f.fileno(), sys.stdout.fileno())
+        os.dup2(f.fileno(), sys.stderr.fileno())
+
+def running_under_systemd():
+    # Explicit flag from unit file keeps behavior deterministic.
+    return os.environ.get("SYSTEMD_SERVICE") == "1"
+
+if __name__ == "__main__":
+    setproctitle.setproctitle("re-api")
+    if not running_under_systemd():
+        new_logfile()
+        daemonize()
+    setup_logging()
+    log("Starting re-api server.")
+    log("Listening on port 8081, awaiting requests.")
+    run_server(8081)

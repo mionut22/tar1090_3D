@@ -1,0 +1,1 @@
+{"version":3,"file":"LazyLoader.d.ts","sourceRoot":"","sources":["../../../../src/olcs/contrib/LazyLoader.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,OAAO,UAAU;IAC7B,OAAO,CAAC,OAAO,CAA4B;IAC3C,OAAO,CAAC,IAAI,CAAS;IAErB;;;OAGG;gBACS,GAAG,EAAE,MAAM;IAIvB;;;OAGG;IACH,IAAI,IAAI,OAAO,CAAC,IAAI,CAAC;CAatB"}

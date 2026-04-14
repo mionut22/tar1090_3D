@@ -1,0 +1,277 @@
+#!/usr/bin/env python3
+import os
+import sys
+import json
+import csv
+import logging
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+from urllib.parse import urlparse, parse_qs
+from pathlib import Path
+from datetime import datetime
+from functools import lru_cache
+from math import asin, cos, radians, sin, sqrt
+from socketserver import ThreadingMixIn
+from logging.handlers import RotatingFileHandler
+import setproctitle
+
+route_cache = {}
+noroute = {}
+max_route_cache_entries = 500
+
+this_path = os.path.dirname(os.path.abspath(__file__))
+
+LOGFILE = this_path + "/route_server.log"
+logger = None
+
+
+def setup_logging():
+    global logger
+
+    logger = logging.getLogger("route_server")
+    logger.setLevel(logging.INFO)
+    logger.handlers.clear()
+    logger.propagate = False
+
+    handler = RotatingFileHandler(LOGFILE, maxBytes=5 * 1024 * 1024, backupCount=3)
+    handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(handler)
+
+
+def log(message):
+    if logger:
+        logger.info(message)
+    else:
+        print(message)
+
+class CSVToJson:
+    # This class is used to convert a csv file to a json file
+    # The csv file must have a header row
+    # The output will be a list of dictionaries
+    def __init__(self, csv_file, translate_keys=None, dicts_by_key=None):
+        self.csv_file = csv_file
+        self.translate_keys = translate_keys
+        self.dicts = []
+        self.dicts_by_key_filter = dicts_by_key
+        self.dicts_by_key = {}
+
+    def read_csv(self):
+        # Read the csv file and return a list of dictionaries
+        with open(self.csv_file, "r", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                self.dicts.append(row)
+                if self.dicts_by_key_filter:
+                    self.dicts_by_key[row[self.dicts_by_key_filter]] = row
+
+EARTH_RADIUS = 6371000  # meters
+
+airlines = {}
+
+def _hav(x: float) -> float:
+    return (1 - cos(x)) / 2
+
+def _hav_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    return _hav(lat2 - lat1) + cos(lat1) * cos(lat2) * _hav(lng2 - lng1)
+
+def _distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """Great circle distance in meters."""
+    return EARTH_RADIUS * 2 * asin(sqrt(_hav_distance(lat1, lng1, lat2, lng2)))
+
+@lru_cache(maxsize=512)
+def plausible(pos_lat: float, pos_lng: float,
+              a_lat: float, a_lng: float,
+              b_lat: float, b_lng: float) -> tuple[bool, float]:
+    """Check if position is within threshold of great circle route A-B."""
+    p_lat, p_lng = radians(pos_lat), radians(pos_lng)
+    a_lat_r, a_lng_r = radians(a_lat), radians(a_lng)
+    b_lat_r, b_lng_r = radians(b_lat), radians(b_lng)
+
+    dist_ab = _distance(a_lat_r, a_lng_r, b_lat_r, b_lng_r) / 1852  # nautical miles
+    threshold = max(50 * 1852, 0.20 * dist_ab * 1852)  # 50nm or 20%
+
+    # Simplified check: point close to either endpoint or cross-track distance small
+    hav_tolerance = _hav(threshold / EARTH_RADIUS)
+    hav_dist_pa = _hav_distance(a_lat_r, a_lng_r, p_lat, p_lng)
+    if hav_dist_pa <= hav_tolerance:
+        return True, dist_ab
+
+    # Cross-track approximation
+    sin_dist_pa = 2 * sqrt(hav_dist_pa * (1 - hav_dist_pa))
+    hav_cross_track = hav_dist_pa * (1 - cos(b_lng_r - a_lng_r)) / 2
+    if hav_cross_track <= hav_tolerance:
+        return True, dist_ab
+
+    return False, dist_ab
+
+def calc_plausible(route, lat: float, lng: float) -> bool:
+    for i in range(len(route.get("_airports", [])) - 1):
+        a, b = route["_airports"][i], route["_airports"][i + 1]
+        if plausible(round(lat, 3), round(lng, 3), round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3)):
+            return True
+    return False
+
+class RouteServer(ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+    allow_reuse_address = True
+
+
+class RouteHandler(SimpleHTTPRequestHandler):
+
+    def log_message(self, format, *args):
+        # Override to log to file instead of stderr
+        pass
+
+    def end_headers(self):
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'access-control-allow-origin,content-type')
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
+        return super(RouteHandler, self).end_headers()
+
+    def searchAirline(self, callsign):
+        code = callsign[:2]
+        if code in airlines:
+            return airlines[code]
+        code = callsign[:3]
+        if code in airlines:
+            return airlines[code]
+        return ""
+
+    def searchRoute(self, callsign, lat, lon):
+        response = {}
+        if callsign in route_cache:
+            log(f"Cache hit for {callsign}")
+            response = json.loads(route_cache[callsign])
+            return response["plausible"], route_cache[callsign], str(response["_airport_codes_iata"]), response["airline"]
+        
+        log(f"Cache miss for {callsign}, checking disk")
+        if (os.path.isfile(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json")):
+            with open(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json") as f:
+                response = json.load(f)
+            response["plausible"] = calc_plausible(response, float(lat), float(lon))
+        else:
+            with open(this_path + "/noroute.json") as f:
+                response = json.load(f)
+            response["callsign"] = callsign
+            response["plausible"] = True
+
+        response["airline"] = self.searchAirline(callsign)
+        data = json.dumps(response)
+        route_cache[callsign] = data
+        return True, data, str(response["_airport_codes_iata"]), response["airline"]
+
+    def do_GET(self):
+        self.send_error(405, "GET method not implemented, use POST instead.")
+
+    def do_POST(self):
+        parsed = urlparse(self.path)
+        if parsed.path == "/routes":
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+        
+            received = json.loads(post_data.decode('utf-8'))
+
+            data = str("")
+
+            for plane in received["planes"]:
+                callsign = plane["callsign"]
+                lat      = plane["lat"]
+                lon      = plane["lng"]
+                now = datetime.now()
+                date_time = now.strftime("%H:%M:%S")
+                ok, route, rtr, al = self.searchRoute(callsign, lat, lon)
+                if (ok == True):
+                    r = rtr.split("-")
+                    log("%8s: %-15s - %-10s: %s -> %s - %s" % (date_time, self.address_string(), callsign, r[0], r[len(r)-1], al))
+                    data += str(route) + ",\n"
+                else:
+                    log("%8s: %-15s - %-10s: No route - %s" % (date_time, self.address_string(), callsign, al))
+
+            if len(data) == 0:
+                self.send_error(204, "No flights found! (POST)")
+                return
+
+            data = data[:-2]
+            data = str("[") + data + str("]")
+
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data.encode("utf-8").strip())            
+        
+        else:
+            self.send_error(400, "Invalid call (POST)")
+
+        if (len(route_cache) > max_route_cache_entries):
+            while len(route_cache) > max_route_cache_entries:
+                del route_cache[list(route_cache.keys())[0]]
+        sys.stdout.flush()
+        sys.stderr.flush()
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.end_headers()
+
+def daemonize():
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+
+    os.setsid()
+
+    pid = os.fork()
+    if pid > 0:
+        sys.exit(0)
+
+    # Redirect stdin/stdout/stderr to LOGFILE
+    sys.stdout.flush()
+    sys.stderr.flush()
+    with open("/dev/null", "rb", 0) as f:
+        os.dup2(f.fileno(), sys.stdin.fileno())
+    with open(LOGFILE, "ab", 0) as f:
+        os.dup2(f.fileno(), sys.stdout.fileno())
+        os.dup2(f.fileno(), sys.stderr.fileno())
+
+def load_airlines():
+    Airlines = CSVToJson(os.path.join(this_path, "airlines.csv"), dicts_by_key="Code")
+    Airlines.read_csv()
+    print("Loading airlines ... ", end = "")
+    for al in Airlines.dicts:
+        code = al["Code"]
+        name = al["Name"]
+        airlines[code] = name
+    Airlines = None
+    print("Airlines count: ", len(airlines))
+
+def run_server(port=8080):
+    server = RouteServer(("0.0.0.0", port), RouteHandler)
+    server.serve_forever()
+
+def new_logfile():
+    try:
+        os.remove(LOGFILE)
+    except:
+        pass
+
+def count_routes():
+    log("Counting routes ...")
+    rcount = sum(1 for _, _, files in os.walk(this_path + "/routes") for f in files)
+    log(f"Route count: {rcount}")
+
+
+def running_under_systemd():
+    return os.environ.get("SYSTEMD_SERVICE") == "1"
+
+if __name__ == "__main__":
+    setproctitle.setproctitle("route_server")
+    if not running_under_systemd():
+        new_logfile()
+        daemonize()
+
+    setup_logging()
+    log("Starting route server.")
+    count_routes()
+    load_airlines()
+    log("Listening on port 8080, awaiting requests.")
+    run_server(8080)
