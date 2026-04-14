@@ -3,3 +3,5 @@ html/js/Cesium-1.140.zip
 html/js/Cesium.full/
 html/js/Cesium/
 routes/routes/
+html/3dmodels/*
+!html/3dmodels/Cesium_Air.glb
