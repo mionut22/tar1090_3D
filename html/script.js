@@ -6703,13 +6703,13 @@ function refreshInt() {
     }
 
     if (document.visibilityState === 'hidden') { refresh *= 4; } // in case visibility change events don't work, reduce refresh rate if visibilityState works
-    /*
+
     const isVisible = document.getElementById('iframeModal').checkVisibility();
     if (isVisible) {
         refresh = 500;
     }
     // console.log(refresh);
-    */
+
     return refresh;
 }
 

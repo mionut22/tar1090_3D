@@ -7,9 +7,9 @@ Wants=network-online.target
 Type=simple
 User=ionut
 Group=ionut
-WorkingDirectory=/usr/local/share/tar1090/routes
+WorkingDirectory=/home/ionut/src/3d_tar1090/routes
 Environment=SYSTEMD_SERVICE=1
-ExecStart=/usr/local/share/tar1090/routes/route_server
+ExecStart=/home/ionut/src/3d_tar1090/routes/route_server
 Restart=on-failure
 RestartSec=2
 KillMode=control-group
@@ -17,7 +17,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=full
 ProtectHome=false
-ReadWritePaths=/usr/local/share/tar1090/routes
+ReadWritePaths=/home/ionut/src/3d_tar1090/routes
 
 [Install]
 WantedBy=multi-user.target

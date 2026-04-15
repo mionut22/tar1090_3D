@@ -13,10 +13,11 @@ from math import asin, cos, radians, sin, sqrt
 from socketserver import ThreadingMixIn
 from logging.handlers import RotatingFileHandler
 import setproctitle
+from plausible import assess_route_plausibility
 
 route_cache = {}
 noroute = {}
-max_route_cache_entries = 500
+max_route_cache_entries = 10
 
 this_path = os.path.dirname(os.path.abspath(__file__))
 
