@@ -14,9 +14,19 @@ For advanced users, this fork offers a powerful base for building a highly custo
 
 Clone this repo, study the code, change the maps with you providers and have fun with it! The code is tailored for my local develpoment, so you have to massive edit the config files (config.js, layers.js, etc.). Good knowledge about readsb (<https://github.com/wiedehopf/readsb>) is also required. But finally you'll have an website that displays live aircrafts with a 3D View.
 
-I will answer to issues when I have time and if I consider the question asked to be worthy answering. No feature requests will be answered; if you want some new feature, write it yourself, but consider sharing it with the community.
+I will answer to issues when I have time and if I consider the question asked to be worthy answering. No feature requests will be answered; if you want some new feature, write them yourself, but consider sharing it with the community.
 
 Comercial use is permitted only if the original source is specified.
+
+## Install
+
+Starting point:
+
+- Replace the original html directory in the tar1090 installation (backup first!) with the html from this repo;
+- Edit layers.js and delete or add maps;
+- Rename 3d.config.local.example.js to 3d.config.local.js and add your Cesium Ion key;
+- Edit in config.js routeApiUrl and put your own value;
+- Edit script.js and remove lines 622 and 645 and uncomment the next lines;
 
 ## Credits
 
