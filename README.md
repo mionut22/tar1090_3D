@@ -41,7 +41,8 @@ Comercial use is permitted only if the original source is specified.
 - **[OpenStreetMap](https://www.openstreetmap.org/copyright)** contributors — ODbL
 - **[Esri](https://www.esri.com)** — satellite imagery
 - **[Virtual Radar](https://github.com/vradarserver/standing-data)** — flight route data
-- **[BelugaProject](https://github.com/amnesica/BelugaProject)** - 3dModels and inspiration
+- **[BelugaProject](https://github.com/amnesica/BelugaProject)** - 3d Models and inspiration
+- **[FlightAirMap-3dmodels](https://github.com/Ysurac/FlightAirMap-3dmodels)** - 3d Models
 
 ### Utility libraries
 
