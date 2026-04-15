@@ -19,8 +19,3 @@ GitHub: <https://github.com/consbio/mbgl-render>
 Maps rendered by this setup are created with OpenFreeMap.
 
 Reference: <https://openfreemap.org/>
-
-## Notes
-
-- Keep generated tile outputs out of git unless explicitly needed.
-- Version style/config files and service definitions.
