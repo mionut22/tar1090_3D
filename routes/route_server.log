@@ -1,1731 +1,712 @@
-2026-04-15 17:55:59,625 - INFO - Starting route server.
-2026-04-15 17:55:59,625 - INFO - Counting routes ...
-2026-04-15 17:55:59,825 - INFO - Route count: 609297
+2026-04-16 01:14:31,094 - INFO - Starting route server.
+2026-04-16 01:14:31,094 - INFO - Counting routes ...
+2026-04-16 01:14:31,323 - INFO - Route count: 609297
 Loading airlines ... Airlines count:  5954
-2026-04-15 17:55:59,837 - INFO - Listening on port 8080, awaiting requests.
+2026-04-16 01:14:31,337 - INFO - Listening on port 8080, awaiting requests.
+{
+  "plausible": true,
+  "overallScore": 92,
+  "headingScore": 82,
+  "progressScore": 100,
+  "deviationScore": 97,
+  "metrics": {
+    "aircraftHeading": 95.3,
+    "bearingToDestination": 79,
+    "bearingPlannedRoute": 90,
+    "headingErrorFromRoute": 5,
+    "headingErrorToCurrent": 17,
+    "distanceRemaining": 13,
+    "distanceTotal": 697,
+    "progressPercent": 98
+  }
+}
+2026-04-16 01:17:40,567 - INFO - 01:17:40: 10.100.100.163  - WMT307    : BGY -> BBU - Wizz Air Malta
+{
+  "plausible": true,
+  "overallScore": 96,
+  "headingScore": 95,
+  "progressScore": 100,
+  "deviationScore": 90,
+  "metrics": {
+    "aircraftHeading": 98.62222222222222,
+    "bearingToDestination": 104,
+    "bearingPlannedRoute": 81,
+    "headingErrorFromRoute": 17,
+    "headingErrorToCurrent": -5,
+    "distanceRemaining": 51,
+    "distanceTotal": 1139,
+    "progressPercent": 95
+  }
+}
+2026-04-16 01:17:41,582 - INFO - 01:17:41: 10.100.100.163  - WMT9NT    : BOD -> OTP - Wizz Air Malta
+{
+  "plausible": false,
+  "overallScore": 44,
+  "headingScore": 0,
+  "progressScore": 100,
+  "deviationScore": 19,
+  "metrics": {
+    "aircraftHeading": 116.91111111111111,
+    "bearingToDestination": 300,
+    "bearingPlannedRoute": 331,
+    "headingErrorFromRoute": 146,
+    "headingErrorToCurrent": 177,
+    "distanceRemaining": 730,
+    "distanceTotal": 5059,
+    "progressPercent": 86
+  }
+}
+2026-04-16 01:17:41,582 - INFO - 01:17:41: 10.100.100.163  - GEC8384   : FRA -> NRT - Lufthansa Cargo
+{
+  "plausible": true,
+  "overallScore": 79,
+  "headingScore": 80,
+  "progressScore": 73,
+  "deviationScore": 88,
+  "metrics": {
+    "aircraftHeading": 120.73333333333333,
+    "bearingToDestination": 103,
+    "bearingPlannedRoute": 98,
+    "headingErrorFromRoute": 22,
+    "headingErrorToCurrent": 18,
+    "distanceRemaining": 905,
+    "distanceTotal": 1773,
+    "progressPercent": 49
+  }
+}
+2026-04-16 01:17:41,582 - INFO - 01:17:41: 10.100.100.163  - FIE778    : AMS -> EVN - FlyOne Armenia
+{
+  "plausible": true,
+  "overallScore": 97,
+  "headingScore": 96,
+  "progressScore": 100,
+  "deviationScore": 92,
+  "metrics": {
+    "aircraftHeading": 101.06666666666666,
+    "bearingToDestination": 105,
+    "bearingPlannedRoute": 86,
+    "headingErrorFromRoute": 15,
+    "headingErrorToCurrent": -4,
+    "distanceRemaining": 41,
+    "distanceTotal": 784,
+    "progressPercent": 95
+  }
+}
+2026-04-16 01:17:41,583 - INFO - 01:17:41: 10.100.100.163  - WMT2EE    : TRN -> OTP - Wizz Air Malta
+2026-04-16 01:17:41,583 - INFO - 01:17:41: 10.100.100.163  - ABB854    : xxx -> xxx - Air Belgium
+{
+  "plausible": true,
+  "overallScore": 56,
+  "headingScore": 20,
+  "progressScore": 83,
+  "deviationScore": 75,
+  "metrics": {
+    "aircraftHeading": 319.94444444444446,
+    "bearingToDestination": 32,
+    "bearingPlannedRoute": 4,
+    "headingErrorFromRoute": -44,
+    "headingErrorToCurrent": -72,
+    "distanceRemaining": 761,
+    "distanceTotal": 1713,
+    "progressPercent": 56
+  }
+}
+2026-04-16 01:17:41,583 - INFO - 01:17:41: 10.100.100.163  - NMA602    : HRG -> VKO - Nesma Airlines
+{
+  "plausible": true,
+  "overallScore": 93,
+  "headingScore": 83,
+  "progressScore": 100,
+  "deviationScore": 98,
+  "metrics": {
+    "aircraftHeading": 116.75555555555556,
+    "bearingToDestination": 101,
+    "bearingPlannedRoute": 120,
+    "headingErrorFromRoute": -3,
+    "headingErrorToCurrent": 15,
+    "distanceRemaining": 24,
+    "distanceTotal": 584,
+    "progressPercent": 96
+  }
+}
+2026-04-16 01:17:41,584 - INFO - 01:17:41: 10.100.100.163  - WMT2535   : PRG -> OTP - Wizz Air Malta
+{
+  "plausible": true,
+  "overallScore": 95,
+  "headingScore": 94,
+  "progressScore": 100,
+  "deviationScore": 85,
+  "metrics": {
+    "aircraftHeading": 83.62222222222222,
+    "bearingToDestination": 89,
+    "bearingPlannedRoute": 110,
+    "headingErrorFromRoute": -27,
+    "headingErrorToCurrent": -6,
+    "distanceRemaining": 4,
+    "distanceTotal": 963,
+    "progressPercent": 100
+  }
+}
+2026-04-16 01:17:41,584 - INFO - 01:17:41: 10.100.100.163  - KLM1377   : AMS -> OTP - KLM
+{
+  "plausible": true,
+  "overallScore": 67,
+  "headingScore": 64,
+  "progressScore": 100,
+  "deviationScore": 9,
+  "metrics": {
+    "aircraftHeading": 264.4,
+    "bearingToDestination": 232,
+    "bearingPlannedRoute": 101,
+    "headingErrorFromRoute": 164,
+    "headingErrorToCurrent": 32,
+    "distanceRemaining": 0,
+    "distanceTotal": 1137,
+    "progressPercent": 100
+  }
+}
+2026-04-16 01:17:41,585 - INFO - 01:17:41: 10.100.100.163  - BAW878    : LHR -> OTP - British Airways
+{
+  "plausible": false,
+  "overallScore": 42,
+  "headingScore": 0,
+  "progressScore": 100,
+  "deviationScore": 9,
+  "metrics": {
+    "aircraftHeading": 130.9111111111111,
+    "bearingToDestination": 335,
+    "bearingPlannedRoute": 327,
+    "headingErrorFromRoute": 164,
+    "headingErrorToCurrent": 156,
+    "distanceRemaining": 432,
+    "distanceTotal": 4651,
+    "progressPercent": 91
+  }
+}
+2026-04-16 01:17:41,585 - INFO - 01:17:41: 10.100.100.163  - LOT79     : WAW -> NRT - LOT Polish Airlines
+{
+  "plausible": false,
+  "overallScore": 42,
+  "headingScore": 0,
+  "progressScore": 100,
+  "deviationScore": 10,
+  "metrics": {
+    "aircraftHeading": 123,
+    "bearingToDestination": 282,
+    "bearingPlannedRoute": 321,
+    "headingErrorFromRoute": 162,
+    "headingErrorToCurrent": -159,
+    "distanceRemaining": 677,
+    "distanceTotal": 4793,
+    "progressPercent": 86
+  }
+}
+2026-04-16 01:17:41,585 - INFO - 01:17:41: 10.100.100.163  - KAL928    : MXP -> ICN - Korean Air
+{
+  "plausible": true,
+  "overallScore": 96,
+  "headingScore": 92,
+  "progressScore": 100,
+  "deviationScore": 98,
+  "metrics": {
+    "aircraftHeading": 157.73333333333332,
+    "bearingToDestination": 151,
+    "bearingPlannedRoute": 154,
+    "headingErrorFromRoute": 4,
+    "headingErrorToCurrent": 7,
+    "distanceRemaining": 94,
+    "distanceTotal": 500,
+    "progressPercent": 81
+  }
+}
+2026-04-16 01:17:41,586 - INFO - 01:17:41: 10.100.100.163  - LOT6RF    : WAW -> OTP - LOT Polish Airlines
+2026-04-16 01:17:41,586 - INFO - 01:17:41: 10.100.100.163  - TKJ8MY    : xxx -> xxx - AJet
+{
+  "plausible": true,
+  "overallScore": 54,
+  "headingScore": 75,
+  "progressScore": 22,
+  "deviationScore": 78,
+  "metrics": {
+    "aircraftHeading": 117.88888888888889,
+    "bearingToDestination": 95,
+    "bearingPlannedRoute": 78,
+    "headingErrorFromRoute": 40,
+    "headingErrorToCurrent": 23,
+    "distanceRemaining": 5003,
+    "distanceTotal": 5877,
+    "progressPercent": 15
+  }
+}
+2026-04-16 01:17:45,785 - INFO - 01:17:45: 10.100.100.163  - QFA2      : LHR -> SYD - Qantas
+{
+  "plausible": false,
+  "overallScore": 43,
+  "headingScore": 0,
+  "progressScore": 100,
+  "deviationScore": 17,
+  "metrics": {
+    "aircraftHeading": 108.26666666666667,
+    "bearingToDestination": 285,
+    "bearingPlannedRoute": 319,
+    "headingErrorFromRoute": 149,
+    "headingErrorToCurrent": -177,
+    "distanceRemaining": 584,
+    "distanceTotal": 5011,
+    "progressPercent": 88
+  }
+}
+2026-04-16 01:17:45,785 - INFO - 01:17:45: 10.100.100.163  - SWR138    : ZRH -> HKG - Swiss
+2026-04-16 01:17:45,785 - INFO - 01:17:45: 10.100.100.163  - PGT56GL   : xxx -> xxx - Pegasus Airlines
+{
+  "plausible": true,
+  "overallScore": 88,
+  "headingScore": 99,
+  "progressScore": 72,
+  "deviationScore": 98,
+  "metrics": {
+    "aircraftHeading": 348.8222222222222,
+    "bearingToDestination": 349,
+    "bearingPlannedRoute": 352,
+    "headingErrorFromRoute": -3,
+    "headingErrorToCurrent": -1,
+    "distanceRemaining": 460,
+    "distanceTotal": 882,
+    "progressPercent": 48
+  }
+}
+2026-04-16 01:17:45,786 - INFO - 01:17:45: 10.100.100.163  - WZZ18TW   : ATH -> WMI - Wizz Air
+{
+  "plausible": true,
+  "overallScore": 56,
+  "headingScore": 61,
+  "progressScore": 35,
+  "deviationScore": 87,
+  "metrics": {
+    "aircraftHeading": 136.22222222222223,
+    "bearingToDestination": 101,
+    "bearingPlannedRoute": 113,
+    "headingErrorFromRoute": 23,
+    "headingErrorToCurrent": 36,
+    "distanceRemaining": 891,
+    "distanceTotal": 1160,
+    "progressPercent": 23
+  }
+}
+2026-04-16 01:17:45,786 - INFO - 01:17:45: 10.100.100.163  - LOT7CJ    : WAW -> TBS - LOT Polish Airlines
+{
+  "plausible": true,
+  "overallScore": 90,
+  "headingScore": 94,
+  "progressScore": 84,
+  "deviationScore": 95,
+  "metrics": {
+    "aircraftHeading": 308.7888888888889,
+    "bearingToDestination": 303,
+    "bearingPlannedRoute": 318,
+    "headingErrorFromRoute": -9,
+    "headingErrorToCurrent": 5,
+    "distanceRemaining": 504,
+    "distanceTotal": 1142,
+    "progressPercent": 56
+  }
+}
+2026-04-16 01:17:49,932 - INFO - 01:17:49: 10.100.100.163  - SXS3DZ    : AYT -> NUE - SunExpress
+{
+  "plausible": true,
+  "overallScore": 67,
+  "headingScore": 56,
+  "progressScore": 69,
+  "deviationScore": 86,
+  "metrics": {
+    "aircraftHeading": 326.72222222222223,
+    "bearingToDestination": 6,
+    "bearingPlannedRoute": 352,
+    "headingErrorFromRoute": -25,
+    "headingErrorToCurrent": -39,
+    "distanceRemaining": 738,
+    "distanceTotal": 1371,
+    "progressPercent": 46
+  }
+}
+2026-04-16 01:17:49,933 - INFO - 01:17:49: 10.100.100.163  - SXS8SD    : AYT -> TLL - SunExpress
+{
+  "plausible": true,
+  "overallScore": 69,
+  "headingScore": 52,
+  "progressScore": 79,
+  "deviationScore": 83,
+  "metrics": {
+    "aircraftHeading": 318.6111111111111,
+    "bearingToDestination": 2,
+    "bearingPlannedRoute": 349,
+    "headingErrorFromRoute": -31,
+    "headingErrorToCurrent": -44,
+    "distanceRemaining": 587,
+    "distanceTotal": 1233,
+    "progressPercent": 52
+  }
+}
+2026-04-16 01:17:49,933 - INFO - 01:17:49: 10.100.100.163  - FHY727    : AYT -> RIX - Freebird Airlines
+{
+  "plausible": true,
+  "overallScore": 67,
+  "headingScore": 31,
+  "progressScore": 100,
+  "deviationScore": 76,
+  "metrics": {
+    "aircraftHeading": 106.64444444444445,
+    "bearingToDestination": 169,
+    "bearingPlannedRoute": 63,
+    "headingErrorFromRoute": 43,
+    "headingErrorToCurrent": -63,
+    "distanceRemaining": 12,
+    "distanceTotal": 985,
+    "progressPercent": 99
+  }
+}
+2026-04-16 01:17:49,933 - INFO - 01:17:49: 10.100.100.163  - WMT6UU    : BCN -> CLJ - Wizz Air Malta
+WMT761 plausible in reverse leg
+{
+  "plausible": true,
+  "overallScore": 55,
+  "headingScore": 90,
+  "progressScore": 0,
+  "deviationScore": 95,
+  "metrics": {
+    "aircraftHeading": 253.12222222222223,
+    "bearingToDestination": 262,
+    "bearingPlannedRoute": 262,
+    "headingErrorFromRoute": -9,
+    "headingErrorToCurrent": -9,
+    "distanceRemaining": 1235,
+    "distanceTotal": 1236,
+    "progressPercent": 0
+  }
+}
+2026-04-16 01:17:49,934 - INFO - 01:17:49: 10.100.100.163  - WMT761    : MAD -> CLJ - Wizz Air Malta
+LOT5HA plausible in reverse leg
+{
+  "plausible": true,
+  "overallScore": 64,
+  "headingScore": 81,
+  "progressScore": 35,
+  "deviationScore": 90,
+  "metrics": {
+    "aircraftHeading": 129.63333333333333,
+    "bearingToDestination": 147,
+    "bearingPlannedRoute": 148,
+    "headingErrorFromRoute": -18,
+    "headingErrorToCurrent": -17,
+    "distanceRemaining": 1039,
+    "distanceTotal": 1354,
+    "progressPercent": 23
+  }
+}
+2026-04-16 01:17:49,934 - INFO - 01:17:49: 10.100.100.163  - LOT5HA    : TLV -> WAW - LOT Polish Airlines
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 53342)
 Traceback (most recent call last):
-  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 278, in <module>
-    run_server(8080)
-    ~~~~~~~~~~^^^^^^
-  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 249, in run_server
-    server = RouteServer(("0.0.0.0", port), RouteHandler)
-  File "/usr/lib/python3.13/socketserver.py", line 457, in __init__
-    self.server_bind()
-    ~~~~~~~~~~~~~~~~^^
-  File "/usr/lib/python3.13/http/server.py", line 136, in server_bind
-    socketserver.TCPServer.server_bind(self)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
-  File "/usr/lib/python3.13/socketserver.py", line 478, in server_bind
-    self.socket.bind(self.server_address)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
-OSError: [Errno 98] Address already in use
-2026-04-15 17:56:18,455 - INFO - Starting route server.
-2026-04-15 17:56:18,455 - INFO - Counting routes ...
-2026-04-15 17:56:18,652 - INFO - Route count: 609297
-2026-04-15 17:56:18,664 - INFO - Listening on port 8080, awaiting requests.
-2026-04-15 17:56:39,733 - INFO - Cache miss for WMT7YA, checking disk
-2026-04-15 17:56:39,733 - INFO - 17:56:39: 10.100.100.163  - WMT7YA    : OTP -> LTN - Wizz Air Malta
-2026-04-15 17:56:39,733 - INFO - Cache miss for DLH729, checking disk
-2026-04-15 17:56:39,734 - INFO - 17:56:39: 10.100.100.163  - DLH729    : PVG -> FRA - Lufthansa
-2026-04-15 17:56:39,734 - INFO - Cache miss for UPS15, checking disk
-2026-04-15 17:56:39,734 - INFO - 17:56:39: 10.100.100.163  - UPS15     : SZX -> CGN - United Parcel Service
-2026-04-15 17:56:39,734 - INFO - Cache miss for THY9BS, checking disk
-2026-04-15 17:56:39,734 - INFO - 17:56:39: 10.100.100.163  - THY9BS    : IST -> VNO - Turkish Airlines
-2026-04-15 17:56:39,734 - INFO - Cache miss for SVI3524, checking disk
-2026-04-15 17:56:39,735 - INFO - 17:56:39: 10.100.100.163  - SVI3524   : xxx -> xxx - Sky Vision Airlines
-2026-04-15 17:56:39,735 - INFO - Cache miss for PGT49PK, checking disk
-2026-04-15 17:56:39,735 - INFO - 17:56:39: 10.100.100.163  - PGT49PK   : SAW -> BER - Pegasus Airlines
-2026-04-15 17:56:39,735 - INFO - Cache miss for KZR938, checking disk
-2026-04-15 17:56:39,735 - INFO - 17:56:39: 10.100.100.163  - KZR938    : FRA -> URA - Air Astana
-2026-04-15 17:56:39,736 - INFO - Cache miss for PGT389, checking disk
-2026-04-15 17:56:39,736 - INFO - 17:56:39: 10.100.100.163  - PGT389    : VKO -> SAW - Pegasus Airlines
-2026-04-15 17:56:39,736 - INFO - Cache miss for THY7FU, checking disk
-2026-04-15 17:56:39,736 - INFO - 17:56:39: 10.100.100.163  - THY7FU    : IST -> WAW - Turkish Airlines
-2026-04-15 17:56:39,736 - INFO - Cache miss for ABB853, checking disk
-2026-04-15 17:56:39,737 - INFO - 17:56:39: 10.100.100.163  - ABB853    : HKG -> LGG - Air Belgium
-2026-04-15 17:56:39,737 - INFO - Cache miss for AFR196, checking disk
-2026-04-15 17:56:39,737 - INFO - 17:56:39: 10.100.100.163  - AFR196    : CDG -> BKK - Air France
-2026-04-15 17:56:39,737 - INFO - Cache miss for TWI556, checking disk
-2026-04-15 17:56:39,737 - INFO - 17:56:39: 10.100.100.163  - TWI556    : xxx -> xxx - Tailwind Airlines
-2026-04-15 17:56:39,737 - INFO - Cache miss for KLM844, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - KLM844    : BKK -> AMS - KLM
-2026-04-15 17:56:39,738 - INFO - Cache miss for KLM896, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - KLM896    : PVG -> AMS - KLM
-2026-04-15 17:56:39,738 - INFO - Cache miss for THY2JE, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - THY2JE    : CPH -> IST - Turkish Airlines
-2026-04-15 17:56:39,738 - INFO - Cache miss for RYR95CH, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - RYR95CH   : OTP -> BER - Ryanair
-2026-04-15 17:56:39,738 - INFO - Cache miss for BOX735, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - BOX735    : HKG -> LEJ - Aerologic
-2026-04-15 17:56:39,738 - INFO - Cache miss for KLM871, checking disk
-2026-04-15 17:56:39,738 - INFO - 17:56:39: 10.100.100.163  - KLM871    : AMS -> DEL - KLM
-2026-04-15 17:56:40,754 - INFO - Cache miss for RYR53YN, checking disk
-2026-04-15 17:56:40,754 - INFO - 17:56:40: 10.100.100.163  - RYR53YN   : CLJ -> CRL - Ryanair
-2026-04-15 17:56:40,754 - INFO - Cache miss for AFR199, checking disk
-2026-04-15 17:56:40,755 - INFO - 17:56:40: 10.100.100.163  - AFR199    : BKK -> CDG - Air France
-2026-04-15 17:56:40,755 - INFO - Cache miss for THY1GJ, checking disk
-2026-04-15 17:56:40,755 - INFO - 17:56:40: 10.100.100.163  - THY1GJ    : IST -> YYZ - Turkish Airlines
-2026-04-15 17:56:40,755 - INFO - Cache miss for AUA69B, checking disk
-2026-04-15 17:56:40,755 - INFO - 17:56:40: 10.100.100.163  - AUA69B    : VIE -> OTP - Austrian Airlines
-2026-04-15 17:56:40,755 - INFO - Cache miss for DLH713, checking disk
-2026-04-15 17:56:40,756 - INFO - 17:56:40: 10.100.100.163  - DLH713    : ICN -> FRA - Lufthansa
-2026-04-15 17:56:40,756 - INFO - Cache miss for VIR208, checking disk
-2026-04-15 17:56:40,756 - INFO - 17:56:40: 10.100.100.163  - VIR208    : LHR -> ICN - Virgin Atlantic
-2026-04-15 17:56:40,756 - INFO - Cache miss for WMT7003, checking disk
-2026-04-15 17:56:40,756 - INFO - 17:56:40: 10.100.100.163  - WMT7003   : BBU -> HAM - Wizz Air Malta
-2026-04-15 17:56:40,756 - INFO - Cache miss for SXS5YP, checking disk
-2026-04-15 17:56:40,757 - INFO - 17:56:40: 10.100.100.163  - SXS5YP    : AYT -> STN - SunExpress
-2026-04-15 17:56:40,757 - INFO - Cache miss for MSC2961, checking disk
-2026-04-15 17:56:40,757 - INFO - 17:56:40: 10.100.100.163  - MSC2961   : BER -> HRG - Air Cairo
-2026-04-15 17:56:40,757 - INFO - Cache miss for WZZ6QU, checking disk
-2026-04-15 17:56:40,757 - INFO - 17:56:40: 10.100.100.163  - WZZ6QU    : DTM -> VAR - Wizz Air
-2026-04-15 17:56:40,757 - INFO - Cache miss for GEL1903, checking disk
-2026-04-15 17:56:40,758 - INFO - 17:56:40: 10.100.100.163  - GEL1903   : PRG -> TBS - Geo Sky
-2026-04-15 17:56:40,758 - INFO - Cache miss for WUK441, checking disk
-2026-04-15 17:56:40,758 - INFO - 17:56:40: 10.100.100.163  - WUK441    : LGW -> IST - Wizz Air UK
-2026-04-15 17:56:40,758 - INFO - Cache miss for BAW168, checking disk
-2026-04-15 17:56:40,758 - INFO - 17:56:40: 10.100.100.163  - BAW168    : PVG -> LHR - British Airways
-2026-04-15 17:56:40,758 - INFO - Cache miss for EVA62, checking disk
-2026-04-15 17:56:40,758 - INFO - 17:56:40: 10.100.100.163  - EVA62     : VIE -> TPE - EVA Air
-2026-04-15 17:56:40,759 - INFO - Cache miss for THY2TG, checking disk
-2026-04-15 17:56:40,759 - INFO - 17:56:40: 10.100.100.163  - THY2TG    : AMS -> IST - Turkish Airlines
-2026-04-15 17:56:40,759 - INFO - Cache miss for ROT373D, checking disk
-2026-04-15 17:56:40,759 - INFO - 17:56:40: 10.100.100.163  - ROT373D   : OTP -> BRU - Tarom
-2026-04-15 17:56:51,205 - INFO - Cache miss for FIE545, checking disk
-2026-04-15 17:56:51,206 - INFO - 17:56:51: 10.100.100.163  - FIE545    : EVN -> BRU - FlyOne Armenia
-2026-04-15 17:57:22,665 - INFO - Starting route server.
-2026-04-15 17:57:22,665 - INFO - Counting routes ...
-2026-04-15 17:57:22,873 - INFO - Route count: 609297
-2026-04-15 17:57:22,886 - INFO - Listening on port 8080, awaiting requests.
-2026-04-15 17:57:40,483 - INFO - Cache miss for WMT714, checking disk
-2026-04-15 17:57:40,483 - INFO - 17:57:40: 10.100.100.163  - WMT714    : STR -> OTP - Wizz Air Malta
-2026-04-15 17:57:41,501 - INFO - Cache miss for AEE866, checking disk
-2026-04-15 17:57:41,501 - INFO - 17:57:41: 10.100.100.163  - AEE866    : ATH -> PRG - Aegean Airlines
-2026-04-15 17:57:41,501 - INFO - Cache miss for KAL901, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - KAL901    : ICN -> CDG - Korean Air
-2026-04-15 17:57:41,502 - INFO - Cache miss for WZZ287, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - WZZ287    : HAM -> SOF - Wizz Air
-2026-04-15 17:57:41,502 - INFO - Cache miss for AXY503E, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - AXY503E   : xxx -> xxx - Air X Charter
-2026-04-15 17:57:41,502 - INFO - Cache miss for ABD4590, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - ABD4590   : xxx -> xxx - Air Atlanta Icelandic
-2026-04-15 17:57:41,502 - INFO - Cache miss for WMT1DR, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - WMT1DR    : TSR -> BVA - Wizz Air Malta
-2026-04-15 17:57:41,502 - INFO - Cache miss for THY7LY, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - THY7LY    : MAN -> IST - Turkish Airlines
-2026-04-15 17:57:41,502 - INFO - Cache miss for ROT363T, checking disk
-2026-04-15 17:57:41,502 - INFO - 17:57:41: 10.100.100.163  - ROT363T   : OTP -> AMS - Tarom
-2026-04-15 17:57:41,502 - INFO - Cache miss for EXS516, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - EXS516    : PFO -> NCL - Jet2.com
-2026-04-15 17:57:41,503 - INFO - Cache miss for PGT703B, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - PGT703B   : PRG -> SAW - Pegasus Airlines
-2026-04-15 17:57:41,503 - INFO - Cache miss for KLM867, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - KLM867    : AMS -> KIX - KLM
-2026-04-15 17:57:41,503 - INFO - Cache miss for THY10, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - THY10     : LAX -> IST - Turkish Airlines
-2026-04-15 17:57:41,503 - INFO - Cache miss for THY5AR, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - THY5AR    : FRA -> IST - Turkish Airlines
-2026-04-15 17:57:41,503 - INFO - Cache miss for WMT2321, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - WMT2321   : NAP -> CLJ - Wizz Air Malta
-2026-04-15 17:57:41,503 - INFO - Cache miss for FIN9BL, checking disk
-2026-04-15 17:57:41,503 - INFO - 17:57:41: 10.100.100.163  - FIN9BL    : xxx -> xxx - Finnair
-2026-04-15 17:57:41,503 - INFO - Cache miss for UAE9642, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - UAE9642   : xxx -> xxx - Emirates
-2026-04-15 17:57:41,504 - INFO - Cache miss for THY5JH, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - THY5JH    : DUS -> IST - Turkish Airlines
-2026-04-15 17:57:41,504 - INFO - Cache miss for THY3VP, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - THY3VP    : IST -> SZG - Turkish Airlines
-2026-04-15 17:57:41,504 - INFO - Cache miss for THY3TR, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - THY3TR    : BER -> IST - Turkish Airlines
-2026-04-15 17:57:41,504 - INFO - Cache miss for PGT5EW, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - PGT5EW    : COV -> SAW - Pegasus Airlines
-2026-04-15 17:57:41,504 - INFO - Cache miss for HYS275, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - HYS275    : CLJ -> OTP - HiSky Europe
-2026-04-15 17:57:41,504 - INFO - Cache miss for FIN1935, checking disk
-2026-04-15 17:57:41,504 - INFO - 17:57:41: 10.100.100.163  - FIN1935   : HEL -> GZP - Finnair
-2026-04-15 17:57:41,504 - INFO - Cache miss for FIA5216, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - FIA5216   : PMF -> RMO - FlyOne
-2026-04-15 17:57:41,505 - INFO - Cache miss for PGT69TD, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - PGT69TD   : SAW -> MUC - Pegasus Airlines
-2026-04-15 17:57:41,505 - INFO - Cache miss for MSC553, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - MSC553    : HRG -> PRG - Air Cairo
-2026-04-15 17:57:41,505 - INFO - Cache miss for RYR63LL, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - RYR63LL   : SUF -> OTP - Ryanair
-2026-04-15 17:57:41,505 - INFO - Cache miss for NJE503Q, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - NJE503Q   : xxx -> xxx - NetJets Europe
-2026-04-15 17:57:41,505 - INFO - Cache miss for THY7GF, checking disk
-2026-04-15 17:57:41,505 - INFO - 17:57:41: 10.100.100.163  - THY7GF    : HAM -> IST - Turkish Airlines
-2026-04-15 17:57:41,505 - INFO - Cache miss for SXS3KQ, checking disk
-2026-04-15 17:57:41,506 - INFO - 17:57:41: 10.100.100.163  - SXS3KQ    : AYT -> WAW - SunExpress
-2026-04-15 17:57:41,506 - INFO - Cache miss for BCS675, checking disk
-2026-04-15 17:57:41,506 - INFO - 17:57:41: 10.100.100.163  - BCS675    : HKG -> LEJ - European Air Transport
-2026-04-15 17:57:41,506 - INFO - Cache miss for BAW5, checking disk
-2026-04-15 17:57:41,506 - INFO - 17:57:41: 10.100.100.163  - BAW5      : LHR -> HND - British Airways
-2026-04-15 17:57:41,506 - INFO - Cache miss for HVN18, checking disk
-2026-04-15 17:57:41,506 - INFO - 17:57:41: 10.100.100.163  - HVN18     : CDG -> HAN - Vietnam Airlines
-2026-04-15 17:57:47,761 - INFO - Cache miss for AFR267, checking disk
-2026-04-15 17:57:47,761 - INFO - 17:57:47: 10.100.100.163  - AFR267    : ICN -> CDG - Air France
-2026-04-15 17:57:47,761 - INFO - Cache miss for SXS5KE, checking disk
-2026-04-15 17:57:47,762 - INFO - 17:57:47: 10.100.100.163  - SXS5KE    : DUS -> AYT - SunExpress
-2026-04-15 17:57:47,762 - INFO - Cache miss for VKA120, checking disk
-2026-04-15 17:57:47,763 - INFO - 17:57:47: 10.100.100.163  - VKA120    : xxx -> xxx - Vulkan Air
-2026-04-15 17:57:47,763 - INFO - Cache miss for WMT5CS, checking disk
-2026-04-15 17:57:47,763 - INFO - 17:57:47: 10.100.100.163  - WMT5CS    : BGY -> OTP - Wizz Air Malta
-2026-04-15 17:57:47,763 - INFO - Cache miss for THY1UP, checking disk
-2026-04-15 17:57:47,763 - INFO - 17:57:47: 10.100.100.163  - THY1UP    : IST -> MUC - Turkish Airlines
-2026-04-15 17:57:47,764 - INFO - Cache miss for OEDAP, checking disk
-2026-04-15 17:57:47,764 - INFO - 17:57:47: 10.100.100.163  - OEDAP     : xxx -> xxx - Orion Air Charter
-2026-04-15 17:57:47,764 - INFO - Cache miss for THY1896, checking disk
-2026-04-15 17:57:47,764 - INFO - 17:57:47: 10.100.100.163  - THY1896   : MXP -> IST - Turkish Airlines
-2026-04-15 17:57:47,764 - INFO - Cache miss for THY1VT, checking disk
-2026-04-15 17:57:47,765 - INFO - 17:57:47: 10.100.100.163  - THY1VT    : ZRH -> IST - Turkish Airlines
-2026-04-15 17:57:47,765 - INFO - Cache miss for UBT792, checking disk
-2026-04-15 17:57:47,765 - INFO - 17:57:47: 10.100.100.163  - UBT792    : BKK -> LGW - Norse Atlantic Airways UK
-2026-04-15 17:57:47,765 - INFO - Cache miss for WZZ178, checking disk
-2026-04-15 17:57:47,766 - INFO - 17:57:47: 10.100.100.163  - WZZ178    : KRK -> LCA - Wizz Air
-2026-04-15 17:57:47,766 - INFO - Cache miss for WZZ4887, checking disk
-2026-04-15 17:57:47,766 - INFO - 17:57:47: 10.100.100.163  - WZZ4887   : VNO -> LCA - Wizz Air
-2026-04-15 17:57:47,767 - INFO - Cache miss for YRBYR, checking disk
-2026-04-15 17:57:47,767 - INFO - 17:57:47: 10.100.100.163  - YRBYR     : xxx -> xxx - Romanian Civil Aircraft
-2026-04-15 17:57:48,803 - INFO - Cache miss for RYR18WL, checking disk
-2026-04-15 17:57:48,803 - INFO - 17:57:48: 10.100.100.163  - RYR18WL   : WRO -> NAP - Ryanair
-2026-04-15 17:57:48,803 - INFO - Cache miss for TKJ8XR, checking disk
-2026-04-15 17:57:48,804 - INFO - 17:57:48: 10.100.100.163  - TKJ8XR    : SAW -> VIE - AJet
-2026-04-15 17:57:48,804 - INFO - Cache miss for OKRDS, checking disk
-2026-04-15 17:57:48,804 - INFO - 17:57:48: 10.100.100.163  - OKRDS     : xxx -> xxx - 
-2026-04-15 17:57:48,804 - INFO - Cache miss for EJU83ZK, checking disk
-2026-04-15 17:57:48,805 - INFO - 17:57:48: 10.100.100.163  - EJU83ZK   : NCE -> BCN - easyJet Europe
-2026-04-15 17:57:48,805 - INFO - Cache miss for AUA718, checking disk
-2026-04-15 17:57:48,805 - INFO - 17:57:48: 10.100.100.163  - AUA718    : RMO -> VIE - Austrian Airlines
-2026-04-15 17:57:48,805 - INFO - Cache miss for FIN7BK, checking disk
-2026-04-15 17:57:48,805 - INFO - 17:57:48: 10.100.100.163  - FIN7BK    : LJU -> HEL - Finnair
-2026-04-15 17:57:48,806 - INFO - Cache miss for OKHHH, checking disk
-2026-04-15 17:57:48,806 - INFO - 17:57:48: 10.100.100.163  - OKHHH     : xxx -> xxx - 
-2026-04-15 17:57:48,806 - INFO - Cache miss for OMM350, checking disk
-2026-04-15 17:57:48,806 - INFO - 17:57:48: 10.100.100.163  - OMM350    : xxx -> xxx - 
-2026-04-15 17:57:48,806 - INFO - Cache miss for AEE832, checking disk
-2026-04-15 17:57:48,807 - INFO - 17:57:48: 10.100.100.163  - AEE832    : ATH -> FRA - Aegean Airlines
-2026-04-15 17:57:48,807 - INFO - Cache miss for OMKLW, checking disk
-2026-04-15 17:57:48,807 - INFO - 17:57:48: 10.100.100.163  - OMKLW     : xxx -> xxx - 
-2026-04-15 17:57:48,807 - INFO - Cache miss for THY2ZC, checking disk
-2026-04-15 17:57:48,808 - INFO - 17:57:48: 10.100.100.163  - THY2ZC    : VIE -> IST - Turkish Airlines
-2026-04-15 17:57:48,808 - INFO - Cache miss for PGT85XU, checking disk
-2026-04-15 17:57:48,808 - INFO - 17:57:48: 10.100.100.163  - PGT85XU   : HAJ -> SAW - Pegasus Airlines
-2026-04-15 17:57:48,808 - INFO - Cache miss for MSR774, checking disk
-2026-04-15 17:57:48,809 - INFO - 17:57:48: 10.100.100.163  - MSR774    : ZRH -> CAI - Egyptair
-2026-04-15 17:57:48,809 - INFO - Cache miss for AFR647, checking disk
-2026-04-15 17:57:48,809 - INFO - 17:57:48: 10.100.100.163  - AFR647    : RUN -> CDG - Air France
-2026-04-15 17:57:48,810 - INFO - Cache miss for AEE6TH, checking disk
-2026-04-15 17:57:48,810 - INFO - 17:57:48: 10.100.100.163  - AEE6TH    : ATH -> BRU - Aegean Airlines
-2026-04-15 17:57:48,810 - INFO - Cache miss for WMT551, checking disk
-2026-04-15 17:57:48,811 - INFO - 17:57:48: 10.100.100.163  - WMT551    : LTN -> OTP - Wizz Air Malta
-2026-04-15 17:57:48,811 - INFO - Cache miss for TSC215, checking disk
-2026-04-15 17:57:48,812 - INFO - 17:57:48: 10.100.100.163  - TSC215    : IST -> YYZ - Air Transat
-2026-04-15 17:57:48,812 - INFO - Cache miss for GPX4AV, checking disk
-2026-04-15 17:57:48,812 - INFO - 17:57:48: 10.100.100.163  - GPX4AV    : xxx -> xxx - GP Aviation
-2026-04-15 17:57:48,812 - INFO - Cache miss for RYR6053, checking disk
-2026-04-15 17:57:48,813 - INFO - 17:57:48: 10.100.100.163  - RYR6053   : BLQ -> ATH - Ryanair
-2026-04-15 17:57:48,813 - INFO - Cache miss for EXS89CA, checking disk
-2026-04-15 17:57:48,813 - INFO - 17:57:48: 10.100.100.163  - EXS89CA   : REU -> BRS - Jet2.com
-2026-04-15 17:57:48,813 - INFO - Cache miss for WMT1UF, checking disk
-2026-04-15 17:57:48,813 - INFO - 17:57:48: 10.100.100.163  - WMT1UF    : CLJ -> MAD - Wizz Air Malta
-2026-04-15 17:57:48,813 - INFO - Cache miss for AXY866J, checking disk
-2026-04-15 17:57:48,814 - INFO - 17:57:48: 10.100.100.163  - AXY866J   : xxx -> xxx - Air X Charter
-2026-04-15 17:57:48,814 - INFO - Cache miss for MNE301, checking disk
-2026-04-15 17:57:48,814 - INFO - 17:57:48: 10.100.100.163  - MNE301    : FRA -> TGD - Air Montenegro
-2026-04-15 17:57:48,814 - INFO - Cache miss for ENF1, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - ENF1      : xxx -> xxx - ENAV
-2026-04-15 17:57:48,815 - INFO - Cache miss for THY9VA, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - THY9VA    : IST -> HAJ - Turkish Airlines
-2026-04-15 17:57:48,815 - INFO - Cache miss for OEDAY, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - OEDAY     : xxx -> xxx - Orion Air Charter
-2026-04-15 17:57:48,815 - INFO - Cache miss for EXS78H, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - EXS78H    : EMA -> PFO - Jet2.com
-2026-04-15 17:57:48,815 - INFO - Cache miss for HYM402, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - HYM402    : FRA -> RMO - HiSky Airilnes
-2026-04-15 17:57:48,815 - INFO - Cache miss for EZY38TB, checking disk
-2026-04-15 17:57:48,815 - INFO - 17:57:48: 10.100.100.163  - EZY38TB   : MAN -> SSH - easyJet
-2026-04-15 17:57:48,816 - INFO - Cache miss for ENT2621, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - ENT2621   : STR -> PRN - Enter Air
-2026-04-15 17:57:48,816 - INFO - Cache miss for PGT19QR, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - PGT19QR   : SAW -> FRA - Pegasus Airlines
-2026-04-15 17:57:48,816 - INFO - Cache miss for THY7AT, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - THY7AT    : FCO -> IST - Turkish Airlines
-2026-04-15 17:57:48,816 - INFO - Cache miss for RYR2277, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - RYR2277   : BUD -> MLA - Ryanair
-2026-04-15 17:57:48,816 - INFO - Cache miss for OCN2B, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - OCN2B     : RAK -> FRA - Discover Airlines
-2026-04-15 17:57:48,816 - INFO - Cache miss for AIC113, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - AIC113    : DEL -> BHX - Air India
-2026-04-15 17:57:48,816 - INFO - Cache miss for TOM442, checking disk
-2026-04-15 17:57:48,816 - INFO - 17:57:48: 10.100.100.163  - TOM442    : LGW -> DLM - TUI Airways
-2026-04-15 17:57:48,817 - INFO - Cache miss for RYR2428, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - RYR2428   : BGY -> SJJ - Ryanair
-2026-04-15 17:57:48,817 - INFO - Cache miss for CTN369, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - CTN369    : SKP -> ZAG - Croatia Airlines
-2026-04-15 17:57:48,817 - INFO - Cache miss for UPS3, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - UPS3      : HKG -> CGN - United Parcel Service
-2026-04-15 17:57:48,817 - INFO - Cache miss for SXS21R, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - SXS21R    : AYT -> FRA - SunExpress
-2026-04-15 17:57:48,817 - INFO - Cache miss for TRA76U, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - TRA76U    : AMS -> ATH - Transavia
-2026-04-15 17:57:48,817 - INFO - Cache miss for ELY451, checking disk
-2026-04-15 17:57:48,817 - INFO - 17:57:48: 10.100.100.163  - ELY451    : xxx -> xxx - El Al Israel Airlines
-2026-04-15 17:57:48,817 - INFO - Cache miss for LXJ671, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - LXJ671    : xxx -> xxx - Flexjet
-2026-04-15 17:57:48,818 - INFO - Cache miss for CFG9MH, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - CFG9MH    : HER -> HER - Condor
-2026-04-15 17:57:48,818 - INFO - Cache miss for SEH7GA, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - SEH7GA    : LGW -> ATH - Sky Express
-2026-04-15 17:57:48,818 - INFO - Cache miss for THY6ZU, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - THY6ZU    : IST -> NCE - Turkish Airlines
-2026-04-15 17:57:48,818 - INFO - Cache miss for RYR638T, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - RYR638T   : BRI -> WMI - Ryanair
-2026-04-15 17:57:48,818 - INFO - Cache miss for SXS7TC, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - SXS7TC    : xxx -> xxx - SunExpress
-2026-04-15 17:57:48,818 - INFO - Cache miss for UAE71K, checking disk
-2026-04-15 17:57:48,818 - INFO - 17:57:48: 10.100.100.163  - UAE71K    : PRG -> DXB - Emirates
-2026-04-15 17:57:48,818 - INFO - Cache miss for AEE4MI, checking disk
-2026-04-15 17:57:48,819 - INFO - 17:57:48: 10.100.100.163  - AEE4MI    : ATH -> MXP - Aegean Airlines
-2026-04-15 17:57:48,819 - INFO - Cache miss for THY6467, checking disk
-2026-04-15 17:57:48,819 - INFO - 17:57:48: 10.100.100.163  - THY6467   : xxx -> xxx - Turkish Airlines
-2026-04-15 17:57:48,819 - INFO - Cache miss for AEE510, checking disk
-2026-04-15 17:57:48,819 - INFO - 17:57:48: 10.100.100.163  - AEE510    : SKG -> STR - Aegean Airlines
-2026-04-15 17:57:48,819 - INFO - Cache miss for WZZ658, checking disk
-2026-04-15 17:57:48,819 - INFO - 17:57:48: 10.100.100.163  - WZZ658    : BRI -> BUD - Wizz Air
-2026-04-15 17:57:48,819 - INFO - Cache miss for MNE2441, checking disk
-2026-04-15 17:57:48,820 - INFO - 17:57:48: 10.100.100.163  - MNE2441   : xxx -> xxx - Air Montenegro
-2026-04-15 17:57:48,820 - INFO - Cache miss for GPX8KW, checking disk
-2026-04-15 17:57:48,820 - INFO - 17:57:48: 10.100.100.163  - GPX8KW    : PRN -> DUS - GP Aviation
-2026-04-15 17:57:48,820 - INFO - Cache miss for SXS1LN, checking disk
-2026-04-15 17:57:48,820 - INFO - 17:57:48: 10.100.100.163  - SXS1LN    : DUS -> ADB - SunExpress
-2026-04-15 17:57:48,821 - INFO - Cache miss for RYR51DD, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - RYR51DD   : CTA -> KRK - Ryanair
-2026-04-15 17:57:48,821 - INFO - Cache miss for TVF89WM, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - TVF89WM   : xxx -> xxx - Transavia France
-2026-04-15 17:57:48,821 - INFO - Cache miss for SXS7RR, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - SXS7RR    : ZRH -> ADB - SunExpress
-2026-04-15 17:57:48,821 - INFO - Cache miss for KAL509, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - KAL509    : ICN -> AMS - Korean Air
-2026-04-15 17:57:48,821 - INFO - Cache miss for WZZ1014, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - WZZ1014   : BUD -> BGO - Wizz Air
-2026-04-15 17:57:48,821 - INFO - Cache miss for BEL6PR, checking disk
-2026-04-15 17:57:48,821 - INFO - 17:57:48: 10.100.100.163  - BEL6PR    : BRU -> BUD - Brussels Airlines
-2026-04-15 17:57:48,822 - INFO - Cache miss for TOM5BK, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - TOM5BK    : PFO -> LGW - TUI Airways
-2026-04-15 17:57:48,822 - INFO - Cache miss for DLH3CK, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - DLH3CK    : MUC -> ATH - Lufthansa
-2026-04-15 17:57:48,822 - INFO - Cache miss for BEL5FT, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - BEL5FT    : BRU -> HRG - Brussels Airlines
-2026-04-15 17:57:48,822 - INFO - Cache miss for PGT365M, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - PGT365M   : BIO -> SAW - Pegasus Airlines
-2026-04-15 17:57:48,822 - INFO - Cache miss for CFG9AT, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - CFG9AT    : DUS -> FUE - Condor
-2026-04-15 17:57:48,822 - INFO - Cache miss for CPA239, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - CPA239    : HKG -> LHR - Cathay Pacific
-2026-04-15 17:57:48,822 - INFO - Cache miss for SEH9HE, checking disk
-2026-04-15 17:57:48,822 - INFO - 17:57:48: 10.100.100.163  - SEH9HE    : CDG -> ATH - Sky Express
-2026-04-15 17:57:48,823 - INFO - Cache miss for AEE542, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - AEE542    : SKG -> DUS - Aegean Airlines
-2026-04-15 17:57:48,823 - INFO - Cache miss for RYR8DG, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - RYR8DG    : NAP -> BUD - Ryanair
-2026-04-15 17:57:48,823 - INFO - Cache miss for KZR922, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - KZR922    : FRA -> NQZ - Air Astana
-2026-04-15 17:57:48,823 - INFO - Cache miss for WZZ1071, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - WZZ1071   : WRO -> BUD - Wizz Air
-2026-04-15 17:57:48,823 - INFO - Cache miss for SXS8VB, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - SXS8VB    : HAM -> ADB - SunExpress
-2026-04-15 17:57:48,823 - INFO - Cache miss for SXS6NH, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - SXS6NH    : MAN -> AYT - SunExpress
-2026-04-15 17:57:48,823 - INFO - Cache miss for DEDLZ, checking disk
-2026-04-15 17:57:48,823 - INFO - 17:57:48: 10.100.100.163  - DEDLZ     : xxx -> xxx - 
-2026-04-15 17:57:48,823 - INFO - Cache miss for WZZ3GV, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - WZZ3GV    : BEG -> BER - Wizz Air
-2026-04-15 17:57:48,824 - INFO - Cache miss for DLH719, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - DLH719    : ICN -> MUC - Lufthansa
-2026-04-15 17:57:48,824 - INFO - Cache miss for EXS17EW, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - EXS17EW   : HER -> NCL - Jet2.com
-2026-04-15 17:57:48,824 - INFO - Cache miss for TVF3289, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - TVF3289   : IST -> ORY - Transavia France
-2026-04-15 17:57:48,824 - INFO - Cache miss for JFL205, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - JFL205    : xxx -> xxx - Jetfly Airlines
-2026-04-15 17:57:48,824 - INFO - Cache miss for BEL1VC, checking disk
-2026-04-15 17:57:48,824 - INFO - 17:57:48: 10.100.100.163  - BEL1VC    : ATH -> BRU - Brussels Airlines
-2026-04-15 17:57:48,824 - INFO - Cache miss for AFR264, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - AFR264    : CDG -> ICN - Air France
-2026-04-15 17:57:48,825 - INFO - Cache miss for CFG2368, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - CFG2368   : FRA -> HKT - Condor
-2026-04-15 17:57:48,825 - INFO - Cache miss for RYR1HV, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - RYR1HV    : CFU -> WMI - Ryanair
-2026-04-15 17:57:48,825 - INFO - Cache miss for MSR732, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - MSR732    : BER -> CAI - Egyptair
-2026-04-15 17:57:48,825 - INFO - Cache miss for WZZ3NZ, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - WZZ3NZ    : TIA -> KRK - Wizz Air
-2026-04-15 17:57:48,825 - INFO - Cache miss for PGT8BW, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - PGT8BW    : FRA -> SAW - Pegasus Airlines
-2026-04-15 17:57:48,825 - INFO - Cache miss for ASL64T, checking disk
-2026-04-15 17:57:48,825 - INFO - 17:57:48: 10.100.100.163  - ASL64T    : SKG -> BEG - Air Serbia
-2026-04-15 17:57:48,825 - INFO - Cache miss for TWB407, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - TWB407    : ICN -> BCN - T'Way Air
-2026-04-15 17:57:48,826 - INFO - Cache miss for YUICE, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - YUICE     : xxx -> xxx - 
-2026-04-15 17:57:48,826 - INFO - Cache miss for CFG3, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - CFG3      : HRG -> HAM - Condor
-2026-04-15 17:57:48,826 - INFO - Cache miss for PGT462Z, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - PGT462Z   : OSL -> SAW - Pegasus Airlines
-2026-04-15 17:57:48,826 - INFO - Cache miss for BAW875, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - BAW875    : OTP -> LHR - British Airways
-2026-04-15 17:57:48,826 - INFO - Cache miss for THY5ST, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - THY5ST    : IST -> BLQ - Turkish Airlines
-2026-04-15 17:57:48,826 - INFO - Cache miss for EXS71U, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - EXS71U    : AYT -> BRS - Jet2.com
-2026-04-15 17:57:48,826 - INFO - Cache miss for RYR7EE, checking disk
-2026-04-15 17:57:48,826 - INFO - 17:57:48: 10.100.100.163  - RYR7EE    : RHO -> MAN - Ryanair
-2026-04-15 17:57:48,827 - INFO - Cache miss for AZG3941, checking disk
-2026-04-15 17:57:48,827 - INFO - 17:57:48: 10.100.100.163  - AZG3941   : xxx -> xxx - Silk Way West Airlines
-2026-04-15 17:57:48,827 - INFO - Cache miss for UAE70M, checking disk
-2026-04-15 17:57:48,827 - INFO - 17:57:48: 10.100.100.163  - UAE70M    : DXB -> LHR - Emirates
-2026-04-15 17:57:48,827 - INFO - Cache miss for THY9RK, checking disk
-2026-04-15 17:57:48,827 - INFO - 17:57:48: 10.100.100.163  - THY9RK    : MUC -> SAW - Turkish Airlines
-2026-04-15 17:57:49,853 - INFO - Cache miss for WZZ9WL, checking disk
-2026-04-15 17:57:49,854 - INFO - 17:57:49: 10.100.100.163  - WZZ9WL    : FMM -> SKP - Wizz Air
-2026-04-15 17:57:49,854 - INFO - Cache miss for WUK2UC, checking disk
-2026-04-15 17:57:49,854 - INFO - 17:57:49: 10.100.100.163  - WUK2UC    : KSC -> LTN - Wizz Air UK
-2026-04-15 17:57:49,854 - INFO - Cache miss for WZZ1919, checking disk
-2026-04-15 17:57:49,854 - INFO - 17:57:49: 10.100.100.163  - WZZ1919   : SOF -> MAD - Wizz Air
-2026-04-15 17:57:49,855 - INFO - Cache miss for WZZ46G, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - WZZ46G    : xxx -> xxx - Wizz Air
-2026-04-15 17:57:49,855 - INFO - Cache miss for THY43C, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - THY43C    : IST -> LOS - Turkish Airlines
-2026-04-15 17:57:49,855 - INFO - Cache miss for BBC7056, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - BBC7056   : xxx -> xxx - Biman Bangladesh Airlines
-2026-04-15 17:57:49,855 - INFO - Cache miss for HAENJ, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - HAENJ     : xxx -> xxx - 
-2026-04-15 17:57:49,855 - INFO - Cache miss for PGT33RG, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - PGT33RG   : ESB -> WAW - Pegasus Airlines
-2026-04-15 17:57:49,855 - INFO - Cache miss for HAENK, checking disk
-2026-04-15 17:57:49,855 - INFO - 17:57:49: 10.100.100.163  - HAENK     : xxx -> xxx - 
-2026-04-15 17:57:49,855 - INFO - Cache miss for SPTUC, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - SPTUC     : xxx -> xxx - Speed Aviation
-2026-04-15 17:57:49,856 - INFO - Cache miss for PGT84V, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - PGT84V    : LYS -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,856 - INFO - Cache miss for THY3GK, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - THY3GK    : IST -> FCO - Turkish Airlines
-2026-04-15 17:57:49,856 - INFO - Cache miss for SXS2TK, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - SXS2TK    : FRA -> ADB - SunExpress
-2026-04-15 17:57:49,856 - INFO - Cache miss for EDW186, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - EDW186    : ZRH -> AYT - Edelweiss Air
-2026-04-15 17:57:49,856 - INFO - Cache miss for THY4SK, checking disk
-2026-04-15 17:57:49,856 - INFO - 17:57:49: 10.100.100.163  - THY4SK    : IST -> RIX - Turkish Airlines
-2026-04-15 17:57:49,856 - INFO - Cache miss for BTI2DH, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - BTI2DH    : HRG -> RIX - Air Baltic
-2026-04-15 17:57:49,857 - INFO - Cache miss for LOY862, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - LOY862    : xxx -> xxx - 
-2026-04-15 17:57:49,857 - INFO - Cache miss for SXS6ZW, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - SXS6ZW    : EDI -> AYT - SunExpress
-2026-04-15 17:57:49,857 - INFO - Cache miss for TOM64C, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - TOM64C    : PFO -> STN - TUI Airways
-2026-04-15 17:57:49,857 - INFO - Cache miss for PGT1236, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - PGT1236   : VCE -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,857 - INFO - Cache miss for THY1BG, checking disk
-2026-04-15 17:57:49,857 - INFO - 17:57:49: 10.100.100.163  - THY1BG    : IST -> PMO - Turkish Airlines
-2026-04-15 17:57:49,857 - INFO - Cache miss for THY3DJ, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - THY3DJ    : ORN -> IST - Turkish Airlines
-2026-04-15 17:57:49,858 - INFO - Cache miss for THY8AD, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - THY8AD    : NAP -> IST - Turkish Airlines
-2026-04-15 17:57:49,858 - INFO - Cache miss for QTR70R, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - QTR70R    : BHX -> DOH - Qatar Airways
-2026-04-15 17:57:49,858 - INFO - Cache miss for WZZ8CC, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - WZZ8CC    : STR -> SOF - Wizz Air
-2026-04-15 17:57:49,858 - INFO - Cache miss for RYR49JV, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - RYR49JV   : LPL -> SOF - Ryanair
-2026-04-15 17:57:49,858 - INFO - Cache miss for RYR9MA, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - RYR9MA    : VIE -> SOF - Ryanair
-2026-04-15 17:57:49,858 - INFO - Cache miss for JAF4NW, checking disk
-2026-04-15 17:57:49,858 - INFO - 17:57:49: 10.100.100.163  - JAF4NW    : xxx -> xxx - TUI fly Belgium
-2026-04-15 17:57:49,859 - INFO - Cache miss for PGT140N, checking disk
-2026-04-15 17:57:49,859 - INFO - 17:57:49: 10.100.100.163  - PGT140N   : STN -> ADB - Pegasus Airlines
-2026-04-15 17:57:49,859 - INFO - Cache miss for THY9NL, checking disk
-2026-04-15 17:57:49,859 - INFO - 17:57:49: 10.100.100.163  - THY9NL    : CDG -> IST - Turkish Airlines
-2026-04-15 17:57:49,859 - INFO - Cache miss for PGT13CG, checking disk
-2026-04-15 17:57:49,859 - INFO - 17:57:49: 10.100.100.163  - PGT13CG   : STR -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,859 - INFO - Cache miss for THY6EK, checking disk
-2026-04-15 17:57:49,860 - INFO - 17:57:49: 10.100.100.163  - THY6EK    : IST -> MLA - Turkish Airlines
-2026-04-15 17:57:49,860 - INFO - Cache miss for UAE54J, checking disk
-2026-04-15 17:57:49,860 - INFO - 17:57:49: 10.100.100.163  - UAE54J    : VIE -> DXB - Emirates
-2026-04-15 17:57:49,860 - INFO - Cache miss for TRA26B, checking disk
-2026-04-15 17:57:49,860 - INFO - 17:57:49: 10.100.100.163  - TRA26B    : RAK -> BRU - Transavia
-2026-04-15 17:57:49,860 - INFO - Cache miss for MEA202, checking disk
-2026-04-15 17:57:49,860 - INFO - 17:57:49: 10.100.100.163  - MEA202    : LHR -> BEY - Middle East Airlines
-2026-04-15 17:57:49,860 - INFO - Cache miss for FDX7, checking disk
-2026-04-15 17:57:49,860 - INFO - 17:57:49: 10.100.100.163  - FDX7      : BOM -> MEM - Federal Express
-2026-04-15 17:57:49,861 - INFO - Cache miss for THY2KD, checking disk
-2026-04-15 17:57:49,861 - INFO - 17:57:49: 10.100.100.163  - THY2KD    : CZL -> IST - Turkish Airlines
-2026-04-15 17:57:49,861 - INFO - Cache miss for ITY792, checking disk
-2026-04-15 17:57:49,861 - INFO - 17:57:49: 10.100.100.163  - ITY792    : FCO -> HND - ITA Airways
-2026-04-15 17:57:49,861 - INFO - Cache miss for THY6437, checking disk
-2026-04-15 17:57:49,861 - INFO - 17:57:49: 10.100.100.163  - THY6437   : IST -> IST - Turkish Airlines
-2026-04-15 17:57:49,861 - INFO - Cache miss for THY8LQ, checking disk
-2026-04-15 17:57:49,861 - INFO - 17:57:49: 10.100.100.163  - THY8LQ    : BRU -> IST - Turkish Airlines
-2026-04-15 17:57:49,861 - INFO - Cache miss for THY1WG, checking disk
-2026-04-15 17:57:49,861 - INFO - 17:57:49: 10.100.100.163  - THY1WG    : PRG -> IST - Turkish Airlines
-2026-04-15 17:57:49,862 - INFO - Cache miss for DAH3025, checking disk
-2026-04-15 17:57:49,862 - INFO - 17:57:49: 10.100.100.163  - DAH3025   : IST -> ORN - Air Algérie
-2026-04-15 17:57:49,862 - INFO - Cache miss for THY6JP, checking disk
-2026-04-15 17:57:49,862 - INFO - 17:57:49: 10.100.100.163  - THY6JP    : BEG -> IST - Turkish Airlines
-2026-04-15 17:57:49,862 - INFO - Cache miss for PGT839Q, checking disk
-2026-04-15 17:57:49,862 - INFO - 17:57:49: 10.100.100.163  - PGT839Q   : SAW -> DUS - Pegasus Airlines
-2026-04-15 17:57:49,862 - INFO - Cache miss for BAW716, checking disk
-2026-04-15 17:57:49,862 - INFO - 17:57:49: 10.100.100.163  - BAW716    : LHR -> IST - British Airways
-2026-04-15 17:57:49,862 - INFO - Cache miss for PGT397, checking disk
-2026-04-15 17:57:49,862 - INFO - 17:57:49: 10.100.100.163  - PGT397    : LED -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,862 - INFO - Cache miss for PGT972L, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - PGT972L   : BLQ -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,863 - INFO - Cache miss for PGT1175, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - PGT1175   : SAW -> STN - Pegasus Airlines
-2026-04-15 17:57:49,863 - INFO - Cache miss for TRA5162, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - TRA5162   : RIX -> AMS - Transavia
-2026-04-15 17:57:49,863 - INFO - Cache miss for LZB5227, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - LZB5227   : xxx -> xxx - Bulgaria Air
-2026-04-15 17:57:49,863 - INFO - Cache miss for PGT13BP, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - PGT13BP   : ASR -> DUS - Pegasus Airlines
-2026-04-15 17:57:49,863 - INFO - Cache miss for PGT45NE, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - PGT45NE   : BHX -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,863 - INFO - Cache miss for THY3ED, checking disk
-2026-04-15 17:57:49,863 - INFO - 17:57:49: 10.100.100.163  - THY3ED    : IST -> PRG - Turkish Airlines
-2026-04-15 17:57:49,863 - INFO - Cache miss for THY8QM, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - THY8QM    : IST -> VCE - Turkish Airlines
-2026-04-15 17:57:49,864 - INFO - Cache miss for PGT306U, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - PGT306U   : NUE -> SAW - Pegasus Airlines
-2026-04-15 17:57:49,864 - INFO - Cache miss for THY2SA, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - THY2SA    : GVA -> IST - Turkish Airlines
-2026-04-15 17:57:49,864 - INFO - Cache miss for LOT4JH, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - LOT4JH    : IST -> WAW - LOT Polish Airlines
-2026-04-15 17:57:49,864 - INFO - Cache miss for WMT9297, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - WMT9297   : AYT -> CLJ - Wizz Air Malta
-2026-04-15 17:57:49,864 - INFO - Cache miss for KLM1960, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - KLM1960   : IST -> AMS - KLM
-2026-04-15 17:57:49,864 - INFO - Cache miss for AYJ163, checking disk
-2026-04-15 17:57:49,864 - INFO - 17:57:49: 10.100.100.163  - AYJ163    : xxx -> xxx - Zeman Nextgen
-2026-04-15 17:57:49,865 - INFO - Cache miss for THY6RZ, checking disk
-2026-04-15 17:57:49,865 - INFO - 17:57:49: 10.100.100.163  - THY6RZ    : IST -> RZV - Turkish Airlines
-2026-04-15 17:57:49,865 - INFO - Cache miss for THY6335, checking disk
-2026-04-15 17:57:49,865 - INFO - 17:57:49: 10.100.100.163  - THY6335   : IST -> IST - Turkish Airlines
-2026-04-15 17:57:49,865 - INFO - Cache miss for THA901, checking disk
-2026-04-15 17:57:49,865 - INFO - 17:57:49: 10.100.100.163  - THA901    : IST -> BKK - Thai Airways International
-2026-04-15 17:57:49,865 - INFO - Cache miss for AAR547, checking disk
-2026-04-15 17:57:49,865 - INFO - 17:57:49: 10.100.100.163  - AAR547    : xxx -> xxx - Asiana Airlines
-2026-04-15 17:57:49,865 - INFO - Cache miss for THY6238, checking disk
-2026-04-15 17:57:49,865 - INFO - 17:57:49: 10.100.100.163  - THY6238   : YYZ -> IST - Turkish Airlines
-2026-04-15 17:57:49,865 - INFO - Cache miss for SIA326, checking disk
-2026-04-15 17:57:49,866 - INFO - 17:57:49: 10.100.100.163  - SIA326    : SIN -> FRA - Singapore Airlines
-2026-04-15 17:57:49,866 - INFO - Cache miss for CPA382, checking disk
-2026-04-15 17:57:49,866 - INFO - 17:57:49: 10.100.100.163  - CPA382    : ZRH -> HKG - Cathay Pacific
-2026-04-15 17:57:49,866 - INFO - Cache miss for THA925, checking disk
-2026-04-15 17:57:49,866 - INFO - 17:57:49: 10.100.100.163  - THA925    : MUC -> BKK - Thai Airways International
-2026-04-15 17:57:59,361 - INFO - Cache miss for EZY94BK, checking disk
-2026-04-15 17:57:59,362 - INFO - 17:57:59: 10.100.100.163  - EZY94BK   : BRS -> PFO - easyJet
-2026-04-15 17:57:59,362 - INFO - Cache miss for SVA152, checking disk
-2026-04-15 17:57:59,362 - INFO - 17:57:59: 10.100.100.163  - SVA152    : VIE -> RUH - Saudia
-2026-04-15 17:57:59,362 - INFO - Cache miss for SPSMTZ, checking disk
-2026-04-15 17:57:59,363 - INFO - 17:57:59: 10.100.100.163  - SPSMTZ    : xxx -> xxx - SPASA
-2026-04-15 17:57:59,363 - INFO - Cache miss for WZZ3642, checking disk
-2026-04-15 17:57:59,363 - INFO - 17:57:59: 10.100.100.163  - WZZ3642   : KUT -> FMM - Wizz Air
-2026-04-15 17:57:59,363 - INFO - Cache miss for THY3ML, checking disk
-2026-04-15 17:57:59,364 - INFO - 17:57:59: 10.100.100.163  - THY3ML    : LGW -> IST - Turkish Airlines
-2026-04-15 17:58:00,402 - INFO - Cache miss for THY1634, checking disk
-2026-04-15 17:58:00,403 - INFO - 17:58:00: 10.100.100.163  - THY1634   : MUC -> IST - Turkish Airlines
-2026-04-15 17:58:00,403 - INFO - Cache miss for S5MTL, checking disk
-2026-04-15 17:58:00,403 - INFO - 17:58:00: 10.100.100.163  - S5MTL     : xxx -> xxx - 
-2026-04-15 17:58:00,403 - INFO - Cache miss for LOT1PT, checking disk
-2026-04-15 17:58:00,404 - INFO - 17:58:00: 10.100.100.163  - LOT1PT    : WAW -> FCO - LOT Polish Airlines
-2026-04-15 17:58:00,404 - INFO - Cache miss for WZZ6UN, checking disk
-2026-04-15 17:58:00,404 - INFO - 17:58:00: 10.100.100.163  - WZZ6UN    : BUD -> VLC - Wizz Air
-2026-04-15 17:58:00,404 - INFO - Cache miss for WZZ489, checking disk
-2026-04-15 17:58:00,405 - INFO - 17:58:00: 10.100.100.163  - WZZ489    : HAM -> TZL - Wizz Air
-2026-04-15 17:58:00,405 - INFO - Cache miss for EWG40U, checking disk
-2026-04-15 17:58:00,405 - INFO - 17:58:00: 10.100.100.163  - EWG40U    : xxx -> xxx - Eurowings
-2026-04-15 17:58:00,405 - INFO - Cache miss for EXS84FN, checking disk
-2026-04-15 17:58:00,406 - INFO - 17:58:00: 10.100.100.163  - EXS84FN   : EDI -> TFS - Jet2.com
-2026-04-15 17:58:00,406 - INFO - Cache miss for AWG681, checking disk
-2026-04-15 17:58:00,406 - INFO - 17:58:00: 10.100.100.163  - AWG681    : GVA -> OTP - Anima Wings
-2026-04-15 17:58:00,406 - INFO - Cache miss for S5DTG, checking disk
-2026-04-15 17:58:00,406 - INFO - 17:58:00: 10.100.100.163  - S5DTG     : xxx -> xxx - 
-2026-04-15 17:58:00,407 - INFO - Cache miss for S5PGI, checking disk
-2026-04-15 17:58:00,407 - INFO - 17:58:00: 10.100.100.163  - S5PGI     : xxx -> xxx - 
-2026-04-15 17:58:00,407 - INFO - Cache miss for AUA45SM, checking disk
-2026-04-15 17:58:00,407 - INFO - 17:58:00: 10.100.100.163  - AUA45SM   : AGP -> VIE - Austrian Airlines
-2026-04-15 17:58:00,407 - INFO - Cache miss for RYR26PZ, checking disk
-2026-04-15 17:58:00,408 - INFO - 17:58:00: 10.100.100.163  - RYR26PZ   : PMI -> VIE - Ryanair
-2026-04-15 17:58:00,408 - INFO - Cache miss for RYR68KK, checking disk
-2026-04-15 17:58:00,408 - INFO - 17:58:00: 10.100.100.163  - RYR68KK   : BTS -> AHO - Ryanair
-2026-04-15 17:58:00,409 - INFO - Cache miss for S5DOG, checking disk
-2026-04-15 17:58:00,409 - INFO - 17:58:00: 10.100.100.163  - S5DOG     : xxx -> xxx - 
-2026-04-15 17:58:00,409 - INFO - Cache miss for LOT7JH, checking disk
-2026-04-15 17:58:00,410 - INFO - 17:58:00: 10.100.100.163  - LOT7JH    : WAW -> ZAG - LOT Polish Airlines
-2026-04-15 17:58:00,410 - INFO - Cache miss for AAB44U, checking disk
-2026-04-15 17:58:00,410 - INFO - 17:58:00: 10.100.100.163  - AAB44U    : xxx -> xxx - Luxaviation Belgium
-2026-04-15 17:58:07,749 - INFO - Cache miss for ANE60GG, checking disk
-2026-04-15 17:58:07,749 - INFO - 17:58:07: 10.100.100.163  - ANE60GG   : MAD -> SXB - Air Nostrum
-2026-04-15 17:58:07,750 - INFO - Cache miss for RYR52GM, checking disk
-2026-04-15 17:58:07,750 - INFO - 17:58:07: 10.100.100.163  - RYR52GM   : VRN -> MAN - Ryanair
-2026-04-15 17:58:07,750 - INFO - Cache miss for ITI229C, checking disk
-2026-04-15 17:58:07,750 - INFO - 17:58:07: 10.100.100.163  - ITI229C   : xxx -> xxx - Intairline
-2026-04-15 17:58:07,751 - INFO - Cache miss for AFR1226, checking disk
-2026-04-15 17:58:07,751 - INFO - 17:58:07: 10.100.100.163  - AFR1226   : CDG -> VCE - Air France
-2026-04-15 17:58:07,751 - INFO - Cache miss for SWR2GZ, checking disk
-2026-04-15 17:58:07,752 - INFO - 17:58:07: 10.100.100.163  - SWR2GZ    : CDG -> ZRH - Swiss
-2026-04-15 17:58:07,752 - INFO - Cache miss for EZY63WK, checking disk
-2026-04-15 17:58:07,752 - INFO - 17:58:07: 10.100.100.163  - EZY63WK   : HER -> BHX - easyJet
-2026-04-15 17:58:07,752 - INFO - Cache miss for BAW586M, checking disk
-2026-04-15 17:58:07,752 - INFO - 17:58:07: 10.100.100.163  - BAW586M   : LHR -> MXP - British Airways
-2026-04-15 17:58:07,753 - INFO - Cache miss for THY8SB, checking disk
-2026-04-15 17:58:07,753 - INFO - 17:58:07: 10.100.100.163  - THY8SB    : CDG -> IST - Turkish Airlines
-2026-04-15 17:58:07,753 - INFO - Cache miss for RYR8C, checking disk
-2026-04-15 17:58:07,753 - INFO - 17:58:07: 10.100.100.163  - RYR8C     : CAG -> NRN - Ryanair
-2026-04-15 17:58:07,754 - INFO - Cache miss for RYR80FZ, checking disk
-2026-04-15 17:58:07,754 - INFO - 17:58:07: 10.100.100.163  - RYR80FZ   : LUX -> MAD - Ryanair
-2026-04-15 17:58:07,754 - INFO - Cache miss for RYR1HH, checking disk
-2026-04-15 17:58:07,754 - INFO - 17:58:07: 10.100.100.163  - RYR1HH    : BVA -> BLQ - Ryanair
-2026-04-15 17:58:07,754 - INFO - Cache miss for TRA6M, checking disk
-2026-04-15 17:58:07,755 - INFO - 17:58:07: 10.100.100.163  - TRA6M     : PSA -> AMS - Transavia
-2026-04-15 17:58:07,755 - INFO - Cache miss for JAF3FD, checking disk
-2026-04-15 17:58:07,755 - INFO - 17:58:07: 10.100.100.163  - JAF3FD    : BRU -> ALG - TUI fly Belgium
-2026-04-15 17:58:07,755 - INFO - Cache miss for AFR1822, checking disk
-2026-04-15 17:58:07,755 - INFO - 17:58:07: 10.100.100.163  - AFR1822   : CDG -> MUC - Air France
-2026-04-15 17:58:07,756 - INFO - Cache miss for FHNFC, checking disk
-2026-04-15 17:58:07,756 - INFO - 17:58:07: 10.100.100.163  - FHNFC     : xxx -> xxx - 
-2026-04-15 17:58:07,756 - INFO - Cache miss for HBPQD, checking disk
-2026-04-15 17:58:07,756 - INFO - 17:58:07: 10.100.100.163  - HBPQD     : xxx -> xxx - 
-2026-04-15 17:58:07,756 - INFO - Cache miss for RYR8KM, checking disk
-2026-04-15 17:58:07,756 - INFO - 17:58:07: 10.100.100.163  - RYR8KM    : STN -> BRI - Ryanair
-2026-04-15 17:58:07,757 - INFO - Cache miss for FJFMI, checking disk
-2026-04-15 17:58:07,757 - INFO - 17:58:07: 10.100.100.163  - FJFMI     : xxx -> xxx - 
-2026-04-15 17:58:07,757 - INFO - Cache miss for RJA118, checking disk
-2026-04-15 17:58:07,757 - INFO - 17:58:07: 10.100.100.163  - RJA118    : CDG -> AMM - Royal Jordanian
-2026-04-15 17:58:07,757 - INFO - Cache miss for AFR93SM, checking disk
-2026-04-15 17:58:07,757 - INFO - 17:58:07: 10.100.100.163  - AFR93SM   : CDG -> MXP - Air France
-2026-04-15 17:58:07,757 - INFO - Cache miss for FHRMN, checking disk
-2026-04-15 17:58:07,757 - INFO - 17:58:07: 10.100.100.163  - FHRMN     : xxx -> xxx - 
-2026-04-15 17:58:07,757 - INFO - Cache miss for SKV222, checking disk
-2026-04-15 17:58:07,758 - INFO - 17:58:07: 10.100.100.163  - SKV222    : xxx -> xxx - Skyside
-2026-04-15 17:58:07,758 - INFO - Cache miss for FJJBS, checking disk
-2026-04-15 17:58:07,758 - INFO - 17:58:07: 10.100.100.163  - FJJBS     : xxx -> xxx - 
-2026-04-15 17:58:07,758 - INFO - Cache miss for FJGBG, checking disk
-2026-04-15 17:58:07,758 - INFO - 17:58:07: 10.100.100.163  - FJGBG     : xxx -> xxx - 
-2026-04-15 17:58:07,758 - INFO - Cache miss for RYR64CZ, checking disk
-2026-04-15 17:58:07,758 - INFO - 17:58:07: 10.100.100.163  - RYR64CZ   : CRL -> NAP - Ryanair
-2026-04-15 17:58:07,758 - INFO - Cache miss for EWG7PQ, checking disk
-2026-04-15 17:58:07,758 - INFO - 17:58:07: 10.100.100.163  - EWG7PQ    : HAM -> PMI - Eurowings
-2026-04-15 17:58:07,759 - INFO - Cache miss for BPO813, checking disk
-2026-04-15 17:58:07,759 - INFO - 17:58:07: 10.100.100.163  - BPO813    : xxx -> xxx - Bundespolizei-Fliegertruppe
-2026-04-15 17:58:07,759 - INFO - Cache miss for MOZ309, checking disk
-2026-04-15 17:58:07,759 - INFO - 17:58:07: 10.100.100.163  - MOZ309    : xxx -> xxx - Salzburg Jet Aviation
-2026-04-15 17:58:07,759 - INFO - Cache miss for BPO262, checking disk
-2026-04-15 17:58:07,759 - INFO - 17:58:07: 10.100.100.163  - BPO262    : xxx -> xxx - Bundespolizei-Fliegertruppe
-2026-04-15 17:58:07,759 - INFO - Cache miss for CHX54, checking disk
-2026-04-15 17:58:07,759 - INFO - 17:58:07: 10.100.100.163  - CHX54     : xxx -> xxx - DRF Luftrettung
-2026-04-15 17:58:07,759 - INFO - Cache miss for SWR51D, checking disk
-2026-04-15 17:58:07,759 - INFO - 17:58:07: 10.100.100.163  - SWR51D    : MAN -> ZRH - Swiss
-2026-04-15 17:58:07,759 - INFO - Cache miss for CHX56, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - CHX56     : xxx -> xxx - DRF Luftrettung
-2026-04-15 17:58:07,760 - INFO - Cache miss for PVD412J, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - PVD412J   : xxx -> xxx - Pad Aviation Service
-2026-04-15 17:58:07,760 - INFO - Cache miss for DMBCT, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - DMBCT     : xxx -> xxx - 
-2026-04-15 17:58:07,760 - INFO - Cache miss for EWG14G, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - EWG14G    : STR -> BCN - Eurowings
-2026-04-15 17:58:07,760 - INFO - Cache miss for HBPMC, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - HBPMC     : xxx -> xxx - 
-2026-04-15 17:58:07,760 - INFO - Cache miss for TAP932, checking disk
-2026-04-15 17:58:07,760 - INFO - 17:58:07: 10.100.100.163  - TAP932    : LIS -> ZRH - TAP Portugal
-2026-04-15 17:58:07,761 - INFO - Cache miss for SWR5AX, checking disk
-2026-04-15 17:58:07,761 - INFO - 17:58:07: 10.100.100.163  - SWR5AX    : VLC -> ZRH - Swiss
-2026-04-15 17:58:07,761 - INFO - Cache miss for ROT383X, checking disk
-2026-04-15 17:58:07,761 - INFO - 17:58:07: 10.100.100.163  - ROT383X   : OTP -> CDG - Tarom
-2026-04-15 17:58:07,761 - INFO - Cache miss for NJE116N, checking disk
-2026-04-15 17:58:07,761 - INFO - 17:58:07: 10.100.100.163  - NJE116N   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:07,761 - INFO - Cache miss for SWR4CA, checking disk
-2026-04-15 17:58:07,761 - INFO - 17:58:07: 10.100.100.163  - SWR4CA    : NAP -> ZRH - Swiss
-2026-04-15 17:58:07,761 - INFO - Cache miss for VLG30CZ, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - VLG30CZ   : PMI -> ZRH - Vueling Airlines
-2026-04-15 17:58:07,762 - INFO - Cache miss for PTN59H, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - PTN59H    : xxx -> xxx - Platoon Aviation
-2026-04-15 17:58:07,762 - INFO - Cache miss for SWR9WE, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - SWR9WE    : PMO -> ZRH - Swiss
-2026-04-15 17:58:07,762 - INFO - Cache miss for SWR9YP, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - SWR9YP    : BER -> ZRH - Swiss
-2026-04-15 17:58:07,762 - INFO - Cache miss for EDW38, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - EDW38     : ZRH -> ZRH - Edelweiss Air
-2026-04-15 17:58:07,762 - INFO - Cache miss for SVA126, checking disk
-2026-04-15 17:58:07,762 - INFO - 17:58:07: 10.100.100.163  - SVA126    : CDG -> JED - Saudia
-2026-04-15 17:58:07,762 - INFO - Cache miss for SLJ503, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - SLJ503    : xxx -> xxx - Slam Lavori Aerei
-2026-04-15 17:58:07,763 - INFO - Cache miss for SWR4TD, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - SWR4TD    : BCN -> ZRH - Swiss
-2026-04-15 17:58:07,763 - INFO - Cache miss for SWR77M, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - SWR77M    : ZRH -> GRZ - Swiss
-2026-04-15 17:58:07,763 - INFO - Cache miss for EDW57P, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - EDW57P    : PMI -> ZRH - Edelweiss Air
-2026-04-15 17:58:07,763 - INFO - Cache miss for SWR7HL, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - SWR7HL    : OSL -> ZRH - Swiss
-2026-04-15 17:58:07,763 - INFO - Cache miss for DLA3EN, checking disk
-2026-04-15 17:58:07,763 - INFO - 17:58:07: 10.100.100.163  - DLA3EN    : FRA -> PSA - Air Dolomiti
-2026-04-15 17:58:07,764 - INFO - Cache miss for SWR, checking disk
-2026-04-15 17:58:07,764 - INFO - 17:58:07: 10.100.100.163  - SWR       : xxx -> xxx - Swiss
-2026-04-15 17:58:07,764 - INFO - Cache miss for SWR374P, checking disk
-2026-04-15 17:58:07,764 - INFO - 17:58:07: 10.100.100.163  - SWR374P   : ZRH -> ALC - Swiss
-2026-04-15 17:58:07,764 - INFO - Cache miss for SWR854, checking disk
-2026-04-15 17:58:07,765 - INFO - 17:58:07: 10.100.100.163  - SWR854    : ZRH -> BRE - Swiss
-2026-04-15 17:58:07,765 - INFO - Cache miss for FYL81YG, checking disk
-2026-04-15 17:58:07,765 - INFO - 17:58:07: 10.100.100.163  - FYL81YG   : xxx -> xxx - Flying Group Luxembourg
-2026-04-15 17:58:07,765 - INFO - Cache miss for CFG7FK, checking disk
-2026-04-15 17:58:07,765 - INFO - 17:58:07: 10.100.100.163  - CFG7FK    : PMI -> LEJ - Condor
-2026-04-15 17:58:07,765 - INFO - Cache miss for NJE176U, checking disk
-2026-04-15 17:58:07,765 - INFO - 17:58:07: 10.100.100.163  - NJE176U   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:07,765 - INFO - Cache miss for MABGS, checking disk
-2026-04-15 17:58:07,766 - INFO - 17:58:07: 10.100.100.163  - MABGS     : xxx -> xxx - Millardair
-2026-04-15 17:58:07,766 - INFO - Cache miss for DIPAG, checking disk
-2026-04-15 17:58:07,766 - INFO - 17:58:07: 10.100.100.163  - DIPAG     : xxx -> xxx - Diplomatic Freight Services
-2026-04-15 17:58:07,766 - INFO - Cache miss for SXS9DA, checking disk
-2026-04-15 17:58:07,766 - INFO - 17:58:07: 10.100.100.163  - SXS9DA    : CDG -> ADB - SunExpress
-2026-04-15 17:58:07,766 - INFO - Cache miss for HBZPK, checking disk
-2026-04-15 17:58:07,766 - INFO - 17:58:07: 10.100.100.163  - HBZPK     : xxx -> xxx - 
-2026-04-15 17:58:07,766 - INFO - Cache miss for EWG4ZA, checking disk
-2026-04-15 17:58:07,766 - INFO - 17:58:07: 10.100.100.163  - EWG4ZA    : STR -> STR - Eurowings
-2026-04-15 17:58:07,767 - INFO - Cache miss for EWG2801, checking disk
-2026-04-15 17:58:07,767 - INFO - 17:58:07: 10.100.100.163  - EWG2801   : PMO -> STR - Eurowings
-2026-04-15 17:58:07,767 - INFO - Cache miss for HB3143, checking disk
-2026-04-15 17:58:07,767 - INFO - 17:58:07: 10.100.100.163  - HB3143    : xxx -> xxx - 
-2026-04-15 17:58:07,767 - INFO - Cache miss for HB1690, checking disk
-2026-04-15 17:58:07,767 - INFO - 17:58:07: 10.100.100.163  - HB1690    : xxx -> xxx - 
-2026-04-15 17:58:07,767 - INFO - Cache miss for DIFEF, checking disk
-2026-04-15 17:58:07,767 - INFO - 17:58:07: 10.100.100.163  - DIFEF     : xxx -> xxx - 
-2026-04-15 17:58:07,767 - INFO - Cache miss for SWR3VD, checking disk
-2026-04-15 17:58:07,767 - INFO - 17:58:07: 10.100.100.163  - SWR3VD    : TIA -> ZRH - Swiss
-2026-04-15 17:58:07,767 - INFO - Cache miss for RYR5CT, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - RYR5CT    : ZAD -> CRL - Ryanair
-2026-04-15 17:58:07,768 - INFO - Cache miss for DKVMO, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - DKVMO     : xxx -> xxx - 
-2026-04-15 17:58:07,768 - INFO - Cache miss for OEFHQ, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - OEFHQ     : xxx -> xxx - 
-2026-04-15 17:58:07,768 - INFO - Cache miss for PGT60MV, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - PGT60MV   : SAW -> STR - Pegasus Airlines
-2026-04-15 17:58:07,768 - INFO - Cache miss for HBSGT, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - HBSGT     : xxx -> xxx - 
-2026-04-15 17:58:07,768 - INFO - Cache miss for SXS1ZM, checking disk
-2026-04-15 17:58:07,768 - INFO - 17:58:07: 10.100.100.163  - SXS1ZM    : STR -> AYT - SunExpress
-2026-04-15 17:58:07,769 - INFO - Cache miss for WZZ9EG, checking disk
-2026-04-15 17:58:07,769 - INFO - 17:58:07: 10.100.100.163  - WZZ9EG    : xxx -> xxx - Wizz Air
-2026-04-15 17:58:07,769 - INFO - Cache miss for DKSAH, checking disk
-2026-04-15 17:58:07,769 - INFO - 17:58:07: 10.100.100.163  - DKSAH     : xxx -> xxx - 
-2026-04-15 17:58:07,769 - INFO - Cache miss for MSC2951, checking disk
-2026-04-15 17:58:07,769 - INFO - 17:58:07: 10.100.100.163  - MSC2951   : STR -> HRG - Air Cairo
-2026-04-15 17:58:07,769 - INFO - Cache miss for ATV304, checking disk
-2026-04-15 17:58:07,769 - INFO - 17:58:07: 10.100.100.163  - ATV304    : xxx -> xxx - Avanti Air
-2026-04-15 17:58:07,769 - INFO - Cache miss for EWG9TL, checking disk
-2026-04-15 17:58:07,769 - INFO - 17:58:07: 10.100.100.163  - EWG9TL    : PMI -> STR - Eurowings
-2026-04-15 17:58:07,769 - INFO - Cache miss for DLZBW, checking disk
-2026-04-15 17:58:07,770 - INFO - 17:58:07: 10.100.100.163  - DLZBW     : xxx -> xxx - 
-2026-04-15 17:58:07,770 - INFO - Cache miss for CHX45, checking disk
-2026-04-15 17:58:07,770 - INFO - 17:58:07: 10.100.100.163  - CHX45     : xxx -> xxx - DRF Luftrettung
-2026-04-15 17:58:07,770 - INFO - Cache miss for RYR48NP, checking disk
-2026-04-15 17:58:07,770 - INFO - 17:58:07: 10.100.100.163  - RYR48NP   : BLQ -> STN - Ryanair
-2026-04-15 17:58:07,770 - INFO - Cache miss for HBLVB, checking disk
-2026-04-15 17:58:07,770 - INFO - 17:58:07: 10.100.100.163  - HBLVB     : xxx -> xxx - Faroecopter
-2026-04-15 17:58:11,868 - INFO - Cache miss for THY1PA, checking disk
-2026-04-15 17:58:11,868 - INFO - 17:58:11: 10.100.100.163  - THY1PA    : IST -> CDG - Turkish Airlines
-2026-04-15 17:58:11,869 - INFO - Cache miss for TOM2WA, checking disk
-2026-04-15 17:58:11,869 - INFO - 17:58:11: 10.100.100.163  - TOM2WA    : RHO -> DUB - TUI Airways
-2026-04-15 17:58:11,869 - INFO - Cache miss for SWR404, checking disk
-2026-04-15 17:58:11,869 - INFO - 17:58:11: 10.100.100.163  - SWR404    : ZRH -> DUB - Swiss
-2026-04-15 17:58:11,869 - INFO - Cache miss for BAW603, checking disk
-2026-04-15 17:58:11,870 - INFO - 17:58:11: 10.100.100.163  - BAW603    : VCE -> LHR - British Airways
-2026-04-15 17:58:11,870 - INFO - Cache miss for EDW268G, checking disk
-2026-04-15 17:58:11,870 - INFO - 17:58:11: 10.100.100.163  - EDW268G   : ZRH -> FAO - Edelweiss Air
-2026-04-15 17:58:11,870 - INFO - Cache miss for DMZWT, checking disk
-2026-04-15 17:58:11,870 - INFO - 17:58:11: 10.100.100.163  - DMZWT     : xxx -> xxx - 
-2026-04-15 17:58:11,871 - INFO - Cache miss for DHTRB, checking disk
-2026-04-15 17:58:11,871 - INFO - 17:58:11: 10.100.100.163  - DHTRB     : xxx -> xxx - 
-2026-04-15 17:58:11,871 - INFO - Cache miss for QTR70M, checking disk
-2026-04-15 17:58:11,871 - INFO - 17:58:11: 10.100.100.163  - QTR70M    : MUC -> DOH - Qatar Airways
-2026-04-15 17:58:11,871 - INFO - Cache miss for DEIEB, checking disk
-2026-04-15 17:58:11,872 - INFO - 17:58:11: 10.100.100.163  - DEIEB     : xxx -> xxx - Ecoair
-2026-04-15 17:58:11,872 - INFO - Cache miss for RYR6192, checking disk
-2026-04-15 17:58:11,872 - INFO - 17:58:11: 10.100.100.163  - RYR6192   : ALC -> FDH - Ryanair
-2026-04-15 17:58:11,872 - INFO - Cache miss for RAM822, checking disk
-2026-04-15 17:58:11,872 - INFO - 17:58:11: 10.100.100.163  - RAM822    : CMN -> MUC - Royal Air Maroc
-2026-04-15 17:58:11,873 - INFO - Cache miss for HBZYQ, checking disk
-2026-04-15 17:58:11,873 - INFO - 17:58:11: 10.100.100.163  - HBZYQ     : xxx -> xxx - 
-2026-04-15 17:58:11,873 - INFO - Cache miss for DEGZT, checking disk
-2026-04-15 17:58:11,874 - INFO - 17:58:11: 10.100.100.163  - DEGZT     : xxx -> xxx - Air Service Groningen
-2026-04-15 17:58:11,874 - INFO - Cache miss for DELMD, checking disk
-2026-04-15 17:58:11,874 - INFO - 17:58:11: 10.100.100.163  - DELMD     : xxx -> xxx - Carib Aviation
-2026-04-15 17:58:11,874 - INFO - Cache miss for EZY58EL, checking disk
-2026-04-15 17:58:11,875 - INFO - 17:58:11: 10.100.100.163  - EZY58EL   : CHQ -> LGW - easyJet
-2026-04-15 17:58:11,875 - INFO - Cache miss for RYR14MJ, checking disk
-2026-04-15 17:58:11,875 - INFO - 17:58:11: 10.100.100.163  - RYR14MJ   : PSR -> STN - Ryanair
-2026-04-15 17:58:11,875 - INFO - Cache miss for RYR58JX, checking disk
-2026-04-15 17:58:11,876 - INFO - 17:58:11: 10.100.100.163  - RYR58JX   : BVA -> BUD - Ryanair
-2026-04-15 17:58:11,876 - INFO - Cache miss for JDI22R, checking disk
-2026-04-15 17:58:11,876 - INFO - 17:58:11: 10.100.100.163  - JDI22R    : xxx -> xxx - Jet Story
-2026-04-15 17:58:11,876 - INFO - Cache miss for DEZPS, checking disk
-2026-04-15 17:58:11,876 - INFO - 17:58:11: 10.100.100.163  - DEZPS     : xxx -> xxx - 
-2026-04-15 17:58:11,877 - INFO - Cache miss for GAM12S, checking disk
-2026-04-15 17:58:11,877 - INFO - 17:58:11: 10.100.100.163  - GAM12S    : xxx -> xxx - German Army
-2026-04-15 17:58:11,877 - INFO - Cache miss for GAM62T, checking disk
-2026-04-15 17:58:11,877 - INFO - 17:58:11: 10.100.100.163  - GAM62T    : xxx -> xxx - German Army
-2026-04-15 17:58:11,877 - INFO - Cache miss for SXS4GY, checking disk
-2026-04-15 17:58:11,877 - INFO - 17:58:11: 10.100.100.163  - SXS4GY    : xxx -> xxx - SunExpress
-2026-04-15 17:58:11,877 - INFO - Cache miss for IJM666, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - IJM666    : xxx -> xxx - International Jet Management
-2026-04-15 17:58:11,878 - INFO - Cache miss for EJU62DZ, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - EJU62DZ   : VCE -> AMS - easyJet Europe
-2026-04-15 17:58:11,878 - INFO - Cache miss for TCIHA, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - TCIHA     : xxx -> xxx - Amber Aviation
-2026-04-15 17:58:11,878 - INFO - Cache miss for DLH3RT, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - DLH3RT    : MUC -> LIN - Lufthansa
-2026-04-15 17:58:11,878 - INFO - Cache miss for EZY91MN, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - EZY91MN   : LTN -> GLA - easyJet
-2026-04-15 17:58:11,878 - INFO - Cache miss for NSZ6HT, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - NSZ6HT    : HEL -> AGP - Norwegian Air Sweden
-2026-04-15 17:58:11,878 - INFO - Cache miss for SWU1951, checking disk
-2026-04-15 17:58:11,878 - INFO - 17:58:11: 10.100.100.163  - SWU1951   : BER -> BZO - SkyAlps
-2026-04-15 17:58:11,879 - INFO - Cache miss for DMLVV, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - DMLVV     : xxx -> xxx - Getjet Airlines Latvia
-2026-04-15 17:58:11,879 - INFO - Cache miss for SVA180, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - SVA180    : FRA -> RUH - Saudia
-2026-04-15 17:58:11,879 - INFO - Cache miss for AFR53FD, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - AFR53FD   : CDG -> BUD - Air France
-2026-04-15 17:58:11,879 - INFO - Cache miss for SPJMP, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - SPJMP     : xxx -> xxx - Air Service
-2026-04-15 17:58:11,879 - INFO - Cache miss for DHALD, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - DHALD     : xxx -> xxx - DHL Air Austria
-2026-04-15 17:58:11,879 - INFO - Cache miss for NJE72F, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - NJE72F    : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:11,879 - INFO - Cache miss for BPO231, checking disk
-2026-04-15 17:58:11,879 - INFO - 17:58:11: 10.100.100.163  - BPO231    : xxx -> xxx - Bundespolizei-Fliegertruppe
-2026-04-15 17:58:11,879 - INFO - Cache miss for LHX7LP, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - LHX7LP    : MUC -> FCO - Lufthansa City Airlines
-2026-04-15 17:58:11,880 - INFO - Cache miss for DMOUL, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - DMOUL     : xxx -> xxx - 
-2026-04-15 17:58:11,880 - INFO - Cache miss for UAE9398, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - UAE9398   : FRA -> DWC - Emirates
-2026-04-15 17:58:11,880 - INFO - Cache miss for WMT9MR, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - WMT9MR    : TIA -> STR - Wizz Air Malta
-2026-04-15 17:58:11,880 - INFO - Cache miss for TCFNH, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - TCFNH     : xxx -> xxx - Shuttle America
-2026-04-15 17:58:11,880 - INFO - Cache miss for T7SKY1, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - T7SKY1    : xxx -> xxx - 
-2026-04-15 17:58:11,880 - INFO - Cache miss for NSZ9WP, checking disk
-2026-04-15 17:58:11,880 - INFO - 17:58:11: 10.100.100.163  - NSZ9WP    : HEL -> ALC - Norwegian Air Sweden
-2026-04-15 17:58:11,880 - INFO - Cache miss for WUK8SV, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - WUK8SV    : LTN -> TIA - Wizz Air UK
-2026-04-15 17:58:11,881 - INFO - Cache miss for DHTTS, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - DHTTS     : xxx -> xxx - 
-2026-04-15 17:58:11,881 - INFO - Cache miss for EZY61JH, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - EZY61JH   : BFS -> AYT - easyJet
-2026-04-15 17:58:11,881 - INFO - Cache miss for KLM7908, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - KLM7908   : xxx -> xxx - KLM
-2026-04-15 17:58:11,881 - INFO - Cache miss for THY8UG, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - THY8UG    : IST -> STR - Turkish Airlines
-2026-04-15 17:58:11,881 - INFO - Cache miss for SXS5ET, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - SXS5ET    : AYT -> ZRH - SunExpress
-2026-04-15 17:58:11,881 - INFO - Cache miss for QGA1A, checking disk
-2026-04-15 17:58:11,881 - INFO - 17:58:11: 10.100.100.163  - QGA1A     : xxx -> xxx - Windrose Air
-2026-04-15 17:58:11,881 - INFO - Cache miss for RYR9647, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - RYR9647   : KRK -> LPL - Ryanair
-2026-04-15 17:58:11,882 - INFO - Cache miss for DMWOP, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - DMWOP     : xxx -> xxx - 
-2026-04-15 17:58:11,882 - INFO - Cache miss for PGT58CD, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - PGT58CD   : STN -> SAW - Pegasus Airlines
-2026-04-15 17:58:11,882 - INFO - Cache miss for OEANZ, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - OEANZ     : xxx -> xxx - 
-2026-04-15 17:58:11,882 - INFO - Cache miss for OECLJ, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - OECLJ     : xxx -> xxx - Christophorus Flugrettungsverein
-2026-04-15 17:58:11,882 - INFO - Cache miss for WZZ216, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - WZZ216    : EIN -> SKP - Wizz Air
-2026-04-15 17:58:11,882 - INFO - Cache miss for MSC2931, checking disk
-2026-04-15 17:58:11,882 - INFO - 17:58:11: 10.100.100.163  - MSC2931   : MUC -> HRG - Air Cairo
-2026-04-15 17:58:11,882 - INFO - Cache miss for CFG282, checking disk
-2026-04-15 17:58:11,883 - INFO - 17:58:11: 10.100.100.163  - CFG282    : FRA -> MBA - Condor
-2026-04-15 17:58:11,883 - INFO - Cache miss for OEEKZ, checking disk
-2026-04-15 17:58:11,883 - INFO - 17:58:11: 10.100.100.163  - OEEKZ     : xxx -> xxx - 
-2026-04-15 17:58:11,883 - INFO - Cache miss for RYR4DU, checking disk
-2026-04-15 17:58:11,883 - INFO - 17:58:11: 10.100.100.163  - RYR4DU    : VIE -> BCN - Ryanair
-2026-04-15 17:58:11,883 - INFO - Cache miss for EWG8LA, checking disk
-2026-04-15 17:58:11,883 - INFO - 17:58:11: 10.100.100.163  - EWG8LA    : PMI -> SZG - Eurowings
-2026-04-15 17:58:11,883 - INFO - Cache miss for RYR1JC, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - RYR1JC    : KGS -> STN - Ryanair
-2026-04-15 17:58:11,884 - INFO - Cache miss for AIC2027, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - AIC2027   : BOM -> FRA - Air India
-2026-04-15 17:58:11,884 - INFO - Cache miss for DLZFN, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - DLZFN     : xxx -> xxx - 
-2026-04-15 17:58:11,884 - INFO - Cache miss for WZZ576, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - WZZ576    : SOF -> BVA - Wizz Air
-2026-04-15 17:58:11,884 - INFO - Cache miss for MSR788, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - MSR788    : MUC -> CAI - Egyptair
-2026-04-15 17:58:11,884 - INFO - Cache miss for PGT1158, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - PGT1158   : DUB -> SAW - Pegasus Airlines
-2026-04-15 17:58:11,884 - INFO - Cache miss for RJA126, checking disk
-2026-04-15 17:58:11,884 - INFO - 17:58:11: 10.100.100.163  - RJA126    : FRA -> AMM - Royal Jordanian
-2026-04-15 17:58:11,884 - INFO - Cache miss for RYR9Z, checking disk
-2026-04-15 17:58:11,885 - INFO - 17:58:11: 10.100.100.163  - RYR9Z     : BUD -> BGY - Ryanair
-2026-04-15 17:58:11,885 - INFO - Cache miss for ELY859, checking disk
-2026-04-15 17:58:11,885 - INFO - 17:58:11: 10.100.100.163  - ELY859    : TLV -> FRA - El Al Israel Airlines
-2026-04-15 17:58:11,885 - INFO - Cache miss for DLH6LX, checking disk
-2026-04-15 17:58:11,885 - INFO - 17:58:11: 10.100.100.163  - DLH6LX    : ATH -> MUC - Lufthansa
-2026-04-15 17:58:11,885 - INFO - Cache miss for VIR385E, checking disk
-2026-04-15 17:58:11,885 - INFO - 17:58:11: 10.100.100.163  - VIR385E   : MLE -> LHR - Virgin Atlantic
-2026-04-15 17:58:12,932 - INFO - Cache miss for VLG7VE, checking disk
-2026-04-15 17:58:12,933 - INFO - 17:58:12: 10.100.100.163  - VLG7VE    : PMI -> BRU - Vueling Airlines
-2026-04-15 17:58:12,933 - INFO - Cache miss for FHRDV, checking disk
-2026-04-15 17:58:12,933 - INFO - 17:58:12: 10.100.100.163  - FHRDV     : xxx -> xxx - 
-2026-04-15 17:58:12,933 - INFO - Cache miss for BLT117H, checking disk
-2026-04-15 17:58:12,934 - INFO - 17:58:12: 10.100.100.163  - BLT117H   : xxx -> xxx - Baltic Aviation
-2026-04-15 17:58:12,934 - INFO - Cache miss for AFR29AT, checking disk
-2026-04-15 17:58:12,934 - INFO - 17:58:12: 10.100.100.163  - AFR29AT   : CDG -> AGP - Air France
-2026-04-15 17:58:12,934 - INFO - Cache miss for LGL785, checking disk
-2026-04-15 17:58:12,934 - INFO - 17:58:12: 10.100.100.163  - LGL785    : LUX -> FAO - Luxair
-2026-04-15 17:58:12,934 - INFO - Cache miss for TRA71J, checking disk
-2026-04-15 17:58:12,935 - INFO - 17:58:12: 10.100.100.163  - TRA71J    : RTM -> AGP - Transavia
-2026-04-15 17:58:12,935 - INFO - Cache miss for FJLIJ, checking disk
-2026-04-15 17:58:12,935 - INFO - 17:58:12: 10.100.100.163  - FJLIJ     : xxx -> xxx - Fly Jinnah
-2026-04-15 17:58:12,935 - INFO - Cache miss for VLG44PX, checking disk
-2026-04-15 17:58:12,936 - INFO - 17:58:12: 10.100.100.163  - VLG44PX   : ORY -> AGP - Vueling Airlines
-2026-04-15 17:58:12,936 - INFO - Cache miss for FHLRA, checking disk
-2026-04-15 17:58:12,936 - INFO - 17:58:12: 10.100.100.163  - FHLRA     : xxx -> xxx - Fast Helicopters
-2026-04-15 17:58:12,936 - INFO - Cache miss for FHJUC, checking disk
-2026-04-15 17:58:12,936 - INFO - 17:58:12: 10.100.100.163  - FHJUC     : xxx -> xxx - 
-2026-04-15 17:58:12,936 - INFO - Cache miss for TRA3N, checking disk
-2026-04-15 17:58:12,937 - INFO - 17:58:12: 10.100.100.163  - TRA3N     : EIN -> AGP - Transavia
-2026-04-15 17:58:12,937 - INFO - Cache miss for FJLRF, checking disk
-2026-04-15 17:58:12,937 - INFO - 17:58:12: 10.100.100.163  - FJLRF     : xxx -> xxx - Fly Jinnah
-2026-04-15 17:58:12,937 - INFO - Cache miss for FBXNQ, checking disk
-2026-04-15 17:58:12,937 - INFO - 17:58:12: 10.100.100.163  - FBXNQ     : xxx -> xxx - 
-2026-04-15 17:58:12,937 - INFO - Cache miss for TRA83R, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - TRA83R    : RTM -> ALC - Transavia
-2026-04-15 17:58:12,938 - INFO - Cache miss for AFR96, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - AFR96     : CDG -> MCO - Air France
-2026-04-15 17:58:12,938 - INFO - Cache miss for FHAAT, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - FHAAT     : xxx -> xxx - 
-2026-04-15 17:58:12,938 - INFO - Cache miss for AFR85WE, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - AFR85WE   : BHX -> CDG - Air France
-2026-04-15 17:58:12,938 - INFO - Cache miss for VOE5TD, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - VOE5TD    : OVD -> BRU - Volotea
-2026-04-15 17:58:12,938 - INFO - Cache miss for VLG8326, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - VLG8326   : ORY -> ALC - Vueling Airlines
-2026-04-15 17:58:12,938 - INFO - Cache miss for TVF60CT, checking disk
-2026-04-15 17:58:12,938 - INFO - 17:58:12: 10.100.100.163  - TVF60CT   : xxx -> xxx - Transavia France
-2026-04-15 17:58:12,938 - INFO - Cache miss for NJE300K, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - NJE300K   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:12,939 - INFO - Cache miss for VLG7YG, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - VLG7YG    : CDG -> BCN - Vueling Airlines
-2026-04-15 17:58:12,939 - INFO - Cache miss for TVF15GP, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - TVF15GP   : ORY -> OUD - Transavia France
-2026-04-15 17:58:12,939 - INFO - Cache miss for THY6UZ, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - THY6UZ    : IST -> LGW - Turkish Airlines
-2026-04-15 17:58:12,939 - INFO - Cache miss for TVF18EK, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - TVF18EK   : ORY -> ALG - Transavia France
-2026-04-15 17:58:12,939 - INFO - Cache miss for DAH1121, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - DAH1121   : ORY -> BLJ - Air Algérie
-2026-04-15 17:58:12,939 - INFO - Cache miss for NSZ6FY, checking disk
-2026-04-15 17:58:12,939 - INFO - 17:58:12: 10.100.100.163  - NSZ6FY    : PMI -> ARN - Norwegian Air Sweden
-2026-04-15 17:58:12,939 - INFO - Cache miss for TVF64TW, checking disk
-2026-04-15 17:58:12,940 - INFO - 17:58:12: 10.100.100.163  - TVF64TW   : ORY -> BCN - Transavia France
-2026-04-15 17:58:12,940 - INFO - Cache miss for AFR1168, checking disk
-2026-04-15 17:58:12,940 - INFO - 17:58:12: 10.100.100.163  - AFR1168   : CDG -> MAN - Air France
-2026-04-15 17:58:12,940 - INFO - Cache miss for AFR8U, checking disk
-2026-04-15 17:58:12,940 - INFO - 17:58:12: 10.100.100.163  - AFR8U     : CDG -> JFK - Air France
-2026-04-15 17:58:12,940 - INFO - Cache miss for AFR86PV, checking disk
-2026-04-15 17:58:12,940 - INFO - 17:58:12: 10.100.100.163  - AFR86PV   : CDG -> BIQ - Air France
-2026-04-15 17:58:12,940 - INFO - Cache miss for SAMU80, checking disk
-2026-04-15 17:58:12,941 - INFO - 17:58:12: 10.100.100.163  - SAMU80    : xxx -> xxx - USAF Special Air Mission
-2026-04-15 17:58:12,941 - INFO - Cache miss for CCM68JG, checking disk
-2026-04-15 17:58:12,941 - INFO - 17:58:12: 10.100.100.163  - CCM68JG   : AJA -> ORY - Air Corsica
-2026-04-15 17:58:12,941 - INFO - Cache miss for RYR22ZU, checking disk
-2026-04-15 17:58:12,941 - INFO - 17:58:12: 10.100.100.163  - RYR22ZU   : SDR -> CRL - Ryanair
-2026-04-15 17:58:12,941 - INFO - Cache miss for FJEDQ, checking disk
-2026-04-15 17:58:12,941 - INFO - 17:58:12: 10.100.100.163  - FJEDQ     : xxx -> xxx - Fanjet Express
-2026-04-15 17:58:12,941 - INFO - Cache miss for MAU15, checking disk
-2026-04-15 17:58:12,941 - INFO - 17:58:12: 10.100.100.163  - MAU15     : CDG -> MRU - Air Mauritius
-2026-04-15 17:58:12,941 - INFO - Cache miss for AFR56QQ, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - AFR56QQ   : MAN -> CDG - Air France
-2026-04-15 17:58:12,942 - INFO - Cache miss for SAMU58, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - SAMU58    : xxx -> xxx - USAF Special Air Mission
-2026-04-15 17:58:12,942 - INFO - Cache miss for AFR95SK, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - AFR95SK   : CDG -> MRS - Air France
-2026-04-15 17:58:12,942 - INFO - Cache miss for VLG90DB, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - VLG90DB   : PMI -> ORY - Vueling Airlines
-2026-04-15 17:58:12,942 - INFO - Cache miss for EAP62, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - EAP62     : xxx -> xxx - Aero-Pyrenees
-2026-04-15 17:58:12,942 - INFO - Cache miss for FHBTI, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - FHBTI     : xxx -> xxx - 
-2026-04-15 17:58:12,942 - INFO - Cache miss for TVF31GU, checking disk
-2026-04-15 17:58:12,942 - INFO - 17:58:12: 10.100.100.163  - TVF31GU   : ORY -> NCE - Transavia France
-2026-04-15 17:58:12,943 - INFO - Cache miss for THY50J, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - THY50J    : IST -> CDG - Turkish Airlines
-2026-04-15 17:58:12,943 - INFO - Cache miss for TRA25E, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - TRA25E    : EIN -> ALC - Transavia
-2026-04-15 17:58:12,943 - INFO - Cache miss for QTR65L, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - QTR65L    : DOH -> SEA - Qatar Airways
-2026-04-15 17:58:12,943 - INFO - Cache miss for FGGQU, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - FGGQU     : xxx -> xxx - 
-2026-04-15 17:58:12,943 - INFO - Cache miss for AFR35AJ, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - AFR35AJ   : MXP -> CDG - Air France
-2026-04-15 17:58:12,943 - INFO - Cache miss for AFR1184, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - AFR1184   : CDG -> TUN - Air France
-2026-04-15 17:58:12,943 - INFO - Cache miss for JFA42W, checking disk
-2026-04-15 17:58:12,943 - INFO - 17:58:12: 10.100.100.163  - JFA42W    : xxx -> xxx - Jetfly Aviation
-2026-04-15 17:58:12,943 - INFO - Cache miss for TVF70XK, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - TVF70XK   : TFS -> ORY - Transavia France
-2026-04-15 17:58:12,944 - INFO - Cache miss for AAR501, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - AAR501    : ICN -> CDG - Asiana Airlines
-2026-04-15 17:58:12,944 - INFO - Cache miss for VLG9HV, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - VLG9HV    : BCN -> BRU - Vueling Airlines
-2026-04-15 17:58:12,944 - INFO - Cache miss for EZY53ZG, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - EZY53ZG   : RHO -> LGW - easyJet
-2026-04-15 17:58:12,944 - INFO - Cache miss for VLG435A, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - VLG435A   : VLC -> ORY - Vueling Airlines
-2026-04-15 17:58:12,944 - INFO - Cache miss for CTN52R, checking disk
-2026-04-15 17:58:12,944 - INFO - 17:58:12: 10.100.100.163  - CTN52R    : SPU -> CDG - Croatia Airlines
-2026-04-15 17:58:12,944 - INFO - Cache miss for OYO2, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - OYO2      : xxx -> xxx - Oyonnair
-2026-04-15 17:58:12,945 - INFO - Cache miss for TVF8230, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - TVF8230   : ORY -> TUN - Transavia France
-2026-04-15 17:58:12,945 - INFO - Cache miss for CFG9MK, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - CFG9MK    : FUE -> FRA - Condor
-2026-04-15 17:58:12,945 - INFO - Cache miss for ANA215, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - ANA215    : HND -> CDG - All Nippon Airways
-2026-04-15 17:58:12,945 - INFO - Cache miss for EJU91HD, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - EJU91HD   : FCO -> ORY - easyJet Europe
-2026-04-15 17:58:12,945 - INFO - Cache miss for RAM788H, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - RAM788H   : CMN -> CDG - Royal Air Maroc
-2026-04-15 17:58:12,945 - INFO - Cache miss for BEL4GU, checking disk
-2026-04-15 17:58:12,945 - INFO - 17:58:12: 10.100.100.163  - BEL4GU    : BRU -> AGP - Brussels Airlines
-2026-04-15 17:58:12,945 - INFO - Cache miss for VLG364R, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - VLG364R   : LGW -> FLR - Vueling Airlines
-2026-04-15 17:58:12,946 - INFO - Cache miss for GAC977D, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - GAC977D   : xxx -> xxx - GlobeAir
-2026-04-15 17:58:12,946 - INFO - Cache miss for ITY324, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - ITY324    : FCO -> CDG - ITA Airways
-2026-04-15 17:58:12,946 - INFO - Cache miss for TVF40PY, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - TVF40PY   : NCE -> ORY - Transavia France
-2026-04-15 17:58:12,946 - INFO - Cache miss for FDX5046, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - FDX5046   : MEM -> CDG - Federal Express
-2026-04-15 17:58:12,946 - INFO - Cache miss for TOM8EC, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - TOM8EC    : PFO -> BHX - TUI Airways
-2026-04-15 17:58:12,946 - INFO - Cache miss for 9HMIA, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - 9HMIA     : xxx -> xxx - 
-2026-04-15 17:58:12,946 - INFO - Cache miss for IBE9VB, checking disk
-2026-04-15 17:58:12,946 - INFO - 17:58:12: 10.100.100.163  - IBE9VB    : OSL -> MAD - Iberia Airlines
-2026-04-15 17:58:12,946 - INFO - Cache miss for DAH1004, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - DAH1004   : ALG -> ORY - Air Algérie
-2026-04-15 17:58:12,947 - INFO - Cache miss for SEY1008, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - SEY1008   : xxx -> xxx - Air Seychelles
-2026-04-15 17:58:12,947 - INFO - Cache miss for EZY73ZJ, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - EZY73ZJ   : BJV -> LGW - easyJet
-2026-04-15 17:58:12,947 - INFO - Cache miss for EJU98AL, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - EJU98AL   : xxx -> xxx - easyJet Europe
-2026-04-15 17:58:12,947 - INFO - Cache miss for NSZ2046, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - NSZ2046   : ARN -> CDG - Norwegian Air Sweden
-2026-04-15 17:58:12,947 - INFO - Cache miss for TOM7HB, checking disk
-2026-04-15 17:58:12,947 - INFO - 17:58:12: 10.100.100.163  - TOM7HB    : RHO -> BHX - TUI Airways
-2026-04-15 17:58:12,947 - INFO - Cache miss for AFR1623, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - AFR1623   : MUC -> CDG - Air France
-2026-04-15 17:58:12,948 - INFO - Cache miss for TWB401, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - TWB401    : ICN -> CDG - T'Way Air
-2026-04-15 17:58:12,948 - INFO - Cache miss for AFR41BL, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - AFR41BL   : ATH -> CDG - Air France
-2026-04-15 17:58:12,948 - INFO - Cache miss for CPV825, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - CPV825    : xxx -> xxx - Air Corporate
-2026-04-15 17:58:12,948 - INFO - Cache miss for RYR88DL, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - RYR88DL   : PSA -> BVA - Ryanair
-2026-04-15 17:58:12,948 - INFO - Cache miss for PEA302, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - PEA302    : xxx -> xxx - Pan Europeenne Air Service
-2026-04-15 17:58:12,948 - INFO - Cache miss for AFR87BK, checking disk
-2026-04-15 17:58:12,948 - INFO - 17:58:12: 10.100.100.163  - AFR87BK   : LYS -> CFR - Air France
-2026-04-15 17:58:12,948 - INFO - Cache miss for MSR800, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - MSR800    : CDG -> CAI - Egyptair
-2026-04-15 17:58:12,949 - INFO - Cache miss for BAW527, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - BAW527    : NAP -> LHR - British Airways
-2026-04-15 17:58:12,949 - INFO - Cache miss for VOE2580, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - VOE2580   : MRS -> CFR - Volotea
-2026-04-15 17:58:12,949 - INFO - Cache miss for JFA29J, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - JFA29J    : xxx -> xxx - Jetfly Aviation
-2026-04-15 17:58:12,949 - INFO - Cache miss for RVR12DP, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - RVR12DP   : xxx -> xxx - Raven Air
-2026-04-15 17:58:12,949 - INFO - Cache miss for AFR97DR, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - AFR97DR   : CDG -> GVA - Air France
-2026-04-15 17:58:12,949 - INFO - Cache miss for JFA4J, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - JFA4J     : xxx -> xxx - Jetfly Aviation
-2026-04-15 17:58:12,949 - INFO - Cache miss for AFR16CP, checking disk
-2026-04-15 17:58:12,949 - INFO - 17:58:12: 10.100.100.163  - AFR16CP   : FCO -> CDG - Air France
-2026-04-15 17:58:12,949 - INFO - Cache miss for NJE5NW, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - NJE5NW    : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:12,950 - INFO - Cache miss for FHLEI, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - FHLEI     : xxx -> xxx - Fast Helicopters
-2026-04-15 17:58:12,950 - INFO - Cache miss for BAW606, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - BAW606    : LHR -> VCE - British Airways
-2026-04-15 17:58:12,950 - INFO - Cache miss for AFR42KA, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - AFR42KA   : CDG -> NUE - Air France
-2026-04-15 17:58:12,950 - INFO - Cache miss for DAH1528, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - DAH1528   : xxx -> xxx - Air Algérie
-2026-04-15 17:58:12,950 - INFO - Cache miss for TVF48RW, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - TVF48RW   : MLA -> ORY - Transavia France
-2026-04-15 17:58:12,950 - INFO - Cache miss for FNY5020, checking disk
-2026-04-15 17:58:12,950 - INFO - 17:58:12: 10.100.100.163  - FNY5020   : xxx -> xxx - France Marine Nationale
-2026-04-15 17:58:12,950 - INFO - Cache miss for AFR91RA, checking disk
-2026-04-15 17:58:12,951 - INFO - 17:58:12: 10.100.100.163  - AFR91RA   : CDG -> FRA - Air France
-2026-04-15 17:58:13,970 - INFO - Cache miss for VCJ97G, checking disk
-2026-04-15 17:58:13,970 - INFO - 17:58:13: 10.100.100.163  - VCJ97G    : xxx -> xxx - Avcon Jet Malta
-2026-04-15 17:58:13,970 - INFO - Cache miss for DAH1144, checking disk
-2026-04-15 17:58:13,971 - INFO - 17:58:13: 10.100.100.163  - DAH1144   : AAE -> ORY - Air Algérie
-2026-04-15 17:58:13,971 - INFO - Cache miss for BAW329, checking disk
-2026-04-15 17:58:13,971 - INFO - 17:58:13: 10.100.100.163  - BAW329    : NCE -> LHR - British Airways
-2026-04-15 17:58:13,971 - INFO - Cache miss for RYR95LU, checking disk
-2026-04-15 17:58:13,972 - INFO - 17:58:13: 10.100.100.163  - RYR95LU   : FKB -> AGP - Ryanair
-2026-04-15 17:58:13,972 - INFO - Cache miss for DFIII, checking disk
-2026-04-15 17:58:13,972 - INFO - 17:58:13: 10.100.100.163  - DFIII     : xxx -> xxx - 
-2026-04-15 17:58:13,972 - INFO - Cache miss for FHRIZ, checking disk
-2026-04-15 17:58:13,972 - INFO - 17:58:13: 10.100.100.163  - FHRIZ     : xxx -> xxx - 
-2026-04-15 17:58:13,973 - INFO - Cache miss for LOT7KU, checking disk
-2026-04-15 17:58:13,973 - INFO - 17:58:13: 10.100.100.163  - LOT7KU    : LIS -> WAW - LOT Polish Airlines
-2026-04-15 17:58:13,973 - INFO - Cache miss for EJU89JK, checking disk
-2026-04-15 17:58:13,973 - INFO - 17:58:13: 10.100.100.163  - EJU89JK   : VCE -> ORY - easyJet Europe
-2026-04-15 17:58:13,973 - INFO - Cache miss for SAMU21, checking disk
-2026-04-15 17:58:13,974 - INFO - 17:58:13: 10.100.100.163  - SAMU21    : xxx -> xxx - USAF Special Air Mission
-2026-04-15 17:58:13,974 - INFO - Cache miss for AFR52WN, checking disk
-2026-04-15 17:58:13,974 - INFO - 17:58:13: 10.100.100.163  - AFR52WN   : PRG -> CDG - Air France
-2026-04-15 17:58:13,974 - INFO - Cache miss for FJDPD, checking disk
-2026-04-15 17:58:13,974 - INFO - 17:58:13: 10.100.100.163  - FJDPD     : xxx -> xxx - 
-2026-04-15 17:58:13,974 - INFO - Cache miss for NJU324V, checking disk
-2026-04-15 17:58:13,974 - INFO - 17:58:13: 10.100.100.163  - NJU324V   : xxx -> xxx - Netjets UK
-2026-04-15 17:58:13,974 - INFO - Cache miss for EXS19WU, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - EXS19WU   : STN -> CTA - Jet2.com
-2026-04-15 17:58:13,975 - INFO - Cache miss for LHX27W, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - LHX27W    : CDG -> MUC - Lufthansa City Airlines
-2026-04-15 17:58:13,975 - INFO - Cache miss for IBE8EK, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - IBE8EK    : xxx -> xxx - Iberia Airlines
-2026-04-15 17:58:13,975 - INFO - Cache miss for EZY52JX, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - EZY52JX   : MAN -> GVA - easyJet
-2026-04-15 17:58:13,975 - INFO - Cache miss for RYR66WT, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - RYR66WT   : PSA -> CRL - Ryanair
-2026-04-15 17:58:13,975 - INFO - Cache miss for LXAID, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - LXAID     : xxx -> xxx - Luxaviation
-2026-04-15 17:58:13,975 - INFO - Cache miss for EZS1506, checking disk
-2026-04-15 17:58:13,975 - INFO - 17:58:13: 10.100.100.163  - EZS1506   : DBV -> GVA - easyJet Switzerland
-2026-04-15 17:58:13,975 - INFO - Cache miss for EJU68QN, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - EJU68QN   : MXP -> ORY - easyJet Europe
-2026-04-15 17:58:13,976 - INFO - Cache miss for FIA5902, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - FIA5902   : CDG -> RMO - FlyOne
-2026-04-15 17:58:13,976 - INFO - Cache miss for MMD6789, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - MMD6789   : xxx -> xxx - Air Alsie
-2026-04-15 17:58:13,976 - INFO - Cache miss for VLJ371S, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - VLJ371S   : xxx -> xxx - VallJet
-2026-04-15 17:58:13,976 - INFO - Cache miss for EZY42ZW, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - EZY42ZW   : ZRH -> LTN - easyJet
-2026-04-15 17:58:13,976 - INFO - Cache miss for FUU231A, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - FUU231A   : xxx -> xxx - Fly My Sky
-2026-04-15 17:58:13,976 - INFO - Cache miss for EZS26DT, checking disk
-2026-04-15 17:58:13,976 - INFO - 17:58:13: 10.100.100.163  - EZS26DT   : GVA -> TLS - easyJet Switzerland
-2026-04-15 17:58:13,977 - INFO - Cache miss for NJE353B, checking disk
-2026-04-15 17:58:13,977 - INFO - 17:58:13: 10.100.100.163  - NJE353B   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:13,977 - INFO - Cache miss for NJE827V, checking disk
-2026-04-15 17:58:13,977 - INFO - 17:58:13: 10.100.100.163  - NJE827V   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:13,977 - INFO - Cache miss for FHAYE, checking disk
-2026-04-15 17:58:13,977 - INFO - 17:58:13: 10.100.100.163  - FHAYE     : xxx -> xxx - 
-2026-04-15 17:58:13,977 - INFO - Cache miss for PHTBM, checking disk
-2026-04-15 17:58:13,978 - INFO - 17:58:13: 10.100.100.163  - PHTBM     : xxx -> xxx - Phoenix Airways
-2026-04-15 17:58:13,978 - INFO - Cache miss for FJIZG, checking disk
-2026-04-15 17:58:13,978 - INFO - 17:58:13: 10.100.100.163  - FJIZG     : xxx -> xxx - Fiji Airways
-2026-04-15 17:58:13,978 - INFO - Cache miss for KLM1433, checking disk
-2026-04-15 17:58:13,978 - INFO - 17:58:13: 10.100.100.163  - KLM1433   : AMS -> LYS - KLM
-2026-04-15 17:58:13,978 - INFO - Cache miss for LGL92EL, checking disk
-2026-04-15 17:58:13,978 - INFO - 17:58:13: 10.100.100.163  - LGL92EL   : BCN -> LUX - Luxair
-2026-04-15 17:58:13,978 - INFO - Cache miss for RYR65RJ, checking disk
-2026-04-15 17:58:13,979 - INFO - 17:58:13: 10.100.100.163  - RYR65RJ   : ZAG -> CRL - Ryanair
-2026-04-15 17:58:13,979 - INFO - Cache miss for IBE8TR, checking disk
-2026-04-15 17:58:13,979 - INFO - 17:58:13: 10.100.100.163  - IBE8TR    : CPH -> MAD - Iberia Airlines
-2026-04-15 17:58:13,979 - INFO - Cache miss for BEL6VF, checking disk
-2026-04-15 17:58:13,979 - INFO - 17:58:13: 10.100.100.163  - BEL6VF    : NCE -> BRU - Brussels Airlines
-2026-04-15 17:58:13,979 - INFO - Cache miss for DKXAI, checking disk
-2026-04-15 17:58:13,979 - INFO - 17:58:13: 10.100.100.163  - DKXAI     : xxx -> xxx - 
-2026-04-15 17:58:13,979 - INFO - Cache miss for HBKFI, checking disk
-2026-04-15 17:58:13,979 - INFO - 17:58:13: 10.100.100.163  - HBKFI     : xxx -> xxx - 
-2026-04-15 17:58:13,979 - INFO - Cache miss for HBYSL, checking disk
-2026-04-15 17:58:13,980 - INFO - 17:58:13: 10.100.100.163  - HBYSL     : xxx -> xxx - 
-2026-04-15 17:58:13,980 - INFO - Cache miss for EJU69MZ, checking disk
-2026-04-15 17:58:13,980 - INFO - 17:58:13: 10.100.100.163  - EJU69MZ   : BER -> BCN - easyJet Europe
-2026-04-15 17:58:13,980 - INFO - Cache miss for V616, checking disk
-2026-04-15 17:58:13,980 - INFO - 17:58:13: 10.100.100.163  - V616      : xxx -> xxx - 
-2026-04-15 17:58:13,980 - INFO - Cache miss for LGL58HB, checking disk
-2026-04-15 17:58:13,980 - INFO - 17:58:13: 10.100.100.163  - LGL58HB   : BUD -> LUX - Luxair
-2026-04-15 17:58:13,980 - INFO - Cache miss for AFR76MK, checking disk
-2026-04-15 17:58:13,980 - INFO - 17:58:13: 10.100.100.163  - AFR76MK   : CDG -> NAP - Air France
-2026-04-15 17:58:13,980 - INFO - Cache miss for JMP902, checking disk
-2026-04-15 17:58:13,981 - INFO - 17:58:13: 10.100.100.163  - JMP902    : LBG -> MHG - Business Wings
-2026-04-15 17:58:13,981 - INFO - Cache miss for AFR253, checking disk
-2026-04-15 17:58:13,981 - INFO - 17:58:13: 10.100.100.163  - AFR253    : SGN -> CDG - Air France
-2026-04-15 17:58:13,981 - INFO - Cache miss for T7MUSIC, checking disk
-2026-04-15 17:58:13,981 - INFO - 17:58:13: 10.100.100.163  - T7MUSIC   : xxx -> xxx - 
-2026-04-15 17:58:13,981 - INFO - Cache miss for HBZWD, checking disk
-2026-04-15 17:58:13,981 - INFO - 17:58:13: 10.100.100.163  - HBZWD     : xxx -> xxx - 
-2026-04-15 17:58:13,981 - INFO - Cache miss for DKSEP, checking disk
-2026-04-15 17:58:13,981 - INFO - 17:58:13: 10.100.100.163  - DKSEP     : xxx -> xxx - 
-2026-04-15 17:58:13,981 - INFO - Cache miss for DKHGW, checking disk
-2026-04-15 17:58:13,982 - INFO - 17:58:13: 10.100.100.163  - DKHGW     : xxx -> xxx - Juneyao Airlines
-2026-04-15 17:58:13,982 - INFO - Cache miss for HBKPN, checking disk
-2026-04-15 17:58:13,982 - INFO - 17:58:13: 10.100.100.163  - HBKPN     : xxx -> xxx - 
-2026-04-15 17:58:13,982 - INFO - Cache miss for EXS72AR, checking disk
-2026-04-15 17:58:13,982 - INFO - 17:58:13: 10.100.100.163  - EXS72AR   : HER -> LTN - Jet2.com
-2026-04-15 17:58:13,982 - INFO - Cache miss for CHX16, checking disk
-2026-04-15 17:58:13,982 - INFO - 17:58:13: 10.100.100.163  - CHX16     : xxx -> xxx - DRF Luftrettung
-2026-04-15 17:58:13,982 - INFO - Cache miss for EZY13WN, checking disk
-2026-04-15 17:58:13,983 - INFO - 17:58:13: 10.100.100.163  - EZY13WN   : xxx -> xxx - easyJet
-2026-04-15 17:58:13,983 - INFO - Cache miss for CORBY99, checking disk
-2026-04-15 17:58:13,983 - INFO - 17:58:13: 10.100.100.163  - CORBY99   : xxx -> xxx - Continental Express
-2026-04-15 17:58:13,983 - INFO - Cache miss for DEHOW, checking disk
-2026-04-15 17:58:13,983 - INFO - 17:58:13: 10.100.100.163  - DEHOW     : xxx -> xxx - 
-2026-04-15 17:58:13,983 - INFO - Cache miss for SWR465K, checking disk
-2026-04-15 17:58:13,983 - INFO - 17:58:13: 10.100.100.163  - SWR465K   : ZRH -> MAD - Swiss
-2026-04-15 17:58:13,983 - INFO - Cache miss for DEATW, checking disk
-2026-04-15 17:58:13,983 - INFO - 17:58:13: 10.100.100.163  - DEATW     : xxx -> xxx - Delta Aerotaxi
-2026-04-15 17:58:13,983 - INFO - Cache miss for UAE98P, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - UAE98P    : BHX -> DXB - Emirates
-2026-04-15 17:58:13,984 - INFO - Cache miss for VJH992, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - VJH992    : xxx -> xxx - VistaJet Germany
-2026-04-15 17:58:13,984 - INFO - Cache miss for RYR83CW, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - RYR83CW   : VRN -> BHX - Ryanair
-2026-04-15 17:58:13,984 - INFO - Cache miss for HBEPH, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - HBEPH     : xxx -> xxx - 
-2026-04-15 17:58:13,984 - INFO - Cache miss for DEENR, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - DEENR     : xxx -> xxx - Dixie Airways
-2026-04-15 17:58:13,984 - INFO - Cache miss for HBKOR, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - HBKOR     : xxx -> xxx - 
-2026-04-15 17:58:13,984 - INFO - Cache miss for HHN306, checking disk
-2026-04-15 17:58:13,984 - INFO - 17:58:13: 10.100.100.163  - HHN306    : xxx -> xxx - Hope Air
-2026-04-15 17:58:13,985 - INFO - Cache miss for BEL5EF, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - BEL5EF    : FRA -> BRU - Brussels Airlines
-2026-04-15 17:58:13,985 - INFO - Cache miss for DEELL, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - DEELL     : xxx -> xxx - Dixie Airways
-2026-04-15 17:58:13,985 - INFO - Cache miss for DHTAF, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - DHTAF     : xxx -> xxx - 
-2026-04-15 17:58:13,985 - INFO - Cache miss for DMMAN, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - DMMAN     : xxx -> xxx - 
-2026-04-15 17:58:13,985 - INFO - Cache miss for GAF602, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - GAF602    : xxx -> xxx - German Air Force
-2026-04-15 17:58:13,985 - INFO - Cache miss for DECBF, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - DECBF     : xxx -> xxx - 
-2026-04-15 17:58:13,985 - INFO - Cache miss for OCN6NH, checking disk
-2026-04-15 17:58:13,985 - INFO - 17:58:13: 10.100.100.163  - OCN6NH    : FRA -> PMI - Discover Airlines
-2026-04-15 17:58:13,985 - INFO - Cache miss for DLH276, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - DLH276    : FRA -> LIN - Lufthansa
-2026-04-15 17:58:13,986 - INFO - Cache miss for RYR8GK, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - RYR8GK    : KRK -> BVA - Ryanair
-2026-04-15 17:58:13,986 - INFO - Cache miss for EFD2F, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - EFD2F     : xxx -> xxx - Eisele Flugdienst
-2026-04-15 17:58:13,986 - INFO - Cache miss for HBZVI, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - HBZVI     : xxx -> xxx - 
-2026-04-15 17:58:13,986 - INFO - Cache miss for RYR9EF, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - RYR9EF    : OPO -> FMM - Ryanair
-2026-04-15 17:58:13,986 - INFO - Cache miss for HBKNS, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - HBKNS     : xxx -> xxx - 
-2026-04-15 17:58:13,986 - INFO - Cache miss for KMM490, checking disk
-2026-04-15 17:58:13,986 - INFO - 17:58:13: 10.100.100.163  - KMM490    : MLA -> ZRH - KM Malta Airlines
-2026-04-15 17:58:13,986 - INFO - Cache miss for RYR39WL, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - RYR39WL   : ALC -> FKB - Ryanair
-2026-04-15 17:58:13,987 - INFO - Cache miss for SWR26W, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - SWR26W    : CPH -> ZRH - Swiss
-2026-04-15 17:58:13,987 - INFO - Cache miss for SUZ8, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - SUZ8      : xxx -> xxx - 
-2026-04-15 17:58:13,987 - INFO - Cache miss for HBKNI, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - HBKNI     : xxx -> xxx - 
-2026-04-15 17:58:13,987 - INFO - Cache miss for V632, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - V632      : xxx -> xxx - 
-2026-04-15 17:58:13,987 - INFO - Cache miss for HBKNP, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - HBKNP     : xxx -> xxx - 
-2026-04-15 17:58:13,987 - INFO - Cache miss for UAE65W, checking disk
-2026-04-15 17:58:13,987 - INFO - 17:58:13: 10.100.100.163  - UAE65W    : CDG -> DXB - Emirates
-2026-04-15 17:58:13,987 - INFO - Cache miss for UAE1CL, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - UAE1CL    : LGW -> DXB - Emirates
-2026-04-15 17:58:13,988 - INFO - Cache miss for RYR9VX, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - RYR9VX    : STN -> RHO - Ryanair
-2026-04-15 17:58:13,988 - INFO - Cache miss for TRA6083, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - TRA6083   : AMS -> ZTH - Transavia
-2026-04-15 17:58:13,988 - INFO - Cache miss for TUA472, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - TUA472    : BRQ -> ASB - Turkmenistan Airlines
-2026-04-15 17:58:13,988 - INFO - Cache miss for EWG7YY, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - EWG7YY    : xxx -> xxx - Eurowings
-2026-04-15 17:58:13,988 - INFO - Cache miss for AEE532, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - AEE532    : SKG -> FRA - Aegean Airlines
-2026-04-15 17:58:13,988 - INFO - Cache miss for CFG314, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - CFG314    : FRA -> MRU - Condor
-2026-04-15 17:58:13,988 - INFO - Cache miss for BEL7PK, checking disk
-2026-04-15 17:58:13,988 - INFO - 17:58:13: 10.100.100.163  - BEL7PK    : BRU -> LJU - Brussels Airlines
-2026-04-15 17:58:13,989 - INFO - Cache miss for DMEBE, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - DMEBE     : xxx -> xxx - 
-2026-04-15 17:58:13,989 - INFO - Cache miss for DEDAM, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - DEDAM     : xxx -> xxx - 
-2026-04-15 17:58:13,989 - INFO - Cache miss for EJU13CL, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - EJU13CL   : PRG -> LYS - easyJet Europe
-2026-04-15 17:58:13,989 - INFO - Cache miss for DLA8E, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - DLA8E     : FRA -> GRZ - Air Dolomiti
-2026-04-15 17:58:13,989 - INFO - Cache miss for CFG6YR, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - CFG6YR    : MUC -> FRA - Condor
-2026-04-15 17:58:13,989 - INFO - Cache miss for DERFM, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - DERFM     : xxx -> xxx - Deer Jet
-2026-04-15 17:58:13,989 - INFO - Cache miss for VJT981, checking disk
-2026-04-15 17:58:13,989 - INFO - 17:58:13: 10.100.100.163  - VJT981    : xxx -> xxx - Vistajet
-2026-04-15 17:58:15,027 - INFO - Cache miss for MSR758, checking disk
-2026-04-15 17:58:15,027 - INFO - 17:58:15: 10.100.100.163  - MSR758    : AMS -> CAI - Egyptair
-2026-04-15 17:58:15,027 - INFO - Cache miss for OEBXQ, checking disk
-2026-04-15 17:58:15,027 - INFO - 17:58:15: 10.100.100.163  - OEBXQ     : xxx -> xxx - 
-2026-04-15 17:58:15,027 - INFO - Cache miss for HRE11A, checking disk
-2026-04-15 17:58:15,027 - INFO - 17:58:15: 10.100.100.163  - HRE11A    : xxx -> xxx - 
-2026-04-15 17:58:15,027 - INFO - Cache miss for AUA36RB, checking disk
-2026-04-15 17:58:15,027 - INFO - 17:58:15: 10.100.100.163  - AUA36RB   : CDG -> VIE - Austrian Airlines
-2026-04-15 17:58:15,027 - INFO - Cache miss for THY5HK, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - THY5HK    : IST -> LUX - Turkish Airlines
-2026-04-15 17:58:15,028 - INFO - Cache miss for DEIGE, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - DEIGE     : xxx -> xxx - Ecoair
-2026-04-15 17:58:15,028 - INFO - Cache miss for BOX637, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - BOX637    : HKG -> FRA - Aerologic
-2026-04-15 17:58:15,028 - INFO - Cache miss for DMYGX, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - DMYGX     : xxx -> xxx - 
-2026-04-15 17:58:15,028 - INFO - Cache miss for JEI434, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - JEI434    : xxx -> xxx - Jet Executive International Charter
-2026-04-15 17:58:15,028 - INFO - Cache miss for RYR67JA, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - RYR67JA   : STN -> PDV - Ryanair
-2026-04-15 17:58:15,028 - INFO - Cache miss for DEOEM, checking disk
-2026-04-15 17:58:15,028 - INFO - 17:58:15: 10.100.100.163  - DEOEM     : xxx -> xxx - 
-2026-04-15 17:58:15,028 - INFO - Cache miss for WZZ337, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - WZZ337    : LCA -> LGW - Wizz Air
-2026-04-15 17:58:15,029 - INFO - Cache miss for THY3NV, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - THY3NV    : IST -> FRA - Turkish Airlines
-2026-04-15 17:58:15,029 - INFO - Cache miss for DEBFT, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - DEBFT     : xxx -> xxx - 
-2026-04-15 17:58:15,029 - INFO - Cache miss for FSF120A, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - FSF120A   : xxx -> xxx - Fly7
-2026-04-15 17:58:15,029 - INFO - Cache miss for EZY91TK, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - EZY91TK   : LGW -> ATH - easyJet
-2026-04-15 17:58:15,029 - INFO - Cache miss for DEDLG, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - DEDLG     : xxx -> xxx - 
-2026-04-15 17:58:15,029 - INFO - Cache miss for DERRW, checking disk
-2026-04-15 17:58:15,029 - INFO - 17:58:15: 10.100.100.163  - DERRW     : xxx -> xxx - Deer Jet
-2026-04-15 17:58:15,029 - INFO - Cache miss for HAZE32, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - HAZE32    : xxx -> xxx - 
-2026-04-15 17:58:15,030 - INFO - Cache miss for RYR45CC, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - RYR45CC   : BER -> IBZ - Ryanair
-2026-04-15 17:58:15,030 - INFO - Cache miss for CFG2369, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - CFG2369   : HKT -> FRA - Condor
-2026-04-15 17:58:15,030 - INFO - Cache miss for SLAYR33, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - SLAYR33   : xxx -> xxx - Sierra National Airlines
-2026-04-15 17:58:15,030 - INFO - Cache miss for IFA1119, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - IFA1119   : xxx -> xxx - FAI Air Service
-2026-04-15 17:58:15,030 - INFO - Cache miss for ALK558, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - ALK558    : FRA -> CMB - SriLankan Airlines
-2026-04-15 17:58:15,030 - INFO - Cache miss for EZY2146, checking disk
-2026-04-15 17:58:15,030 - INFO - 17:58:15: 10.100.100.163  - EZY2146   : BER -> LTN - easyJet
-2026-04-15 17:58:15,030 - INFO - Cache miss for DLH4YA, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - DLH4YA    : MUC -> DUS - Lufthansa
-2026-04-15 17:58:15,031 - INFO - Cache miss for RCH170, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - RCH170    : xxx -> xxx - Air Mobility Command
-2026-04-15 17:58:15,031 - INFO - Cache miss for IFA6241, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - IFA6241   : xxx -> xxx - FAI Air Service
-2026-04-15 17:58:15,031 - INFO - Cache miss for RDF1, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - RDF1      : xxx -> xxx - 
-2026-04-15 17:58:15,031 - INFO - Cache miss for EZY64UT, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - EZY64UT   : PFO -> LTN - easyJet
-2026-04-15 17:58:15,031 - INFO - Cache miss for WZZ65GB, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - WZZ65GB   : WAW -> BIO - Wizz Air
-2026-04-15 17:58:15,031 - INFO - Cache miss for RYR515T, checking disk
-2026-04-15 17:58:15,031 - INFO - 17:58:15: 10.100.100.163  - RYR515T   : CRL -> OTP - Ryanair
-2026-04-15 17:58:15,031 - INFO - Cache miss for RYR724C, checking disk
-2026-04-15 17:58:15,032 - INFO - 17:58:15: 10.100.100.163  - RYR724C   : NUE -> PMO - Ryanair
-2026-04-15 17:58:15,032 - INFO - Cache miss for ITY404, checking disk
-2026-04-15 17:58:15,032 - INFO - 17:58:15: 10.100.100.163  - ITY404    : FCO -> FRA - ITA Airways
-2026-04-15 17:58:15,032 - INFO - Cache miss for RYR8ER, checking disk
-2026-04-15 17:58:15,032 - INFO - 17:58:15: 10.100.100.163  - RYR8ER    : BLQ -> EIN - Ryanair
-2026-04-15 17:58:15,032 - INFO - Cache miss for QTR6P, checking disk
-2026-04-15 17:58:15,032 - INFO - 17:58:15: 10.100.100.163  - QTR6P     : FRA -> DOH - Qatar Airways
-2026-04-15 17:58:15,032 - INFO - Cache miss for TRA28U, checking disk
-2026-04-15 17:58:15,032 - INFO - 17:58:15: 10.100.100.163  - TRA28U    : INN -> AMS - Transavia
-2026-04-15 17:58:15,033 - INFO - Cache miss for THY6455, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - THY6455   : xxx -> xxx - Turkish Airlines
-2026-04-15 17:58:15,033 - INFO - Cache miss for DIOTT, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - DIOTT     : xxx -> xxx - 
-2026-04-15 17:58:15,033 - INFO - Cache miss for ULC7P, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - ULC7P     : xxx -> xxx - Albinati Aviation
-2026-04-15 17:58:15,033 - INFO - Cache miss for EXS11MG, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - EXS11MG   : PFO -> GLA - Jet2.com
-2026-04-15 17:58:15,033 - INFO - Cache miss for SLAYR32, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - SLAYR32   : xxx -> xxx - Sierra National Airlines
-2026-04-15 17:58:15,033 - INFO - Cache miss for DLH520, checking disk
-2026-04-15 17:58:15,033 - INFO - 17:58:15: 10.100.100.163  - DLH520    : MUC -> MEX - Lufthansa
-2026-04-15 17:58:15,034 - INFO - Cache miss for RYR15FP, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - RYR15FP   : CPH -> VCE - Ryanair
-2026-04-15 17:58:15,034 - INFO - Cache miss for EWG78P, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - EWG78P    : STR -> STR - Eurowings
-2026-04-15 17:58:15,034 - INFO - Cache miss for EZY27YE, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - EZY27YE   : LTN -> CTA - easyJet
-2026-04-15 17:58:15,034 - INFO - Cache miss for LHX3PP, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - LHX3PP    : MUC -> GOT - Lufthansa City Airlines
-2026-04-15 17:58:15,034 - INFO - Cache miss for DASGW, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - DASGW     : xxx -> xxx - Damascene Airways
-2026-04-15 17:58:15,034 - INFO - Cache miss for QTR49U, checking disk
-2026-04-15 17:58:15,034 - INFO - 17:58:15: 10.100.100.163  - QTR49U    : MUC -> DOH - Qatar Airways
-2026-04-15 17:58:15,035 - INFO - Cache miss for BAW935, checking disk
-2026-04-15 17:58:15,035 - INFO - 17:58:15: 10.100.100.163  - BAW935    : MUC -> LHR - British Airways
-2026-04-15 17:58:15,035 - INFO - Cache miss for SPJRA, checking disk
-2026-04-15 17:58:15,035 - INFO - 17:58:15: 10.100.100.163  - SPJRA     : xxx -> xxx - Air Service
-2026-04-15 17:58:15,035 - INFO - Cache miss for RYR33PK, checking disk
-2026-04-15 17:58:15,035 - INFO - 17:58:15: 10.100.100.163  - RYR33PK   : KRK -> AGP - Ryanair
-2026-04-15 17:58:15,035 - INFO - Cache miss for RJA130, checking disk
-2026-04-15 17:58:15,035 - INFO - 17:58:15: 10.100.100.163  - RJA130    : DUS -> AMM - Royal Jordanian
-2026-04-15 17:58:15,035 - INFO - Cache miss for RYR85HF, checking disk
-2026-04-15 17:58:15,036 - INFO - 17:58:15: 10.100.100.163  - RYR85HF   : PMI -> KLU - Ryanair
-2026-04-15 17:58:15,036 - INFO - Cache miss for NSZ3741, checking disk
-2026-04-15 17:58:15,036 - INFO - 17:58:15: 10.100.100.163  - NSZ3741   : VCE -> CPH - Norwegian Air Sweden
-2026-04-15 17:58:15,036 - INFO - Cache miss for PGT878C, checking disk
-2026-04-15 17:58:15,036 - INFO - 17:58:15: 10.100.100.163  - PGT878C   : AYT -> DUS - Pegasus Airlines
-2026-04-15 17:58:15,036 - INFO - Cache miss for RJA152, checking disk
-2026-04-15 17:58:15,036 - INFO - 17:58:15: 10.100.100.163  - RJA152    : AMS -> AMM - Royal Jordanian
-2026-04-15 17:58:15,036 - INFO - Cache miss for WZZ4118, checking disk
-2026-04-15 17:58:15,037 - INFO - 17:58:15: 10.100.100.163  - WZZ4118   : KUT -> BVA - Wizz Air
-2026-04-15 17:58:15,037 - INFO - Cache miss for DOR811, checking disk
-2026-04-15 17:58:15,037 - INFO - 17:58:15: 10.100.100.163  - DOR811    : xxx -> xxx - Dornier
-2026-04-15 17:58:15,037 - INFO - Cache miss for SXS4JV, checking disk
-2026-04-15 17:58:15,037 - INFO - 17:58:15: 10.100.100.163  - SXS4JV    : AYT -> BRS - SunExpress
-2026-04-15 17:58:15,037 - INFO - Cache miss for KAL907, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - KAL907    : ICN -> LHR - Korean Air
-2026-04-15 17:58:15,038 - INFO - Cache miss for SAS80D, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - SAS80D    : NCE -> ARN - SAS
-2026-04-15 17:58:15,038 - INFO - Cache miss for DEUGS, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - DEUGS     : xxx -> xxx - 
-2026-04-15 17:58:15,038 - INFO - Cache miss for THY6431, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - THY6431   : IST -> CDG - Turkish Airlines
-2026-04-15 17:58:15,038 - INFO - Cache miss for DEIFY, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - DEIFY     : xxx -> xxx - Ecoair
-2026-04-15 17:58:15,038 - INFO - Cache miss for KAL945, checking disk
-2026-04-15 17:58:15,038 - INFO - 17:58:15: 10.100.100.163  - KAL945    : ICN -> FRA - Korean Air
-2026-04-15 17:58:15,039 - INFO - Cache miss for THY1HZ, checking disk
-2026-04-15 17:58:15,039 - INFO - 17:58:15: 10.100.100.163  - THY1HZ    : IST -> BRU - Turkish Airlines
-2026-04-15 17:58:15,039 - INFO - Cache miss for UAE2, checking disk
-2026-04-15 17:58:15,039 - INFO - 17:58:15: 10.100.100.163  - UAE2      : LHR -> DXB - Emirates
-2026-04-15 17:58:15,039 - INFO - Cache miss for FIN3AN, checking disk
-2026-04-15 17:58:15,039 - INFO - 17:58:15: 10.100.100.163  - FIN3AN    : HEL -> FCO - Finnair
-2026-04-15 17:58:15,039 - INFO - Cache miss for RYR8RF, checking disk
-2026-04-15 17:58:15,039 - INFO - 17:58:15: 10.100.100.163  - RYR8RF    : EIN -> SOF - Ryanair
-2026-04-15 17:58:15,039 - INFO - Cache miss for BAW866H, checking disk
-2026-04-15 17:58:15,039 - INFO - 17:58:15: 10.100.100.163  - BAW866H   : LHR -> BUD - British Airways
-2026-04-15 17:58:15,039 - INFO - Cache miss for WZZ3253, checking disk
-2026-04-15 17:58:15,040 - INFO - 17:58:15: 10.100.100.163  - WZZ3253   : VAR -> EIN - Wizz Air
-2026-04-15 17:58:15,040 - INFO - Cache miss for RJA33, checking disk
-2026-04-15 17:58:15,040 - INFO - 17:58:15: 10.100.100.163  - RJA33     : AMM -> MST - Royal Jordanian
-2026-04-15 17:58:15,040 - INFO - Cache miss for DEHSD, checking disk
-2026-04-15 17:58:15,040 - INFO - 17:58:15: 10.100.100.163  - DEHSD     : xxx -> xxx - 
-2026-04-15 17:58:15,040 - INFO - Cache miss for SXS7QF, checking disk
-2026-04-15 17:58:15,040 - INFO - 17:58:15: 10.100.100.163  - SXS7QF    : AYT -> DUS - SunExpress
-2026-04-15 17:58:15,040 - INFO - Cache miss for EJU57BX, checking disk
-2026-04-15 17:58:15,041 - INFO - 17:58:15: 10.100.100.163  - EJU57BX   : MXP -> PRG - easyJet Europe
-2026-04-15 17:58:15,041 - INFO - Cache miss for ACI500, checking disk
-2026-04-15 17:58:15,041 - INFO - 17:58:15: 10.100.100.163  - ACI500    : NOU -> CDG - Air Caledonie International
-2026-04-15 17:58:15,041 - INFO - Cache miss for BAW719, checking disk
-2026-04-15 17:58:15,041 - INFO - 17:58:15: 10.100.100.163  - BAW719    : IST -> LHR - British Airways
-2026-04-15 17:58:15,041 - INFO - Cache miss for TOM98B, checking disk
-2026-04-15 17:58:15,041 - INFO - 17:58:15: 10.100.100.163  - TOM98B    : HER -> BRS - TUI Airways
-2026-04-15 17:58:15,041 - INFO - Cache miss for PGT388P, checking disk
-2026-04-15 17:58:15,042 - INFO - 17:58:15: 10.100.100.163  - PGT388P   : MUC -> SAW - Pegasus Airlines
-2026-04-15 17:58:15,042 - INFO - Cache miss for OEGHB, checking disk
-2026-04-15 17:58:15,042 - INFO - 17:58:15: 10.100.100.163  - OEGHB     : xxx -> xxx - 
-2026-04-15 17:58:15,042 - INFO - Cache miss for RYR295B, checking disk
-2026-04-15 17:58:15,042 - INFO - 17:58:15: 10.100.100.163  - RYR295B   : SKG -> NUE - Ryanair
-2026-04-15 17:58:15,042 - INFO - Cache miss for RYR8193, checking disk
-2026-04-15 17:58:15,042 - INFO - 17:58:15: 10.100.100.163  - RYR8193   : BGY -> VIE - Ryanair
-2026-04-15 17:58:15,042 - INFO - Cache miss for QTR8242, checking disk
-2026-04-15 17:58:15,043 - INFO - 17:58:15: 10.100.100.163  - QTR8242   : BUD -> DOH - Qatar Airways
-2026-04-15 17:58:15,043 - INFO - Cache miss for DEQIS, checking disk
-2026-04-15 17:58:15,043 - INFO - 17:58:15: 10.100.100.163  - DEQIS     : xxx -> xxx - 
-2026-04-15 17:58:15,043 - INFO - Cache miss for C10, checking disk
-2026-04-15 17:58:15,043 - INFO - 17:58:15: 10.100.100.163  - C10       : xxx -> xxx - 
-2026-04-15 17:58:15,043 - INFO - Cache miss for FDX5023, checking disk
-2026-04-15 17:58:15,043 - INFO - 17:58:15: 10.100.100.163  - FDX5023   : KIX -> MEM - Federal Express
-2026-04-15 17:58:15,043 - INFO - Cache miss for THY3UY, checking disk
-2026-04-15 17:58:15,043 - INFO - 17:58:15: 10.100.100.163  - THY3UY    : IST -> ZRH - Turkish Airlines
-2026-04-15 17:58:15,043 - INFO - Cache miss for OE9429, checking disk
-2026-04-15 17:58:15,044 - INFO - 17:58:15: 10.100.100.163  - OE9429    : xxx -> xxx - 
-2026-04-15 17:58:15,044 - INFO - Cache miss for SWR98G, checking disk
-2026-04-15 17:58:15,044 - INFO - 17:58:15: 10.100.100.163  - SWR98G    : OTP -> ZRH - Swiss
-2026-04-15 17:58:15,044 - INFO - Cache miss for TKJ1BP, checking disk
-2026-04-15 17:58:15,044 - INFO - 17:58:15: 10.100.100.163  - TKJ1BP    : STR -> SAW - AJet
-2026-04-15 17:58:15,044 - INFO - Cache miss for UAE46, checking disk
-2026-04-15 17:58:15,044 - INFO - 17:58:15: 10.100.100.163  - UAE46     : FRA -> DXB - Emirates
-2026-04-15 17:58:15,044 - INFO - Cache miss for DLH3M, checking disk
-2026-04-15 17:58:15,045 - INFO - 17:58:15: 10.100.100.163  - DLH3M     : HAM -> MUC - Lufthansa
-2026-04-15 17:58:15,045 - INFO - Cache miss for MSC2975, checking disk
-2026-04-15 17:58:15,045 - INFO - 17:58:15: 10.100.100.163  - MSC2975   : LEJ -> HRG - Air Cairo
-2026-04-15 17:58:15,045 - INFO - Cache miss for NJE612K, checking disk
-2026-04-15 17:58:15,045 - INFO - 17:58:15: 10.100.100.163  - NJE612K   : xxx -> xxx - NetJets Europe
-2026-04-15 17:58:15,045 - INFO - Cache miss for MSC2992, checking disk
-2026-04-15 17:58:15,045 - INFO - 17:58:15: 10.100.100.163  - MSC2992   : RMF -> VIE - Air Cairo
-2026-04-15 17:58:15,045 - INFO - Cache miss for PWF13, checking disk
-2026-04-15 17:58:15,045 - INFO - 17:58:15: 10.100.100.163  - PWF13     : xxx -> xxx - Private Wings Flugcharter
-2026-04-15 17:58:15,046 - INFO - Cache miss for AUA1472, checking disk
-2026-04-15 17:58:15,046 - INFO - 17:58:15: 10.100.100.163  - AUA1472   : BRU -> VIE - Austrian Airlines
-2026-04-15 17:58:15,046 - INFO - Cache miss for BTI4ZC, checking disk
-2026-04-15 17:58:15,046 - INFO - 17:58:15: 10.100.100.163  - BTI4ZC    : VIE -> TLL - Air Baltic
-2026-04-15 17:58:15,046 - INFO - Cache miss for AUA770, checking disk
-2026-04-15 17:58:15,046 - INFO - 17:58:15: 10.100.100.163  - AUA770    : VAR -> VIE - Austrian Airlines
-2026-04-15 17:58:16,081 - INFO - Cache miss for OKDUN77, checking disk
-2026-04-15 17:58:16,081 - INFO - 17:58:16: 10.100.100.163  - OKDUN77   : xxx -> xxx - 
-2026-04-15 17:58:16,081 - INFO - Cache miss for UAE57X, checking disk
-2026-04-15 17:58:16,081 - INFO - 17:58:16: 10.100.100.163  - UAE57X    : HAM -> DXB - Emirates
-2026-04-15 17:58:16,081 - INFO - Cache miss for DCPDB, checking disk
-2026-04-15 17:58:16,081 - INFO - 17:58:16: 10.100.100.163  - DCPDB     : xxx -> xxx - 
-2026-04-15 17:58:16,081 - INFO - Cache miss for RYR8939, checking disk
-2026-04-15 17:58:16,081 - INFO - 17:58:16: 10.100.100.163  - RYR8939   : CHQ -> WRO - Ryanair
-2026-04-15 17:58:16,081 - INFO - Cache miss for WMT2GW, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - WMT2GW    : DTM -> CLJ - Wizz Air Malta
-2026-04-15 17:58:16,082 - INFO - Cache miss for WZZ691, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - WZZ691    : KUT -> BER - Wizz Air
-2026-04-15 17:58:16,082 - INFO - Cache miss for OMZMI, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - OMZMI     : xxx -> xxx - 
-2026-04-15 17:58:16,082 - INFO - Cache miss for LOT71, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - LOT71     : WAW -> DEL - LOT Polish Airlines
-2026-04-15 17:58:16,082 - INFO - Cache miss for AEE852, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - AEE852    : ATH -> ZRH - Aegean Airlines
-2026-04-15 17:58:16,082 - INFO - Cache miss for PGT950, checking disk
-2026-04-15 17:58:16,082 - INFO - 17:58:16: 10.100.100.163  - PGT950    : ZRH -> SAW - Pegasus Airlines
-2026-04-15 17:58:16,082 - INFO - Cache miss for EZY14AR, checking disk
-2026-04-15 17:58:16,083 - INFO - 17:58:16: 10.100.100.163  - EZY14AR   : LTN -> RHO - easyJet
-2026-04-15 18:01:58,237 - INFO - Cache miss for KLM867, checking disk
-2026-04-15 18:01:58,238 - INFO - 18:01:58: 10.100.100.163  - KLM867    : AMS -> KIX - KLM
-2026-04-15 18:01:58,238 - INFO - Cache miss for FIN9BL, checking disk
-2026-04-15 18:01:58,238 - INFO - 18:01:58: 10.100.100.163  - FIN9BL    : xxx -> xxx - Finnair
-2026-04-15 18:01:58,239 - INFO - Cache miss for ABB853, checking disk
-2026-04-15 18:01:58,239 - INFO - 18:01:58: 10.100.100.163  - ABB853    : HKG -> LGG - Air Belgium
-2026-04-15 18:01:58,239 - INFO - Cache miss for PGT49PK, checking disk
-2026-04-15 18:01:58,239 - INFO - 18:01:58: 10.100.100.163  - PGT49PK   : SAW -> BER - Pegasus Airlines
-2026-04-15 18:01:58,239 - INFO - Cache miss for WMT2321, checking disk
-2026-04-15 18:01:58,240 - INFO - 18:01:58: 10.100.100.163  - WMT2321   : NAP -> CLJ - Wizz Air Malta
-2026-04-15 18:01:58,240 - INFO - Cache miss for UAE9642, checking disk
-2026-04-15 18:01:58,240 - INFO - 18:01:58: 10.100.100.163  - UAE9642   : xxx -> xxx - Emirates
-2026-04-15 18:01:58,240 - INFO - Cache miss for KLM844, checking disk
-2026-04-15 18:01:58,240 - INFO - 18:01:58: 10.100.100.163  - KLM844    : BKK -> AMS - KLM
-2026-04-15 18:01:58,241 - INFO - Cache miss for RYR53YN, checking disk
-2026-04-15 18:01:58,241 - INFO - 18:01:58: 10.100.100.163  - RYR53YN   : CLJ -> CRL - Ryanair
-2026-04-15 18:01:58,241 - INFO - Cache miss for THY1GJ, checking disk
-2026-04-15 18:01:58,241 - INFO - 18:01:58: 10.100.100.163  - THY1GJ    : IST -> YYZ - Turkish Airlines
-2026-04-15 18:01:58,241 - INFO - Cache miss for KLM896, checking disk
-2026-04-15 18:01:58,242 - INFO - 18:01:58: 10.100.100.163  - KLM896    : PVG -> AMS - KLM
-2026-04-15 18:01:58,242 - INFO - Cache miss for EVA62, checking disk
-2026-04-15 18:01:58,242 - INFO - 18:01:58: 10.100.100.163  - EVA62     : VIE -> TPE - EVA Air
-2026-04-15 18:01:58,242 - INFO - Cache miss for THY3TR, checking disk
-2026-04-15 18:01:58,242 - INFO - 18:01:58: 10.100.100.163  - THY3TR    : BER -> IST - Turkish Airlines
-2026-04-15 18:01:58,242 - INFO - Cache miss for DLH713, checking disk
-2026-04-15 18:01:58,243 - INFO - 18:01:58: 10.100.100.163  - DLH713    : ICN -> FRA - Lufthansa
-2026-04-15 18:01:58,243 - INFO - Cache miss for AFR199, checking disk
-2026-04-15 18:01:58,243 - INFO - 18:01:58: 10.100.100.163  - AFR199    : BKK -> CDG - Air France
-2026-04-15 18:01:58,243 - INFO - Cache miss for HYS275, checking disk
-2026-04-15 18:01:58,243 - INFO - 18:01:58: 10.100.100.163  - HYS275    : CLJ -> OTP - HiSky Europe
-2026-04-15 18:01:58,244 - INFO - Cache miss for BOX735, checking disk
-2026-04-15 18:01:58,244 - INFO - 18:01:58: 10.100.100.163  - BOX735    : HKG -> LEJ - Aerologic
-2026-04-15 18:01:58,244 - INFO - Cache miss for RYR95CH, checking disk
-2026-04-15 18:01:58,244 - INFO - 18:01:58: 10.100.100.163  - RYR95CH   : OTP -> BER - Ryanair
-2026-04-15 18:01:58,244 - INFO - Cache miss for SVI3524, checking disk
-2026-04-15 18:01:58,245 - INFO - 18:01:58: 10.100.100.163  - SVI3524   : xxx -> xxx - Sky Vision Airlines
-2026-04-15 18:01:58,245 - INFO - Cache miss for FIN1935, checking disk
-2026-04-15 18:01:58,245 - INFO - 18:01:58: 10.100.100.163  - FIN1935   : HEL -> GZP - Finnair
-2026-04-15 18:01:58,245 - INFO - Cache miss for GEL1903, checking disk
-2026-04-15 18:01:58,246 - INFO - 18:01:58: 10.100.100.163  - GEL1903   : PRG -> TBS - Geo Sky
-2026-04-15 18:01:58,246 - INFO - Cache miss for WMT7003, checking disk
-2026-04-15 18:01:58,246 - INFO - 18:01:58: 10.100.100.163  - WMT7003   : BBU -> HAM - Wizz Air Malta
-2026-04-15 18:01:58,246 - INFO - Cache miss for BAW168, checking disk
-2026-04-15 18:01:58,246 - INFO - 18:01:58: 10.100.100.163  - BAW168    : PVG -> LHR - British Airways
-2026-04-15 18:01:58,246 - INFO - Cache miss for ROT373D, checking disk
-2026-04-15 18:01:58,247 - INFO - 18:01:58: 10.100.100.163  - ROT373D   : OTP -> BRU - Tarom
-2026-04-15 18:01:58,247 - INFO - Cache miss for FIE545, checking disk
-2026-04-15 18:01:58,247 - INFO - 18:01:58: 10.100.100.163  - FIE545    : EVN -> BRU - FlyOne Armenia
-2026-04-15 18:01:58,247 - INFO - Cache miss for KZR938, checking disk
-2026-04-15 18:01:58,248 - INFO - 18:01:58: 10.100.100.163  - KZR938    : FRA -> URA - Air Astana
-2026-04-15 18:02:05,610 - INFO - Cache miss for WZZ178, checking disk
-2026-04-15 18:02:05,611 - INFO - 18:02:05: 10.100.100.163  - WZZ178    : KRK -> LCA - Wizz Air
-2026-04-15 18:02:05,611 - INFO - Cache miss for WZZ4887, checking disk
-2026-04-15 18:02:05,611 - INFO - 18:02:05: 10.100.100.163  - WZZ4887   : VNO -> LCA - Wizz Air
-2026-04-15 18:02:09,835 - INFO - Cache miss for THY7FU, checking disk
-2026-04-15 18:02:09,836 - INFO - 18:02:09: 10.100.100.163  - THY7FU    : IST -> WAW - Turkish Airlines
-2026-04-15 18:02:34,158 - INFO - Cache miss for DLH729, checking disk
-2026-04-15 18:02:34,159 - INFO - 18:02:34: 10.100.100.163  - DLH729    : PVG -> FRA - Lufthansa
-2026-04-15 18:02:34,159 - INFO - Cache miss for WMT1DR, checking disk
-2026-04-15 18:02:34,159 - INFO - 18:02:34: 10.100.100.163  - WMT1DR    : TSR -> BVA - Wizz Air Malta
-2026-04-15 18:02:34,160 - INFO - Cache miss for WMT7YA, checking disk
-2026-04-15 18:02:34,160 - INFO - 18:02:34: 10.100.100.163  - WMT7YA    : OTP -> LTN - Wizz Air Malta
-2026-04-15 18:02:34,160 - INFO - Cache miss for HAENJ, checking disk
-2026-04-15 18:02:34,160 - INFO - 18:02:34: 10.100.100.163  - HAENJ     : xxx -> xxx - 
-2026-04-15 18:02:34,160 - INFO - Cache miss for WMT5CS, checking disk
-2026-04-15 18:02:34,161 - INFO - 18:02:34: 10.100.100.163  - WMT5CS    : BGY -> OTP - Wizz Air Malta
-2026-04-15 18:02:34,161 - INFO - Cache miss for UPS15, checking disk
-2026-04-15 18:02:34,161 - INFO - 18:02:34: 10.100.100.163  - UPS15     : SZX -> CGN - United Parcel Service
-2026-04-15 18:02:34,161 - INFO - Cache miss for HAENK, checking disk
-2026-04-15 18:02:34,161 - INFO - 18:02:34: 10.100.100.163  - HAENK     : xxx -> xxx - 
-2026-04-15 18:02:34,161 - INFO - Cache miss for AXY503E, checking disk
-2026-04-15 18:02:34,162 - INFO - 18:02:34: 10.100.100.163  - AXY503E   : xxx -> xxx - Air X Charter
-2026-04-15 18:02:34,162 - INFO - Cache miss for SXS5YP, checking disk
-2026-04-15 18:02:34,162 - INFO - 18:02:34: 10.100.100.163  - SXS5YP    : AYT -> STN - SunExpress
-2026-04-15 18:02:34,162 - INFO - Cache miss for ABD4590, checking disk
-2026-04-15 18:02:34,162 - INFO - 18:02:34: 10.100.100.163  - ABD4590   : xxx -> xxx - Air Atlanta Icelandic
-2026-04-15 18:02:34,162 - INFO - Cache miss for PGT703B, checking disk
-2026-04-15 18:02:34,163 - INFO - 18:02:34: 10.100.100.163  - PGT703B   : PRG -> SAW - Pegasus Airlines
-2026-04-15 18:02:34,163 - INFO - Cache miss for THY10, checking disk
-2026-04-15 18:02:34,163 - INFO - 18:02:34: 10.100.100.163  - THY10     : LAX -> IST - Turkish Airlines
-2026-04-15 18:02:34,163 - INFO - Cache miss for YRBYR, checking disk
-2026-04-15 18:02:34,163 - INFO - 18:02:34: 10.100.100.163  - YRBYR     : xxx -> xxx - Romanian Civil Aircraft
-2026-04-15 18:02:45,513 - INFO - Cache miss for FIA5216, checking disk
-2026-04-15 18:02:45,514 - INFO - 18:02:45: 10.100.100.163  - FIA5216   : PMF -> RMO - FlyOne
-2026-04-15 18:02:49,745 - INFO - Cache miss for PGT389, checking disk
-2026-04-15 18:02:49,745 - INFO - 18:02:49: 10.100.100.163  - PGT389    : VKO -> SAW - Pegasus Airlines
-2026-04-15 18:03:38,021 - INFO - Cache miss for PGT85XU, checking disk
-2026-04-15 18:03:38,021 - INFO - 18:03:38: 10.100.100.163  - PGT85XU   : HAJ -> SAW - Pegasus Airlines
-2026-04-15 18:03:38,021 - INFO - Cache miss for CPA239, checking disk
-2026-04-15 18:03:38,021 - INFO - 18:03:38: 10.100.100.163  - CPA239    : HKG -> LHR - Cathay Pacific
-2026-04-15 18:03:38,021 - INFO - Cache miss for WMT551, checking disk
-2026-04-15 18:03:38,021 - INFO - 18:03:38: 10.100.100.163  - WMT551    : LTN -> OTP - Wizz Air Malta
-2026-04-15 18:03:38,021 - INFO - Cache miss for DLH719, checking disk
-2026-04-15 18:03:38,021 - INFO - 18:03:38: 10.100.100.163  - DLH719    : ICN -> MUC - Lufthansa
-2026-04-15 18:03:38,021 - INFO - Cache miss for THY2ZC, checking disk
-2026-04-15 18:03:38,021 - INFO - 18:03:38: 10.100.100.163  - THY2ZC    : VIE -> IST - Turkish Airlines
-2026-04-15 18:03:38,022 - INFO - Cache miss for EXS78H, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - EXS78H    : EMA -> PFO - Jet2.com
-2026-04-15 18:03:38,022 - INFO - Cache miss for TVF3289, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - TVF3289   : IST -> ORY - Transavia France
-2026-04-15 18:03:38,022 - INFO - Cache miss for WZZ1014, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - WZZ1014   : BUD -> BGO - Wizz Air
-2026-04-15 18:03:38,022 - INFO - Cache miss for TOM442, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - TOM442    : LGW -> DLM - TUI Airways
-2026-04-15 18:03:38,022 - INFO - Cache miss for EXS17EW, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - EXS17EW   : HER -> NCL - Jet2.com
-2026-04-15 18:03:38,022 - INFO - Cache miss for WZZ5137, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - WZZ5137   : BUD -> GDN - Wizz Air
-2026-04-15 18:03:38,022 - INFO - Cache miss for HYM402, checking disk
-2026-04-15 18:03:38,022 - INFO - 18:03:38: 10.100.100.163  - HYM402    : FRA -> RMO - HiSky Airilnes
-2026-04-15 18:03:38,022 - INFO - Cache miss for RYR638T, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - RYR638T   : BRI -> WMI - Ryanair
-2026-04-15 18:03:38,023 - INFO - Cache miss for BEL1VC, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - BEL1VC    : ATH -> BRU - Brussels Airlines
-2026-04-15 18:03:38,023 - INFO - Cache miss for JFL205, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - JFL205    : xxx -> xxx - Jetfly Airlines
-2026-04-15 18:03:38,023 - INFO - Cache miss for WZZ3GV, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - WZZ3GV    : BEG -> BER - Wizz Air
-2026-04-15 18:03:38,023 - INFO - Cache miss for WZZ1071, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - WZZ1071   : WRO -> BUD - Wizz Air
-2026-04-15 18:03:38,023 - INFO - Cache miss for WZZ658, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - WZZ658    : BRI -> BUD - Wizz Air
-2026-04-15 18:03:38,023 - INFO - Cache miss for BEL6PR, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - BEL6PR    : BRU -> BUD - Brussels Airlines
-2026-04-15 18:03:38,023 - INFO - Cache miss for AFR267, checking disk
-2026-04-15 18:03:38,023 - INFO - 18:03:38: 10.100.100.163  - AFR267    : ICN -> CDG - Air France
-2026-04-15 18:03:38,024 - INFO - Cache miss for BAW875, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - BAW875    : OTP -> LHR - British Airways
-2026-04-15 18:03:38,024 - INFO - Cache miss for RYR51DD, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - RYR51DD   : CTA -> KRK - Ryanair
-2026-04-15 18:03:38,024 - INFO - Cache miss for THY5ST, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - THY5ST    : IST -> BLQ - Turkish Airlines
-2026-04-15 18:03:38,024 - INFO - Cache miss for CFG3, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - CFG3      : HRG -> HAM - Condor
-2026-04-15 18:03:38,024 - INFO - Cache miss for UAE71K, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - UAE71K    : PRG -> DXB - Emirates
-2026-04-15 18:03:38,024 - INFO - Cache miss for THY6467, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - THY6467   : xxx -> xxx - Turkish Airlines
-2026-04-15 18:03:38,024 - INFO - Cache miss for THY1UP, checking disk
-2026-04-15 18:03:38,024 - INFO - 18:03:38: 10.100.100.163  - THY1UP    : IST -> MUC - Turkish Airlines
-2026-04-15 18:03:38,024 - INFO - Cache miss for SXS1LN, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - SXS1LN    : DUS -> ADB - SunExpress
-2026-04-15 18:03:38,025 - INFO - Cache miss for WMT2GW, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - WMT2GW    : DTM -> CLJ - Wizz Air Malta
-2026-04-15 18:03:38,025 - INFO - Cache miss for KAL901, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - KAL901    : ICN -> CDG - Korean Air
-2026-04-15 18:03:38,025 - INFO - Cache miss for WZZ3NZ, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - WZZ3NZ    : TIA -> KRK - Wizz Air
-2026-04-15 18:03:38,025 - INFO - Cache miss for RYR1HV, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - RYR1HV    : CFU -> WMI - Ryanair
-2026-04-15 18:03:38,025 - INFO - Cache miss for SXS8VB, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - SXS8VB    : HAM -> ADB - SunExpress
-2026-04-15 18:03:38,025 - INFO - Cache miss for BEL5FT, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - BEL5FT    : BRU -> HRG - Brussels Airlines
-2026-04-15 18:03:38,025 - INFO - Cache miss for YUICE, checking disk
-2026-04-15 18:03:38,025 - INFO - 18:03:38: 10.100.100.163  - YUICE     : xxx -> xxx - 
-2026-04-15 18:03:38,025 - INFO - Cache miss for VKA120, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - VKA120    : xxx -> xxx - Vulkan Air
-2026-04-15 18:03:38,026 - INFO - Cache miss for AEE866, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - AEE866    : ATH -> PRG - Aegean Airlines
-2026-04-15 18:03:38,026 - INFO - Cache miss for ASL64T, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - ASL64T    : SKG -> BEG - Air Serbia
-2026-04-15 18:03:38,026 - INFO - Cache miss for SXS6NH, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - SXS6NH    : MAN -> AYT - SunExpress
-2026-04-15 18:03:38,026 - INFO - Cache miss for OEDAP, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - OEDAP     : xxx -> xxx - Orion Air Charter
-2026-04-15 18:03:38,026 - INFO - Cache miss for KZR922, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - KZR922    : FRA -> NQZ - Air Astana
-2026-04-15 18:03:38,026 - INFO - Cache miss for ROT363T, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - ROT363T   : OTP -> AMS - Tarom
-2026-04-15 18:03:38,026 - INFO - Cache miss for MSR732, checking disk
-2026-04-15 18:03:38,026 - INFO - 18:03:38: 10.100.100.163  - MSR732    : BER -> CAI - Egyptair
-2026-04-15 18:03:38,026 - INFO - Cache miss for PGT462Z, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - PGT462Z   : OSL -> SAW - Pegasus Airlines
-2026-04-15 18:03:38,027 - INFO - Cache miss for EXS516, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - EXS516    : PFO -> NCL - Jet2.com
-2026-04-15 18:03:38,027 - INFO - Cache miss for AFR264, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - AFR264    : CDG -> ICN - Air France
-2026-04-15 18:03:38,027 - INFO - Cache miss for CFG2368, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - CFG2368   : FRA -> HKT - Condor
-2026-04-15 18:03:38,027 - INFO - Cache miss for WZZ287, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - WZZ287    : HAM -> SOF - Wizz Air
-2026-04-15 18:03:38,027 - INFO - Cache miss for SPTUC, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - SPTUC     : xxx -> xxx - Speed Aviation
-2026-04-15 18:03:38,027 - INFO - Cache miss for THY3VP, checking disk
-2026-04-15 18:03:38,027 - INFO - 18:03:38: 10.100.100.163  - THY3VP    : IST -> SZG - Turkish Airlines
-2026-04-15 18:03:38,027 - INFO - Cache miss for LOT71, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - LOT71     : WAW -> DEL - LOT Polish Airlines
-2026-04-15 18:03:38,028 - INFO - Cache miss for WZZ46G, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - WZZ46G    : xxx -> xxx - Wizz Air
-2026-04-15 18:03:38,028 - INFO - Cache miss for THY9BS, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - THY9BS    : IST -> VNO - Turkish Airlines
-2026-04-15 18:03:38,028 - INFO - Cache miss for THY2TG, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - THY2TG    : AMS -> IST - Turkish Airlines
-2026-04-15 18:03:38,028 - INFO - Cache miss for PGT69TD, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - PGT69TD   : SAW -> MUC - Pegasus Airlines
-2026-04-15 18:03:38,028 - INFO - Cache miss for MSC553, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - MSC553    : HRG -> PRG - Air Cairo
-2026-04-15 18:03:38,028 - INFO - Cache miss for WZZ6QU, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - WZZ6QU    : DTM -> VAR - Wizz Air
-2026-04-15 18:03:38,028 - INFO - Cache miss for TWI556, checking disk
-2026-04-15 18:03:38,028 - INFO - 18:03:38: 10.100.100.163  - TWI556    : xxx -> xxx - Tailwind Airlines
-2026-04-15 18:03:38,028 - INFO - Cache miss for AUA69B, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - AUA69B    : VIE -> OTP - Austrian Airlines
-2026-04-15 18:03:38,029 - INFO - Cache miss for BCS675, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - BCS675    : HKG -> LEJ - European Air Transport
-2026-04-15 18:03:38,029 - INFO - Cache miss for SXS3KQ, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - SXS3KQ    : AYT -> WAW - SunExpress
-2026-04-15 18:03:38,029 - INFO - Cache miss for VIR209, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - VIR209    : ICN -> LHR - Virgin Atlantic
-2026-04-15 18:03:38,029 - INFO - Cache miss for SXS7WQ, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - SXS7WQ    : TZX -> DUS - SunExpress
-2026-04-15 18:03:38,029 - INFO - Cache miss for AFR196, checking disk
-2026-04-15 18:03:38,029 - INFO - 18:03:38: 10.100.100.163  - AFR196    : CDG -> BKK - Air France
-2026-04-15 18:03:43,212 - INFO - Cache miss for PGT8BW, checking disk
-2026-04-15 18:03:43,212 - INFO - 18:03:43: 10.100.100.163  - PGT8BW    : FRA -> SAW - Pegasus Airlines
-2026-04-15 18:03:43,212 - INFO - Cache miss for SXS5KE, checking disk
-2026-04-15 18:03:43,213 - INFO - 18:03:43: 10.100.100.163  - SXS5KE    : DUS -> AYT - SunExpress
-2026-04-15 18:03:43,213 - INFO - Cache miss for THY7LY, checking disk
-2026-04-15 18:03:43,213 - INFO - 18:03:43: 10.100.100.163  - THY7LY    : MAN -> IST - Turkish Airlines
-2026-04-15 18:03:43,213 - INFO - Cache miss for WUK441, checking disk
-2026-04-15 18:03:43,214 - INFO - 18:03:43: 10.100.100.163  - WUK441    : LGW -> IST - Wizz Air UK
-2026-04-15 18:03:43,214 - INFO - Cache miss for THY2JE, checking disk
-2026-04-15 18:03:43,214 - INFO - 18:03:43: 10.100.100.163  - THY2JE    : CPH -> IST - Turkish Airlines
-2026-04-15 18:03:43,214 - INFO - Cache miss for WMT9297, checking disk
-2026-04-15 18:03:43,214 - INFO - 18:03:43: 10.100.100.163  - WMT9297   : AYT -> CLJ - Wizz Air Malta
-2026-04-15 18:03:43,214 - INFO - Cache miss for VIR208, checking disk
-2026-04-15 18:03:43,215 - INFO - 18:03:43: 10.100.100.163  - VIR208    : LHR -> ICN - Virgin Atlantic
-2026-04-15 18:03:53,471 - INFO - Cache miss for WMT684, checking disk
-2026-04-15 18:03:53,471 - INFO - 18:03:53: 10.100.100.163  - WMT684    : FMM -> BBU - Wizz Air Malta
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 34506)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 36040)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 44142)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 39814)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 36160)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 54400)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 58944)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('10.100.100.163', 49256)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 163, in do_POST
+    ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 126, in searchRoute
+    response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ionut/src/3d_tar1090/routes/./route_server", line 75, in calc_plausible
+    pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+  File "/home/ionut/src/3d_tar1090/routes/plausible.py", line 48, in assess_route_plausibility
+    heading_error_direct = normalize_heading_diff(aircraft_heading - bearing_origin_to_dest)
+                                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
+----------------------------------------

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3 -B
 import os
 import sys
 import json
@@ -18,6 +18,7 @@ from plausible import assess_route_plausibility
 route_cache = {}
 noroute = {}
 max_route_cache_entries = 10
+useCache = False
 
 this_path = os.path.dirname(os.path.abspath(__file__))
 
@@ -68,53 +69,26 @@ EARTH_RADIUS = 6371000  # meters
 
 airlines = {}
 
-def _hav(x: float) -> float:
-    return (1 - cos(x)) / 2
-
-def _hav_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
-    return _hav(lat2 - lat1) + cos(lat1) * cos(lat2) * _hav(lng2 - lng1)
-
-def _distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
-    """Great circle distance in meters."""
-    return EARTH_RADIUS * 2 * asin(sqrt(_hav_distance(lat1, lng1, lat2, lng2)))
-
-@lru_cache(maxsize=512)
-def plausible(pos_lat: float, pos_lng: float,
-              a_lat: float, a_lng: float,
-              b_lat: float, b_lng: float) -> tuple[bool, float]:
-    """Check if position is within threshold of great circle route A-B."""
-    p_lat, p_lng = radians(pos_lat), radians(pos_lng)
-    a_lat_r, a_lng_r = radians(a_lat), radians(a_lng)
-    b_lat_r, b_lng_r = radians(b_lat), radians(b_lng)
-
-    dist_ab = _distance(a_lat_r, a_lng_r, b_lat_r, b_lng_r) / 1852  # nautical miles
-    threshold = max(50 * 1852, 0.20 * dist_ab * 1852)  # 50nm or 20%
-
-    # Simplified check: point close to either endpoint or cross-track distance small
-    hav_tolerance = _hav(threshold / EARTH_RADIUS)
-    hav_dist_pa = _hav_distance(a_lat_r, a_lng_r, p_lat, p_lng)
-    if hav_dist_pa <= hav_tolerance:
-        return True, dist_ab
-
-    # Cross-track approximation
-    sin_dist_pa = 2 * sqrt(hav_dist_pa * (1 - hav_dist_pa))
-    hav_cross_track = hav_dist_pa * (1 - cos(b_lng_r - a_lng_r)) / 2
-    if hav_cross_track <= hav_tolerance:
-        return True, dist_ab
-
-    return False, dist_ab
-
-def calc_plausible(route, lat: float, lng: float) -> bool:
+def calc_plausible(route, lat: float, lng: float, trk: float):
     for i in range(len(route.get("_airports", [])) - 1):
         a, b = route["_airports"][i], route["_airports"][i + 1]
-        if plausible(round(lat, 3), round(lng, 3), round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3)):
+        pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
+        #print(json.dumps(pls, indent=2))
+        if pls["plausible"]:
+            print(json.dumps(pls, indent=2))
             return True
+        else:
+            pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(b["lat"], 3), round(b["lon"], 3), round(a["lat"], 3), round(a["lon"], 3))
+            if pls["plausible"]:
+                print(route["callsign"], "plausible in reverse leg")
+                print(json.dumps(pls, indent=2))
+                return True
+    print(json.dumps(pls, indent=2))
     return False
 
 class RouteServer(ThreadingMixIn, HTTPServer):
     daemon_threads = True
     allow_reuse_address = True
-
 
 class RouteHandler(SimpleHTTPRequestHandler):
 
@@ -138,18 +112,18 @@ class RouteHandler(SimpleHTTPRequestHandler):
             return airlines[code]
         return ""
 
-    def searchRoute(self, callsign, lat, lon):
+    def searchRoute(self, callsign, lat, lon, trk):
         response = {}
-        if callsign in route_cache:
-            log(f"Cache hit for {callsign}")
-            response = json.loads(route_cache[callsign])
-            return response["plausible"], route_cache[callsign], str(response["_airport_codes_iata"]), response["airline"]
-        
-        log(f"Cache miss for {callsign}, checking disk")
+        if useCache:
+            if callsign in route_cache:
+                log(f"Cache hit for {callsign}")
+                response = json.loads(route_cache[callsign])
+                return response["plausible"], route_cache[callsign], str(response["_airport_codes_iata"]), response["airline"]
+            log(f"Cache miss for {callsign}, checking disk")
         if (os.path.isfile(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json")):
             with open(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json") as f:
                 response = json.load(f)
-            response["plausible"] = calc_plausible(response, float(lat), float(lon))
+            response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
         else:
             with open(this_path + "/noroute.json") as f:
                 response = json.load(f)
@@ -158,7 +132,8 @@ class RouteHandler(SimpleHTTPRequestHandler):
 
         response["airline"] = self.searchAirline(callsign)
         data = json.dumps(response)
-        route_cache[callsign] = data
+        if useCache:
+            route_cache[callsign] = data
         return True, data, str(response["_airport_codes_iata"]), response["airline"]
 
     def do_GET(self):
@@ -175,12 +150,17 @@ class RouteHandler(SimpleHTTPRequestHandler):
             data = str("")
 
             for plane in received["planes"]:
+                #print(json.dumps(plane, indent=2))
                 callsign = plane["callsign"]
                 lat      = plane["lat"]
                 lon      = plane["lng"]
+                if "trk" in plane:
+                    trk  = plane["trk"]
+                else:
+                    trk = 0.0
                 now = datetime.now()
                 date_time = now.strftime("%H:%M:%S")
-                ok, route, rtr, al = self.searchRoute(callsign, lat, lon)
+                ok, route, rtr, al = self.searchRoute(callsign, lat, lon, trk)
                 if (ok == True):
                     r = rtr.split("-")
                     log("%8s: %-15s - %-10s: %s -> %s - %s" % (date_time, self.address_string(), callsign, r[0], r[len(r)-1], al))

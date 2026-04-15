@@ -10,7 +10,7 @@ The project is extensive in scope and combines multiple operational layers: deco
 
 Warning: this software requires extensive technical knowledge to use correctly and safely. You should be comfortable with Linux system administration, decoder/service operations, networking, web server configuration, JavaScript configuration and debugging, and performance troubleshooting across both backend and frontend components; incorrect setup can lead to broken views, stale tracking, high resource use, or service conflicts with existing ADS-B installations.
 
-For advanced users, this fork offers a powerful base for building a highly customized local or networked tracking stack with both high-density 2D monitoring and immersive Cesium-based 3D situational views. The code is offered as-is, no support is provided, and it is distributed under the CC0 1.0 Universal; treat updates and configuration changes as production-grade operations by validating assumptions, testing in controlled conditions, documenting overrides, and promoting changes carefully to your primary receiver environment.
+For advanced users, this fork offers a powerful base for building a highly customized local or networked tracking stack with both high-density 2D monitoring and immersive Cesium-based 3D situational views. The code is offered as-is, no support is provided, and it is distributed under the GPL-3.0.
 
 Clone this repo, study the code, change the maps with you providers and have fun with it! The code is tailored for my local develpoment, so you have to massive edit the config files (config.js, layers.js, etc.). Good knowledge about readsb (<https://github.com/wiedehopf/readsb>) is also required. But finally you'll have an website that displays live aircrafts with a 3D View.
 
@@ -24,7 +24,7 @@ Comercial use is permitted only if the original source is specified.
 
 - **[readsb](https://github.com/wiedehopf/readsb)** by wiedehopf - the ADS-B decoder swiss knife (GPL-2.0+)
 - **[tar1090](https://github.com/wiedehopf/tar1090)** by wiedehopf — the 2D ADS-B interface this project is forked from (GPL-2.0+)
-- **[dump1090](https://github.com/flightaware/dump1090)** — `dbloader.js` originally by Oliver Jowett (GPL-2.0+)
+- **[dump1090](https://github.com/flightaware/dump1090)** — `dbloader.js` (GPL-2.0+)
 
 ### 3D engine
 
@@ -49,12 +49,11 @@ Comercial use is permitted only if the original source is specified.
 
 - **[jQuery](https://jquery.com)** 3.6.1 — MIT
 - **[jQuery UI](https://jqueryui.com)** 1.13.2 — MIT
-- **[jQuery UI Touch Punch](https://github.com/furf/jquery-ui-touch-punch)** 1.0.8 by Dave Furfero — MIT/GPL-2.0
+- **[jQuery UI Touch Punch](https://github.com/furf/jquery-ui-touch-punch)** 1.0.8  — MIT/GPL-2.0
 - **[egm96-universal](https://github.com/nicholasgasior/egm96-universal)** — EGM96 geoid height correction
 - **[geomag2020.js](http://www.ngdc.noaa.gov/geomag/WMM/)** — World Magnetic Model, adapted by Christopher Weiss from NOAA/NGDC
 - **[zstddec-tar1090](https://github.com/wiedehopf/tar1090)** — Zstandard decoder for compressed aircraft data
 - **[country-flag-icons](https://gitlab.com/catamphetamine/country-flag-icons)** by @catamphetamine — MIT
 - **[elm-pep](https://github.com/nicktindall/cyclon.p2p-common)** — Pointer Events polyfill
-- **[adsb.lol](https://github.com/adsblol)** - route plausibility calculation
 
 ### THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" with NO WARRANTY

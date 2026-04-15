@@ -1,18 +1,6 @@
 import math
 
 def calculate_bearing(lat1, lon1, lat2, lon2):
-    """
-    Calculate the bearing (compass heading) between two geographic points
-    
-    Args:
-        lat1: Origin latitude in degrees
-        lon1: Origin longitude in degrees
-        lat2: Destination latitude in degrees
-        lon2: Destination longitude in degrees
-    
-    Returns:
-        Bearing in degrees (0-360), where 0° is North
-    """
     dLon = (lon2 - lon1) * math.pi / 180
     lat1_rad = lat1 * math.pi / 180
     lat2_rad = lat2 * math.pi / 180
@@ -27,18 +15,6 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
 
 
 def calculate_distance(lat1, lon1, lat2, lon2):
-    """
-    Calculate great circle distance between two points using Haversine formula
-    
-    Args:
-        lat1: Origin latitude in degrees
-        lon1: Origin longitude in degrees
-        lat2: Destination latitude in degrees
-        lon2: Destination longitude in degrees
-    
-    Returns:
-        Distance in nautical miles
-    """
     R = 3440.065  # Earth's radius in nautical miles
     dLat = (lat2 - lat1) * math.pi / 180
     dLon = (lon2 - lon1) * math.pi / 180
@@ -52,15 +28,6 @@ def calculate_distance(lat1, lon1, lat2, lon2):
 
 
 def normalize_heading_diff(diff):
-    """
-    Normalize heading difference to -180 to +180 range
-    
-    Args:
-        diff: Heading difference in degrees
-    
-    Returns:
-        Normalized difference
-    """
     diff = diff % 360
     if diff > 180:
         diff -= 360
@@ -68,24 +35,8 @@ def normalize_heading_diff(diff):
         diff += 360
     return diff
 
-
 def assess_route_plausibility(aircraft_lat, aircraft_lon, aircraft_heading,
                              origin_lat, origin_lon, dest_lat, dest_lon):
-    """
-    Assess the plausibility of a route
-    
-    Args:
-        aircraft_lat: Aircraft latitude
-        aircraft_lon: Aircraft longitude
-        aircraft_heading: Aircraft heading in degrees (0-360)
-        origin_lat: Origin latitude
-        origin_lon: Origin longitude
-        dest_lat: Destination latitude
-        dest_lon: Destination longitude
-    
-    Returns:
-        dict: Plausibility assessment with metrics
-    """
     
     # Calculate key bearings and distances
     bearing_origin_to_dest = calculate_bearing(origin_lat, origin_lon, dest_lat, dest_lon)
@@ -118,7 +69,7 @@ def assess_route_plausibility(aircraft_lat, aircraft_lon, aircraft_heading,
     overall_score = (heading_score * 0.4 + progress_score * 0.4 + deviation_score * 0.2)
     
     return {
-        'plausible': overall_score > 50,
+        'plausible': overall_score > 50,  # Threshold for plausibility
         'overallScore': round(overall_score),
         'headingScore': round(heading_score),
         'progressScore': round(progress_score),

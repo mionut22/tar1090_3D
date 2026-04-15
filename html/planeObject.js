@@ -2941,10 +2941,12 @@ PlaneObject.prototype.routeCheck = function () {
             if (!routeApiUrl.includes("adsb.im")) {
                 route_check['lat'] = this.position[1];
                 route_check['lng'] = this.position[0];
+                route_check['track'] = this.track;
             }
         } else {
             route_check['lat'] = this.position[1];
             route_check['lng'] = this.position[0];
+            route_check['track'] = this.track;
         }
 
         g.route_check_todo[currentName] = route_check;
@@ -2999,6 +3001,7 @@ function routeDoLookup() {
             callsign: entry['callsign'],
             lat: entry['lat'],
             lng: entry['lng'],
+            trk: entry['track'],
         });
     }
 
