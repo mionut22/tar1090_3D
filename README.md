@@ -36,11 +36,12 @@ Comercial use is permitted only if the original source is specified.
 - **[ol-ext](https://github.com/Viglino/ol-ext)** v4.0.21 by Jean-Marc Viglino — BSD 3-Clause
 - **[ol-mapbox-style (olms)](https://github.com/openlayers/ol-mapbox-style)** — BSD 2-Clause
 
-### Data & imagery
+### Data & imagery & 3D Models
 
 - **[OpenStreetMap](https://www.openstreetmap.org/copyright)** contributors — ODbL
 - **[Esri](https://www.esri.com)** — satellite imagery
 - **[Virtual Radar](https://github.com/vradarserver/standing-data)** — flight route data
+- **[BelugaProject](https://github.com/amnesica/BelugaProject)** - 3dModels and inspiration
 
 ### Utility libraries
 
