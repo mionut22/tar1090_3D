@@ -1128,3 +1128,445 @@
 2026-04-14 23:41:23,858 - INFO - 23:41:23: 10.100.100.163  - UTN9122   : HRG -> KTW - Skyline Express Airlines
 2026-04-14 23:41:23,858 - INFO - Cache hit for WMT4GW
 2026-04-14 23:41:23,858 - INFO - 23:41:23: 10.100.100.163  - WMT4GW    : MAD -> OTP - Wizz Air Malta
+2026-04-15 02:22:14,227 - INFO - Starting route server.
+2026-04-15 02:22:14,440 - INFO - Counting routes ...
+2026-04-15 02:23:32,060 - INFO - Route count: 609126
+2026-04-15 02:23:32,319 - INFO - Listening on port 8080, awaiting requests.
+2026-04-15 02:25:44,045 - INFO - Cache miss for A6EXJ, checking disk
+2026-04-15 02:25:44,465 - INFO - 02:25:44: 10.100.100.163  - A6EXJ     : xxx -> xxx - 
+2026-04-15 02:25:44,465 - INFO - Cache miss for UAE1N, checking disk
+2026-04-15 02:25:44,692 - INFO - 02:25:44: 10.100.100.163  - UAE1N     : DXB -> BLR - Emirates
+2026-04-15 02:25:44,692 - INFO - Cache miss for UAE302, checking disk
+2026-04-15 02:25:44,749 - INFO - 02:25:44: 10.100.100.163  - UAE302    : DXB -> PVG - Emirates
+2026-04-15 02:25:44,749 - INFO - Cache miss for UAE98P, checking disk
+2026-04-15 02:25:45,135 - INFO - 02:25:44: 10.100.100.163  - UAE98P    : BHX -> DXB - Emirates
+2026-04-15 02:25:45,135 - INFO - Cache miss for UAE15K, checking disk
+2026-04-15 02:25:45,189 - INFO - 02:25:45: 10.100.100.163  - UAE15K    : DXB -> KUL - Emirates
+2026-04-15 02:28:12,353 - INFO - Cache hit for UAE15K
+2026-04-15 02:28:12,360 - INFO - 02:28:12: 10.100.100.163  - UAE15K    : DXB -> KUL - Emirates
+2026-04-15 02:28:12,360 - INFO - Cache hit for A6EXJ
+2026-04-15 02:28:12,360 - INFO - 02:28:12: 10.100.100.163  - A6EXJ     : xxx -> xxx - 
+2026-04-15 02:28:12,360 - INFO - Cache hit for UAE1N
+2026-04-15 02:28:12,360 - INFO - 02:28:12: 10.100.100.163  - UAE1N     : DXB -> BLR - Emirates
+2026-04-15 02:28:12,360 - INFO - Cache hit for UAE302
+2026-04-15 02:28:12,360 - INFO - 02:28:12: 10.100.100.163  - UAE302    : DXB -> PVG - Emirates
+2026-04-15 02:28:12,360 - INFO - Cache miss for SEJ52, checking disk
+2026-04-15 02:28:12,532 - INFO - 02:28:12: 10.100.100.163  - SEJ52     : DXB -> PNQ - Spicejet
+2026-04-15 02:28:12,532 - INFO - Cache miss for UAE526, checking disk
+2026-04-15 02:28:12,600 - INFO - 02:28:12: 10.100.100.163  - UAE526    : DXB -> HYD - Emirates
+2026-04-15 02:28:12,601 - INFO - Cache hit for UAE98P
+2026-04-15 02:28:12,601 - INFO - 02:28:12: 10.100.100.163  - UAE98P    : BHX -> DXB - Emirates
+2026-04-15 02:28:12,601 - INFO - Cache miss for FDB646, checking disk
+2026-04-15 02:28:12,720 - INFO - 02:28:12: 10.100.100.163  - FDB646    : ASM -> DXB - Flydubai
+2026-04-15 02:28:17,554 - INFO - Cache miss for UAE384, checking disk
+2026-04-15 02:28:17,651 - INFO - 02:28:17: 10.100.100.163  - UAE384    : DXB -> HKG - Emirates
+2026-04-15 02:28:21,752 - INFO - Cache miss for ABY563, checking disk
+2026-04-15 02:28:21,844 - INFO - 02:28:21: 10.100.100.163  - ABY563    : LYP -> SHJ - Air Arabia
+2026-04-15 02:28:30,064 - INFO - Cache miss for ETD1, checking disk
+2026-04-15 02:28:30,117 - INFO - 02:28:30: 10.100.100.163  - ETD1      : AUH -> JFK - Etihad Airways
+2026-04-15 02:28:30,117 - INFO - Cache miss for ETD2NG, checking disk
+2026-04-15 02:28:30,124 - INFO - 02:28:30: 10.100.100.163  - ETD2NG    : AUH -> ATH - Etihad Airways
+2026-04-15 02:28:30,124 - INFO - Cache miss for UAE30Y, checking disk
+2026-04-15 02:28:30,165 - INFO - 02:28:30: 10.100.100.163  - UAE30Y    : DXB -> YYZ - Emirates
+2026-04-15 02:28:30,165 - INFO - Cache miss for UAE338, checking disk
+2026-04-15 02:28:30,180 - INFO - 02:28:30: 10.100.100.163  - UAE338    : DXB -> DXB - Emirates
+2026-04-15 02:28:30,180 - INFO - Cache miss for KMF902, checking disk
+2026-04-15 02:28:30,229 - INFO - 02:28:30: 10.100.100.163  - KMF902    : DXB -> KBL - Kam Air
+2026-04-15 02:28:30,230 - INFO - Cache miss for UAE316, checking disk
+2026-04-15 02:28:30,256 - INFO - 02:28:30: 10.100.100.163  - UAE316    : DXB -> KIX - Emirates
+2026-04-15 02:28:30,256 - INFO - Cache miss for FDB5YA, checking disk
+2026-04-15 02:28:30,295 - INFO - 02:28:30: 10.100.100.163  - FDB5YA    : VKO -> DXB - Flydubai
+2026-04-15 02:28:30,295 - INFO - Cache miss for UAE393, checking disk
+2026-04-15 02:28:30,310 - INFO - 02:28:30: 10.100.100.163  - UAE393    : SGN -> DXB - Emirates
+2026-04-15 02:28:30,310 - INFO - Cache miss for FDB9JZ, checking disk
+2026-04-15 02:28:30,339 - INFO - 02:28:30: 10.100.100.163  - FDB9JZ    : GYD -> DXB - Flydubai
+2026-04-15 02:28:30,339 - INFO - Cache miss for SVI4401, checking disk
+2026-04-15 02:28:30,365 - INFO - 02:28:30: 10.100.100.163  - SVI4401   : xxx -> xxx - Sky Vision Airlines
+2026-04-15 02:28:31,103 - INFO - Cache miss for FDB828, checking disk
+2026-04-15 02:28:31,146 - INFO - 02:28:31: 10.100.100.163  - FDB828    : MED -> DXB - Flydubai
+2026-04-15 02:28:31,146 - INFO - Cache miss for UAE1KM, checking disk
+2026-04-15 02:28:31,207 - INFO - 02:28:31: 10.100.100.163  - UAE1KM    : DXB -> MAN - Emirates
+2026-04-15 02:28:31,207 - INFO - Cache miss for ETD7MF, checking disk
+2026-04-15 02:28:31,218 - INFO - 02:28:31: 10.100.100.163  - ETD7MF    : AUH -> YYZ - Etihad Airways
+2026-04-15 02:28:31,218 - INFO - Cache miss for FDB1NU, checking disk
+2026-04-15 02:28:31,252 - INFO - 02:28:31: 10.100.100.163  - FDB1NU    : DXB -> OTP - Flydubai
+2026-04-15 02:28:31,252 - INFO - Cache miss for ETD72W, checking disk
+2026-04-15 02:28:31,258 - INFO - 02:28:31: 10.100.100.163  - ETD72W    : AUH -> DUB - Etihad Airways
+2026-04-15 02:28:31,258 - INFO - Cache miss for ETD93C, checking disk
+2026-04-15 02:28:31,268 - INFO - 02:28:31: 10.100.100.163  - ETD93C    : AUH -> ORD - Etihad Airways
+2026-04-15 02:28:31,268 - INFO - Cache miss for ETD125, checking disk
+2026-04-15 02:28:31,269 - INFO - 02:28:31: 10.100.100.163  - ETD125    : xxx -> xxx - Etihad Airways
+2026-04-15 02:28:31,269 - INFO - Cache miss for UAE378, checking disk
+2026-04-15 02:28:31,278 - INFO - 02:28:31: 10.100.100.163  - UAE378    : DXB -> HKT - Emirates
+2026-04-15 02:28:31,278 - INFO - Cache miss for ADY43, checking disk
+2026-04-15 02:28:31,290 - INFO - 02:28:31: 10.100.100.163  - ADY43     : AUH -> KTM - Air Arabia Abu Dhabi
+2026-04-15 02:28:31,290 - INFO - Cache miss for UAE7MY, checking disk
+2026-04-15 02:28:31,323 - INFO - 02:28:31: 10.100.100.163  - UAE7MY    : DXB -> PER - Emirates
+2026-04-15 02:28:31,323 - INFO - Cache miss for UAE5K, checking disk
+2026-04-15 02:28:31,332 - INFO - 02:28:31: 10.100.100.163  - UAE5K     : DXB -> CMB - Emirates
+2026-04-15 02:28:31,333 - INFO - Cache miss for PGT830, checking disk
+2026-04-15 02:28:31,353 - INFO - 02:28:31: 10.100.100.163  - PGT830    : SAW -> MCT - Pegasus Airlines
+2026-04-15 02:28:31,353 - INFO - Cache miss for UAE318, checking disk
+2026-04-15 02:28:31,355 - INFO - 02:28:31: 10.100.100.163  - UAE318    : DXB -> NRT - Emirates
+2026-04-15 02:28:31,356 - INFO - Cache miss for OMA241, checking disk
+2026-04-15 02:28:31,399 - INFO - 02:28:31: 10.100.100.163  - OMA241    : MCT -> DEL - Oman Air
+2026-04-15 02:28:31,399 - INFO - Cache miss for T7ESJ, checking disk
+2026-04-15 02:28:31,399 - INFO - 02:28:31: 10.100.100.163  - T7ESJ     : xxx -> xxx - 
+2026-04-15 02:28:31,399 - INFO - Cache miss for ETH686, checking disk
+2026-04-15 02:28:31,456 - INFO - 02:28:31: 10.100.100.163  - ETH686    : ADD -> DEL - Ethiopian Airlines
+2026-04-15 02:28:31,456 - INFO - Cache miss for UAE353, checking disk
+2026-04-15 02:28:31,507 - INFO - 02:28:31: 10.100.100.163  - UAE353    : SIN -> DXB - Emirates
+2026-04-15 02:28:31,507 - INFO - Cache miss for SVA705, checking disk
+2026-04-15 02:28:31,522 - INFO - 02:28:31: 10.100.100.163  - SVA705    : KHI -> JED - Saudia
+2026-04-15 02:28:31,522 - INFO - Cache miss for ABQ172, checking disk
+2026-04-15 02:28:31,523 - INFO - 02:28:31: 10.100.100.163  - ABQ172    : xxx -> xxx - Airblue
+2026-04-15 02:28:31,523 - INFO - Cache miss for UBG342, checking disk
+2026-04-15 02:28:31,528 - INFO - 02:28:31: 10.100.100.163  - UBG342    : DXB -> DAC - US-Bangla Airlines
+2026-04-15 02:28:31,528 - INFO - Cache miss for ABY554, checking disk
+2026-04-15 02:28:31,544 - INFO - 02:28:31: 10.100.100.163  - ABY554    : SHJ -> PEW - Air Arabia
+2026-04-15 02:28:31,544 - INFO - Cache miss for UAE367, checking disk
+2026-04-15 02:28:31,553 - INFO - 02:28:31: 10.100.100.163  - UAE367    : TPE -> DXB - Emirates
+2026-04-15 02:28:31,554 - INFO - Cache miss for FJL601, checking disk
+2026-04-15 02:28:31,566 - INFO - 02:28:31: 10.100.100.163  - FJL601    : JED -> KHI - Fly Jinnah
+2026-04-15 02:28:31,566 - INFO - Cache miss for OMS513, checking disk
+2026-04-15 02:28:31,580 - INFO - 02:28:31: 10.100.100.163  - OMS513    : MCT -> KHI - SalamAir
+2026-04-15 02:28:31,580 - INFO - Cache miss for ETD841, checking disk
+2026-04-15 02:28:31,582 - INFO - 02:28:31: 10.100.100.163  - ETD841    : AUH -> SVO - Etihad Airways
+2026-04-15 02:28:31,582 - INFO - Cache miss for ABQ210, checking disk
+2026-04-15 02:28:31,596 - INFO - 02:28:31: 10.100.100.163  - ABQ210    : ISB -> DXB - Airblue
+2026-04-15 02:28:31,596 - INFO - Cache miss for BBC338, checking disk
+2026-04-15 02:28:31,616 - INFO - 02:28:31: 10.100.100.163  - BBC338    : MED -> DAC - Biman Bangladesh Airlines
+2026-04-15 02:28:31,617 - INFO - Cache miss for QTR617, checking disk
+2026-04-15 02:28:31,637 - INFO - 02:28:31: 10.100.100.163  - QTR617    : MUX -> DOH - Qatar Airways
+2026-04-15 02:28:31,638 - INFO - Cache miss for ETH672, checking disk
+2026-04-15 02:28:31,649 - INFO - 02:28:31: 10.100.100.163  - ETH672    : ADD -> NRT - Ethiopian Airlines
+2026-04-15 02:28:32,105 - INFO - Cache miss for OMA685, checking disk
+2026-04-15 02:28:32,120 - INFO - 02:28:32: 10.100.100.163  - OMA685    : MCT -> RUH - Oman Air
+2026-04-15 02:28:32,120 - INFO - Cache miss for ETD49D, checking disk
+2026-04-15 02:28:32,123 - INFO - 02:28:32: 10.100.100.163  - ETD49D    : AUH -> MAN - Etihad Airways
+2026-04-15 02:28:32,123 - INFO - Cache miss for KLM880, checking disk
+2026-04-15 02:28:32,146 - INFO - 02:28:32: 10.100.100.163  - KLM880    : BLR -> AMS - KLM
+2026-04-15 02:28:32,146 - INFO - Cache miss for QTR29X, checking disk
+2026-04-15 02:28:32,158 - INFO - 02:28:32: 10.100.100.163  - QTR29X    : MUC -> DOH - Qatar Airways
+2026-04-15 02:28:32,158 - INFO - Cache miss for THY1JM, checking disk
+2026-04-15 02:28:32,184 - INFO - 02:28:32: 10.100.100.163  - THY1JM    : MCT -> IST - Turkish Airlines
+2026-04-15 02:28:32,184 - INFO - Cache miss for ALK563, checking disk
+2026-04-15 02:28:32,218 - INFO - 02:28:32: 10.100.100.163  - ALK563    : CMB -> CDG - SriLankan Airlines
+2026-04-15 02:28:32,219 - INFO - Cache miss for ETD6A8, checking disk
+2026-04-15 02:28:32,219 - INFO - 02:28:32: 10.100.100.163  - ETD6A8    : xxx -> xxx - Etihad Airways
+2026-04-15 02:28:32,219 - INFO - Cache miss for QTR8660, checking disk
+2026-04-15 02:28:32,224 - INFO - 02:28:32: 10.100.100.163  - QTR8660   : DOH -> DEL - Qatar Airways
+2026-04-15 02:28:32,224 - INFO - Cache miss for SVA805, checking disk
+2026-04-15 02:28:32,285 - INFO - 02:28:32: 10.100.100.163  - SVA805    : DAC -> RUH - Saudia
+2026-04-15 02:28:32,285 - INFO - Cache miss for RJA192, checking disk
+2026-04-15 02:28:32,337 - INFO - 02:28:32: 10.100.100.163  - RJA192    : AMM -> BOM - Royal Jordanian
+2026-04-15 02:28:32,337 - INFO - Cache miss for MSR959, checking disk
+2026-04-15 02:28:32,370 - INFO - 02:28:32: 10.100.100.163  - MSR959    : CAN -> CAI - Egyptair
+2026-04-15 02:28:32,370 - INFO - Cache miss for KNE327, checking disk
+2026-04-15 02:28:32,395 - INFO - 02:28:32: 10.100.100.163  - KNE327    : RUH -> CCJ - Flynas
+2026-04-15 02:28:32,395 - INFO - Cache miss for IGO68, checking disk
+2026-04-15 02:28:32,426 - INFO - 02:28:32: 10.100.100.163  - IGO68     : JED -> HYD - IndiGo Airlines
+2026-04-15 02:28:32,426 - INFO - Cache miss for OMA211, checking disk
+2026-04-15 02:28:32,439 - INFO - 02:28:32: 10.100.100.163  - OMA211    : MCT -> TRV - Oman Air
+2026-04-15 02:28:32,439 - INFO - Cache miss for ADY167, checking disk
+2026-04-15 02:28:32,447 - INFO - 02:28:32: 10.100.100.163  - ADY167    : CCU -> AUH - Air Arabia Abu Dhabi
+2026-04-15 02:28:32,447 - INFO - Cache miss for KNE325, checking disk
+2026-04-15 02:28:32,454 - INFO - 02:28:32: 10.100.100.163  - KNE325    : RUH -> HYD - Flynas
+2026-04-15 02:28:32,454 - INFO - Cache miss for GF250, checking disk
+2026-04-15 02:28:32,454 - INFO - 02:28:32: 10.100.100.163  - GF250     : xxx -> xxx - 
+2026-04-15 02:28:32,456 - INFO - Cache miss for UBG362, checking disk
+2026-04-15 02:28:32,459 - INFO - 02:28:32: 10.100.100.163  - UBG362    : JED -> DAC - US-Bangla Airlines
+2026-04-15 02:28:32,460 - INFO - Cache miss for ABQ275, checking disk
+2026-04-15 02:28:32,469 - INFO - 02:28:32: 10.100.100.163  - ABQ275    : xxx -> xxx - Airblue
+2026-04-15 02:28:32,469 - INFO - Cache miss for KNE1333, checking disk
+2026-04-15 02:28:32,469 - INFO - 02:28:32: 10.100.100.163  - KNE1333   : xxx -> xxx - Flynas
+2026-04-15 02:28:32,469 - INFO - Cache miss for ABY536, checking disk
+2026-04-15 02:28:32,484 - INFO - 02:28:32: 10.100.100.163  - ABY536    : SHJ -> KTM - Air Arabia
+2026-04-15 02:28:32,484 - INFO - Cache miss for FDB563, checking disk
+2026-04-15 02:28:32,513 - INFO - 02:28:32: 10.100.100.163  - FDB563    : DXB -> CGP - Flydubai
+2026-04-15 02:28:32,513 - INFO - Cache miss for QTR54X, checking disk
+2026-04-15 02:28:32,530 - INFO - 02:28:32: 10.100.100.163  - QTR54X    : DOH -> CDG - Qatar Airways
+2026-04-15 02:28:32,530 - INFO - Cache miss for AFL632, checking disk
+2026-04-15 02:28:32,543 - INFO - 02:28:32: 10.100.100.163  - AFL632    : SVX -> GOI - Aeroflot
+2026-04-15 02:28:32,544 - INFO - Cache miss for SVA803, checking disk
+2026-04-15 02:28:32,551 - INFO - 02:28:32: 10.100.100.163  - SVA803    : DAC -> JED - Saudia
+2026-04-15 02:28:32,552 - INFO - Cache miss for UAE311, checking disk
+2026-04-15 02:28:32,565 - INFO - 02:28:32: 10.100.100.163  - UAE311    : HGH -> DXB - Emirates
+2026-04-15 02:28:32,565 - INFO - Cache miss for SQ366, checking disk
+2026-04-15 02:28:32,581 - INFO - 02:28:32: 10.100.100.163  - SQ366     : xxx -> xxx - 
+2026-04-15 02:28:40,403 - INFO - Cache miss for FAD829, checking disk
+2026-04-15 02:28:40,427 - INFO - 02:28:40: 10.100.100.163  - FAD829    : JED -> KHI - flyadeal
+2026-04-15 02:28:40,427 - INFO - Cache miss for ETD26N, checking disk
+2026-04-15 02:28:40,447 - INFO - 02:28:40: 10.100.100.163  - ETD26N    : AUH -> MXP - Etihad Airways
+2026-04-15 02:28:43,503 - INFO - Cache miss for THY45T, checking disk
+2026-04-15 02:28:43,558 - INFO - 02:28:43: 10.100.100.163  - THY45T    : CPT -> IST - Turkish Airlines
+2026-04-15 02:28:43,559 - INFO - Cache miss for STW6932, checking disk
+2026-04-15 02:28:43,559 - INFO - 02:28:43: 10.100.100.163  - STW6932   : xxx -> xxx - Southwind
+2026-04-15 02:28:43,559 - INFO - Cache miss for THY94Y, checking disk
+2026-04-15 02:28:43,652 - INFO - 02:28:43: 10.100.100.163  - THY94Y    : ESB -> VAN - Turkish Airlines
+2026-04-15 02:28:43,652 - INFO - Cache miss for OMA144, checking disk
+2026-04-15 02:28:44,021 - INFO - 02:28:43: 10.100.100.163  - OMA144    : MXP -> MCT - Oman Air
+2026-04-15 02:28:44,022 - INFO - Cache miss for ETD18M, checking disk
+2026-04-15 02:28:44,343 - INFO - 02:28:44: 10.100.100.163  - ETD18M    : FRA -> AUH - Etihad Airways
+2026-04-15 02:28:44,343 - INFO - Cache miss for ETD80, checking disk
+2026-04-15 02:28:44,528 - INFO - 02:28:44: 10.100.100.163  - ETD80     : MXP -> AUH - Etihad Airways
+2026-04-15 02:28:44,528 - INFO - Cache miss for FYC491, checking disk
+2026-04-15 02:28:44,528 - INFO - 02:28:44: 10.100.100.163  - FYC491    : xxx -> xxx - Fly Cham
+2026-04-15 02:28:44,529 - INFO - Cache miss for RJA555, checking disk
+2026-04-15 02:28:44,613 - INFO - 02:28:44: 10.100.100.163  - RJA555    : AMM -> CMN - Royal Jordanian
+2026-04-15 02:28:44,613 - INFO - Cache miss for SYR381, checking disk
+2026-04-15 02:28:44,647 - INFO - 02:28:44: 10.100.100.163  - SYR381    : DAM -> JED - Syrian Arab Airlines
+2026-04-15 02:28:44,647 - INFO - Cache miss for BRU9310, checking disk
+2026-04-15 02:28:44,648 - INFO - 02:28:44: 10.100.100.163  - BRU9310   : xxx -> xxx - Belavia Belarusian Airlines
+2026-04-15 02:28:44,797 - INFO - Cache miss for AFR256, checking disk
+2026-04-15 02:28:44,897 - INFO - 02:28:44: 10.100.100.163  - AFR256    : CDG -> SIN - Air France
+2026-04-15 02:28:44,897 - INFO - Cache miss for SXS1ZQ, checking disk
+2026-04-15 02:28:44,996 - INFO - 02:28:44: 10.100.100.163  - SXS1ZQ    : NUE -> AYT - SunExpress
+2026-04-15 02:28:44,996 - INFO - Cache miss for AIC130, checking disk
+2026-04-15 02:28:45,056 - INFO - 02:28:44: 10.100.100.163  - AIC130    : LHR -> BOM - Air India
+2026-04-15 02:28:45,056 - INFO - Cache miss for WMT994, checking disk
+2026-04-15 02:28:45,176 - INFO - 02:28:45: 10.100.100.163  - WMT994    : BGY -> TIA - Wizz Air Malta
+2026-04-15 02:28:45,176 - INFO - Cache miss for THY6425, checking disk
+2026-04-15 02:28:45,208 - INFO - 02:28:45: 10.100.100.163  - THY6425   : xxx -> xxx - Turkish Airlines
+2026-04-15 02:28:45,208 - INFO - Cache miss for UAE9389, checking disk
+2026-04-15 02:28:45,311 - INFO - 02:28:45: 10.100.100.163  - UAE9389   : DWC -> MAD - Emirates
+2026-04-15 02:28:45,311 - INFO - Cache miss for GFA2142, checking disk
+2026-04-15 02:28:45,312 - INFO - 02:28:45: 10.100.100.163  - GFA2142   : xxx -> xxx - Gulf Air
+2026-04-15 02:28:45,312 - INFO - Cache miss for UAE6, checking disk
+2026-04-15 02:28:45,407 - INFO - 02:28:45: 10.100.100.163  - UAE6      : LHR -> DXB - Emirates
+2026-04-15 02:28:45,407 - INFO - Cache miss for AFR248, checking disk
+2026-04-15 02:28:45,497 - INFO - 02:28:45: 10.100.100.163  - AFR248    : CDG -> MNL - Air France
+2026-04-15 02:28:45,497 - INFO - Cache miss for AIC2018, checking disk
+2026-04-15 02:28:45,590 - INFO - 02:28:45: 10.100.100.163  - AIC2018   : LHR -> DEL - Air India
+2026-04-15 02:28:45,590 - INFO - Cache miss for UAE144, checking disk
+2026-04-15 02:28:45,662 - INFO - 02:28:45: 10.100.100.163  - UAE144    : MAD -> DXB - Emirates
+2026-04-15 02:28:45,662 - INFO - Cache miss for MSC2918, checking disk
+2026-04-15 02:28:45,752 - INFO - 02:28:45: 10.100.100.163  - MSC2918   : HRG -> CGN - Air Cairo
+2026-04-15 02:28:45,752 - INFO - Cache miss for EZY75EJ, checking disk
+2026-04-15 02:28:45,855 - INFO - 02:28:45: 10.100.100.163  - EZY75EJ   : LGW -> PMO - easyJet
+2026-04-15 02:28:45,855 - INFO - Cache miss for ELY488, checking disk
+2026-04-15 02:28:45,934 - INFO - 02:28:45: 10.100.100.163  - ELY488    : MXP -> TLV - El Al Israel Airlines
+2026-04-15 02:28:45,935 - INFO - Cache miss for HLJ3DF, checking disk
+2026-04-15 02:28:45,935 - INFO - 02:28:45: 10.100.100.163  - HLJ3DF    : xxx -> xxx - Hello Jets
+2026-04-15 02:28:45,935 - INFO - Cache miss for SVA931, checking disk
+2026-04-15 02:28:46,022 - INFO - 02:28:45: 10.100.100.163  - SVA931    : RUH -> LGG - Saudia
+2026-04-15 02:28:46,022 - INFO - Cache miss for WZZ1469, checking disk
+2026-04-15 02:28:46,136 - INFO - 02:28:46: 10.100.100.163  - WZZ1469   : GOT -> SKP - Wizz Air
+2026-04-15 02:28:46,136 - INFO - Cache miss for ELY428, checking disk
+2026-04-15 02:28:46,206 - INFO - 02:28:46: 10.100.100.163  - ELY428    : CDG -> TLV - El Al Israel Airlines
+2026-04-15 02:28:46,206 - INFO - Cache miss for EZY63MD, checking disk
+2026-04-15 02:28:46,309 - INFO - 02:28:46: 10.100.100.163  - EZY63MD   : VIE -> MAN - easyJet
+2026-04-15 02:28:46,309 - INFO - Cache miss for THY1CT, checking disk
+2026-04-15 02:28:46,430 - INFO - 02:28:46: 10.100.100.163  - THY1CT    : IST -> DSS - Turkish Airlines
+2026-04-15 02:28:46,430 - INFO - Cache miss for AFR202, checking disk
+2026-04-15 02:28:46,477 - INFO - 02:28:46: 10.100.100.163  - AFR202    : CDG -> PEK - Air France
+2026-04-15 02:28:46,477 - INFO - Cache miss for ETH737, checking disk
+2026-04-15 02:28:46,523 - INFO - 02:28:46: 10.100.100.163  - ETH737    : ZRH -> ADD - Ethiopian Airlines
+2026-04-15 02:28:46,523 - INFO - Cache miss for ELY436, checking disk
+2026-04-15 02:28:46,524 - INFO - 02:28:46: 10.100.100.163  - ELY436    : xxx -> xxx - El Al Israel Airlines
+2026-04-15 02:28:46,524 - INFO - Cache miss for MGH232, checking disk
+2026-04-15 02:28:46,604 - INFO - 02:28:46: 10.100.100.163  - MGH232    : HAJ -> AYT - Mavi Gok Aviation
+2026-04-15 02:28:46,604 - INFO - Cache miss for ELY418, checking disk
+2026-04-15 02:28:46,644 - INFO - 02:28:46: 10.100.100.163  - ELY418    : LHR -> TLV - El Al Israel Airlines
+2026-04-15 02:28:46,644 - INFO - Cache miss for THY3EZ, checking disk
+2026-04-15 02:28:46,780 - INFO - 02:28:46: 10.100.100.163  - THY3EZ    : AMS -> IST - Turkish Airlines
+2026-04-15 02:28:46,780 - INFO - Cache miss for DAH3014, checking disk
+2026-04-15 02:28:46,885 - INFO - 02:28:46: 10.100.100.163  - DAH3014   : ALG -> IST - Air Algérie
+2026-04-15 02:28:46,885 - INFO - Cache miss for UAE20, checking disk
+2026-04-15 02:28:46,964 - INFO - 02:28:46: 10.100.100.163  - UAE20     : MAN -> DXB - Emirates
+2026-04-15 02:28:46,965 - INFO - Cache miss for ETH713, checking disk
+2026-04-15 02:28:46,989 - INFO - 02:28:46: 10.100.100.163  - ETH713    : FCO -> ADD - Ethiopian Airlines
+2026-04-15 02:28:46,989 - INFO - Cache miss for VLG8104, checking disk
+2026-04-15 02:28:47,028 - INFO - 02:28:46: 10.100.100.163  - VLG8104   : BCN -> ATH - Vueling Airlines
+2026-04-15 02:28:47,028 - INFO - Cache miss for TOM871, checking disk
+2026-04-15 02:28:47,072 - INFO - 02:28:47: 10.100.100.163  - TOM871    : SSH -> NCL - TUI Airways
+2026-04-15 02:28:47,072 - INFO - Cache miss for ETH727, checking disk
+2026-04-15 02:28:47,073 - INFO - 02:28:47: 10.100.100.163  - ETH727    : MAN -> ADD - Ethiopian Airlines
+2026-04-15 02:28:47,073 - INFO - Cache miss for CLX89, checking disk
+2026-04-15 02:28:47,073 - INFO - 02:28:47: 10.100.100.163  - CLX89     : xxx -> xxx - Cargolux
+2026-04-15 02:28:47,073 - INFO - Cache miss for BAW2065, checking disk
+2026-04-15 02:28:47,166 - INFO - 02:28:47: 10.100.100.163  - BAW2065   : LGW -> MRU - British Airways
+2026-04-15 02:28:47,166 - INFO - Cache miss for QTR1V, checking disk
+2026-04-15 02:28:47,285 - INFO - 02:28:47: 10.100.100.163  - QTR1V     : LHR -> DOH - Qatar Airways
+2026-04-15 02:28:47,286 - INFO - Cache miss for ETD42B, checking disk
+2026-04-15 02:28:47,329 - INFO - 02:28:47: 10.100.100.163  - ETD42B    : LHR -> AUH - Etihad Airways
+2026-04-15 02:28:47,330 - INFO - Cache miss for AFR1390, checking disk
+2026-04-15 02:28:47,394 - INFO - 02:28:47: 10.100.100.163  - AFR1390   : CDG -> IST - Air France
+2026-04-15 02:28:47,394 - INFO - Cache miss for THY7MT, checking disk
+2026-04-15 02:28:47,518 - INFO - 02:28:47: 10.100.100.163  - THY7MT    : IST -> LED - Turkish Airlines
+2026-04-15 02:28:47,518 - INFO - Cache miss for ETH701, checking disk
+2026-04-15 02:28:47,582 - INFO - 02:28:47: 10.100.100.163  - ETH701    : LHR -> ADD - Ethiopian Airlines
+2026-04-15 02:28:47,582 - INFO - Cache miss for NOS46PP, checking disk
+2026-04-15 02:28:47,592 - INFO - 02:28:47: 10.100.100.163  - NOS46PP   : xxx -> xxx - Neos
+2026-04-15 02:28:47,593 - INFO - Cache miss for TKJ3SY, checking disk
+2026-04-15 02:28:47,667 - INFO - 02:28:47: 10.100.100.163  - TKJ3SY    : SAW -> SZF - AJet
+2026-04-15 02:28:47,667 - INFO - Cache miss for AIC2016, checking disk
+2026-04-15 02:28:47,732 - INFO - 02:28:47: 10.100.100.163  - AIC2016   : LHR -> DEL - Air India
+2026-04-15 02:28:47,732 - INFO - Cache miss for AFR274, checking disk
+2026-04-15 02:28:47,789 - INFO - 02:28:47: 10.100.100.163  - AFR274    : CDG -> HND - Air France
+2026-04-15 02:28:47,790 - INFO - Cache miss for MOOSE57, checking disk
+2026-04-15 02:28:47,790 - INFO - 02:28:47: 10.100.100.163  - MOOSE57   : xxx -> xxx - 
+2026-04-15 02:28:47,790 - INFO - Cache miss for OMA102, checking disk
+2026-04-15 02:28:47,829 - INFO - 02:28:47: 10.100.100.163  - OMA102    : LHR -> MCT - Oman Air
+2026-04-15 02:28:47,829 - INFO - Cache miss for AIC160, checking disk
+2026-04-15 02:28:47,871 - INFO - 02:28:47: 10.100.100.163  - AIC160    : LGW -> AMD - Air India
+2026-04-15 02:28:47,871 - INFO - Cache miss for TKJ1ML, checking disk
+2026-04-15 02:28:47,914 - INFO - 02:28:47: 10.100.100.163  - TKJ1ML    : ECN -> SAW - AJet
+2026-04-15 02:28:47,914 - INFO - Cache miss for AHY8, checking disk
+2026-04-15 02:28:47,919 - INFO - 02:28:47: 10.100.100.163  - AHY8      : LHR -> GYD - Azerbaijan Airlines
+2026-04-15 02:28:47,920 - INFO - Cache miss for ELY848, checking disk
+2026-04-15 02:28:47,953 - INFO - 02:28:47: 10.100.100.163  - ELY848    : ZRH -> TLV - El Al Israel Airlines
+2026-04-15 02:28:47,953 - INFO - Cache miss for ISR954, checking disk
+2026-04-15 02:28:47,980 - INFO - 02:28:47: 10.100.100.163  - ISR954    : xxx -> xxx - Israir
+2026-04-15 02:28:47,980 - INFO - Cache miss for SIA337, checking disk
+2026-04-15 02:28:48,056 - INFO - 02:28:47: 10.100.100.163  - SIA337    : CDG -> SIN - Singapore Airlines
+2026-04-15 02:28:48,057 - INFO - Cache miss for LOT149, checking disk
+2026-04-15 02:28:48,344 - INFO - 02:28:48: 10.100.100.163  - LOT149    : WAW -> CAI - LOT Polish Airlines
+2026-04-15 02:28:48,344 - INFO - Cache miss for SEU7551, checking disk
+2026-04-15 02:28:48,431 - INFO - 02:28:48: 10.100.100.163  - SEU7551   : RZE -> SSH - SkyUp Europe
+2026-04-15 02:28:48,432 - INFO - Cache miss for DAH3200, checking disk
+2026-04-15 02:28:48,603 - INFO - 02:28:48: 10.100.100.163  - DAH3200   : ALG -> IST - Air Algérie
+2026-04-15 02:28:48,604 - INFO - Cache miss for THY6YW, checking disk
+2026-04-15 02:28:48,718 - INFO - 02:28:48: 10.100.100.163  - THY6YW    : IST -> OTP - Turkish Airlines
+2026-04-15 02:28:48,718 - INFO - Cache miss for UAE93P, checking disk
+2026-04-15 02:28:48,836 - INFO - 02:28:48: 10.100.100.163  - UAE93P    : CDG -> DXB - Emirates
+2026-04-15 02:28:48,837 - INFO - Cache miss for UAE39L, checking disk
+2026-04-15 02:28:48,903 - INFO - 02:28:48: 10.100.100.163  - UAE39L    : MXP -> DXB - Emirates
+2026-04-15 02:28:48,903 - INFO - Cache miss for ENT7382, checking disk
+2026-04-15 02:28:48,904 - INFO - 02:28:48: 10.100.100.163  - ENT7382   : xxx -> xxx - Enter Air
+2026-04-15 02:28:48,904 - INFO - Cache miss for TKJ4CS, checking disk
+2026-04-15 02:28:49,346 - INFO - 02:28:48: 10.100.100.163  - TKJ4CS    : SAW -> STN - AJet
+2026-04-15 02:28:49,346 - INFO - Cache miss for ETD3AG, checking disk
+2026-04-15 02:28:49,378 - INFO - 02:28:49: 10.100.100.163  - ETD3AG    : CDG -> AUH - Etihad Airways
+2026-04-15 02:28:49,378 - INFO - Cache miss for THY4JD, checking disk
+2026-04-15 02:28:49,783 - INFO - 02:28:49: 10.100.100.163  - THY4JD    : IST -> MIA - Turkish Airlines
+2026-04-15 02:28:49,783 - INFO - Cache miss for UAE35Q, checking disk
+2026-04-15 02:28:49,816 - INFO - 02:28:49: 10.100.100.163  - UAE35Q    : MUC -> DXB - Emirates
+2026-04-15 02:28:49,816 - INFO - Cache miss for AFG719, checking disk
+2026-04-15 02:28:49,904 - INFO - 02:28:49: 10.100.100.163  - AFG719    : KBL -> IST - Ariana Afghan Airlines
+2026-04-15 02:28:49,905 - INFO - Cache miss for MSR745, checking disk
+2026-04-15 02:28:49,980 - INFO - 02:28:49: 10.100.100.163  - MSR745    : CAI -> IST - Egyptair
+2026-04-15 02:28:49,980 - INFO - Cache miss for HKC9490, checking disk
+2026-04-15 02:28:50,057 - INFO - 02:28:49: 10.100.100.163  - HKC9490   : IST -> HKG - Hong Kong Air Cargo
+2026-04-15 02:28:50,057 - INFO - Cache miss for THY7LR, checking disk
+2026-04-15 02:28:50,268 - INFO - 02:28:50: 10.100.100.163  - THY7LR    : IST -> HRG - Turkish Airlines
+2026-04-15 02:28:50,268 - INFO - Cache miss for THY9VP, checking disk
+2026-04-15 02:28:50,389 - INFO - 02:28:50: 10.100.100.163  - THY9VP    : IST -> SSH - Turkish Airlines
+2026-04-15 02:28:50,389 - INFO - Cache miss for THY164, checking disk
+2026-04-15 02:28:50,475 - INFO - 02:28:50: 10.100.100.163  - THY164    : IST -> HAN - Turkish Airlines
+2026-04-15 02:28:50,475 - INFO - Cache miss for THY646, checking disk
+2026-04-15 02:28:50,570 - INFO - 02:28:50: 10.100.100.163  - THY646    : IST -> MGQ - Turkish Airlines
+2026-04-15 02:28:50,570 - INFO - Cache miss for THY140, checking disk
+2026-04-15 02:28:50,643 - INFO - 02:28:50: 10.100.100.163  - THY140    : IST -> RUH - Turkish Airlines
+2026-04-15 02:28:50,643 - INFO - Cache miss for THY9YB, checking disk
+2026-04-15 02:28:50,698 - INFO - 02:28:50: 10.100.100.163  - THY9YB    : IST -> HBE - Turkish Airlines
+2026-04-15 02:28:50,698 - INFO - Cache miss for THY10J, checking disk
+2026-04-15 02:28:50,705 - INFO - 02:28:50: 10.100.100.163  - THY10J    : IST -> CPT - Turkish Airlines
+2026-04-15 02:28:50,705 - INFO - Cache miss for THY4VL, checking disk
+2026-04-15 02:28:50,786 - INFO - 02:28:50: 10.100.100.163  - THY4VL    : IST -> CAI - Turkish Airlines
+2026-04-15 02:28:50,786 - INFO - Cache miss for THY172, checking disk
+2026-04-15 02:28:50,837 - INFO - 02:28:50: 10.100.100.163  - THY172    : IST -> HKT - Turkish Airlines
+2026-04-15 02:28:50,837 - INFO - Cache miss for WMT89JC, checking disk
+2026-04-15 02:28:51,036 - INFO - 02:28:50: 10.100.100.163  - WMT89JC   : LCA -> CLJ - Wizz Air Malta
+2026-04-15 02:28:51,036 - INFO - Cache miss for MAS1, checking disk
+2026-04-15 02:28:51,106 - INFO - 02:28:51: 10.100.100.163  - MAS1      : LHR -> KUL - Malaysia Airlines
+2026-04-15 02:28:51,106 - INFO - Cache miss for THY21Y, checking disk
+2026-04-15 02:28:51,189 - INFO - 02:28:51: 10.100.100.163  - THY21Y    : IST -> DUR - Turkish Airlines
+2026-04-15 02:28:51,189 - INFO - Cache miss for UAE7TC, checking disk
+2026-04-15 02:28:51,255 - INFO - 02:28:51: 10.100.100.163  - UAE7TC    : STN -> DXB - Emirates
+2026-04-15 02:28:51,255 - INFO - Cache miss for RJA268, checking disk
+2026-04-15 02:28:51,321 - INFO - 02:28:51: 10.100.100.163  - RJA268    : DTW -> AMM - Royal Jordanian
+2026-04-15 02:28:51,321 - INFO - Cache miss for THY5RC, checking disk
+2026-04-15 02:28:51,346 - INFO - 02:28:51: 10.100.100.163  - THY5RC    : AYT -> IST - Turkish Airlines
+2026-04-15 02:28:51,347 - INFO - Cache miss for ABY286, checking disk
+2026-04-15 02:28:51,359 - INFO - 02:28:51: 10.100.100.163  - ABY286    : SAW -> SHJ - Air Arabia
+2026-04-15 02:28:51,359 - INFO - Cache miss for LWA100, checking disk
+2026-04-15 02:28:51,436 - INFO - 02:28:51: 10.100.100.163  - LWA100    : MJI -> IST - Libyan Wings
+2026-04-15 02:28:51,436 - INFO - Cache miss for TKJ213, checking disk
+2026-04-15 02:28:51,499 - INFO - 02:28:51: 10.100.100.163  - TKJ213    : SAW -> RUH - AJet
+2026-04-15 02:28:51,499 - INFO - Cache miss for UTN7126, checking disk
+2026-04-15 02:28:51,550 - INFO - 02:28:51: 10.100.100.163  - UTN7126   : xxx -> xxx - Skyline Express Airlines
+2026-04-15 02:28:51,550 - INFO - Cache miss for THY98, checking disk
+2026-04-15 02:28:51,587 - INFO - 02:28:51: 10.100.100.163  - THY98     : IST -> MED - Turkish Airlines
+2026-04-15 02:28:51,587 - INFO - Cache miss for THY96, checking disk
+2026-04-15 02:28:51,619 - INFO - 02:28:51: 10.100.100.163  - THY96     : IST -> JED - Turkish Airlines
+2026-04-15 02:28:51,619 - INFO - Cache miss for PGT14T, checking disk
+2026-04-15 02:28:51,661 - INFO - 02:28:51: 10.100.100.163  - PGT14T    : ESB -> CRL - Pegasus Airlines
+2026-04-15 02:28:51,661 - INFO - Cache miss for SQY7505, checking disk
+2026-04-15 02:28:51,672 - INFO - 02:28:51: 10.100.100.163  - SQY7505   : RMO -> SSH - Vision Air
+2026-04-15 02:28:51,673 - INFO - Cache miss for THY137, checking disk
+2026-04-15 02:28:51,702 - INFO - 02:28:51: 10.100.100.163  - THY137    : MED -> IST - Turkish Airlines
+2026-04-15 02:28:51,702 - INFO - Cache miss for ETH3714, checking disk
+2026-04-15 02:28:51,714 - INFO - 02:28:51: 10.100.100.163  - ETH3714   : ADD -> BRU - Ethiopian Airlines
+2026-04-15 02:28:51,715 - INFO - Cache miss for QTR91Y, checking disk
+2026-04-15 02:28:51,734 - INFO - 02:28:51: 10.100.100.163  - QTR91Y    : BER -> DOH - Qatar Airways
+2026-04-15 02:28:51,734 - INFO - Cache miss for SDM5974, checking disk
+2026-04-15 02:28:51,763 - INFO - 02:28:51: 10.100.100.163  - SDM5974   : xxx -> xxx - Rossiya
+2026-04-15 02:28:51,763 - INFO - Cache miss for THY66, checking disk
+2026-04-15 02:28:51,790 - INFO - 02:28:51: 10.100.100.163  - THY66     : IST -> DPS - Turkish Airlines
+2026-04-15 02:28:51,790 - INFO - Cache miss for CSN6036, checking disk
+2026-04-15 02:28:51,822 - INFO - 02:28:51: 10.100.100.163  - CSN6036   : IST -> URC - China Southern Airlines
+2026-04-15 02:28:51,822 - INFO - Cache miss for THY5VH, checking disk
+2026-04-15 02:28:51,833 - INFO - 02:28:51: 10.100.100.163  - THY5VH    : IST -> GYD - Turkish Airlines
+2026-04-15 02:28:51,833 - INFO - Cache miss for SIA319, checking disk
+2026-04-15 02:28:51,846 - INFO - 02:28:51: 10.100.100.163  - SIA319    : LHR -> SIN - Singapore Airlines
+2026-04-15 02:28:51,846 - INFO - Cache miss for MFX3364, checking disk
+2026-04-15 02:28:51,846 - INFO - 02:28:51: 10.100.100.163  - MFX3364   : xxx -> xxx - My Freighter
+2026-04-15 02:28:51,846 - INFO - Cache miss for AAR582, checking disk
+2026-04-15 02:28:51,893 - INFO - 02:28:51: 10.100.100.163  - AAR582    : MXP -> ICN - Asiana Airlines
+2026-04-15 02:28:51,893 - INFO - Cache miss for LMU747, checking disk
+2026-04-15 02:28:51,893 - INFO - 02:28:51: 10.100.100.163  - LMU747    : xxx -> xxx - AlMasria Universal Airlines
+2026-04-15 02:28:51,894 - INFO - Cache miss for THY262, checking disk
+2026-04-15 02:28:51,933 - INFO - 02:28:51: 10.100.100.163  - THY262    : IST -> UGC - Turkish Airlines
+2026-04-15 02:28:56,284 - INFO - Cache miss for ALK504, checking disk
+2026-04-15 02:28:56,303 - INFO - 02:28:56: 10.100.100.163  - ALK504    : LHR -> CMB - SriLankan Airlines
+2026-04-15 02:28:56,304 - INFO - Cache miss for CPA254, checking disk
+2026-04-15 02:28:56,337 - INFO - 02:28:56: 10.100.100.163  - CPA254    : LHR -> HKG - Cathay Pacific
+2026-04-15 02:28:56,337 - INFO - Cache miss for TKJ3MQ, checking disk
+2026-04-15 02:28:56,365 - INFO - 02:28:56: 10.100.100.163  - TKJ3MQ    : STN -> SAW - AJet
+2026-04-15 02:28:56,365 - INFO - Cache hit for AFR202
+2026-04-15 02:28:56,365 - INFO - 02:28:56: 10.100.100.163  - AFR202    : CDG -> PEK - Air France
+2026-04-15 02:28:56,365 - INFO - Cache miss for DNA508, checking disk
+2026-04-15 02:28:56,427 - INFO - 02:28:56: 10.100.100.163  - DNA508    : DUB -> OTP - Dan Air
+2026-04-15 02:28:56,427 - INFO - Cache miss for BAW2231, checking disk
+2026-04-15 02:28:56,463 - INFO - 02:28:56: 10.100.100.163  - BAW2231   : LGW -> BKK - British Airways
+2026-04-15 02:28:56,463 - INFO - Cache miss for BAW33, checking disk
+2026-04-15 02:28:56,493 - INFO - 02:28:56: 10.100.100.163  - BAW33     : LHR -> KUL - British Airways
+2026-04-15 02:28:56,493 - INFO - Cache miss for BAW137, checking disk
+2026-04-15 02:28:56,529 - INFO - 02:28:56: 10.100.100.163  - BAW137    : LHR -> DEL - British Airways
+2026-04-15 02:28:56,530 - INFO - Cache hit for ELY436
+2026-04-15 02:28:56,530 - INFO - 02:28:56: 10.100.100.163  - ELY436    : xxx -> xxx - El Al Israel Airlines
+2026-04-15 02:28:56,530 - INFO - Cache hit for MGH232
+2026-04-15 02:28:56,530 - INFO - 02:28:56: 10.100.100.163  - MGH232    : HAJ -> AYT - Mavi Gok Aviation
+2026-04-15 02:28:56,530 - INFO - Cache hit for THY3EZ
+2026-04-15 02:28:56,530 - INFO - 02:28:56: 10.100.100.163  - THY3EZ    : AMS -> IST - Turkish Airlines
+2026-04-15 02:28:56,530 - INFO - Cache miss for BAW15, checking disk
+2026-04-15 02:28:56,555 - INFO - 02:28:56: 10.100.100.163  - BAW15     : LHR -> SYD - British Airways
+2026-04-15 02:28:56,555 - INFO - Cache miss for PGT1581, checking disk
+2026-04-15 02:28:56,572 - INFO - 02:28:56: 10.100.100.163  - PGT1581   : VKO -> AYT - Pegasus Airlines
+2026-04-15 02:28:56,572 - INFO - Cache hit for CLX89
+2026-04-15 02:28:56,572 - INFO - 02:28:56: 10.100.100.163  - CLX89     : xxx -> xxx - Cargolux
+2026-04-15 02:28:56,573 - INFO - Cache hit for THY7MT
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - THY7MT    : IST -> LED - Turkish Airlines
+2026-04-15 02:28:56,573 - INFO - Cache hit for TKJ3SY
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - TKJ3SY    : SAW -> SZF - AJet
+2026-04-15 02:28:56,573 - INFO - Cache hit for AFR274
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - AFR274    : CDG -> HND - Air France
+2026-04-15 02:28:56,573 - INFO - Cache hit for TKJ1ML
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - TKJ1ML    : ECN -> SAW - AJet
+2026-04-15 02:28:56,573 - INFO - Cache hit for AHY8
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - AHY8      : LHR -> GYD - Azerbaijan Airlines
+2026-04-15 02:28:56,573 - INFO - Cache hit for SIA337
+2026-04-15 02:28:56,573 - INFO - 02:28:56: 10.100.100.163  - SIA337    : CDG -> SIN - Singapore Airlines
+2026-04-15 02:29:03,629 - INFO - Cache miss for THY9YQ, checking disk
+2026-04-15 02:29:03,649 - INFO - 02:29:03: 10.100.100.163  - THY9YQ    : LED -> IST - Turkish Airlines
+2026-04-15 02:29:07,877 - INFO - Cache hit for AFR248
+2026-04-15 02:29:07,877 - INFO - 02:29:07: 10.100.100.163  - AFR248    : CDG -> MNL - Air France
+2026-04-15 02:29:07,877 - INFO - Cache miss for NMA641, checking disk
+2026-04-15 02:29:07,896 - INFO - 02:29:07: 10.100.100.163  - NMA641    : xxx -> xxx - Nesma Airlines
+2026-04-15 02:29:07,896 - INFO - Cache miss for MGH874A, checking disk
+2026-04-15 02:29:07,896 - INFO - 02:29:07: 10.100.100.163  - MGH874A   : xxx -> xxx - Mavi Gok Aviation
+2026-04-15 02:29:12,127 - INFO - Cache miss for TKJ6UN, checking disk
+2026-04-15 02:29:12,151 - INFO - 02:29:12: 10.100.100.163  - TKJ6UN    : BRU -> SAW - AJet
+2026-04-15 02:29:26,730 - INFO - Cache miss for WMT952, checking disk
+2026-04-15 02:29:26,771 - INFO - 02:29:26: 10.100.100.163  - WMT952    : EVN -> MXP - Wizz Air Malta

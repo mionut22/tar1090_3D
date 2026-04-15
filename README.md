@@ -1,4 +1,4 @@
-# tar1090 (Cesium 3D Fork)
+# tar1090 with Cesium 3D
 
 ![3D tar1090 screenshot](images/3d_tar1090.png)
 
