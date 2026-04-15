@@ -22,6 +22,7 @@ Comercial use is permitted only if the original source is specified.
 
 ### Upstream project
 
+- **[readsb](https://github.com/wiedehopf/readsb)** by wiedehopf - the ADS-B decoder swiss knife (GPL-2.0+)
 - **[tar1090](https://github.com/wiedehopf/tar1090)** by wiedehopf — the 2D ADS-B interface this project is forked from (GPL-2.0+)
 - **[dump1090](https://github.com/flightaware/dump1090)** — `dbloader.js` originally by Oliver Jowett (GPL-2.0+)
 
@@ -54,3 +55,5 @@ Comercial use is permitted only if the original source is specified.
 - **[zstddec-tar1090](https://github.com/wiedehopf/tar1090)** — Zstandard decoder for compressed aircraft data
 - **[country-flag-icons](https://gitlab.com/catamphetamine/country-flag-icons)** by @catamphetamine — MIT
 - **[elm-pep](https://github.com/nicktindall/cyclon.p2p-common)** — Pointer Events polyfill
+
+### THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" with NO WARRANTY
