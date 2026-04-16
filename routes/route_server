@@ -13,31 +13,26 @@ from math import asin, cos, radians, sin, sqrt
 from socketserver import ThreadingMixIn
 from logging.handlers import RotatingFileHandler
 import setproctitle
-from plausible import assess_route_plausibility
+from plausible import calc_plausible
 
 route_cache = {}
 noroute = {}
 max_route_cache_entries = 10
 useCache = False
-
+airlines = {}
 this_path = os.path.dirname(os.path.abspath(__file__))
-
 LOGFILE = this_path + "/route_server.log"
 logger = None
 
-
 def setup_logging():
     global logger
-
     logger = logging.getLogger("route_server")
     logger.setLevel(logging.INFO)
     logger.handlers.clear()
     logger.propagate = False
-
     handler = RotatingFileHandler(LOGFILE, maxBytes=5 * 1024 * 1024, backupCount=3)
     handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
     logger.addHandler(handler)
-
 
 def log(message):
     if logger:
@@ -46,9 +41,6 @@ def log(message):
         print(message)
 
 class CSVToJson:
-    # This class is used to convert a csv file to a json file
-    # The csv file must have a header row
-    # The output will be a list of dictionaries
     def __init__(self, csv_file, translate_keys=None, dicts_by_key=None):
         self.csv_file = csv_file
         self.translate_keys = translate_keys
@@ -64,27 +56,6 @@ class CSVToJson:
                 self.dicts.append(row)
                 if self.dicts_by_key_filter:
                     self.dicts_by_key[row[self.dicts_by_key_filter]] = row
-
-EARTH_RADIUS = 6371000  # meters
-
-airlines = {}
-
-def calc_plausible(route, lat: float, lng: float, trk: float):
-    for i in range(len(route.get("_airports", [])) - 1):
-        a, b = route["_airports"][i], route["_airports"][i + 1]
-        pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(a["lat"], 3), round(a["lon"], 3), round(b["lat"], 3), round(b["lon"], 3))
-        #print(json.dumps(pls, indent=2))
-        if pls["plausible"]:
-            print(json.dumps(pls, indent=2))
-            return True
-        else:
-            pls = assess_route_plausibility(round(lat, 3), round(lng, 3), trk, round(b["lat"], 3), round(b["lon"], 3), round(a["lat"], 3), round(a["lon"], 3))
-            if pls["plausible"]:
-                print(route["callsign"], "plausible in reverse leg")
-                print(json.dumps(pls, indent=2))
-                return True
-    print(json.dumps(pls, indent=2))
-    return False
 
 class RouteServer(ThreadingMixIn, HTTPServer):
     daemon_threads = True
@@ -123,7 +94,7 @@ class RouteHandler(SimpleHTTPRequestHandler):
         if (os.path.isfile(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json")):
             with open(this_path + "/routes/" + callsign[:2] + "/" + callsign + ".json") as f:
                 response = json.load(f)
-            response["plausible"] = calc_plausible(response, float(lat), float(lon), trk)
+            response["plausible"] = calc_plausible(response, float(lat), float(lon), trk, callsign)
         else:
             with open(this_path + "/noroute.json") as f:
                 response = json.load(f)
@@ -155,7 +126,10 @@ class RouteHandler(SimpleHTTPRequestHandler):
                 lat      = plane["lat"]
                 lon      = plane["lng"]
                 if "trk" in plane:
-                    trk  = plane["trk"]
+                    if plane["trk"] is None:
+                        trk = 0.0
+                    else:
+                        trk  = plane["trk"]
                 else:
                     trk = 0.0
                 now = datetime.now()

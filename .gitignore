@@ -6,6 +6,6 @@ routes/routes/
 routes/route_server.log
 html/3dmodels/*
 !html/3dmodels/Cesium_Air.glb
-routes/route_server.log
-routes/route_server.log
 routes/generate.log
+routes/route_server.log
+routes/route_server.log

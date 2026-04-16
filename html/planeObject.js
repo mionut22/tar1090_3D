@@ -3053,11 +3053,12 @@ function routeDoLookup() {
                     }
                     if (route.plausible == true) {
                         g.route_cache[route.callsign] = [tmpStr, route._airport_codes_iata.replaceAll("-", " \u21e8 "), tmpCoords];
+                        route.tarNextUpdate = currentTime + 6 * 3600; // recheck in 6 hours
                     } else {
-                        g.route_cache[route.callsign] = ["<span style='color:Tomato;'>" + tmpStr + "</span>", route._airport_codes_iata.replaceAll("-", " \u21e8 ") + "?", tmpCoords];
+                        g.route_cache[route.callsign] = ["<span style=\"color:red;\">" + tmpStr + "</span>", route._airport_codes_iata.replaceAll("-", " \u21e8 ") + "?", tmpCoords];
+                        route.tarNextUpdate = currentTime + 1 * 60; // recheck in 1 minute
                     }
                 }
-                route.tarNextUpdate = currentTime + 6 * 3600; // recheck in 6 hours
             }
             for (const entry of g.route_check_checking) {
                 delete g.route_check_todo[entry.callsign];
