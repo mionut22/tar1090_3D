@@ -15,7 +15,7 @@
     "esri": {
       "type": "raster",
       "tiles": [
-        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+        "http://tilegen.ami:8080/sat/{z}/{x}/{y}"
       ],
       "scheme": "xyz",
       "tileSize": 256

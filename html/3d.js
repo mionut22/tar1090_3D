@@ -111,9 +111,9 @@ const MAX_PITCH_STEP_DEG = 2.5;
 const MIN_ABS_TELEMETRY_ROLL_DEG = 0.2;
 const MIN_GS_KNOTS_FOR_ROLL_ESTIMATE = 45;
 const MAX_ABS_ROLL_DEG = 45;
-const ARC_TARGET_INTERVAL_SEC = 2.5;          // target spacing between interpolated samples
-const MAX_ARC_INTERMEDIATE_SAMPLES = 6;       // hard cap per segment to avoid overload
-const MAX_ROLL_STEP_DEG = 1.5;                // max roll change (°) per sample for smoothing
+const ARC_TARGET_INTERVAL_SEC = 3;            // target spacing between interpolated samples
+const MAX_ARC_INTERMEDIATE_SAMPLES = 33;      // hard cap per segment to avoid overload
+const MAX_ROLL_STEP_DEG = 0.75;               // max roll change (°) per sample for smoothing
 const MODEL_URI_ALIASES = {
     "A20N": "A320", "A21N": "A321", "A339": "A333", "A338": "A333", "A342": "A343", "A345": "A343", "A35K": "A359", "EC30": "EC35",
     "EC45": "EC35", "AT44": "AT43", "AT45": "AT43", "AT46": "AT43", "B733": "B736", "B734": "B736", "B37M": "B737", "B38M": "B738",
@@ -346,7 +346,7 @@ function flightMessage() {
         ' Speed: ' + (aircraft.gs * 1.852).toFixed(2) + ' km/h' +
         ' VRate: ' + (aircraft.baro_rate * 0.00508).toFixed(2) + ' m/s' +
         ' <span style="color: ' + (onGround ? 'red' : 'green') + ';">' + (onGround ? 'On Ground' : 'Airborne') + '</span>' +
-        (aircraft.isotime ? ('<br><span style="font-size: smaller;">Last seen: ' + new Date(aircraft.isotime).toLocaleString() + '</span>') : '');
+        (aircraft.isotime ? ('<br><span style="font-size: smaller;">Last position: ' + new Date(aircraft.isotime).toLocaleString() + '</span>') : '');
     messageBox(message, { persistent: true });
 }
 

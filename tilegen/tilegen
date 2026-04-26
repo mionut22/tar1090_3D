@@ -210,7 +210,7 @@ class TileHandler(SimpleHTTPRequestHandler):
         try:
             style, z, x, y = parse_tile_request(self.path)
             if style == "sat":
-                tile_data = getSatTile(y, x, z)
+                tile_data = getSatTile(x, y, z)
             else:
                 tile_data = generate_tile(x, y, z, style)
 
